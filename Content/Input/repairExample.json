@@ -1,0 +1,230 @@
+{
+  "FuzzyModel" : {
+      "nodes": [
+           {
+              "label" : "Register : complete",
+              "frequencySignificance" : 1104,
+              "attributes" : [
+                  {
+                      "org:resource" : "System",
+                      "time:timestamp" : "1970-01-02T11:23:00Z",
+                      "lifecycle:transition" : "complete"
+                      }
+                   ]
+          },
+           {
+              "label" : "Analyze Defect : start",
+              "frequencySignificance" : 1104,
+              "attributes" : [
+                  {
+                      "org:resource" : "Tester3",
+                      "time:timestamp" : "1970-01-02T11:23:00Z",
+                      "lifecycle:transition" : "start"
+                      }
+                   ]
+          },
+           {
+              "label" : "Analyze Defect : complete",
+              "frequencySignificance" : 1104,
+              "attributes" : [
+                  {
+                      "defectType" : "6",
+                      "org:resource" : "Tester3",
+                      "lifecycle:transition" : "complete",
+                      "phoneType" : "T2",
+                      "time:timestamp" : "1970-01-02T11:30:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Repair (Complex) : start",
+              "frequencySignificance" : 725,
+              "attributes" : [
+                  {
+                      "org:resource" : "SolverC1",
+                      "time:timestamp" : "1970-01-02T11:31:00Z",
+                      "lifecycle:transition" : "start"
+                      }
+                   ]
+          },
+           {
+              "label" : "Repair (Complex) : complete",
+              "frequencySignificance" : 724,
+              "attributes" : [
+                  {
+                      "org:resource" : "SolverC1",
+                      "time:timestamp" : "1970-01-02T11:49:00Z",
+                      "lifecycle:transition" : "complete"
+                      }
+                   ]
+          },
+           {
+              "label" : "Test Repair : start",
+              "frequencySignificance" : 1508,
+              "attributes" : [
+                  {
+                      "org:resource" : "Tester3",
+                      "time:timestamp" : "1970-01-02T11:49:00Z",
+                      "lifecycle:transition" : "start"
+                      }
+                   ]
+          },
+           {
+              "label" : "Test Repair : complete",
+              "frequencySignificance" : 1508,
+              "attributes" : [
+                  {
+                      "numberRepairs" : "0",
+                      "org:resource" : "Tester3",
+                      "lifecycle:transition" : "complete",
+                      "time:timestamp" : "1970-01-02T11:55:00Z",
+                      "defectFixed" : "true"
+                      }
+                   ]
+          },
+           {
+              "label" : "Inform User : complete",
+              "frequencySignificance" : 1102,
+              "attributes" : [
+                  {
+                      "org:resource" : "System",
+                      "time:timestamp" : "1970-01-02T12:10:00Z",
+                      "lifecycle:transition" : "complete"
+                      }
+                   ]
+          },
+           {
+              "label" : "Archive Repair : complete",
+              "frequencySignificance" : 1000,
+              "attributes" : [
+                  {
+                      "numberRepairs" : "0",
+                      "org:resource" : "System",
+                      "lifecycle:transition" : "complete",
+                      "time:timestamp" : "1970-01-02T12:10:00Z",
+                      "defectFixed" : "true"
+                      }
+                   ]
+          },
+           {
+              "label" : "Repair (Simple) : start",
+              "frequencySignificance" : 785,
+              "attributes" : [
+                  {
+                      "org:resource" : "SolverS1",
+                      "time:timestamp" : "1970-01-01T10:35:00Z",
+                      "lifecycle:transition" : "start"
+                      }
+                   ]
+          },
+           {
+              "label" : "Repair (Simple) : complete",
+              "frequencySignificance" : 785,
+              "attributes" : [
+                  {
+                      "org:resource" : "SolverS1",
+                      "time:timestamp" : "1970-01-01T10:42:00Z",
+                      "lifecycle:transition" : "complete"
+                      }
+                   ]
+          },
+           {
+              "label" : "Restart Repair : complete",
+              "frequencySignificance" : 406,
+              "attributes" : [
+                  {
+                      "org:resource" : "System",
+                      "time:timestamp" : "1970-01-01T10:54:00Z",
+                      "lifecycle:transition" : "complete"
+                      }
+                   ]
+          }
+      ],
+      "edges": [
+           {
+              "label" : "Register : complete -> Analyze Defect : start",
+              "fromNode" : "Register : complete",
+              "toNode" : "Analyze Defect : start",
+              "frequencySignificance" : 1104
+          },
+           {
+              "label" : "Analyze Defect : start -> Analyze Defect : complete",
+              "fromNode" : "Analyze Defect : start",
+              "toNode" : "Analyze Defect : complete",
+              "frequencySignificance" : 1104
+          },
+           {
+              "label" : "Analyze Defect : complete -> Repair (Complex) : start",
+              "fromNode" : "Analyze Defect : complete",
+              "toNode" : "Repair (Complex) : start",
+              "frequencySignificance" : 528
+          },
+           {
+              "label" : "Repair (Complex) : start -> Repair (Complex) : complete",
+              "fromNode" : "Repair (Complex) : start",
+              "toNode" : "Repair (Complex) : complete",
+              "frequencySignificance" : 414
+          },
+           {
+              "label" : "Repair (Complex) : complete -> Test Repair : start",
+              "fromNode" : "Repair (Complex) : complete",
+              "toNode" : "Test Repair : start",
+              "frequencySignificance" : 720
+          },
+           {
+              "label" : "Test Repair : start -> Test Repair : complete",
+              "fromNode" : "Test Repair : start",
+              "toNode" : "Test Repair : complete",
+              "frequencySignificance" : 1333
+          },
+           {
+              "label" : "Analyze Defect : complete -> Repair (Simple) : start",
+              "fromNode" : "Analyze Defect : complete",
+              "toNode" : "Repair (Simple) : start",
+              "frequencySignificance" : 421
+          },
+           {
+              "label" : "Repair (Simple) : start -> Repair (Simple) : complete",
+              "fromNode" : "Repair (Simple) : start",
+              "toNode" : "Repair (Simple) : complete",
+              "frequencySignificance" : 626
+          },
+           {
+              "label" : "Repair (Simple) : complete -> Test Repair : start",
+              "fromNode" : "Repair (Simple) : complete",
+              "toNode" : "Test Repair : start",
+              "frequencySignificance" : 783
+          },
+           {
+              "label" : "Test Repair : complete -> Restart Repair : complete",
+              "fromNode" : "Test Repair : complete",
+              "toNode" : "Restart Repair : complete",
+              "frequencySignificance" : 341
+          },
+           {
+              "label" : "Restart Repair : complete -> Repair (Simple) : start",
+              "fromNode" : "Restart Repair : complete",
+              "toNode" : "Repair (Simple) : start",
+              "frequencySignificance" : 300
+          },
+           {
+              "label" : "Test Repair : complete -> Archive Repair : complete",
+              "fromNode" : "Test Repair : complete",
+              "toNode" : "Archive Repair : complete",
+              "frequencySignificance" : 795
+          },
+           {
+              "label" : "Repair (Complex) : start -> Inform User : complete",
+              "fromNode" : "Repair (Complex) : start",
+              "toNode" : "Inform User : complete",
+              "frequencySignificance" : 310
+          },
+           {
+              "label" : "Inform User : complete -> Repair (Complex) : complete",
+              "fromNode" : "Inform User : complete",
+              "toNode" : "Repair (Complex) : complete",
+              "frequencySignificance" : 310
+          }
+      ]
+  }
+}

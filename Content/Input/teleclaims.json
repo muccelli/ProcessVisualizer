@@ -1,0 +1,224 @@
+{
+  "FuzzyModel" : {
+      "nodes": [
+           {
+              "label" : "incoming claim : complete",
+              "frequencySignificance" : 3512
+          },
+           {
+              "label" : "B check if sufficient information is available : start",
+              "frequencySignificance" : 1720
+          },
+           {
+              "label" : "B check if sufficient information is available : complete",
+              "frequencySignificance" : 1720
+          },
+           {
+              "label" : "B register claim : start",
+              "frequencySignificance" : 1525
+          },
+           {
+              "label" : "B register claim : complete",
+              "frequencySignificance" : 1525
+          },
+           {
+              "label" : "determine likelihood of claim : start",
+              "frequencySignificance" : 2950
+          },
+           {
+              "label" : "determine likelihood of claim : complete",
+              "frequencySignificance" : 2950
+          },
+           {
+              "label" : "end : start",
+              "frequencySignificance" : 3512
+          },
+           {
+              "label" : "end : complete",
+              "frequencySignificance" : 3512
+          },
+           {
+              "label" : "S check if sufficient information is available : start",
+              "frequencySignificance" : 1792
+          },
+           {
+              "label" : "S check if sufficient information is available : complete",
+              "frequencySignificance" : 1792
+          },
+           {
+              "label" : "S register claim : start",
+              "frequencySignificance" : 1425
+          },
+           {
+              "label" : "S register claim : complete",
+              "frequencySignificance" : 1425
+          },
+           {
+              "label" : "assess claim : start",
+              "frequencySignificance" : 2461
+          },
+           {
+              "label" : "assess claim : complete",
+              "frequencySignificance" : 2461
+          },
+           {
+              "label" : "advise claimant on reimbursement : start",
+              "frequencySignificance" : 1976
+          },
+           {
+              "label" : "advise claimant on reimbursement : complete",
+              "frequencySignificance" : 1976
+          },
+           {
+              "label" : "initiate payment : start",
+              "frequencySignificance" : 1976
+          },
+           {
+              "label" : "initiate payment : complete",
+              "frequencySignificance" : 1976
+          },
+           {
+              "label" : "close claim : start",
+              "frequencySignificance" : 1976
+          },
+           {
+              "label" : "close claim : complete",
+              "frequencySignificance" : 1976
+          }
+      ],
+      "edges": [
+           {
+              "label" : "incoming claim : complete -> B check if sufficient information is available : start",
+              "fromNode" : "incoming claim : complete",
+              "toNode" : "B check if sufficient information is available : start",
+              "frequencySignificance" : 1720
+          },
+           {
+              "label" : "B check if sufficient information is available : start -> B check if sufficient information is available : complete",
+              "fromNode" : "B check if sufficient information is available : start",
+              "toNode" : "B check if sufficient information is available : complete",
+              "frequencySignificance" : 1720
+          },
+           {
+              "label" : "B check if sufficient information is available : complete -> B register claim : start",
+              "fromNode" : "B check if sufficient information is available : complete",
+              "toNode" : "B register claim : start",
+              "frequencySignificance" : 1525
+          },
+           {
+              "label" : "B register claim : start -> B register claim : complete",
+              "fromNode" : "B register claim : start",
+              "toNode" : "B register claim : complete",
+              "frequencySignificance" : 1525
+          },
+           {
+              "label" : "B register claim : complete -> determine likelihood of claim : start",
+              "fromNode" : "B register claim : complete",
+              "toNode" : "determine likelihood of claim : start",
+              "frequencySignificance" : 1525
+          },
+           {
+              "label" : "determine likelihood of claim : start -> determine likelihood of claim : complete",
+              "fromNode" : "determine likelihood of claim : start",
+              "toNode" : "determine likelihood of claim : complete",
+              "frequencySignificance" : 2950
+          },
+           {
+              "label" : "end : start -> end : complete",
+              "fromNode" : "end : start",
+              "toNode" : "end : complete",
+              "frequencySignificance" : 3512
+          },
+           {
+              "label" : "incoming claim : complete -> S check if sufficient information is available : start",
+              "fromNode" : "incoming claim : complete",
+              "toNode" : "S check if sufficient information is available : start",
+              "frequencySignificance" : 1792
+          },
+           {
+              "label" : "S check if sufficient information is available : start -> S check if sufficient information is available : complete",
+              "fromNode" : "S check if sufficient information is available : start",
+              "toNode" : "S check if sufficient information is available : complete",
+              "frequencySignificance" : 1792
+          },
+           {
+              "label" : "S check if sufficient information is available : complete -> S register claim : start",
+              "fromNode" : "S check if sufficient information is available : complete",
+              "toNode" : "S register claim : start",
+              "frequencySignificance" : 1425
+          },
+           {
+              "label" : "S register claim : start -> S register claim : complete",
+              "fromNode" : "S register claim : start",
+              "toNode" : "S register claim : complete",
+              "frequencySignificance" : 1425
+          },
+           {
+              "label" : "S register claim : complete -> determine likelihood of claim : start",
+              "fromNode" : "S register claim : complete",
+              "toNode" : "determine likelihood of claim : start",
+              "frequencySignificance" : 1425
+          },
+           {
+              "label" : "determine likelihood of claim : complete -> assess claim : start",
+              "fromNode" : "determine likelihood of claim : complete",
+              "toNode" : "assess claim : start",
+              "frequencySignificance" : 2461
+          },
+           {
+              "label" : "assess claim : start -> assess claim : complete",
+              "fromNode" : "assess claim : start",
+              "toNode" : "assess claim : complete",
+              "frequencySignificance" : 2461
+          },
+           {
+              "label" : "assess claim : complete -> advise claimant on reimbursement : start",
+              "fromNode" : "assess claim : complete",
+              "toNode" : "advise claimant on reimbursement : start",
+              "frequencySignificance" : 994
+          },
+           {
+              "label" : "advise claimant on reimbursement : start -> advise claimant on reimbursement : complete",
+              "fromNode" : "advise claimant on reimbursement : start",
+              "toNode" : "advise claimant on reimbursement : complete",
+              "frequencySignificance" : 1976
+          },
+           {
+              "label" : "advise claimant on reimbursement : complete -> initiate payment : start",
+              "fromNode" : "advise claimant on reimbursement : complete",
+              "toNode" : "initiate payment : start",
+              "frequencySignificance" : 994
+          },
+           {
+              "label" : "initiate payment : start -> initiate payment : complete",
+              "fromNode" : "initiate payment : start",
+              "toNode" : "initiate payment : complete",
+              "frequencySignificance" : 1976
+          },
+           {
+              "label" : "initiate payment : complete -> close claim : start",
+              "fromNode" : "initiate payment : complete",
+              "toNode" : "close claim : start",
+              "frequencySignificance" : 1504
+          },
+           {
+              "label" : "close claim : start -> close claim : complete",
+              "fromNode" : "close claim : start",
+              "toNode" : "close claim : complete",
+              "frequencySignificance" : 1976
+          },
+           {
+              "label" : "close claim : complete -> end : start",
+              "fromNode" : "close claim : complete",
+              "toNode" : "end : start",
+              "frequencySignificance" : 1466
+          },
+           {
+              "label" : "assess claim : complete -> initiate payment : start",
+              "fromNode" : "assess claim : complete",
+              "toNode" : "initiate payment : start",
+              "frequencySignificance" : 982
+          }
+      ]
+  }
+}

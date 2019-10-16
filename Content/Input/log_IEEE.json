@@ -1,0 +1,950 @@
+{
+  "FuzzyModel" : {
+      "nodes": [
+           {
+              "label" : "SRM: Created",
+              "frequencySignificance" : 1628,
+              "attributes" : [
+                  {
+                      "User" : "batch_00",
+                      "org:resource" : "batch_00",
+                      "Cumulative net worth (EUR)" : "2980",
+                      "time:timestamp" : "2018-01-02T12:53:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "SRM: Complete",
+              "frequencySignificance" : 1628,
+              "attributes" : [
+                  {
+                      "User" : "batch_00",
+                      "org:resource" : "batch_00",
+                      "Cumulative net worth (EUR)" : "2980",
+                      "time:timestamp" : "2018-01-02T13:53:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "SRM: Awaiting Approval",
+              "frequencySignificance" : 1628,
+              "attributes" : [
+                  {
+                      "User" : "batch_00",
+                      "org:resource" : "batch_00",
+                      "Cumulative net worth (EUR)" : "2980",
+                      "time:timestamp" : "2018-01-02T13:53:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "SRM: Document Completed",
+              "frequencySignificance" : 1628,
+              "attributes" : [
+                  {
+                      "User" : "batch_00",
+                      "org:resource" : "batch_00",
+                      "Cumulative net worth (EUR)" : "2980",
+                      "time:timestamp" : "2018-01-02T13:53:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "SRM: In Transfer to Execution Syst.",
+              "frequencySignificance" : 1765,
+              "attributes" : [
+                  {
+                      "User" : "batch_00",
+                      "org:resource" : "batch_00",
+                      "Cumulative net worth (EUR)" : "2980",
+                      "time:timestamp" : "2018-01-02T13:53:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "SRM: Ordered",
+              "frequencySignificance" : 1628,
+              "attributes" : [
+                  {
+                      "User" : "batch_00",
+                      "org:resource" : "batch_00",
+                      "Cumulative net worth (EUR)" : "2980",
+                      "time:timestamp" : "2018-01-02T13:53:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "SRM: Change was Transmitted",
+              "frequencySignificance" : 1440,
+              "attributes" : [
+                  {
+                      "User" : "batch_00",
+                      "org:resource" : "batch_00",
+                      "Cumulative net worth (EUR)" : "2980",
+                      "time:timestamp" : "2018-01-02T13:53:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Create Purchase Order Item",
+              "frequencySignificance" : 251734,
+              "attributes" : [
+                  {
+                      "User" : "user_000",
+                      "org:resource" : "user_000",
+                      "Cumulative net worth (EUR)" : "2980",
+                      "time:timestamp" : "2018-01-02T13:53:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Vendor creates invoice",
+              "frequencySignificance" : 219919,
+              "attributes" : [
+                  {
+                      "User" : "NONE",
+                      "org:resource" : "NONE",
+                      "Cumulative net worth (EUR)" : "2980",
+                      "time:timestamp" : "2018-01-02T22:59:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Record Goods Receipt",
+              "frequencySignificance" : 314097,
+              "attributes" : [
+                  {
+                      "User" : "user_000",
+                      "org:resource" : "user_000",
+                      "Cumulative net worth (EUR)" : "2980",
+                      "time:timestamp" : "2018-03-06T06:44:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Record Invoice Receipt",
+              "frequencySignificance" : 228760,
+              "attributes" : [
+                  {
+                      "User" : "user_001",
+                      "org:resource" : "user_001",
+                      "Cumulative net worth (EUR)" : "2980",
+                      "time:timestamp" : "2018-03-06T07:53:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Clear Invoice",
+              "frequencySignificance" : 194393,
+              "attributes" : [
+                  {
+                      "User" : "user_002",
+                      "org:resource" : "user_002",
+                      "Cumulative net worth (EUR)" : "2980",
+                      "time:timestamp" : "2018-03-29T13:06:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Record Service Entry Sheet",
+              "frequencySignificance" : 164975,
+              "attributes" : [
+                  {
+                      "User" : "NONE",
+                      "org:resource" : "NONE",
+                      "Cumulative net worth (EUR)" : "5570",
+                      "time:timestamp" : "2018-01-16T12:09:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "SRM: Transfer Failed (E.Sys.)",
+              "frequencySignificance" : 45,
+              "attributes" : [
+                  {
+                      "User" : "user_003",
+                      "org:resource" : "user_003",
+                      "Cumulative net worth (EUR)" : "5570",
+                      "time:timestamp" : "2019-01-17T10:58:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Cancel Goods Receipt",
+              "frequencySignificance" : 3096,
+              "attributes" : [
+                  {
+                      "User" : "user_000",
+                      "org:resource" : "user_000",
+                      "Cumulative net worth (EUR)" : "762100",
+                      "time:timestamp" : "2018-02-08T10:19:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Vendor creates debit memo",
+              "frequencySignificance" : 6255,
+              "attributes" : [
+                  {
+                      "User" : "NONE",
+                      "org:resource" : "NONE",
+                      "Cumulative net worth (EUR)" : "4330",
+                      "time:timestamp" : "2018-01-08T22:59:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Cancel Invoice Receipt",
+              "frequencySignificance" : 7096,
+              "attributes" : [
+                  {
+                      "User" : "user_007",
+                      "org:resource" : "user_007",
+                      "Cumulative net worth (EUR)" : "4330",
+                      "time:timestamp" : "2018-08-02T07:15:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Change Delivery Indicator",
+              "frequencySignificance" : 3289,
+              "attributes" : [
+                  {
+                      "User" : "user_000",
+                      "org:resource" : "user_000",
+                      "Cumulative net worth (EUR)" : "378190",
+                      "time:timestamp" : "2019-01-17T10:59:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Remove Payment Block",
+              "frequencySignificance" : 57136,
+              "attributes" : [
+                  {
+                      "User" : "user_006",
+                      "org:resource" : "user_006",
+                      "Cumulative net worth (EUR)" : "32270",
+                      "time:timestamp" : "2018-02-21T12:55:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "SRM: Deleted",
+              "frequencySignificance" : 188,
+              "attributes" : [
+                  {
+                      "User" : "batch_00",
+                      "org:resource" : "batch_00",
+                      "Cumulative net worth (EUR)" : "16682640",
+                      "time:timestamp" : "2018-09-05T14:34:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Change Price",
+              "frequencySignificance" : 12423,
+              "attributes" : [
+                  {
+                      "User" : "user_000",
+                      "org:resource" : "user_000",
+                      "Cumulative net worth (EUR)" : "16682640",
+                      "time:timestamp" : "2018-09-05T14:34:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Delete Purchase Order Item",
+              "frequencySignificance" : 8875,
+              "attributes" : [
+                  {
+                      "User" : "user_000",
+                      "org:resource" : "user_000",
+                      "Cumulative net worth (EUR)" : "430",
+                      "time:timestamp" : "2018-01-29T08:18:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "SRM: Transaction Completed",
+              "frequencySignificance" : 8,
+              "attributes" : [
+                  {
+                      "User" : "user_022",
+                      "org:resource" : "user_022",
+                      "Cumulative net worth (EUR)" : "430",
+                      "time:timestamp" : "2018-01-29T08:18:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Change Quantity",
+              "frequencySignificance" : 21449,
+              "attributes" : [
+                  {
+                      "User" : "user_000",
+                      "org:resource" : "user_000",
+                      "Cumulative net worth (EUR)" : "4230",
+                      "time:timestamp" : "2018-02-27T16:29:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Change Final Invoice Indicator",
+              "frequencySignificance" : 11,
+              "attributes" : [
+                  {
+                      "User" : "user_000",
+                      "org:resource" : "user_000",
+                      "Cumulative net worth (EUR)" : "40180",
+                      "time:timestamp" : "2018-08-01T14:14:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "SRM: Incomplete",
+              "frequencySignificance" : 6,
+              "attributes" : [
+                  {
+                      "User" : "batch_00",
+                      "org:resource" : "batch_00",
+                      "Cumulative net worth (EUR)" : "6440",
+                      "time:timestamp" : "2018-02-19T07:51:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "SRM: Held",
+              "frequencySignificance" : 6,
+              "attributes" : [
+                  {
+                      "User" : "batch_00",
+                      "org:resource" : "batch_00",
+                      "Cumulative net worth (EUR)" : "6440",
+                      "time:timestamp" : "2018-02-19T07:51:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Receive Order Confirmation",
+              "frequencySignificance" : 32065,
+              "attributes" : [
+                  {
+                      "User" : "user_029",
+                      "org:resource" : "user_029",
+                      "Cumulative net worth (EUR)" : "2080",
+                      "time:timestamp" : "2018-01-02T10:04:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Cancel Subsequent Invoice",
+              "frequencySignificance" : 491,
+              "attributes" : [
+                  {
+                      "User" : "user_001",
+                      "org:resource" : "user_001",
+                      "Cumulative net worth (EUR)" : "6850",
+                      "time:timestamp" : "2018-02-02T16:34:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Reactivate Purchase Order Item",
+              "frequencySignificance" : 543,
+              "attributes" : [
+                  {
+                      "User" : "user_033",
+                      "org:resource" : "user_033",
+                      "Cumulative net worth (EUR)" : "2380",
+                      "time:timestamp" : "2018-01-11T12:09:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Update Order Confirmation",
+              "frequencySignificance" : 244,
+              "attributes" : [
+                  {
+                      "User" : "batch_00",
+                      "org:resource" : "batch_00",
+                      "Cumulative net worth (EUR)" : "4650",
+                      "time:timestamp" : "2018-01-09T09:05:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Block Purchase Order Item",
+              "frequencySignificance" : 514,
+              "attributes" : [
+                  {
+                      "User" : "user_089",
+                      "org:resource" : "user_089",
+                      "Cumulative net worth (EUR)" : "23740",
+                      "time:timestamp" : "2018-01-17T09:29:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Change Approval for Purchase Order",
+              "frequencySignificance" : 7541,
+              "attributes" : [
+                  {
+                      "User" : "user_045",
+                      "org:resource" : "user_045",
+                      "Cumulative net worth (EUR)" : "1657800",
+                      "time:timestamp" : "2018-01-02T13:06:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Release Purchase Order",
+              "frequencySignificance" : 1610,
+              "attributes" : [
+                  {
+                      "User" : "user_045",
+                      "org:resource" : "user_045",
+                      "Cumulative net worth (EUR)" : "1657800",
+                      "time:timestamp" : "2018-03-13T13:04:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Record Subsequent Invoice",
+              "frequencySignificance" : 167,
+              "attributes" : [
+                  {
+                      "User" : "batch_00",
+                      "org:resource" : "batch_00",
+                      "Cumulative net worth (EUR)" : "417980",
+                      "time:timestamp" : "2018-02-12T11:21:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Set Payment Block",
+              "frequencySignificance" : 124,
+              "attributes" : [
+                  {
+                      "User" : "user_112",
+                      "org:resource" : "user_112",
+                      "Cumulative net worth (EUR)" : "33484980",
+                      "time:timestamp" : "2018-07-03T12:34:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Create Purchase Requisition Item",
+              "frequencySignificance" : 46592,
+              "attributes" : [
+                  {
+                      "User" : "user_124",
+                      "org:resource" : "user_124",
+                      "Cumulative net worth (EUR)" : "96720",
+                      "time:timestamp" : "2018-01-02T23:00:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Change Storage Location",
+              "frequencySignificance" : 415,
+              "attributes" : [
+                  {
+                      "User" : "user_177",
+                      "org:resource" : "user_177",
+                      "Cumulative net worth (EUR)" : "19910",
+                      "time:timestamp" : "2018-01-18T15:44:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Change Currency",
+              "frequencySignificance" : 35,
+              "attributes" : [
+                  {
+                      "User" : "user_095",
+                      "org:resource" : "user_095",
+                      "Cumulative net worth (EUR)" : "45740",
+                      "time:timestamp" : "2018-01-22T08:14:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Change payment term",
+              "frequencySignificance" : 7,
+              "attributes" : [
+                  {
+                      "User" : "user_066",
+                      "org:resource" : "user_066",
+                      "Cumulative net worth (EUR)" : "164670",
+                      "time:timestamp" : "2018-03-19T17:22:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Change Rejection Indicator",
+              "frequencySignificance" : 2,
+              "attributes" : [
+                  {
+                      "User" : "user_147",
+                      "org:resource" : "user_147",
+                      "Cumulative net worth (EUR)" : "2600",
+                      "time:timestamp" : "2018-04-09T07:59:00Z"
+                      }
+                   ]
+          },
+           {
+              "label" : "Release Purchase Requisition",
+              "frequencySignificance" : 467,
+              "attributes" : [
+                  {
+                      "User" : "user_469",
+                      "org:resource" : "user_469",
+                      "Cumulative net worth (EUR)" : "10710",
+                      "time:timestamp" : "2018-11-29T07:56:00Z"
+                      }
+                   ]
+          }
+      ],
+      "edges": [
+           {
+              "label" : "SRM: Created -> SRM: Complete",
+              "fromNode" : "SRM: Created",
+              "toNode" : "SRM: Complete",
+              "frequencySignificance" : 1599
+          },
+           {
+              "label" : "SRM: Complete -> SRM: Awaiting Approval",
+              "fromNode" : "SRM: Complete",
+              "toNode" : "SRM: Awaiting Approval",
+              "frequencySignificance" : 1628
+          },
+           {
+              "label" : "SRM: Awaiting Approval -> SRM: Document Completed",
+              "fromNode" : "SRM: Awaiting Approval",
+              "toNode" : "SRM: Document Completed",
+              "frequencySignificance" : 1626
+          },
+           {
+              "label" : "SRM: Document Completed -> SRM: In Transfer to Execution Syst.",
+              "fromNode" : "SRM: Document Completed",
+              "toNode" : "SRM: In Transfer to Execution Syst.",
+              "frequencySignificance" : 1131
+          },
+           {
+              "label" : "SRM: In Transfer to Execution Syst. -> SRM: Ordered",
+              "fromNode" : "SRM: In Transfer to Execution Syst.",
+              "toNode" : "SRM: Ordered",
+              "frequencySignificance" : 1118
+          },
+           {
+              "label" : "SRM: Ordered -> SRM: Change was Transmitted",
+              "fromNode" : "SRM: Ordered",
+              "toNode" : "SRM: Change was Transmitted",
+              "frequencySignificance" : 775
+          },
+           {
+              "label" : "Create Purchase Order Item -> Vendor creates invoice",
+              "fromNode" : "Create Purchase Order Item",
+              "toNode" : "Vendor creates invoice",
+              "frequencySignificance" : 103150
+          },
+           {
+              "label" : "Record Goods Receipt -> Record Invoice Receipt",
+              "fromNode" : "Record Goods Receipt",
+              "toNode" : "Record Invoice Receipt",
+              "frequencySignificance" : 112182
+          },
+           {
+              "label" : "Record Invoice Receipt -> Clear Invoice",
+              "fromNode" : "Record Invoice Receipt",
+              "toNode" : "Clear Invoice",
+              "frequencySignificance" : 134955
+          },
+           {
+              "label" : "Clear Invoice -> SRM: In Transfer to Execution Syst.",
+              "fromNode" : "Clear Invoice",
+              "toNode" : "SRM: In Transfer to Execution Syst.",
+              "frequencySignificance" : 79
+          },
+           {
+              "label" : "SRM: In Transfer to Execution Syst. -> SRM: Transfer Failed (E.Sys.)",
+              "fromNode" : "SRM: In Transfer to Execution Syst.",
+              "toNode" : "SRM: Transfer Failed (E.Sys.)",
+              "frequencySignificance" : 45
+          },
+           {
+              "label" : "Create Purchase Order Item -> Record Goods Receipt",
+              "fromNode" : "Create Purchase Order Item",
+              "toNode" : "Record Goods Receipt",
+              "frequencySignificance" : 77206
+          },
+           {
+              "label" : "SRM: Change was Transmitted -> Vendor creates invoice",
+              "fromNode" : "SRM: Change was Transmitted",
+              "toNode" : "Vendor creates invoice",
+              "frequencySignificance" : 295
+          },
+           {
+              "label" : "Vendor creates invoice -> Record Invoice Receipt",
+              "fromNode" : "Vendor creates invoice",
+              "toNode" : "Record Invoice Receipt",
+              "frequencySignificance" : 95218
+          },
+           {
+              "label" : "Remove Payment Block -> Clear Invoice",
+              "fromNode" : "Remove Payment Block",
+              "toNode" : "Clear Invoice",
+              "frequencySignificance" : 49424
+          },
+           {
+              "label" : "Vendor creates invoice -> SRM: Created",
+              "fromNode" : "Vendor creates invoice",
+              "toNode" : "SRM: Created",
+              "frequencySignificance" : 131
+          },
+           {
+              "label" : "SRM: Deleted -> Change Price",
+              "fromNode" : "SRM: Deleted",
+              "toNode" : "Change Price",
+              "frequencySignificance" : 110
+          },
+           {
+              "label" : "SRM: Ordered -> SRM: Deleted",
+              "fromNode" : "SRM: Ordered",
+              "toNode" : "SRM: Deleted",
+              "frequencySignificance" : 132
+          },
+           {
+              "label" : "Record Service Entry Sheet -> SRM: Complete",
+              "fromNode" : "Record Service Entry Sheet",
+              "toNode" : "SRM: Complete",
+              "frequencySignificance" : 4
+          },
+           {
+              "label" : "Record Invoice Receipt -> Remove Payment Block",
+              "fromNode" : "Record Invoice Receipt",
+              "toNode" : "Remove Payment Block",
+              "frequencySignificance" : 37621
+          },
+           {
+              "label" : "Delete Purchase Order Item -> SRM: Transaction Completed",
+              "fromNode" : "Delete Purchase Order Item",
+              "toNode" : "SRM: Transaction Completed",
+              "frequencySignificance" : 3
+          },
+           {
+              "label" : "SRM: Transfer Failed (E.Sys.) -> Vendor creates invoice",
+              "fromNode" : "SRM: Transfer Failed (E.Sys.)",
+              "toNode" : "Vendor creates invoice",
+              "frequencySignificance" : 1
+          },
+           {
+              "label" : "Change Quantity -> Record Goods Receipt",
+              "fromNode" : "Change Quantity",
+              "toNode" : "Record Goods Receipt",
+              "frequencySignificance" : 9206
+          },
+           {
+              "label" : "SRM: Deleted -> Change Final Invoice Indicator",
+              "fromNode" : "SRM: Deleted",
+              "toNode" : "Change Final Invoice Indicator",
+              "frequencySignificance" : 4
+          },
+           {
+              "label" : "Change Final Invoice Indicator -> Clear Invoice",
+              "fromNode" : "Change Final Invoice Indicator",
+              "toNode" : "Clear Invoice",
+              "frequencySignificance" : 4
+          },
+           {
+              "label" : "SRM: Created -> SRM: Incomplete",
+              "fromNode" : "SRM: Created",
+              "toNode" : "SRM: Incomplete",
+              "frequencySignificance" : 6
+          },
+           {
+              "label" : "SRM: Incomplete -> SRM: Held",
+              "fromNode" : "SRM: Incomplete",
+              "toNode" : "SRM: Held",
+              "frequencySignificance" : 6
+          },
+           {
+              "label" : "SRM: Held -> SRM: Complete",
+              "fromNode" : "SRM: Held",
+              "toNode" : "SRM: Complete",
+              "frequencySignificance" : 6
+          },
+           {
+              "label" : "Create Purchase Order Item -> Record Service Entry Sheet",
+              "fromNode" : "Create Purchase Order Item",
+              "toNode" : "Record Service Entry Sheet",
+              "frequencySignificance" : 2072
+          },
+           {
+              "label" : "Create Purchase Order Item -> Receive Order Confirmation",
+              "fromNode" : "Create Purchase Order Item",
+              "toNode" : "Receive Order Confirmation",
+              "frequencySignificance" : 30837
+          },
+           {
+              "label" : "Receive Order Confirmation -> Record Goods Receipt",
+              "fromNode" : "Receive Order Confirmation",
+              "toNode" : "Record Goods Receipt",
+              "frequencySignificance" : 20398
+          },
+           {
+              "label" : "Create Purchase Order Item -> Change Quantity",
+              "fromNode" : "Create Purchase Order Item",
+              "toNode" : "Change Quantity",
+              "frequencySignificance" : 11760
+          },
+           {
+              "label" : "Vendor creates debit memo -> Cancel Subsequent Invoice",
+              "fromNode" : "Vendor creates debit memo",
+              "toNode" : "Cancel Subsequent Invoice",
+              "frequencySignificance" : 228
+          },
+           {
+              "label" : "Create Purchase Order Item -> Change Price",
+              "fromNode" : "Create Purchase Order Item",
+              "toNode" : "Change Price",
+              "frequencySignificance" : 6433
+          },
+           {
+              "label" : "Change Quantity -> Change Delivery Indicator",
+              "fromNode" : "Change Quantity",
+              "toNode" : "Change Delivery Indicator",
+              "frequencySignificance" : 1130
+          },
+           {
+              "label" : "Create Purchase Order Item -> Delete Purchase Order Item",
+              "fromNode" : "Create Purchase Order Item",
+              "toNode" : "Delete Purchase Order Item",
+              "frequencySignificance" : 6890
+          },
+           {
+              "label" : "Delete Purchase Order Item -> Reactivate Purchase Order Item",
+              "fromNode" : "Delete Purchase Order Item",
+              "toNode" : "Reactivate Purchase Order Item",
+              "frequencySignificance" : 272
+          },
+           {
+              "label" : "Reactivate Purchase Order Item -> Record Goods Receipt",
+              "fromNode" : "Reactivate Purchase Order Item",
+              "toNode" : "Record Goods Receipt",
+              "frequencySignificance" : 260
+          },
+           {
+              "label" : "Cancel Subsequent Invoice -> Remove Payment Block",
+              "fromNode" : "Cancel Subsequent Invoice",
+              "toNode" : "Remove Payment Block",
+              "frequencySignificance" : 206
+          },
+           {
+              "label" : "Receive Order Confirmation -> Update Order Confirmation",
+              "fromNode" : "Receive Order Confirmation",
+              "toNode" : "Update Order Confirmation",
+              "frequencySignificance" : 182
+          },
+           {
+              "label" : "Update Order Confirmation -> Record Goods Receipt",
+              "fromNode" : "Update Order Confirmation",
+              "toNode" : "Record Goods Receipt",
+              "frequencySignificance" : 105
+          },
+           {
+              "label" : "Create Purchase Order Item -> Block Purchase Order Item",
+              "fromNode" : "Create Purchase Order Item",
+              "toNode" : "Block Purchase Order Item",
+              "frequencySignificance" : 252
+          },
+           {
+              "label" : "Block Purchase Order Item -> Delete Purchase Order Item",
+              "fromNode" : "Block Purchase Order Item",
+              "toNode" : "Delete Purchase Order Item",
+              "frequencySignificance" : 132
+          },
+           {
+              "label" : "Change Approval for Purchase Order -> Cancel Invoice Receipt",
+              "fromNode" : "Change Approval for Purchase Order",
+              "toNode" : "Cancel Invoice Receipt",
+              "frequencySignificance" : 2
+          },
+           {
+              "label" : "Block Purchase Order Item -> Reactivate Purchase Order Item",
+              "fromNode" : "Block Purchase Order Item",
+              "toNode" : "Reactivate Purchase Order Item",
+              "frequencySignificance" : 117
+          },
+           {
+              "label" : "Create Purchase Order Item -> Change Approval for Purchase Order",
+              "fromNode" : "Create Purchase Order Item",
+              "toNode" : "Change Approval for Purchase Order",
+              "frequencySignificance" : 3060
+          },
+           {
+              "label" : "Set Payment Block -> Clear Invoice",
+              "fromNode" : "Set Payment Block",
+              "toNode" : "Clear Invoice",
+              "frequencySignificance" : 42
+          },
+           {
+              "label" : "Record Invoice Receipt -> Set Payment Block",
+              "fromNode" : "Record Invoice Receipt",
+              "toNode" : "Set Payment Block",
+              "frequencySignificance" : 103
+          },
+           {
+              "label" : "Create Purchase Requisition Item -> Create Purchase Order Item",
+              "fromNode" : "Create Purchase Requisition Item",
+              "toNode" : "Create Purchase Order Item",
+              "frequencySignificance" : 46125
+          },
+           {
+              "label" : "Cancel Goods Receipt -> Delete Purchase Order Item",
+              "fromNode" : "Cancel Goods Receipt",
+              "toNode" : "Delete Purchase Order Item",
+              "frequencySignificance" : 65
+          },
+           {
+              "label" : "Create Purchase Order Item -> Cancel Goods Receipt",
+              "fromNode" : "Create Purchase Order Item",
+              "toNode" : "Cancel Goods Receipt",
+              "frequencySignificance" : 925
+          },
+           {
+              "label" : "Record Invoice Receipt -> Record Subsequent Invoice",
+              "fromNode" : "Record Invoice Receipt",
+              "toNode" : "Record Subsequent Invoice",
+              "frequencySignificance" : 39
+          },
+           {
+              "label" : "Release Purchase Order -> Change Approval for Purchase Order",
+              "fromNode" : "Release Purchase Order",
+              "toNode" : "Change Approval for Purchase Order",
+              "frequencySignificance" : 1489
+          },
+           {
+              "label" : "Create Purchase Order Item -> Release Purchase Order",
+              "fromNode" : "Create Purchase Order Item",
+              "toNode" : "Release Purchase Order",
+              "frequencySignificance" : 746
+          },
+           {
+              "label" : "Change Storage Location -> Record Goods Receipt",
+              "fromNode" : "Change Storage Location",
+              "toNode" : "Record Goods Receipt",
+              "frequencySignificance" : 195
+          },
+           {
+              "label" : "Receive Order Confirmation -> Vendor creates debit memo",
+              "fromNode" : "Receive Order Confirmation",
+              "toNode" : "Vendor creates debit memo",
+              "frequencySignificance" : 24
+          },
+           {
+              "label" : "Create Purchase Order Item -> Change Storage Location",
+              "fromNode" : "Create Purchase Order Item",
+              "toNode" : "Change Storage Location",
+              "frequencySignificance" : 250
+          },
+           {
+              "label" : "Change Price -> Change Currency",
+              "fromNode" : "Change Price",
+              "toNode" : "Change Currency",
+              "frequencySignificance" : 29
+          },
+           {
+              "label" : "Cancel Invoice Receipt -> Delete Purchase Order Item",
+              "fromNode" : "Cancel Invoice Receipt",
+              "toNode" : "Delete Purchase Order Item",
+              "frequencySignificance" : 6
+          },
+           {
+              "label" : "Record Subsequent Invoice -> Record Goods Receipt",
+              "fromNode" : "Record Subsequent Invoice",
+              "toNode" : "Record Goods Receipt",
+              "frequencySignificance" : 1
+          },
+           {
+              "label" : "Delete Purchase Order Item -> Change Approval for Purchase Order",
+              "fromNode" : "Delete Purchase Order Item",
+              "toNode" : "Change Approval for Purchase Order",
+              "frequencySignificance" : 303
+          },
+           {
+              "label" : "Change Delivery Indicator -> Change Final Invoice Indicator",
+              "fromNode" : "Change Delivery Indicator",
+              "toNode" : "Change Final Invoice Indicator",
+              "frequencySignificance" : 5
+          },
+           {
+              "label" : "SRM: Transaction Completed -> Change Delivery Indicator",
+              "fromNode" : "SRM: Transaction Completed",
+              "toNode" : "Change Delivery Indicator",
+              "frequencySignificance" : 1
+          },
+           {
+              "label" : "Vendor creates invoice -> Create Purchase Requisition Item",
+              "fromNode" : "Vendor creates invoice",
+              "toNode" : "Create Purchase Requisition Item",
+              "frequencySignificance" : 62
+          },
+           {
+              "label" : "Change Approval for Purchase Order -> Block Purchase Order Item",
+              "fromNode" : "Change Approval for Purchase Order",
+              "toNode" : "Block Purchase Order Item",
+              "frequencySignificance" : 107
+          },
+           {
+              "label" : "Change payment term -> Record Goods Receipt",
+              "fromNode" : "Change payment term",
+              "toNode" : "Record Goods Receipt",
+              "frequencySignificance" : 4
+          },
+           {
+              "label" : "Delete Purchase Order Item -> Change Rejection Indicator",
+              "fromNode" : "Delete Purchase Order Item",
+              "toNode" : "Change Rejection Indicator",
+              "frequencySignificance" : 1
+          },
+           {
+              "label" : "Change Rejection Indicator -> Reactivate Purchase Order Item",
+              "fromNode" : "Change Rejection Indicator",
+              "toNode" : "Reactivate Purchase Order Item",
+              "frequencySignificance" : 1
+          },
+           {
+              "label" : "Change Currency -> Vendor creates invoice",
+              "fromNode" : "Change Currency",
+              "toNode" : "Vendor creates invoice",
+              "frequencySignificance" : 21
+          },
+           {
+              "label" : "Change Delivery Indicator -> Block Purchase Order Item",
+              "fromNode" : "Change Delivery Indicator",
+              "toNode" : "Block Purchase Order Item",
+              "frequencySignificance" : 6
+          },
+           {
+              "label" : "Create Purchase Order Item -> Change payment term",
+              "fromNode" : "Create Purchase Order Item",
+              "toNode" : "Change payment term",
+              "frequencySignificance" : 3
+          },
+           {
+              "label" : "Create Purchase Requisition Item -> Release Purchase Requisition",
+              "fromNode" : "Create Purchase Requisition Item",
+              "toNode" : "Release Purchase Requisition",
+              "frequencySignificance" : 467
+          },
+           {
+              "label" : "Release Purchase Requisition -> Create Purchase Order Item",
+              "fromNode" : "Release Purchase Requisition",
+              "toNode" : "Create Purchase Order Item",
+              "frequencySignificance" : 467
+          }
+      ]
+  }
+}

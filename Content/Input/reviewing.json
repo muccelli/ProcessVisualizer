@@ -1,0 +1,238 @@
+{
+  "FuzzyModel" : {
+      "nodes": [
+           {
+              "label" : "invite reviewers : start",
+              "frequencySignificance" : 100
+          },
+           {
+              "label" : "invite reviewers : complete",
+              "frequencySignificance" : 100
+          },
+           {
+              "label" : "get review 2 : complete",
+              "frequencySignificance" : 45
+          },
+           {
+              "label" : "get review 3 : complete",
+              "frequencySignificance" : 50
+          },
+           {
+              "label" : "get review 1 : complete",
+              "frequencySignificance" : 45
+          },
+           {
+              "label" : "collect reviews : start",
+              "frequencySignificance" : 100
+          },
+           {
+              "label" : "collect reviews : complete",
+              "frequencySignificance" : 100
+          },
+           {
+              "label" : "decide : start",
+              "frequencySignificance" : 626
+          },
+           {
+              "label" : "decide : complete",
+              "frequencySignificance" : 626
+          },
+           {
+              "label" : "invite additional reviewer : start",
+              "frequencySignificance" : 526
+          },
+           {
+              "label" : "invite additional reviewer : complete",
+              "frequencySignificance" : 526
+          },
+           {
+              "label" : "get review X : complete",
+              "frequencySignificance" : 263
+          },
+           {
+              "label" : "reject : start",
+              "frequencySignificance" : 55
+          },
+           {
+              "label" : "reject : complete",
+              "frequencySignificance" : 55
+          },
+           {
+              "label" : "time-out 1 : complete",
+              "frequencySignificance" : 55
+          },
+           {
+              "label" : "time-out X : complete",
+              "frequencySignificance" : 263
+          },
+           {
+              "label" : "accept : start",
+              "frequencySignificance" : 45
+          },
+           {
+              "label" : "accept : complete",
+              "frequencySignificance" : 45
+          },
+           {
+              "label" : "time-out 2 : complete",
+              "frequencySignificance" : 55
+          },
+           {
+              "label" : "time-out 3 : complete",
+              "frequencySignificance" : 50
+          }
+      ],
+      "edges": [
+           {
+              "label" : "invite reviewers : start -> invite reviewers : complete",
+              "fromNode" : "invite reviewers : start",
+              "toNode" : "invite reviewers : complete",
+              "frequencySignificance" : 100
+          },
+           {
+              "label" : "invite reviewers : complete -> get review 2 : complete",
+              "fromNode" : "invite reviewers : complete",
+              "toNode" : "get review 2 : complete",
+              "frequencySignificance" : 19
+          },
+           {
+              "label" : "get review 2 : complete -> get review 3 : complete",
+              "fromNode" : "get review 2 : complete",
+              "toNode" : "get review 3 : complete",
+              "frequencySignificance" : 12
+          },
+           {
+              "label" : "get review 1 : complete -> collect reviews : start",
+              "fromNode" : "get review 1 : complete",
+              "toNode" : "collect reviews : start",
+              "frequencySignificance" : 11
+          },
+           {
+              "label" : "collect reviews : start -> collect reviews : complete",
+              "fromNode" : "collect reviews : start",
+              "toNode" : "collect reviews : complete",
+              "frequencySignificance" : 100
+          },
+           {
+              "label" : "collect reviews : complete -> decide : start",
+              "fromNode" : "collect reviews : complete",
+              "toNode" : "decide : start",
+              "frequencySignificance" : 100
+          },
+           {
+              "label" : "decide : start -> decide : complete",
+              "fromNode" : "decide : start",
+              "toNode" : "decide : complete",
+              "frequencySignificance" : 626
+          },
+           {
+              "label" : "decide : complete -> invite additional reviewer : start",
+              "fromNode" : "decide : complete",
+              "toNode" : "invite additional reviewer : start",
+              "frequencySignificance" : 526
+          },
+           {
+              "label" : "invite additional reviewer : start -> invite additional reviewer : complete",
+              "fromNode" : "invite additional reviewer : start",
+              "toNode" : "invite additional reviewer : complete",
+              "frequencySignificance" : 526
+          },
+           {
+              "label" : "invite additional reviewer : complete -> get review X : complete",
+              "fromNode" : "invite additional reviewer : complete",
+              "toNode" : "get review X : complete",
+              "frequencySignificance" : 263
+          },
+           {
+              "label" : "get review X : complete -> decide : start",
+              "fromNode" : "get review X : complete",
+              "toNode" : "decide : start",
+              "frequencySignificance" : 263
+          },
+           {
+              "label" : "decide : complete -> reject : start",
+              "fromNode" : "decide : complete",
+              "toNode" : "reject : start",
+              "frequencySignificance" : 55
+          },
+           {
+              "label" : "reject : start -> reject : complete",
+              "fromNode" : "reject : start",
+              "toNode" : "reject : complete",
+              "frequencySignificance" : 55
+          },
+           {
+              "label" : "time-out 1 : complete -> collect reviews : start",
+              "fromNode" : "time-out 1 : complete",
+              "toNode" : "collect reviews : start",
+              "frequencySignificance" : 22
+          },
+           {
+              "label" : "invite additional reviewer : complete -> time-out X : complete",
+              "fromNode" : "invite additional reviewer : complete",
+              "toNode" : "time-out X : complete",
+              "frequencySignificance" : 263
+          },
+           {
+              "label" : "time-out X : complete -> decide : start",
+              "fromNode" : "time-out X : complete",
+              "toNode" : "decide : start",
+              "frequencySignificance" : 263
+          },
+           {
+              "label" : "decide : complete -> accept : start",
+              "fromNode" : "decide : complete",
+              "toNode" : "accept : start",
+              "frequencySignificance" : 45
+          },
+           {
+              "label" : "accept : start -> accept : complete",
+              "fromNode" : "accept : start",
+              "toNode" : "accept : complete",
+              "frequencySignificance" : 45
+          },
+           {
+              "label" : "invite reviewers : complete -> get review 3 : complete",
+              "fromNode" : "invite reviewers : complete",
+              "toNode" : "get review 3 : complete",
+              "frequencySignificance" : 19
+          },
+           {
+              "label" : "get review 3 : complete -> time-out 2 : complete",
+              "fromNode" : "get review 3 : complete",
+              "toNode" : "time-out 2 : complete",
+              "frequencySignificance" : 15
+          },
+           {
+              "label" : "time-out 2 : complete -> collect reviews : start",
+              "fromNode" : "time-out 2 : complete",
+              "toNode" : "collect reviews : start",
+              "frequencySignificance" : 26
+          },
+           {
+              "label" : "invite reviewers : complete -> time-out 1 : complete",
+              "fromNode" : "invite reviewers : complete",
+              "toNode" : "time-out 1 : complete",
+              "frequencySignificance" : 16
+          },
+           {
+              "label" : "time-out 3 : complete -> collect reviews : start",
+              "fromNode" : "time-out 3 : complete",
+              "toNode" : "collect reviews : start",
+              "frequencySignificance" : 20
+          },
+           {
+              "label" : "invite reviewers : complete -> get review 1 : complete",
+              "fromNode" : "invite reviewers : complete",
+              "toNode" : "get review 1 : complete",
+              "frequencySignificance" : 16
+          },
+           {
+              "label" : "invite reviewers : complete -> time-out 3 : complete",
+              "fromNode" : "invite reviewers : complete",
+              "toNode" : "time-out 3 : complete",
+              "frequencySignificance" : 18
+          }
+      ]
+  }
+}
