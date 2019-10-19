@@ -67,7 +67,7 @@ void AInputParser::BeginPlay()
 			for (int32 j = 0; j < NodesPositioning[i].Num(); j++)
 			{
 				FString label = NodesPositioning[i][j];
-				int32 significance;
+				int32 significance = 0;
 				for (int32 index = 0; index < nodesArray.Num(); index++)
 				{
 					if (nodesArray[index]->AsObject()->GetStringField("label").Equals(label))
@@ -171,72 +171,85 @@ void AInputParser::BeginPlay()
 			UWorld* const World = GetWorld();
 			if (World)
 			{
-				AEdgeActor* Edge = (AEdgeActor*)World->SpawnActor(EdgeActorBP, location);
-				Edge->SetActorLabel(label);
+				ANodeActor* FromNode = nullptr;
+				ANodeActor* ToNode = nullptr;
+
+				FVector startingLocation;
+				FVector endingLocation;
 
 				for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
 				{
 					if (ActorItr->GetActorLabel() == fromNode)
 					{
-						Edge->FromNode = *ActorItr;
-						Edge->Spline->SetLocationAtSplinePoint(0, ActorItr->GetActorLocation(), ESplineCoordinateSpace::Local);
+						FromNode = *ActorItr;
+						startingLocation = ActorItr->GetActorLocation();
 					}
 					
 					if (ActorItr->GetActorLabel() == toNode)
 					{
-						Edge->ToNode = *ActorItr;
-						Edge->Spline->SetLocationAtSplinePoint(Edge->Spline->GetNumberOfSplinePoints() - 1, ActorItr->GetActorLocation(), ESplineCoordinateSpace::Local);
+						ToNode = *ActorItr;
+						endingLocation = ActorItr->GetActorLocation();
 					}
 				}
-
-				Edge->Spline->AddSplinePointAtIndex(ComputeMiddleSplinePointLocation(Edge->Spline->GetLocationAtSplinePoint(0, ESplineCoordinateSpace::Local), Edge->Spline->GetLocationAtSplinePoint(1, ESplineCoordinateSpace::Local)), 1, ESplineCoordinateSpace::Local);
-
-				float scale;
-				switch (ScalingMethod)
-				{
-				case EScalingMethod::VE_Discrete:
-
-					if (significance < Min + (Max - Min) / 5)
-					{
-						scale = 0.2f;
-					}
-					else if (significance < Min + (Max - Min) * 2 / 5)
-					{
-						scale = 0.4f;
-					}
-					else if (significance < Min + (Max - Min) * 3 / 5)
-					{
-						scale = 0.6f;
-					}
-					else if (significance < Min + (Max - Min) * 4 / 5)
-					{
-						scale = 0.8f;
-					}
-					else if (significance <= Min + (Max - Min))
-					{
-						scale = 1;
-					}
-
-					break;
-				case EScalingMethod::VE_Continuous:
-
-					scale = ((float(significance) - float(Min)) / float(Max)) + 0.2f;
-					//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
-
-					break;
-				case EScalingMethod::VE_MinMax:
-
-					scale = ((float(significance) - float(Min)) / (float(Max) - float(Min))) + 0.2f;
-					//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
-
-					break;
-				default:
-					break;
-				}
-
-				Edge->Significance = scale / 2;
 				
-				Edge->SetEdgeProperties();
+				if (FromNode && ToNode)
+				{
+					AEdgeActor* Edge = (AEdgeActor*)World->SpawnActor(EdgeActorBP, location);
+					Edge->SetActorLabel(label);
+					Edge->FromNode = FromNode;
+					Edge->ToNode = ToNode;
+					Edge->Spline->SetLocationAtSplinePoint(0, startingLocation, ESplineCoordinateSpace::Local);
+					Edge->Spline->SetLocationAtSplinePoint(Edge->Spline->GetNumberOfSplinePoints() - 1, endingLocation, ESplineCoordinateSpace::Local);
+
+					Edge->Spline->AddSplinePointAtIndex(ComputeMiddleSplinePointLocation(Edge->Spline->GetLocationAtSplinePoint(0, ESplineCoordinateSpace::Local), Edge->Spline->GetLocationAtSplinePoint(1, ESplineCoordinateSpace::Local)), 1, ESplineCoordinateSpace::Local);
+
+					float scale;
+					switch (ScalingMethod)
+					{
+					case EScalingMethod::VE_Discrete:
+
+						if (significance < Min + (Max - Min) / 5)
+						{
+							scale = 0.2f;
+						}
+						else if (significance < Min + (Max - Min) * 2 / 5)
+						{
+							scale = 0.4f;
+						}
+						else if (significance < Min + (Max - Min) * 3 / 5)
+						{
+							scale = 0.6f;
+						}
+						else if (significance < Min + (Max - Min) * 4 / 5)
+						{
+							scale = 0.8f;
+						}
+						else if (significance <= Min + (Max - Min))
+						{
+							scale = 1;
+						}
+
+						break;
+					case EScalingMethod::VE_Continuous:
+
+						scale = ((float(significance) - float(Min)) / float(Max)) + 0.2f;
+						//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
+
+						break;
+					case EScalingMethod::VE_MinMax:
+
+						scale = ((float(significance) - float(Min)) / (float(Max) - float(Min))) + 0.2f;
+						//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
+
+						break;
+					default:
+						break;
+					}
+
+					Edge->Significance = scale / 2;
+
+					Edge->SetEdgeProperties();
+				}
 			}
 		}
 	}
