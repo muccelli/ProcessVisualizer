@@ -142,6 +142,9 @@ void AInputParser::BeginPlay()
 			location->Z -= NodesZDistance;
 		}
 
+		FVector* graphLocation = new FVector(0, 0, ((location->Z + NodesZDistance) + 1000) / 2);
+		SetActorLocation(*graphLocation);
+
 		
 
 		// Find min and max significance in the edges array
@@ -252,6 +255,8 @@ void AInputParser::BeginPlay()
 				}
 			}
 		}
+
+
 	}
 	else
 	{
