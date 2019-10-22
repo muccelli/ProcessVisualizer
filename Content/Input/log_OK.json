@@ -1,0 +1,270 @@
+{
+  "FuzzyModel" : {
+      "nodes": [
+           {
+              "label" : "createfine : complete",
+              "frequencySignificance" : 49,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "sendfine : complete",
+              "frequencySignificance" : 47,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "insertfinenotification : complete",
+              "frequencySignificance" : 42,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "addpenalty : complete",
+              "frequencySignificance" : 42,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "sendforcreditcollection : complete",
+              "frequencySignificance" : 14,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "insertdateappealtoprefecture : complete",
+              "frequencySignificance" : 10,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "sendappealtoprefecture : complete",
+              "frequencySignificance" : 10,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "receiveresultappealfromprefecture : complete",
+              "frequencySignificance" : 9,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "notifyresultappealtooffender : complete",
+              "frequencySignificance" : 9,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "appealtojudge : complete",
+              "frequencySignificance" : 12,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "inv5 ) : complete",
+              "frequencySignificance" : 10,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "payment : complete",
+              "frequencySignificance" : 98,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "inv3 ) : complete",
+              "frequencySignificance" : 25,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "inv2 ) : complete",
+              "frequencySignificance" : 5,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "inv4 ) : complete",
+              "frequencySignificance" : 2,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "inv1 ) : complete",
+              "frequencySignificance" : 2,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "inv6 ) : complete",
+              "frequencySignificance" : 1,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          }
+      ],
+      "edges": [
+           {
+              "label" : "createfine : complete -> sendfine : complete",
+              "fromNode" : "createfine : complete",
+              "toNode" : "sendfine : complete",
+              "frequencySignificance" : 43
+          },
+           {
+              "label" : "sendfine : complete -> insertfinenotification : complete",
+              "fromNode" : "sendfine : complete",
+              "toNode" : "insertfinenotification : complete",
+              "frequencySignificance" : 39
+          },
+           {
+              "label" : "insertfinenotification : complete -> addpenalty : complete",
+              "fromNode" : "insertfinenotification : complete",
+              "toNode" : "addpenalty : complete",
+              "frequencySignificance" : 28
+          },
+           {
+              "label" : "addpenalty : complete -> sendforcreditcollection : complete",
+              "fromNode" : "addpenalty : complete",
+              "toNode" : "sendforcreditcollection : complete",
+              "frequencySignificance" : 6
+          },
+           {
+              "label" : "addpenalty : complete -> insertdateappealtoprefecture : complete",
+              "fromNode" : "addpenalty : complete",
+              "toNode" : "insertdateappealtoprefecture : complete",
+              "frequencySignificance" : 8
+          },
+           {
+              "label" : "insertdateappealtoprefecture : complete -> sendappealtoprefecture : complete",
+              "fromNode" : "insertdateappealtoprefecture : complete",
+              "toNode" : "sendappealtoprefecture : complete",
+              "frequencySignificance" : 10
+          },
+           {
+              "label" : "sendappealtoprefecture : complete -> receiveresultappealfromprefecture : complete",
+              "fromNode" : "sendappealtoprefecture : complete",
+              "toNode" : "receiveresultappealfromprefecture : complete",
+              "frequencySignificance" : 9
+          },
+           {
+              "label" : "receiveresultappealfromprefecture : complete -> notifyresultappealtooffender : complete",
+              "fromNode" : "receiveresultappealfromprefecture : complete",
+              "toNode" : "notifyresultappealtooffender : complete",
+              "frequencySignificance" : 9
+          },
+           {
+              "label" : "notifyresultappealtooffender : complete -> appealtojudge : complete",
+              "fromNode" : "notifyresultappealtooffender : complete",
+              "toNode" : "appealtojudge : complete",
+              "frequencySignificance" : 3
+          },
+           {
+              "label" : "appealtojudge : complete -> inv5 ) : complete",
+              "fromNode" : "appealtojudge : complete",
+              "toNode" : "inv5 ) : complete",
+              "frequencySignificance" : 10
+          },
+           {
+              "label" : "addpenalty : complete -> payment : complete",
+              "fromNode" : "addpenalty : complete",
+              "toNode" : "payment : complete",
+              "frequencySignificance" : 24
+          },
+           {
+              "label" : "payment : complete -> sendforcreditcollection : complete",
+              "fromNode" : "payment : complete",
+              "toNode" : "sendforcreditcollection : complete",
+              "frequencySignificance" : 5
+          },
+           {
+              "label" : "payment : complete -> inv3 ) : complete",
+              "fromNode" : "payment : complete",
+              "toNode" : "inv3 ) : complete",
+              "frequencySignificance" : 24
+          },
+           {
+              "label" : "insertfinenotification : complete -> appealtojudge : complete",
+              "fromNode" : "insertfinenotification : complete",
+              "toNode" : "appealtojudge : complete",
+              "frequencySignificance" : 4
+          },
+           {
+              "label" : "inv5 ) : complete -> addpenalty : complete",
+              "fromNode" : "inv5 ) : complete",
+              "toNode" : "addpenalty : complete",
+              "frequencySignificance" : 4
+          },
+           {
+              "label" : "addpenalty : complete -> appealtojudge : complete",
+              "fromNode" : "addpenalty : complete",
+              "toNode" : "appealtojudge : complete",
+              "frequencySignificance" : 4
+          },
+           {
+              "label" : "inv5 ) : complete -> payment : complete",
+              "fromNode" : "inv5 ) : complete",
+              "toNode" : "payment : complete",
+              "frequencySignificance" : 4
+          },
+           {
+              "label" : "appealtojudge : complete -> inv4 ) : complete",
+              "fromNode" : "appealtojudge : complete",
+              "toNode" : "inv4 ) : complete",
+              "frequencySignificance" : 2
+          },
+           {
+              "label" : "payment : complete -> inv2 ) : complete",
+              "fromNode" : "payment : complete",
+              "toNode" : "inv2 ) : complete",
+              "frequencySignificance" : 3
+          },
+           {
+              "label" : "payment : complete -> inv1 ) : complete",
+              "fromNode" : "payment : complete",
+              "toNode" : "inv1 ) : complete",
+              "frequencySignificance" : 2
+          },
+           {
+              "label" : "sendappealtoprefecture : complete -> inv6 ) : complete",
+              "fromNode" : "sendappealtoprefecture : complete",
+              "toNode" : "inv6 ) : complete",
+              "frequencySignificance" : 1
+          }
+      ]
+  }
+}

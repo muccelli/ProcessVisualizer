@@ -3,87 +3,336 @@
       "nodes": [
            {
               "label" : "incoming claim : complete",
-              "frequencySignificance" : 3512
+              "frequencySignificance" : 3512,
+              "attributes" : [
+                  {
+                      "call centre" : [
+                          {
+                          "Brisbane" : "1720",
+                          "Sydney" : "1792"
+                          }
+                      ],
+                      "org:resource" : [
+                          {
+                          "customer" : "3512"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "B check if sufficient information is available : start",
-              "frequencySignificance" : 1720
+              "frequencySignificance" : 1720,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Call Centre Agent Brisbane" : "1720"
+                          }
+                      ],
+                      "location" : [
+                          {
+                          "Brisbane" : "1720"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "B check if sufficient information is available : complete",
-              "frequencySignificance" : 1720
+              "frequencySignificance" : 1720,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Call Centre Agent Brisbane" : "1720"
+                          }
+                      ],
+                      "location" : [
+                          {
+                          "Brisbane" : "1720"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "B register claim : start",
-              "frequencySignificance" : 1525
+              "frequencySignificance" : 1525,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Call Centre Agent Brisbane" : "1525"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "B register claim : complete",
-              "frequencySignificance" : 1525
+              "frequencySignificance" : 1525,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Call Centre Agent Brisbane" : "1525"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "determine likelihood of claim : start",
-              "frequencySignificance" : 2950
+              "frequencySignificance" : 2950,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Claims handler" : "2950"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "determine likelihood of claim : complete",
-              "frequencySignificance" : 2950
+              "frequencySignificance" : 2950,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Claims handler" : "2950"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "end : start",
-              "frequencySignificance" : 3512
+              "frequencySignificance" : 3512,
+              "attributes" : [
+                  {
+                      "duration" : [
+                          {
+                          "Total" : "39037792",
+                          "Arithmetic mean" : "11115,5444191344"
+                          }
+                      ],
+                      "org:resource" : [
+                          {
+                          "Claims handler" : "2950",
+                          "Call Centre Agent Sydney" : "367",
+                          "Call Centre Agent Brisbane" : "195"
+                          }
+                      ],
+                      "outcome" : [
+                          {
+                          "not liable" : "489",
+                          "processed" : "1976",
+                          "S insufficient information" : "367",
+                          "rejected" : "485",
+                          "B insufficient information" : "195"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "end : complete",
-              "frequencySignificance" : 3512
+              "frequencySignificance" : 3512,
+              "attributes" : [
+                  {
+                      "duration" : [
+                          {
+                          "Total" : "39037792",
+                          "Arithmetic mean" : "11115,5444191344"
+                          }
+                      ],
+                      "org:resource" : [
+                          {
+                          "Claims handler" : "2950",
+                          "Call Centre Agent Sydney" : "367",
+                          "Call Centre Agent Brisbane" : "195"
+                          }
+                      ],
+                      "outcome" : [
+                          {
+                          "not liable" : "489",
+                          "processed" : "1976",
+                          "S insufficient information" : "367",
+                          "rejected" : "485",
+                          "B insufficient information" : "195"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "S check if sufficient information is available : start",
-              "frequencySignificance" : 1792
+              "frequencySignificance" : 1792,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Call Centre Agent Sydney" : "1792"
+                          }
+                      ],
+                      "location" : [
+                          {
+                          "Sydney" : "1792"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "S check if sufficient information is available : complete",
-              "frequencySignificance" : 1792
+              "frequencySignificance" : 1792,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Call Centre Agent Sydney" : "1792"
+                          }
+                      ],
+                      "location" : [
+                          {
+                          "Sydney" : "1792"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "S register claim : start",
-              "frequencySignificance" : 1425
+              "frequencySignificance" : 1425,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Call Centre Agent Sydney" : "1425"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "S register claim : complete",
-              "frequencySignificance" : 1425
+              "frequencySignificance" : 1425,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Call Centre Agent Sydney" : "1425"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "assess claim : start",
-              "frequencySignificance" : 2461
+              "frequencySignificance" : 2461,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Claims handler" : "2461"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "assess claim : complete",
-              "frequencySignificance" : 2461
+              "frequencySignificance" : 2461,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Claims handler" : "2461"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "advise claimant on reimbursement : start",
-              "frequencySignificance" : 1976
+              "frequencySignificance" : 1976,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Claims handler" : "1976"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "advise claimant on reimbursement : complete",
-              "frequencySignificance" : 1976
+              "frequencySignificance" : 1976,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Claims handler" : "1976"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "initiate payment : start",
-              "frequencySignificance" : 1976
+              "frequencySignificance" : 1976,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Claims handler" : "1976"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "initiate payment : complete",
-              "frequencySignificance" : 1976
+              "frequencySignificance" : 1976,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Claims handler" : "1976"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "close claim : start",
-              "frequencySignificance" : 1976
+              "frequencySignificance" : 1976,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Claims handler" : "1976"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "close claim : complete",
-              "frequencySignificance" : 1976
+              "frequencySignificance" : 1976,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Claims handler" : "1976"
+                          }
+                      ]
+                      }
+                   ]
           }
       ],
       "edges": [

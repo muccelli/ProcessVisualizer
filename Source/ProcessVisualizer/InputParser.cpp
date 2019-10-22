@@ -81,6 +81,7 @@ void AInputParser::BeginPlay()
 				{
 					//ANodeActor* Node = (ANodeActor*) World->SpawnActor(ANodeActor::StaticClass(), location);
 					ANodeActor* Node = (ANodeActor*)World->SpawnActor(NodeActorBP, location);
+					Node->SetFolderPath("Nodes");
 					Node->SetActorLabel(label);
 
 					// set scale
@@ -198,6 +199,7 @@ void AInputParser::BeginPlay()
 				if (FromNode && ToNode)
 				{
 					AEdgeActor* Edge = (AEdgeActor*)World->SpawnActor(EdgeActorBP, location);
+					Edge->SetFolderPath("Edges");
 					Edge->SetActorLabel(label);
 					Edge->FromNode = FromNode;
 					Edge->ToNode = ToNode;

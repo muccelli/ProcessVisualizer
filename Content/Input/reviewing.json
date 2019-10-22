@@ -3,83 +3,333 @@
       "nodes": [
            {
               "label" : "invite reviewers : start",
-              "frequencySignificance" : 100
+              "frequencySignificance" : 100,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Mike" : "46",
+                          "Anne" : "54"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "invite reviewers : complete",
-              "frequencySignificance" : 100
+              "frequencySignificance" : 100,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Mike" : "46",
+                          "Anne" : "54"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "get review 2 : complete",
-              "frequencySignificance" : 45
+              "frequencySignificance" : 45,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Carol" : "8",
+                          "Sara" : "5",
+                          "Pete" : "7",
+                          "John" : "9",
+                          "Pam" : "6",
+                          "Sam" : "5",
+                          "Mary" : "5"
+                          }
+                      ],
+                      "Result by Reviewer B" : [
+                          {
+                          "reject" : "28",
+                          "accept" : "17"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "get review 3 : complete",
-              "frequencySignificance" : 50
+              "frequencySignificance" : 50,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Pam" : "5",
+                          "John" : "8",
+                          "Sam" : "3",
+                          "Carol" : "13",
+                          "Sara" : "7",
+                          "Pete" : "5",
+                          "Mary" : "9"
+                          }
+                      ],
+                      "Result by Reviewer C" : [
+                          {
+                          "reject" : "25",
+                          "accept" : "25"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "get review 1 : complete",
-              "frequencySignificance" : 45
+              "frequencySignificance" : 45,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "John" : "7",
+                          "Sara" : "3",
+                          "Sam" : "6",
+                          "Mary" : "4",
+                          "Pam" : "10",
+                          "Pete" : "8",
+                          "Carol" : "7"
+                          }
+                      ],
+                      "Result by Reviewer A" : [
+                          {
+                          "reject" : "31",
+                          "accept" : "14"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "collect reviews : start",
-              "frequencySignificance" : 100
+              "frequencySignificance" : 100,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Anne" : "57",
+                          "Mike" : "43"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "collect reviews : complete",
-              "frequencySignificance" : 100
+              "frequencySignificance" : 100,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Anne" : "57",
+                          "Mike" : "43"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "decide : start",
-              "frequencySignificance" : 626
+              "frequencySignificance" : 626,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Wil" : "626"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "decide : complete",
-              "frequencySignificance" : 626
+              "frequencySignificance" : 626,
+              "attributes" : [
+                  {
+                      "rejects" : [
+                          {
+                          "Total" : "1003",
+                          "Arithmetic mean" : "1,60223642172524"
+                          }
+                      ],
+                      "org:resource" : [
+                          {
+                          "Wil" : "626"
+                          }
+                      ],
+                      "accepts" : [
+                          {
+                          "Total" : "937",
+                          "Arithmetic mean" : "1,49680511182109"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "invite additional reviewer : start",
-              "frequencySignificance" : 526
+              "frequencySignificance" : 526,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Anne" : "265",
+                          "Mike" : "261"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "invite additional reviewer : complete",
-              "frequencySignificance" : 526
+              "frequencySignificance" : 526,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Anne" : "265",
+                          "Mike" : "261"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "get review X : complete",
-              "frequencySignificance" : 263
+              "frequencySignificance" : 263,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Pam" : "42",
+                          "Mary" : "40",
+                          "Sara" : "38",
+                          "Pete" : "46",
+                          "Carol" : "24",
+                          "Sam" : "34",
+                          "John" : "39"
+                          }
+                      ],
+                      "Result by Reviewer X" : [
+                          {
+                          "accept" : "122",
+                          "reject" : "141"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "reject : start",
-              "frequencySignificance" : 55
+              "frequencySignificance" : 55,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Anne" : "25",
+                          "Mike" : "30"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "reject : complete",
-              "frequencySignificance" : 55
+              "frequencySignificance" : 55,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Anne" : "25",
+                          "Mike" : "30"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "time-out 1 : complete",
-              "frequencySignificance" : 55
+              "frequencySignificance" : 55,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "__INVALID__" : "55"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "time-out X : complete",
-              "frequencySignificance" : 263
+              "frequencySignificance" : 263,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "__INVALID__" : "263"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "accept : start",
-              "frequencySignificance" : 45
+              "frequencySignificance" : 45,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Mike" : "21",
+                          "Anne" : "24"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "accept : complete",
-              "frequencySignificance" : 45
+              "frequencySignificance" : 45,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Mike" : "21",
+                          "Anne" : "24"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "time-out 2 : complete",
-              "frequencySignificance" : 55
+              "frequencySignificance" : 55,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "__INVALID__" : "55"
+                          }
+                      ]
+                      }
+                   ]
           },
            {
               "label" : "time-out 3 : complete",
-              "frequencySignificance" : 50
+              "frequencySignificance" : 50,
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "__INVALID__" : "50"
+                          }
+                      ]
+                      }
+                   ]
           }
       ],
       "edges": [
