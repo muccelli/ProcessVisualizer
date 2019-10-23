@@ -27,9 +27,6 @@ public:
 	UPROPERTY()
 	USceneComponent* Root;
 
-	/*UPROPERTY(EditAnywhere)
-	UStaticMeshComponent* Mesh;*/
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UStaticMeshComponent* SphereVisual;
 
