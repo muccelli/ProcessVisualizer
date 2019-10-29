@@ -27,11 +27,17 @@ public:
 	UPROPERTY()
 	USceneComponent* Root;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UStaticMeshComponent* SphereVisual;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	//UStaticMeshComponent* VisualMesh;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FText WidgetText;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float SignificanceScale;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float TimeScale;
 
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
 	void SetNodeLabelAndTransform();

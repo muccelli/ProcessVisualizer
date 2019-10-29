@@ -15,18 +15,14 @@ ANodeActor::ANodeActor()
 	Root = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
 	RootComponent = Root;
 
-	/*Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
-	Mesh->AttachTo(Root);*/
-
 	// Create and position a mesh component so we can see where our sphere is
-	SphereVisual = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("VisualRepresentation"));
+	/*SphereVisual = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("VisualRepresentation"));
 	SphereVisual->SetupAttachment(Root);
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> SphereVisualAsset(TEXT("/Engine/BasicShapes/Sphere.Sphere"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> SphereVisualAsset(TEXT("/Engine/BasicShapes/Cylinder.Cylinder"));
 	if (SphereVisualAsset.Succeeded())
 	{
 		SphereVisual->SetStaticMesh(SphereVisualAsset.Object);
-		//SphereVisual->SetWorldScale3D(FVector(0.8f));
-	}
+	}*/
 }
 
 // Called when the game starts or when spawned

@@ -2,36 +2,46 @@
   "FuzzyModel" : {
       "nodes": [
            {
-              "label" : "invite reviewers : start",
+              "label" : "start",
               "frequencySignificance" : 100,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "invite reviewers",
+              "frequencySignificance" : 200,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.8918E+14,
+                      "MeanDuration" : 1.8918E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 4.356E+12
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Mike" : "46",
-                          "Anne" : "54"
+                          "Mike" : "92",
+                          "Anne" : "108"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "invite reviewers : complete",
-              "frequencySignificance" : 100,
-              "attributes" : [
-                  {
-                      "org:resource" : [
-                          {
-                          "Mike" : "46",
-                          "Anne" : "54"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "get review 2 : complete",
+              "label" : "get review 2",
               "frequencySignificance" : 45,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
@@ -55,8 +65,16 @@
                    ]
           },
            {
-              "label" : "get review 3 : complete",
+              "label" : "get review 3",
               "frequencySignificance" : 50,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
@@ -80,8 +98,16 @@
                    ]
           },
            {
-              "label" : "get review 1 : complete",
+              "label" : "get review 1",
               "frequencySignificance" : 45,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
@@ -105,102 +131,93 @@
                    ]
           },
            {
-              "label" : "collect reviews : start",
-              "frequencySignificance" : 100,
+              "label" : "collect reviews",
+              "frequencySignificance" : 200,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2.40192E+14,
+                      "MeanDuration" : 2.40192E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 1.0368E+13
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Anne" : "57",
-                          "Mike" : "43"
+                          "Anne" : "114",
+                          "Mike" : "86"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "collect reviews : complete",
-              "frequencySignificance" : 100,
+              "label" : "decide",
+              "frequencySignificance" : 1252,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.398853E+15,
+                      "MeanDuration" : 2.234589E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 9.504E+12
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Anne" : "57",
-                          "Mike" : "43"
+                          "Wil" : "1252"
                           }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "decide : start",
-              "frequencySignificance" : 626,
-              "attributes" : [
-                  {
-                      "org:resource" : [
-                          {
-                          "Wil" : "626"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "decide : complete",
-              "frequencySignificance" : 626,
-              "attributes" : [
-                  {
+                      ],
                       "rejects" : [
                           {
                           "Total" : "1003",
-                          "Arithmetic mean" : "1,60223642172524"
-                          }
-                      ],
-                      "org:resource" : [
-                          {
-                          "Wil" : "626"
+                          "Arithmetic_Mean" : "1,60223642172524"
                           }
                       ],
                       "accepts" : [
                           {
                           "Total" : "937",
-                          "Arithmetic mean" : "1,49680511182109"
+                          "Arithmetic_Mean" : "1,49680511182109"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "invite additional reviewer : start",
-              "frequencySignificance" : 526,
+              "label" : "invite additional reviewer",
+              "frequencySignificance" : 1052,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.119852E+15,
+                      "MeanDuration" : 2.128997E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 6.912E+12
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Anne" : "265",
-                          "Mike" : "261"
+                          "Anne" : "530",
+                          "Mike" : "522"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "invite additional reviewer : complete",
-              "frequencySignificance" : 526,
-              "attributes" : [
-                  {
-                      "org:resource" : [
-                          {
-                          "Anne" : "265",
-                          "Mike" : "261"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "get review X : complete",
+              "label" : "get review X",
               "frequencySignificance" : 263,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
@@ -224,36 +241,38 @@
                    ]
           },
            {
-              "label" : "reject : start",
-              "frequencySignificance" : 55,
+              "label" : "reject",
+              "frequencySignificance" : 110,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.08072E+14,
+                      "MeanDuration" : 1.964945E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 4.32E+12
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Anne" : "25",
-                          "Mike" : "30"
+                          "Anne" : "50",
+                          "Mike" : "60"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "reject : complete",
+              "label" : "time-out 1",
               "frequencySignificance" : 55,
-              "attributes" : [
+              "durations" : [
                   {
-                      "org:resource" : [
-                          {
-                          "Anne" : "25",
-                          "Mike" : "30"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "time-out 1 : complete",
-              "frequencySignificance" : 55,
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
@@ -265,8 +284,16 @@
                    ]
           },
            {
-              "label" : "time-out X : complete",
+              "label" : "time-out X",
               "frequencySignificance" : 263,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
@@ -278,36 +305,38 @@
                    ]
           },
            {
-              "label" : "accept : start",
-              "frequencySignificance" : 45,
+              "label" : "accept",
+              "frequencySignificance" : 90,
+              "durations" : [
+                  {
+                      "TotalDuration" : 9.590398E+13,
+                      "MeanDuration" : 2.1312E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 8.64E+12
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Mike" : "21",
-                          "Anne" : "24"
+                          "Mike" : "42",
+                          "Anne" : "48"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "accept : complete",
-              "frequencySignificance" : 45,
-              "attributes" : [
-                  {
-                      "org:resource" : [
-                          {
-                          "Mike" : "21",
-                          "Anne" : "24"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "time-out 2 : complete",
+              "label" : "time-out 2",
               "frequencySignificance" : 55,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
@@ -319,8 +348,16 @@
                    ]
           },
            {
-              "label" : "time-out 3 : complete",
+              "label" : "time-out 3",
               "frequencySignificance" : 50,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
@@ -334,154 +371,276 @@
       ],
       "edges": [
            {
-              "label" : "invite reviewers : start -> invite reviewers : complete",
-              "fromNode" : "invite reviewers : start",
-              "toNode" : "invite reviewers : complete",
+              "label" : "start -> invite reviewers",
+              "fromNode" : "start",
+              "toNode" : "invite reviewers",
               "frequencySignificance" : 100
           },
            {
-              "label" : "invite reviewers : complete -> get review 2 : complete",
-              "fromNode" : "invite reviewers : complete",
-              "toNode" : "get review 2 : complete",
-              "frequencySignificance" : 19
+              "label" : "invite reviewers -> get review 2",
+              "fromNode" : "invite reviewers",
+              "toNode" : "get review 2",
+              "frequencySignificance" : 19,
+              "durations" : [
+                  {
+                      "TotalDuration" : 3.024E+13,
+                      "MeanDuration" : 1.591579E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 6.912E+12
+                   }
+               ]
           },
            {
-              "label" : "get review 2 : complete -> get review 3 : complete",
-              "fromNode" : "get review 2 : complete",
-              "toNode" : "get review 3 : complete",
-              "frequencySignificance" : 12
+              "label" : "get review 2 -> get review 3",
+              "fromNode" : "get review 2",
+              "toNode" : "get review 3",
+              "frequencySignificance" : 12,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.5552E+13,
+                      "MeanDuration" : 1.296E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 3.456E+12
+                   }
+               ]
           },
            {
-              "label" : "get review 1 : complete -> collect reviews : start",
-              "fromNode" : "get review 1 : complete",
-              "toNode" : "collect reviews : start",
-              "frequencySignificance" : 11
+              "label" : "get review 1 -> collect reviews",
+              "fromNode" : "get review 1",
+              "toNode" : "collect reviews",
+              "frequencySignificance" : 11,
+              "durations" : [
+                  {
+                      "TotalDuration" : 6.6492E+13,
+                      "MeanDuration" : 6.044728E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 2.592E+13
+                   }
+               ]
           },
            {
-              "label" : "collect reviews : start -> collect reviews : complete",
-              "fromNode" : "collect reviews : start",
-              "toNode" : "collect reviews : complete",
-              "frequencySignificance" : 100
+              "label" : "collect reviews -> decide",
+              "fromNode" : "collect reviews",
+              "toNode" : "decide",
+              "frequencySignificance" : 100,
+              "durations" : [
+                  {
+                      "TotalDuration" : 7.875793E+15,
+                      "MeanDuration" : 7.875792E+13,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 5.65092E+14
+                   }
+               ]
           },
            {
-              "label" : "collect reviews : complete -> decide : start",
-              "fromNode" : "collect reviews : complete",
-              "toNode" : "decide : start",
-              "frequencySignificance" : 100
+              "label" : "decide -> invite additional reviewer",
+              "fromNode" : "decide",
+              "toNode" : "invite additional reviewer",
+              "frequencySignificance" : 526,
+              "durations" : [
+                  {
+                      "TotalDuration" : 5.090401E+15,
+                      "MeanDuration" : 9.677568E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 2.27232E+14
+                   }
+               ]
           },
            {
-              "label" : "decide : start -> decide : complete",
-              "fromNode" : "decide : start",
-              "toNode" : "decide : complete",
-              "frequencySignificance" : 626
+              "label" : "invite additional reviewer -> get review X",
+              "fromNode" : "invite additional reviewer",
+              "toNode" : "get review X",
+              "frequencySignificance" : 263,
+              "durations" : [
+                  {
+                      "TotalDuration" : 5.72868E+14,
+                      "MeanDuration" : 2.178205E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 8.64E+12
+                   }
+               ]
           },
            {
-              "label" : "decide : complete -> invite additional reviewer : start",
-              "fromNode" : "decide : complete",
-              "toNode" : "invite additional reviewer : start",
-              "frequencySignificance" : 526
+              "label" : "get review X -> decide",
+              "fromNode" : "get review X",
+              "toNode" : "decide",
+              "frequencySignificance" : 263,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2.650957E+16,
+                      "MeanDuration" : 1.007968E+14,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 6.84324E+14
+                   }
+               ]
           },
            {
-              "label" : "invite additional reviewer : start -> invite additional reviewer : complete",
-              "fromNode" : "invite additional reviewer : start",
-              "toNode" : "invite additional reviewer : complete",
-              "frequencySignificance" : 526
+              "label" : "decide -> reject",
+              "fromNode" : "decide",
+              "toNode" : "reject",
+              "frequencySignificance" : 55,
+              "durations" : [
+                  {
+                      "TotalDuration" : 5.0112E+13,
+                      "MeanDuration" : 9.111273E+11,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 7.776E+12
+                   }
+               ]
           },
            {
-              "label" : "invite additional reviewer : complete -> get review X : complete",
-              "fromNode" : "invite additional reviewer : complete",
-              "toNode" : "get review X : complete",
-              "frequencySignificance" : 263
+              "label" : "time-out 1 -> collect reviews",
+              "fromNode" : "time-out 1",
+              "toNode" : "collect reviews",
+              "frequencySignificance" : 22,
+              "durations" : [
+                  {
+                      "TotalDuration" : 5.274E+13,
+                      "MeanDuration" : 2.397273E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 8.64E+12
+                   }
+               ]
           },
            {
-              "label" : "get review X : complete -> decide : start",
-              "fromNode" : "get review X : complete",
-              "toNode" : "decide : start",
-              "frequencySignificance" : 263
+              "label" : "invite additional reviewer -> time-out X",
+              "fromNode" : "invite additional reviewer",
+              "toNode" : "time-out X",
+              "frequencySignificance" : 263,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.084392E+15,
+                      "MeanDuration" : 4.123163E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 1.4688E+13
+                   }
+               ]
           },
            {
-              "label" : "decide : complete -> reject : start",
-              "fromNode" : "decide : complete",
-              "toNode" : "reject : start",
-              "frequencySignificance" : 55
+              "label" : "time-out X -> decide",
+              "fromNode" : "time-out X",
+              "toNode" : "decide",
+              "frequencySignificance" : 263,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2.741558E+16,
+                      "MeanDuration" : 1.042418E+14,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 5.85756E+14
+                   }
+               ]
           },
            {
-              "label" : "reject : start -> reject : complete",
-              "fromNode" : "reject : start",
-              "toNode" : "reject : complete",
-              "frequencySignificance" : 55
+              "label" : "decide -> accept",
+              "fromNode" : "decide",
+              "toNode" : "accept",
+              "frequencySignificance" : 45,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2.0736E+13,
+                      "MeanDuration" : 4.608E+11,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 4.32E+12
+                   }
+               ]
           },
            {
-              "label" : "time-out 1 : complete -> collect reviews : start",
-              "fromNode" : "time-out 1 : complete",
-              "toNode" : "collect reviews : start",
-              "frequencySignificance" : 22
+              "label" : "invite reviewers -> get review 3",
+              "fromNode" : "invite reviewers",
+              "toNode" : "get review 3",
+              "frequencySignificance" : 19,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2.16E+13,
+                      "MeanDuration" : 1.136842E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 2.592E+12
+                   }
+               ]
           },
            {
-              "label" : "invite additional reviewer : complete -> time-out X : complete",
-              "fromNode" : "invite additional reviewer : complete",
-              "toNode" : "time-out X : complete",
-              "frequencySignificance" : 263
+              "label" : "get review 3 -> time-out 2",
+              "fromNode" : "get review 3",
+              "toNode" : "time-out 2",
+              "frequencySignificance" : 15,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.8144E+13,
+                      "MeanDuration" : 1.2096E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 3.456E+12
+                   }
+               ]
           },
            {
-              "label" : "time-out X : complete -> decide : start",
-              "fromNode" : "time-out X : complete",
-              "toNode" : "decide : start",
-              "frequencySignificance" : 263
+              "label" : "time-out 2 -> collect reviews",
+              "fromNode" : "time-out 2",
+              "toNode" : "collect reviews",
+              "frequencySignificance" : 26,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.73664E+14,
+                      "MeanDuration" : 6.679385E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 2.6784E+13
+                   }
+               ]
           },
            {
-              "label" : "decide : complete -> accept : start",
-              "fromNode" : "decide : complete",
-              "toNode" : "accept : start",
-              "frequencySignificance" : 45
+              "label" : "invite reviewers -> time-out 1",
+              "fromNode" : "invite reviewers",
+              "toNode" : "time-out 1",
+              "frequencySignificance" : 16,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2.592E+13,
+                      "MeanDuration" : 1.62E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 4.32E+12
+                   }
+               ]
           },
            {
-              "label" : "accept : start -> accept : complete",
-              "fromNode" : "accept : start",
-              "toNode" : "accept : complete",
-              "frequencySignificance" : 45
+              "label" : "time-out 3 -> collect reviews",
+              "fromNode" : "time-out 3",
+              "toNode" : "collect reviews",
+              "frequencySignificance" : 20,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.26072E+14,
+                      "MeanDuration" : 6.3036E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 2.7612E+13
+                   }
+               ]
           },
            {
-              "label" : "invite reviewers : complete -> get review 3 : complete",
-              "fromNode" : "invite reviewers : complete",
-              "toNode" : "get review 3 : complete",
-              "frequencySignificance" : 19
+              "label" : "invite reviewers -> get review 1",
+              "fromNode" : "invite reviewers",
+              "toNode" : "get review 1",
+              "frequencySignificance" : 16,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.4688E+13,
+                      "MeanDuration" : 9.18E+11,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 3.456E+12
+                   }
+               ]
           },
            {
-              "label" : "get review 3 : complete -> time-out 2 : complete",
-              "fromNode" : "get review 3 : complete",
-              "toNode" : "time-out 2 : complete",
-              "frequencySignificance" : 15
-          },
-           {
-              "label" : "time-out 2 : complete -> collect reviews : start",
-              "fromNode" : "time-out 2 : complete",
-              "toNode" : "collect reviews : start",
-              "frequencySignificance" : 26
-          },
-           {
-              "label" : "invite reviewers : complete -> time-out 1 : complete",
-              "fromNode" : "invite reviewers : complete",
-              "toNode" : "time-out 1 : complete",
-              "frequencySignificance" : 16
-          },
-           {
-              "label" : "time-out 3 : complete -> collect reviews : start",
-              "fromNode" : "time-out 3 : complete",
-              "toNode" : "collect reviews : start",
-              "frequencySignificance" : 20
-          },
-           {
-              "label" : "invite reviewers : complete -> get review 1 : complete",
-              "fromNode" : "invite reviewers : complete",
-              "toNode" : "get review 1 : complete",
-              "frequencySignificance" : 16
-          },
-           {
-              "label" : "invite reviewers : complete -> time-out 3 : complete",
-              "fromNode" : "invite reviewers : complete",
-              "toNode" : "time-out 3 : complete",
-              "frequencySignificance" : 18
+              "label" : "invite reviewers -> time-out 3",
+              "fromNode" : "invite reviewers",
+              "toNode" : "time-out 3",
+              "frequencySignificance" : 18,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2.4192E+13,
+                      "MeanDuration" : 1.344E+12,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 3.456E+12
+                   }
+               ]
           }
       ]
   }

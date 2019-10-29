@@ -2,8 +2,24 @@
   "FuzzyModel" : {
       "nodes": [
            {
-              "label" : "incoming claim : complete",
+              "label" : "start",
               "frequencySignificance" : 3512,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "incoming claim",
+              "frequencySignificance" : 3512,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
               "attributes" : [
                   {
                       "call centre" : [
@@ -21,314 +37,237 @@
                    ]
           },
            {
-              "label" : "B check if sufficient information is available : start",
-              "frequencySignificance" : 1720,
+              "label" : "B check if sufficient information is available",
+              "frequencySignificance" : 3440,
+              "durations" : [
+                  {
+                      "TotalDuration" : 5.287899E+11,
+                      "MeanDuration" : 3.07436E+08,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 2.24E+09
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Call Centre Agent Brisbane" : "1720"
+                          "Call Centre Agent Brisbane" : "3440"
                           }
                       ],
                       "location" : [
                           {
-                          "Brisbane" : "1720"
+                          "Brisbane" : "3440"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "B check if sufficient information is available : complete",
-              "frequencySignificance" : 1720,
+              "label" : "B register claim",
+              "frequencySignificance" : 3050,
+              "durations" : [
+                  {
+                      "TotalDuration" : 7.918996E+12,
+                      "MeanDuration" : 5.192784E+09,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 3.747E+10
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Call Centre Agent Brisbane" : "1720"
-                          }
-                      ],
-                      "location" : [
-                          {
-                          "Brisbane" : "1720"
+                          "Call Centre Agent Brisbane" : "3050"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "B register claim : start",
-              "frequencySignificance" : 1525,
+              "label" : "determine likelihood of claim",
+              "frequencySignificance" : 5900,
+              "durations" : [
+                  {
+                      "TotalDuration" : 5.927904E+11,
+                      "MeanDuration" : 2.009459E+08,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 2.16E+09
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Call Centre Agent Brisbane" : "1525"
+                          "Claims handler" : "5900"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "B register claim : complete",
-              "frequencySignificance" : 1525,
-              "attributes" : [
+              "label" : "end",
+              "frequencySignificance" : 7024,
+              "durations" : [
                   {
-                      "org:resource" : [
-                          {
-                          "Call Centre Agent Brisbane" : "1525"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "determine likelihood of claim : start",
-              "frequencySignificance" : 2950,
-              "attributes" : [
-                  {
-                      "org:resource" : [
-                          {
-                          "Claims handler" : "2950"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "determine likelihood of claim : complete",
-              "frequencySignificance" : 2950,
-              "attributes" : [
-                  {
-                      "org:resource" : [
-                          {
-                          "Claims handler" : "2950"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "end : start",
-              "frequencySignificance" : 3512,
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
               "attributes" : [
                   {
                       "duration" : [
                           {
-                          "Total" : "39037792",
-                          "Arithmetic mean" : "11115,5444191344"
+                          "Total" : "78075584",
+                          "Arithmetic_Mean" : "11115,5444191344"
                           }
                       ],
                       "org:resource" : [
                           {
-                          "Claims handler" : "2950",
-                          "Call Centre Agent Sydney" : "367",
-                          "Call Centre Agent Brisbane" : "195"
-                          }
-                      ],
-                      "outcome" : [
-                          {
-                          "not liable" : "489",
-                          "processed" : "1976",
-                          "S insufficient information" : "367",
-                          "rejected" : "485",
-                          "B insufficient information" : "195"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "end : complete",
-              "frequencySignificance" : 3512,
-              "attributes" : [
-                  {
-                      "duration" : [
-                          {
-                          "Total" : "39037792",
-                          "Arithmetic mean" : "11115,5444191344"
-                          }
-                      ],
-                      "org:resource" : [
-                          {
-                          "Claims handler" : "2950",
-                          "Call Centre Agent Sydney" : "367",
-                          "Call Centre Agent Brisbane" : "195"
+                          "Claims handler" : "5900",
+                          "Call Centre Agent Sydney" : "734",
+                          "Call Centre Agent Brisbane" : "390"
                           }
                       ],
                       "outcome" : [
                           {
-                          "not liable" : "489",
-                          "processed" : "1976",
-                          "S insufficient information" : "367",
-                          "rejected" : "485",
-                          "B insufficient information" : "195"
+                          "not liable" : "978",
+                          "processed" : "3952",
+                          "S insufficient information" : "734",
+                          "rejected" : "970",
+                          "B insufficient information" : "390"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "S check if sufficient information is available : start",
-              "frequencySignificance" : 1792,
+              "label" : "S check if sufficient information is available",
+              "frequencySignificance" : 3584,
+              "durations" : [
+                  {
+                      "TotalDuration" : 5.652802E+11,
+                      "MeanDuration" : 3.154466E+08,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 2.09E+09
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Call Centre Agent Sydney" : "1792"
+                          "Call Centre Agent Sydney" : "3584"
                           }
                       ],
                       "location" : [
                           {
-                          "Sydney" : "1792"
+                          "Sydney" : "3584"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "S check if sufficient information is available : complete",
-              "frequencySignificance" : 1792,
+              "label" : "S register claim",
+              "frequencySignificance" : 2850,
+              "durations" : [
+                  {
+                      "TotalDuration" : 7.33416E+12,
+                      "MeanDuration" : 5.146779E+09,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 4.28E+10
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Call Centre Agent Sydney" : "1792"
-                          }
-                      ],
-                      "location" : [
-                          {
-                          "Sydney" : "1792"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "S register claim : start",
-              "frequencySignificance" : 1425,
-              "attributes" : [
-                  {
-                      "org:resource" : [
-                          {
-                          "Call Centre Agent Sydney" : "1425"
+                          "Call Centre Agent Sydney" : "2850"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "S register claim : complete",
-              "frequencySignificance" : 1425,
+              "label" : "assess claim",
+              "frequencySignificance" : 4922,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.627376E+13,
+                      "MeanDuration" : 6.612661E+09,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 5.795E+10
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Call Centre Agent Sydney" : "1425"
+                          "Claims handler" : "4922"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "assess claim : start",
-              "frequencySignificance" : 2461,
+              "label" : "advise claimant on reimbursement",
+              "frequencySignificance" : 3952,
+              "durations" : [
+                  {
+                      "TotalDuration" : 3.497129E+12,
+                      "MeanDuration" : 1.769802E+09,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 1.633E+10
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Claims handler" : "2461"
+                          "Claims handler" : "3952"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "assess claim : complete",
-              "frequencySignificance" : 2461,
+              "label" : "initiate payment",
+              "frequencySignificance" : 3952,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2.451388E+12,
+                      "MeanDuration" : 1.240581E+09,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 1.071E+10
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Claims handler" : "2461"
+                          "Claims handler" : "3952"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "advise claimant on reimbursement : start",
-              "frequencySignificance" : 1976,
+              "label" : "close claim",
+              "frequencySignificance" : 3952,
+              "durations" : [
+                  {
+                      "TotalDuration" : 5.978699E+11,
+                      "MeanDuration" : 3.025658E+08,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 2.06E+09
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Claims handler" : "1976"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "advise claimant on reimbursement : complete",
-              "frequencySignificance" : 1976,
-              "attributes" : [
-                  {
-                      "org:resource" : [
-                          {
-                          "Claims handler" : "1976"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "initiate payment : start",
-              "frequencySignificance" : 1976,
-              "attributes" : [
-                  {
-                      "org:resource" : [
-                          {
-                          "Claims handler" : "1976"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "initiate payment : complete",
-              "frequencySignificance" : 1976,
-              "attributes" : [
-                  {
-                      "org:resource" : [
-                          {
-                          "Claims handler" : "1976"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "close claim : start",
-              "frequencySignificance" : 1976,
-              "attributes" : [
-                  {
-                      "org:resource" : [
-                          {
-                          "Claims handler" : "1976"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "close claim : complete",
-              "frequencySignificance" : 1976,
-              "attributes" : [
-                  {
-                      "org:resource" : [
-                          {
-                          "Claims handler" : "1976"
+                          "Claims handler" : "3952"
                           }
                       ]
                       }
@@ -337,136 +276,178 @@
       ],
       "edges": [
            {
-              "label" : "incoming claim : complete -> B check if sufficient information is available : start",
-              "fromNode" : "incoming claim : complete",
-              "toNode" : "B check if sufficient information is available : start",
-              "frequencySignificance" : 1720
-          },
-           {
-              "label" : "B check if sufficient information is available : start -> B check if sufficient information is available : complete",
-              "fromNode" : "B check if sufficient information is available : start",
-              "toNode" : "B check if sufficient information is available : complete",
-              "frequencySignificance" : 1720
-          },
-           {
-              "label" : "B check if sufficient information is available : complete -> B register claim : start",
-              "fromNode" : "B check if sufficient information is available : complete",
-              "toNode" : "B register claim : start",
-              "frequencySignificance" : 1525
-          },
-           {
-              "label" : "B register claim : start -> B register claim : complete",
-              "fromNode" : "B register claim : start",
-              "toNode" : "B register claim : complete",
-              "frequencySignificance" : 1525
-          },
-           {
-              "label" : "B register claim : complete -> determine likelihood of claim : start",
-              "fromNode" : "B register claim : complete",
-              "toNode" : "determine likelihood of claim : start",
-              "frequencySignificance" : 1525
-          },
-           {
-              "label" : "determine likelihood of claim : start -> determine likelihood of claim : complete",
-              "fromNode" : "determine likelihood of claim : start",
-              "toNode" : "determine likelihood of claim : complete",
-              "frequencySignificance" : 2950
-          },
-           {
-              "label" : "end : start -> end : complete",
-              "fromNode" : "end : start",
-              "toNode" : "end : complete",
+              "label" : "start -> incoming claim",
+              "fromNode" : "start",
+              "toNode" : "incoming claim",
               "frequencySignificance" : 3512
           },
            {
-              "label" : "incoming claim : complete -> S check if sufficient information is available : start",
-              "fromNode" : "incoming claim : complete",
-              "toNode" : "S check if sufficient information is available : start",
-              "frequencySignificance" : 1792
+              "label" : "incoming claim -> B check if sufficient information is available",
+              "fromNode" : "incoming claim",
+              "toNode" : "B check if sufficient information is available",
+              "frequencySignificance" : 1720,
+              "durations" : [
+                  {
+                      "TotalDuration" : 3.915202E+13,
+                      "MeanDuration" : 2.27628E+10,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 2.0976E+11
+                   }
+               ]
           },
            {
-              "label" : "S check if sufficient information is available : start -> S check if sufficient information is available : complete",
-              "fromNode" : "S check if sufficient information is available : start",
-              "toNode" : "S check if sufficient information is available : complete",
-              "frequencySignificance" : 1792
+              "label" : "B check if sufficient information is available -> B register claim",
+              "fromNode" : "B check if sufficient information is available",
+              "toNode" : "B register claim",
+              "frequencySignificance" : 1525,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "S check if sufficient information is available : complete -> S register claim : start",
-              "fromNode" : "S check if sufficient information is available : complete",
-              "toNode" : "S register claim : start",
-              "frequencySignificance" : 1425
+              "label" : "B register claim -> determine likelihood of claim",
+              "fromNode" : "B register claim",
+              "toNode" : "determine likelihood of claim",
+              "frequencySignificance" : 1525,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.524438E+14,
+                      "MeanDuration" : 9.996313E+10,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 3.661E+11
+                   }
+               ]
           },
            {
-              "label" : "S register claim : start -> S register claim : complete",
-              "fromNode" : "S register claim : start",
-              "toNode" : "S register claim : complete",
-              "frequencySignificance" : 1425
+              "label" : "incoming claim -> S check if sufficient information is available",
+              "fromNode" : "incoming claim",
+              "toNode" : "S check if sufficient information is available",
+              "frequencySignificance" : 1792,
+              "durations" : [
+                  {
+                      "TotalDuration" : 7.656166E+12,
+                      "MeanDuration" : 4.272414E+09,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 6.425E+10
+                   }
+               ]
           },
            {
-              "label" : "S register claim : complete -> determine likelihood of claim : start",
-              "fromNode" : "S register claim : complete",
-              "toNode" : "determine likelihood of claim : start",
-              "frequencySignificance" : 1425
+              "label" : "S check if sufficient information is available -> S register claim",
+              "fromNode" : "S check if sufficient information is available",
+              "toNode" : "S register claim",
+              "frequencySignificance" : 1425,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "determine likelihood of claim : complete -> assess claim : start",
-              "fromNode" : "determine likelihood of claim : complete",
-              "toNode" : "assess claim : start",
-              "frequencySignificance" : 2461
+              "label" : "S register claim -> determine likelihood of claim",
+              "fromNode" : "S register claim",
+              "toNode" : "determine likelihood of claim",
+              "frequencySignificance" : 1425,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.513659E+14,
+                      "MeanDuration" : 1.062216E+11,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 3.7113E+11
+                   }
+               ]
           },
            {
-              "label" : "assess claim : start -> assess claim : complete",
-              "fromNode" : "assess claim : start",
-              "toNode" : "assess claim : complete",
-              "frequencySignificance" : 2461
+              "label" : "determine likelihood of claim -> assess claim",
+              "fromNode" : "determine likelihood of claim",
+              "toNode" : "assess claim",
+              "frequencySignificance" : 2461,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "assess claim : complete -> advise claimant on reimbursement : start",
-              "fromNode" : "assess claim : complete",
-              "toNode" : "advise claimant on reimbursement : start",
-              "frequencySignificance" : 994
+              "label" : "assess claim -> advise claimant on reimbursement",
+              "fromNode" : "assess claim",
+              "toNode" : "advise claimant on reimbursement",
+              "frequencySignificance" : 994,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "advise claimant on reimbursement : start -> advise claimant on reimbursement : complete",
-              "fromNode" : "advise claimant on reimbursement : start",
-              "toNode" : "advise claimant on reimbursement : complete",
-              "frequencySignificance" : 1976
+              "label" : "initiate payment -> close claim",
+              "fromNode" : "initiate payment",
+              "toNode" : "close claim",
+              "frequencySignificance" : 1504,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "advise claimant on reimbursement : complete -> initiate payment : start",
-              "fromNode" : "advise claimant on reimbursement : complete",
-              "toNode" : "initiate payment : start",
-              "frequencySignificance" : 994
+              "label" : "close claim -> end",
+              "fromNode" : "close claim",
+              "toNode" : "end",
+              "frequencySignificance" : 1466,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "initiate payment : start -> initiate payment : complete",
-              "fromNode" : "initiate payment : start",
-              "toNode" : "initiate payment : complete",
-              "frequencySignificance" : 1976
+              "label" : "assess claim -> initiate payment",
+              "fromNode" : "assess claim",
+              "toNode" : "initiate payment",
+              "frequencySignificance" : 982,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "initiate payment : complete -> close claim : start",
-              "fromNode" : "initiate payment : complete",
-              "toNode" : "close claim : start",
-              "frequencySignificance" : 1504
-          },
-           {
-              "label" : "close claim : start -> close claim : complete",
-              "fromNode" : "close claim : start",
-              "toNode" : "close claim : complete",
-              "frequencySignificance" : 1976
-          },
-           {
-              "label" : "close claim : complete -> end : start",
-              "fromNode" : "close claim : complete",
-              "toNode" : "end : start",
-              "frequencySignificance" : 1466
-          },
-           {
-              "label" : "assess claim : complete -> initiate payment : start",
-              "fromNode" : "assess claim : complete",
-              "toNode" : "initiate payment : start",
-              "frequencySignificance" : 982
+              "label" : "advise claimant on reimbursement -> end",
+              "fromNode" : "advise claimant on reimbursement",
+              "toNode" : "end",
+              "frequencySignificance" : 510,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           }
       ]
   }

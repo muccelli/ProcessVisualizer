@@ -2,200 +2,586 @@
   "FuzzyModel" : {
       "nodes": [
            {
-              "label" : "createfine : complete",
-              "frequencySignificance" : 49
+              "label" : "start",
+              "frequencySignificance" : 49,
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "sendfine : complete",
-              "frequencySignificance" : 47
+              "label" : "createfine",
+              "frequencySignificance" : 49,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "insertfinenotification : complete",
-              "frequencySignificance" : 42
+              "label" : "sendfine",
+              "frequencySignificance" : 47,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "addpenalty : complete",
-              "frequencySignificance" : 42
+              "label" : "insertfinenotification",
+              "frequencySignificance" : 42,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "sendforcreditcollection : complete",
-              "frequencySignificance" : 14
+              "label" : "addpenalty",
+              "frequencySignificance" : 42,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "insertdateappealtoprefecture : complete",
-              "frequencySignificance" : 10
+              "label" : "sendforcreditcollection",
+              "frequencySignificance" : 14,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "sendappealtoprefecture : complete",
-              "frequencySignificance" : 10
+              "label" : "insertdateappealtoprefecture",
+              "frequencySignificance" : 10,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "receiveresultappealfromprefecture : complete",
-              "frequencySignificance" : 9
+              "label" : "sendappealtoprefecture",
+              "frequencySignificance" : 10,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "notifyresultappealtooffender : complete",
-              "frequencySignificance" : 9
+              "label" : "receiveresultappealfromprefecture",
+              "frequencySignificance" : 9,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "appealtojudge : complete",
-              "frequencySignificance" : 12
+              "label" : "notifyresultappealtooffender",
+              "frequencySignificance" : 9,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "inv5 ) : complete",
-              "frequencySignificance" : 10
+              "label" : "appealtojudge",
+              "frequencySignificance" : 12,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "payment : complete",
-              "frequencySignificance" : 98
+              "label" : "inv5 )",
+              "frequencySignificance" : 10,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "inv3 ) : complete",
-              "frequencySignificance" : 25
+              "label" : "payment",
+              "frequencySignificance" : 98,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "inv2 ) : complete",
-              "frequencySignificance" : 5
+              "label" : "inv3 )",
+              "frequencySignificance" : 25,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "inv4 ) : complete",
-              "frequencySignificance" : 2
+              "label" : "inv2 )",
+              "frequencySignificance" : 5,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "inv1 ) : complete",
-              "frequencySignificance" : 2
+              "label" : "inv4 )",
+              "frequencySignificance" : 2,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           },
            {
-              "label" : "inv6 ) : complete",
-              "frequencySignificance" : 1
+              "label" : "inv1 )",
+              "frequencySignificance" : 2,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "inv6 )",
+              "frequencySignificance" : 1,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
           }
       ],
       "edges": [
            {
-              "label" : "createfine : complete -> sendfine : complete",
-              "fromNode" : "createfine : complete",
-              "toNode" : "sendfine : complete",
-              "frequencySignificance" : 43
+              "label" : "start -> createfine",
+              "fromNode" : "start",
+              "toNode" : "createfine",
+              "frequencySignificance" : 49
           },
            {
-              "label" : "sendfine : complete -> insertfinenotification : complete",
-              "fromNode" : "sendfine : complete",
-              "toNode" : "insertfinenotification : complete",
-              "frequencySignificance" : 39
+              "label" : "createfine -> sendfine",
+              "fromNode" : "createfine",
+              "toNode" : "sendfine",
+              "frequencySignificance" : 43,
+              "durations" : [
+                  {
+                      "TotalDuration" : 50000,
+                      "MeanDuration" : 1162.791,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 40000
+                   }
+               ]
           },
            {
-              "label" : "insertfinenotification : complete -> addpenalty : complete",
-              "fromNode" : "insertfinenotification : complete",
-              "toNode" : "addpenalty : complete",
-              "frequencySignificance" : 28
+              "label" : "sendfine -> insertfinenotification",
+              "fromNode" : "sendfine",
+              "toNode" : "insertfinenotification",
+              "frequencySignificance" : 39,
+              "durations" : [
+                  {
+                      "TotalDuration" : 40000,
+                      "MeanDuration" : 1025.641,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 10000
+                   }
+               ]
           },
            {
-              "label" : "addpenalty : complete -> sendforcreditcollection : complete",
-              "fromNode" : "addpenalty : complete",
-              "toNode" : "sendforcreditcollection : complete",
-              "frequencySignificance" : 6
+              "label" : "insertfinenotification -> addpenalty",
+              "fromNode" : "insertfinenotification",
+              "toNode" : "addpenalty",
+              "frequencySignificance" : 28,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "addpenalty : complete -> insertdateappealtoprefecture : complete",
-              "fromNode" : "addpenalty : complete",
-              "toNode" : "insertdateappealtoprefecture : complete",
-              "frequencySignificance" : 8
+              "label" : "addpenalty -> sendforcreditcollection",
+              "fromNode" : "addpenalty",
+              "toNode" : "sendforcreditcollection",
+              "frequencySignificance" : 6,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "insertdateappealtoprefecture : complete -> sendappealtoprefecture : complete",
-              "fromNode" : "insertdateappealtoprefecture : complete",
-              "toNode" : "sendappealtoprefecture : complete",
-              "frequencySignificance" : 10
+              "label" : "addpenalty -> insertdateappealtoprefecture",
+              "fromNode" : "addpenalty",
+              "toNode" : "insertdateappealtoprefecture",
+              "frequencySignificance" : 8,
+              "durations" : [
+                  {
+                      "TotalDuration" : 10000,
+                      "MeanDuration" : 1250,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 10000
+                   }
+               ]
           },
            {
-              "label" : "sendappealtoprefecture : complete -> receiveresultappealfromprefecture : complete",
-              "fromNode" : "sendappealtoprefecture : complete",
-              "toNode" : "receiveresultappealfromprefecture : complete",
-              "frequencySignificance" : 9
+              "label" : "insertdateappealtoprefecture -> sendappealtoprefecture",
+              "fromNode" : "insertdateappealtoprefecture",
+              "toNode" : "sendappealtoprefecture",
+              "frequencySignificance" : 10,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "receiveresultappealfromprefecture : complete -> notifyresultappealtooffender : complete",
-              "fromNode" : "receiveresultappealfromprefecture : complete",
-              "toNode" : "notifyresultappealtooffender : complete",
-              "frequencySignificance" : 9
+              "label" : "sendappealtoprefecture -> receiveresultappealfromprefecture",
+              "fromNode" : "sendappealtoprefecture",
+              "toNode" : "receiveresultappealfromprefecture",
+              "frequencySignificance" : 9,
+              "durations" : [
+                  {
+                      "TotalDuration" : 10000,
+                      "MeanDuration" : 1111.111,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 10000
+                   }
+               ]
           },
            {
-              "label" : "notifyresultappealtooffender : complete -> appealtojudge : complete",
-              "fromNode" : "notifyresultappealtooffender : complete",
-              "toNode" : "appealtojudge : complete",
-              "frequencySignificance" : 3
+              "label" : "receiveresultappealfromprefecture -> notifyresultappealtooffender",
+              "fromNode" : "receiveresultappealfromprefecture",
+              "toNode" : "notifyresultappealtooffender",
+              "frequencySignificance" : 9,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "appealtojudge : complete -> inv5 ) : complete",
-              "fromNode" : "appealtojudge : complete",
-              "toNode" : "inv5 ) : complete",
-              "frequencySignificance" : 10
+              "label" : "notifyresultappealtooffender -> appealtojudge",
+              "fromNode" : "notifyresultappealtooffender",
+              "toNode" : "appealtojudge",
+              "frequencySignificance" : 3,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "addpenalty : complete -> payment : complete",
-              "fromNode" : "addpenalty : complete",
-              "toNode" : "payment : complete",
-              "frequencySignificance" : 24
+              "label" : "appealtojudge -> inv5 )",
+              "fromNode" : "appealtojudge",
+              "toNode" : "inv5 )",
+              "frequencySignificance" : 10,
+              "durations" : [
+                  {
+                      "TotalDuration" : 20000,
+                      "MeanDuration" : 2000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 10000
+                   }
+               ]
           },
            {
-              "label" : "payment : complete -> sendforcreditcollection : complete",
-              "fromNode" : "payment : complete",
-              "toNode" : "sendforcreditcollection : complete",
-              "frequencySignificance" : 5
+              "label" : "addpenalty -> payment",
+              "fromNode" : "addpenalty",
+              "toNode" : "payment",
+              "frequencySignificance" : 24,
+              "durations" : [
+                  {
+                      "TotalDuration" : 10000,
+                      "MeanDuration" : 416.6667,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 10000
+                   }
+               ]
           },
            {
-              "label" : "payment : complete -> inv3 ) : complete",
-              "fromNode" : "payment : complete",
-              "toNode" : "inv3 ) : complete",
-              "frequencySignificance" : 24
+              "label" : "payment -> sendforcreditcollection",
+              "fromNode" : "payment",
+              "toNode" : "sendforcreditcollection",
+              "frequencySignificance" : 5,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "insertfinenotification : complete -> appealtojudge : complete",
-              "fromNode" : "insertfinenotification : complete",
-              "toNode" : "appealtojudge : complete",
-              "frequencySignificance" : 4
+              "label" : "payment -> inv3 )",
+              "fromNode" : "payment",
+              "toNode" : "inv3 )",
+              "frequencySignificance" : 24,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "inv5 ) : complete -> addpenalty : complete",
-              "fromNode" : "inv5 ) : complete",
-              "toNode" : "addpenalty : complete",
-              "frequencySignificance" : 4
+              "label" : "insertfinenotification -> appealtojudge",
+              "fromNode" : "insertfinenotification",
+              "toNode" : "appealtojudge",
+              "frequencySignificance" : 4,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "addpenalty : complete -> appealtojudge : complete",
-              "fromNode" : "addpenalty : complete",
-              "toNode" : "appealtojudge : complete",
-              "frequencySignificance" : 4
+              "label" : "inv5 ) -> addpenalty",
+              "fromNode" : "inv5 )",
+              "toNode" : "addpenalty",
+              "frequencySignificance" : 4,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "inv5 ) : complete -> payment : complete",
-              "fromNode" : "inv5 ) : complete",
-              "toNode" : "payment : complete",
-              "frequencySignificance" : 4
+              "label" : "addpenalty -> appealtojudge",
+              "fromNode" : "addpenalty",
+              "toNode" : "appealtojudge",
+              "frequencySignificance" : 4,
+              "durations" : [
+                  {
+                      "TotalDuration" : 30000,
+                      "MeanDuration" : 7500,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 10000
+                   }
+               ]
           },
            {
-              "label" : "appealtojudge : complete -> inv4 ) : complete",
-              "fromNode" : "appealtojudge : complete",
-              "toNode" : "inv4 ) : complete",
-              "frequencySignificance" : 2
+              "label" : "inv5 ) -> payment",
+              "fromNode" : "inv5 )",
+              "toNode" : "payment",
+              "frequencySignificance" : 4,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "payment : complete -> inv2 ) : complete",
-              "fromNode" : "payment : complete",
-              "toNode" : "inv2 ) : complete",
-              "frequencySignificance" : 3
+              "label" : "appealtojudge -> inv4 )",
+              "fromNode" : "appealtojudge",
+              "toNode" : "inv4 )",
+              "frequencySignificance" : 2,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           },
            {
-              "label" : "payment : complete -> inv1 ) : complete",
-              "fromNode" : "payment : complete",
-              "toNode" : "inv1 ) : complete",
-              "frequencySignificance" : 2
+              "label" : "payment -> inv2 )",
+              "fromNode" : "payment",
+              "toNode" : "inv2 )",
+              "frequencySignificance" : 3,
+              "durations" : [
+                  {
+                      "TotalDuration" : 40000,
+                      "MeanDuration" : 13333.33,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 40000
+                   }
+               ]
           },
            {
-              "label" : "sendappealtoprefecture : complete -> inv6 ) : complete",
-              "fromNode" : "sendappealtoprefecture : complete",
-              "toNode" : "inv6 ) : complete",
-              "frequencySignificance" : 1
+              "label" : "payment -> inv1 )",
+              "fromNode" : "payment",
+              "toNode" : "inv1 )",
+              "frequencySignificance" : 2,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
+          },
+           {
+              "label" : "sendappealtoprefecture -> inv6 )",
+              "fromNode" : "sendappealtoprefecture",
+              "toNode" : "inv6 )",
+              "frequencySignificance" : 1,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
           }
       ]
   }

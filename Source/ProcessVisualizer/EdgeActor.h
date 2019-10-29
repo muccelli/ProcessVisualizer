@@ -28,9 +28,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	USplineComponent* Spline;
 
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	//FText WidgetText;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	ANodeActor* FromNode;
 
@@ -39,6 +36,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float Significance;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float TimeScale;
 
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
 	void SetEdgeProperties();

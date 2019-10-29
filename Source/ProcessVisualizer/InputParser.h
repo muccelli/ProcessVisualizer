@@ -16,6 +16,13 @@ enum class EScalingMethod : uint8
 	VE_MinMax		UMETA(DisplayName = "MinMax")
 };
 
+UENUM(BlueprintType)		//"BlueprintType" is essential to include
+enum class EVisualizationType : uint8
+{
+	VE_Horizontal 	UMETA(DisplayName = "Horizontal"),
+	VE_Vertical 	UMETA(DisplayName = "Vertical")
+};
+
 UCLASS()
 class PROCESSVISUALIZER_API AInputParser : public AActor
 {
@@ -28,6 +35,10 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	void CreateVerticalGraph(TSharedPtr<FJsonObject> &JsonObject, bool &retflag);
+
+	void CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bool &retflag);
 
 public:	
 	// Called every frame
@@ -48,6 +59,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Enum)
 	EScalingMethod ScalingMethod;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Enum)
+	EVisualizationType VisualizationType;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float NodesYDistance;
