@@ -11,7 +11,7 @@
           },
            {
               "label" : "invite reviewers",
-              "frequencySignificance" : 200,
+              "frequencySignificance" : 100,
               "durations" : [
                   {
                       "TotalDuration" : 1.8918E+14,
@@ -132,7 +132,7 @@
           },
            {
               "label" : "collect reviews",
-              "frequencySignificance" : 200,
+              "frequencySignificance" : 100,
               "durations" : [
                   {
                       "TotalDuration" : 2.40192E+14,
@@ -154,7 +154,7 @@
           },
            {
               "label" : "decide",
-              "frequencySignificance" : 1252,
+              "frequencySignificance" : 626,
               "durations" : [
                   {
                       "TotalDuration" : 1.398853E+15,
@@ -187,7 +187,7 @@
           },
            {
               "label" : "invite additional reviewer",
-              "frequencySignificance" : 1052,
+              "frequencySignificance" : 526,
               "durations" : [
                   {
                       "TotalDuration" : 1.119852E+15,
@@ -242,7 +242,7 @@
           },
            {
               "label" : "reject",
-              "frequencySignificance" : 110,
+              "frequencySignificance" : 55,
               "durations" : [
                   {
                       "TotalDuration" : 1.08072E+14,
@@ -306,7 +306,7 @@
           },
            {
               "label" : "accept",
-              "frequencySignificance" : 90,
+              "frequencySignificance" : 45,
               "durations" : [
                   {
                       "TotalDuration" : 9.590398E+13,

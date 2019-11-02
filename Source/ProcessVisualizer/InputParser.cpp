@@ -157,6 +157,7 @@ FVector AInputParser::ComputeMiddleSplinePointLocation(FVector startSplinePointL
 
 	middleSplinePointLocation.X += FMath::RandRange(-MiddleSplinePointDeviation, MiddleSplinePointDeviation);
 	middleSplinePointLocation.Y += FMath::RandRange(-MiddleSplinePointDeviation, MiddleSplinePointDeviation);
+	middleSplinePointLocation.Z += FMath::RandRange(0, 1);
 
 	return middleSplinePointLocation;
 }
@@ -555,7 +556,16 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 				}
 
 				Node->SignificanceScale = scale;
-				Node->TimeScale = timeScale;
+
+				if (MinTime == 0 && MaxTime == 0)
+				{
+					Node->TimeScale = 0;
+				}
+				else
+				{
+					Node->TimeScale = timeScale;
+				}
+
 				GLog->Log(label + ": " + FString::SanitizeFloat(timeScale));
 
 				Node->WidgetText = FText::AsCultureInvariant(label);
@@ -569,7 +579,7 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 		location->X -= NodesZDistance;
 	}
 
-	FVector* graphLocation = new FVector(0, 0, ((location->Z + NodesZDistance) + 1000) / 2);
+	FVector* graphLocation = new FVector(((location->X + NodesZDistance) + 1000) / 2, 0, 0);
 	SetActorLocation(*graphLocation);
 
 

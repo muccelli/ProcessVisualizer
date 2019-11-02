@@ -27,9 +27,6 @@ public:
 	UPROPERTY()
 	USceneComponent* Root;
 
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	//UStaticMeshComponent* VisualMesh;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FText WidgetText;
 

@@ -38,7 +38,7 @@
           },
            {
               "label" : "B check if sufficient information is available",
-              "frequencySignificance" : 3440,
+              "frequencySignificance" : 1720,
               "durations" : [
                   {
                       "TotalDuration" : 5.287899E+11,
@@ -64,7 +64,7 @@
           },
            {
               "label" : "B register claim",
-              "frequencySignificance" : 3050,
+              "frequencySignificance" : 1525,
               "durations" : [
                   {
                       "TotalDuration" : 7.918996E+12,
@@ -85,7 +85,7 @@
           },
            {
               "label" : "determine likelihood of claim",
-              "frequencySignificance" : 5900,
+              "frequencySignificance" : 2950,
               "durations" : [
                   {
                       "TotalDuration" : 5.927904E+11,
@@ -106,7 +106,7 @@
           },
            {
               "label" : "end",
-              "frequencySignificance" : 7024,
+              "frequencySignificance" : 3512,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -144,7 +144,7 @@
           },
            {
               "label" : "S check if sufficient information is available",
-              "frequencySignificance" : 3584,
+              "frequencySignificance" : 1792,
               "durations" : [
                   {
                       "TotalDuration" : 5.652802E+11,
@@ -170,7 +170,7 @@
           },
            {
               "label" : "S register claim",
-              "frequencySignificance" : 2850,
+              "frequencySignificance" : 1425,
               "durations" : [
                   {
                       "TotalDuration" : 7.33416E+12,
@@ -191,7 +191,7 @@
           },
            {
               "label" : "assess claim",
-              "frequencySignificance" : 4922,
+              "frequencySignificance" : 2461,
               "durations" : [
                   {
                       "TotalDuration" : 1.627376E+13,
@@ -212,7 +212,7 @@
           },
            {
               "label" : "advise claimant on reimbursement",
-              "frequencySignificance" : 3952,
+              "frequencySignificance" : 1976,
               "durations" : [
                   {
                       "TotalDuration" : 3.497129E+12,
@@ -233,7 +233,7 @@
           },
            {
               "label" : "initiate payment",
-              "frequencySignificance" : 3952,
+              "frequencySignificance" : 1976,
               "durations" : [
                   {
                       "TotalDuration" : 2.451388E+12,
@@ -254,7 +254,7 @@
           },
            {
               "label" : "close claim",
-              "frequencySignificance" : 3952,
+              "frequencySignificance" : 1976,
               "durations" : [
                   {
                       "TotalDuration" : 5.978699E+11,
