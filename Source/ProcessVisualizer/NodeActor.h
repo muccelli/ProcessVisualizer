@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Components/WidgetComponent.h"
+#include "InputParser.h"
 #include "NodeActor.generated.h"
 
 UCLASS()
@@ -23,6 +24,9 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	UPROPERTY(BlueprintReadWrite)
+	TMap<FString, FValuesToFrequencyMap> Attributes;
 
 	UPROPERTY()
 	USceneComponent* Root;

@@ -23,6 +23,65 @@ enum class EVisualizationType : uint8
 	VE_Vertical 	UMETA(DisplayName = "Vertical")
 };
 
+USTRUCT(BlueprintType)
+struct FValuesToFrequencyMap
+{
+	GENERATED_BODY()
+
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "ValuesTofrequency")
+	TMap<FString, FString> attrValuesToFrequency;
+
+	void AddToMap(FString key, FString value)
+	{
+		attrValuesToFrequency.Add(key, value);
+	}
+
+	TMap<FString, FString> GetValuesToFrequency()
+	{
+		return attrValuesToFrequency;
+	}
+
+	void SortByValue()
+	{
+		/*GLog->Log("Non sorted");
+		for (auto pair : attrValuesToFrequency)
+		{
+			GLog->Log(pair.Key + ": " + pair.Value);
+		}*/
+		attrValuesToFrequency.ValueSort([](const FString& A, const FString& B) {
+			return FCString::Atof(*A) > FCString::Atof(*B);
+		});
+		/*GLog->Log("Sorted");
+		for (auto pair : attrValuesToFrequency)
+		{
+			GLog->Log(pair.Key + ": " + pair.Value);
+		}*/
+	}
+
+	TMap<FString, FString> GetValuesToPercentage()
+	{
+		TMap<FString, FString> valuesToPercentage = TMap<FString, FString>();
+		int32 totalFrequency = 0;
+		for (auto pair : attrValuesToFrequency)
+		{
+			totalFrequency += FCString::Atoi(*pair.Value);
+		}
+
+		for (auto pair : attrValuesToFrequency)
+		{
+			valuesToPercentage.Add(pair.Key, FString::SanitizeFloat((FCString::Atof(*pair.Value) / totalFrequency) * 100) + "%");
+		}
+		return valuesToPercentage;
+	}
+
+	FValuesToFrequencyMap()
+	{
+		attrValuesToFrequency = TMap<FString, FString>();
+	}
+
+};
+
 UCLASS()
 class PROCESSVISUALIZER_API AInputParser : public AActor
 {

@@ -437,7 +437,7 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 		}
 	}
 
-	FVector* location = new FVector(1000, 0, 0);
+	FVector* location = new FVector((NodesPositioning.Num() / 2) * NodesZDistance, 0, 0);
 
 	for (int32 i = 0; i < NodesPositioning.Num(); i++)
 	{
@@ -447,19 +447,40 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 			FString label = NodesPositioning[i][j];
 			int32 significance = 0;
 			double duration = 0;
+			TMap<FString, FValuesToFrequencyMap> attributes = TMap<FString, FValuesToFrequencyMap>();
 			for (int32 index = 0; index < nodesArray.Num(); index++)
 			{
 				if (nodesArray[index]->AsObject()->GetStringField("label").Equals(label))
 				{
 					significance = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
+
 					if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("start"))
 					{
 						duration = nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration");
 						GLog->Log("duration " + label + ": " + FString::SanitizeFloat(duration));
 					}
 					
+					for (auto itr = nodesArray[index]->AsObject()->GetArrayField("attributes")[0]->AsObject()->Values.CreateConstIterator(); itr; ++itr)
+					{
+						FValuesToFrequencyMap currAttr = FValuesToFrequencyMap();
+						for (auto attrItr = nodesArray[index]->AsObject()->GetArrayField("attributes")[0]->AsObject()->GetArrayField((*itr).Key)[0]->AsObject()->Values.CreateConstIterator(); attrItr; ++attrItr)
+						{
+							currAttr.AddToMap((*attrItr).Key, (*attrItr).Value->AsString());
+						}
+						currAttr.SortByValue();
+						attributes.Add((*itr).Key, currAttr);
+					}
 				}
 			}
+
+			/*for (auto& fs : attributes)
+			{
+				GLog->Log(fs.Key + ": ");
+				for (auto& ff : fs.Value.GetValuesToPercentage())
+				{
+					GLog->Log("    " + ff.Key + ": " + ff.Value);
+				}
+			}*/
 
 			UWorld* const World = GetWorld();
 			if (World)
@@ -570,6 +591,8 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 
 				Node->WidgetText = FText::AsCultureInvariant(label);
 
+				Node->Attributes = attributes;
+
 				Node->SetNodeLabelAndTransform();
 
 			}
@@ -579,7 +602,7 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 		location->X -= NodesZDistance;
 	}
 
-	FVector* graphLocation = new FVector(((location->X + NodesZDistance) + 1000) / 2, 0, 0);
+	FVector* graphLocation = new FVector(0, 0, 0);//((location->X + NodesZDistance) + 1000) / 2, 0, 0);
 	SetActorLocation(*graphLocation);
 
 
@@ -623,7 +646,6 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 		{
 			duration = edgesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration");
 		}
-		GLog->Log("duration: " + FString::SanitizeFloat(duration));
 		FString fromNode = edgesArray[index]->AsObject()->GetStringField("fromNode");
 		FString toNode = edgesArray[index]->AsObject()->GetStringField("toNode");
 
@@ -638,7 +660,7 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 
 			for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
 			{
-				if (ActorItr->GetActorLabel() == fromNode)
+				if (ActorItr->GetActorLabel().Equals(fromNode))
 				{
 					FromNode = *ActorItr;
 					startingLocation.X = ActorItr->GetActorLocation().X;
@@ -646,7 +668,7 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 					startingLocation.Z = 0;
 				}
 
-				if (ActorItr->GetActorLabel() == toNode)
+				if (ActorItr->GetActorLabel().Equals(toNode))
 				{
 					ToNode = *ActorItr;
 					endingLocation.X = ActorItr->GetActorLocation().X;
