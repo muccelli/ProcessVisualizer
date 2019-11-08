@@ -658,9 +658,10 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 			FVector startingLocation;
 			FVector endingLocation;
 
+			GLog->Log(label);
 			for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
 			{
-				if (ActorItr->GetActorLabel().Equals(fromNode))
+				if (ActorItr->GetActorLabel().Equals(fromNode.TrimEnd()))
 				{
 					FromNode = *ActorItr;
 					startingLocation.X = ActorItr->GetActorLocation().X;
@@ -668,7 +669,7 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 					startingLocation.Z = 0;
 				}
 
-				if (ActorItr->GetActorLabel().Equals(toNode))
+				if (ActorItr->GetActorLabel().Equals(toNode.TrimEnd()))
 				{
 					ToNode = *ActorItr;
 					endingLocation.X = ActorItr->GetActorLocation().X;
@@ -776,7 +777,6 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 				Edge->Significance = signScale / 2;
 
 				Edge->TimeScale = timeScale;
-				GLog->Log(FString::SanitizeFloat(timeScale));
 
 				Edge->SetEdgeProperties();
 			}
