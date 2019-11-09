@@ -30,3 +30,16 @@ TSet<FString> Graph::GetNodes()
 {
 	return this->nodes;
 }
+
+TArray<GraphEdge> Graph::GetOutgoingEdgesFor(FString node)
+{
+	TArray<GraphEdge> outgoingEdges = TArray<GraphEdge>();
+	for (GraphEdge ge : this->edges)
+	{
+		if (ge.GetFromNode().Equals(node))
+		{
+			outgoingEdges.Add(ge);
+		}
+	}
+	return outgoingEdges;
+}

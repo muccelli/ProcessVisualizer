@@ -9,7 +9,28 @@ void CycleRemover::DFSRemove(FString node)
 	{
 		return;
 	}
-
+	this->marked.Add(node);
+	this->stack.Add(node);
+	for (GraphEdge ge : graph.GetOutgoingEdgesFor(node))
+	{
+		if (this->stack.Contains(ge.GetToNode()))
+		{
+			for (GraphEdge edge : this->edges)
+			{
+				if (edge.Equals(ge))
+				{
+					this->edges.Add(GraphEdge(edge.GetToNode(), edge.GetFromNode(), true));
+					this->edges.Remove(edge);
+					break;
+				}
+			}
+		}
+		else if (!this-marked.Contains(ge.GetToNode()))
+		{
+			this->DFSRemove(ge.GetToNode());
+		}
+	}
+	this->stack.Remove(node);
 }
 
 CycleRemover::CycleRemover(Graph graph)

@@ -19,4 +19,5 @@ public:
 	~Graph();
 	TArray<GraphEdge> GetEdges();
 	TSet<FString> GetNodes();
+	TArray<GraphEdge> GetOutgoingEdgesFor(FString node);
 };

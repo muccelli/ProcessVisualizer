@@ -3,13 +3,20 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Graph.h"
+#include "GraphEdge.h"
 
 /**
  * 
  */
 class PROCESSVISUALIZER_API LayerAssigner
 {
+private:
+	Graph graph;
 public:
-	LayerAssigner();
+	LayerAssigner(Graph graph);
 	~LayerAssigner();
+
+	TArray<TArray<FString>> assignLayers();
+	TArray<FString> GetVerticesWithoutIncomingEdges(TArray<GraphEdge> edg, TSet<FString> nod);
 };
