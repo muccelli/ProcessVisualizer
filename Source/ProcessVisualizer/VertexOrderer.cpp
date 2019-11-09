@@ -150,30 +150,89 @@ void VertexOrderer::MedianHeuristic(TArray<TArray<FString>> layersM, TArray<Grap
 	}
 }
 
-void VertexOrderer::Transpose(TArray<TArray<FString>> layersT, TArray<GraphEdge> edges)
+void VertexOrderer::Transpose(TArray<TArray<FString>> layersT, TArray<GraphEdge> edgesT)
 {
 	bool improved = true;
 	while (improved)
 	{
 		improved = false;
-		for (int r = 0; r < layersT.Num(); r++)
+		for (int r = 0; r < layersT.Num() - 1; r++)
 		{
 			for (int i = 0; i < layersT[r].Num() - 1; i++)
 			{
 				FString v = layersT[r][i];
 				FString w = layersT[r][i + 1];
-				if (Crossing(layersT, edges, v, w, r) > Crossing(layersT, edges, w, v, r))
+				if (Crossing(layersT, edgesT, v, w, r) > Crossing(layersT, edgesT, w, v, r))
 				{
-
+					improved = true;
+					layersT[r].Swap(i, i + 1);
 				}
 			}
 		}
 	}
 }
 
-int32 VertexOrderer::Crossing(TArray<TArray<FString>> layers, TArray<GraphEdge> edges)
+int32 VertexOrderer::Crossing(TArray<TArray<FString>> layersC, TArray<GraphEdge> edgesC)
 {
-	return 0;
+	int32 numberCrossing = 0;
+	for (int r = 0; r < layersC.Num() - 1; r++)
+	{
+		if (layersC.Num() >= 2)
+		{
+			for (int i = 0; i < layersC[r].Num() - 1; i++)
+			{
+				FString v = layersC[r][i];
+				FString w = layersC[r][i + 1];
+				numberCrossing += Crossing(layersC, edgesC, v, w, r);
+			}
+		}
+	}
+	return numberCrossing;
+}
+
+int32 VertexOrderer::Crossing(TArray<TArray<FString>> layersC, TArray<GraphEdge> edgesC, FString n1, FString n2, int32 layerIndex)
+{
+	int32 numberCrossing = 0;
+	TArray<FString> n1AdjacentNodes = TArray<FString>();
+	TArray<FString> n2AdjacentNodes = TArray<FString>();
+	for (GraphEdge ge : edgesC)
+	{
+		if (ge.GetFromNode().Equals(n1))
+		{
+			n1AdjacentNodes.Add(ge.GetToNode());
+		}
+		if (ge.GetFromNode().Equals(n2))
+		{
+			n2AdjacentNodes.Add(ge.GetToNode());
+		}
+	}
+	TArray<int32> n1AdjacentNodesIndex = TArray<int32>();
+	TArray<int32> n2AdjacentNodesIndex = TArray<int32>();
+	for (FString fs : n1AdjacentNodes)
+	{
+		int32 index = 0;
+		layersC[layerIndex + 1].Find(fs, index);
+		n1AdjacentNodesIndex.Add(index);
+	}
+	for (FString fs : n2AdjacentNodes)
+	{
+		int32 index = 0;
+		layersC[layerIndex + 1].Find(fs, index);
+		n2AdjacentNodesIndex.Add(index);
+	}
+
+	for (int32 i = 0; i < n1AdjacentNodesIndex.Num(); i++)
+	{
+		for (int32 j = 0; j < n2AdjacentNodesIndex.Num(); j++)
+		{
+			if (n2AdjacentNodesIndex[j] < n1AdjacentNodesIndex[i])
+			{
+				numberCrossing++;
+			}
+		}
+	}
+
+	return numberCrossing;
 }
 
 int32 VertexOrderer::MedianValue(FString node, TArray<int32> P)

@@ -26,6 +26,7 @@ public:
 	void MedianHeuristic(TArray<TArray<FString>> layers, TArray<GraphEdge> edges, int32 i);
 	void Transpose(TArray<TArray<FString>> layers, TArray<GraphEdge> edges);
 	int32 Crossing(TArray<TArray<FString>> layers, TArray<GraphEdge> edges);
+	int32 Crossing(TArray<TArray<FString>> layers, TArray<GraphEdge> edges, FString n1, FString n2, int32 layerIndex);
 	int32 MedianValue(FString node, TArray<int32> P);
 	void SortRank(TArray<FString> layer, TMap<FString, int32> median);
 };
