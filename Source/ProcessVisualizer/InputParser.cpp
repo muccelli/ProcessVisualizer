@@ -906,164 +906,164 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 		for (int32 j = 0; j < nodesLayers[i].Num(); j++)
 		{
 			FString label = nodesLayers[i][j];
-			int32 significance = 0;
-			double duration = 0;
-			TMap<FString, FValuesToFrequencyMap> attributes = TMap<FString, FValuesToFrequencyMap>();
-			for (int32 index = 0; index < nodesArray.Num(); index++)
-			{
-				if (nodesArray[index]->AsObject()->GetStringField("label").Equals(label))
+			//if (!label.Contains("virtual"))
+			//{
+				int32 significance = 0;
+				double duration = 0;
+				TMap<FString, FValuesToFrequencyMap> attributes = TMap<FString, FValuesToFrequencyMap>();
+				for (int32 index = 0; index < nodesArray.Num(); index++)
 				{
-					significance = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
-
-					if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("start"))
+					if (nodesArray[index]->AsObject()->GetStringField("label").Equals(label))
 					{
-						duration = nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration");
-						GLog->Log("duration " + label + ": " + FString::SanitizeFloat(duration));
-					}
+						significance = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
 
-					for (auto itr = nodesArray[index]->AsObject()->GetArrayField("attributes")[0]->AsObject()->Values.CreateConstIterator(); itr; ++itr)
-					{
-						FValuesToFrequencyMap currAttr = FValuesToFrequencyMap();
-						for (auto attrItr = nodesArray[index]->AsObject()->GetArrayField("attributes")[0]->AsObject()->GetArrayField((*itr).Key)[0]->AsObject()->Values.CreateConstIterator(); attrItr; ++attrItr)
+						if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("start"))
 						{
-							currAttr.AddToMap((*attrItr).Key, (*attrItr).Value->AsString());
+							duration = nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration");
 						}
-						currAttr.SortByValue();
-						attributes.Add((*itr).Key, currAttr);
+
+						for (auto itr = nodesArray[index]->AsObject()->GetArrayField("attributes")[0]->AsObject()->Values.CreateConstIterator(); itr; ++itr)
+						{
+							FValuesToFrequencyMap currAttr = FValuesToFrequencyMap();
+							for (auto attrItr = nodesArray[index]->AsObject()->GetArrayField("attributes")[0]->AsObject()->GetArrayField((*itr).Key)[0]->AsObject()->Values.CreateConstIterator(); attrItr; ++attrItr)
+							{
+								currAttr.AddToMap((*attrItr).Key, (*attrItr).Value->AsString());
+							}
+							currAttr.SortByValue();
+							attributes.Add((*itr).Key, currAttr);
+						}
 					}
 				}
-			}
 
-			/*for (auto& fs : attributes)
-			{
-				GLog->Log(fs.Key + ": ");
-				for (auto& ff : fs.Value.GetValuesToPercentage())
+				/*for (auto& fs : attributes)
 				{
-					GLog->Log("    " + ff.Key + ": " + ff.Value);
-				}
-			}*/
+					GLog->Log(fs.Key + ": ");
+					for (auto& ff : fs.Value.GetValuesToPercentage())
+					{
+						GLog->Log("    " + ff.Key + ": " + ff.Value);
+					}
+				}*/
 
-			UWorld* const World = GetWorld();
-			if (World)
-			{
-				//ANodeActor* Node = (ANodeActor*) World->SpawnActor(ANodeActor::StaticClass(), location);
-				ANodeActor* Node = (ANodeActor*)World->SpawnActor(NodeActorBP, location);
-				Node->SetFolderPath("Nodes");
-				Node->SetActorLabel(label);
-
-				// set scale
-				float scale;
-				double timeScale = 0;
-
-				switch (ScalingMethod)
+				UWorld* const World = GetWorld();
+				if (World)
 				{
-				case EScalingMethod::VE_Discrete:
+					//ANodeActor* Node = (ANodeActor*) World->SpawnActor(ANodeActor::StaticClass(), location);
+					ANodeActor* Node = (ANodeActor*)World->SpawnActor(NodeActorBP, location);
+					Node->SetFolderPath("Nodes");
+					Node->SetActorLabel(label);
 
-					if (significance < MinSign + (MaxSign - MinSign) / 5)
+					// set scale
+					float scale;
+					double timeScale = 0;
+
+					switch (ScalingMethod)
 					{
-						scale = 0.2f;
+					case EScalingMethod::VE_Discrete:
+
+						if (significance < MinSign + (MaxSign - MinSign) / 5)
+						{
+							scale = 0.2f;
+						}
+						else if (significance < MinSign + (MaxSign - MinSign) * 2 / 5)
+						{
+							scale = 0.4f;
+						}
+						else if (significance < MinSign + (MaxSign - MinSign) * 3 / 5)
+						{
+							scale = 0.6f;
+						}
+						else if (significance < MinSign + (MaxSign - MinSign) * 4 / 5)
+						{
+							scale = 0.8f;
+						}
+						else if (significance <= MinSign + (MaxSign - MinSign))
+						{
+							scale = 1;
+						}
+
+						break;
+					case EScalingMethod::VE_Continuous:
+
+						scale = ((float(significance) - float(MinSign)) / float(MaxSign)) + 0.2f;
+						//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
+
+						break;
+					case EScalingMethod::VE_MinMax:
+
+						scale = ((float(significance) - float(MinSign)) / (float(MaxSign) - float(MinSign))) + 0.2f;
+						//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
+
+						break;
+					default:
+						break;
 					}
-					else if (significance < MinSign + (MaxSign - MinSign) * 2 / 5)
+
+					switch (ScalingMethod)
 					{
-						scale = 0.4f;
+					case EScalingMethod::VE_Discrete:
+
+						if (duration < MinTime + (MaxTime - MinTime) / 5)
+						{
+							timeScale = 0.2f;
+						}
+						else if (duration < MinTime + (MaxTime - MinTime) * 2 / 5)
+						{
+							timeScale = 0.4f;
+						}
+						else if (duration < MinTime + (MaxTime - MinTime) * 3 / 5)
+						{
+							timeScale = 0.6f;
+						}
+						else if (duration < MinTime + (MaxTime - MinTime) * 4 / 5)
+						{
+							timeScale = 0.8f;
+						}
+						else if (duration <= MinTime + (MaxTime - MinTime))
+						{
+							timeScale = 1;
+						}
+
+						break;
+					case EScalingMethod::VE_Continuous:
+
+						timeScale = ((float(duration) - float(MinTime)) / float(MaxTime));
+
+						break;
+					case EScalingMethod::VE_MinMax:
+
+						timeScale = ((duration - MinTime) / (MaxTime - MinTime));
+
+						break;
+					default:
+						break;
 					}
-					else if (significance < MinSign + (MaxSign - MinSign) * 3 / 5)
+
+					Node->SignificanceScale = scale;
+
+					if (MinTime == 0 && MaxTime == 0)
 					{
-						scale = 0.6f;
+						Node->TimeScale = 0;
 					}
-					else if (significance < MinSign + (MaxSign - MinSign) * 4 / 5)
+					else
 					{
-						scale = 0.8f;
-					}
-					else if (significance <= MinSign + (MaxSign - MinSign))
-					{
-						scale = 1;
+						Node->TimeScale = timeScale;
 					}
 
-					break;
-				case EScalingMethod::VE_Continuous:
+					Node->WidgetText = FText::AsCultureInvariant(label);
 
-					scale = ((float(significance) - float(MinSign)) / float(MaxSign)) + 0.2f;
-					//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
+					Node->Attributes = attributes;
 
-					break;
-				case EScalingMethod::VE_MinMax:
+					Node->SetNodeLabelAndTransform();
 
-					scale = ((float(significance) - float(MinSign)) / (float(MaxSign) - float(MinSign))) + 0.2f;
-					//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
-
-					break;
-				default:
-					break;
 				}
-
-				switch (ScalingMethod)
-				{
-				case EScalingMethod::VE_Discrete:
-
-					if (duration < MinTime + (MaxTime - MinTime) / 5)
-					{
-						timeScale = 0.2f;
-					}
-					else if (duration < MinTime + (MaxTime - MinTime) * 2 / 5)
-					{
-						timeScale = 0.4f;
-					}
-					else if (duration < MinTime + (MaxTime - MinTime) * 3 / 5)
-					{
-						timeScale = 0.6f;
-					}
-					else if (duration < MinTime + (MaxTime - MinTime) * 4 / 5)
-					{
-						timeScale = 0.8f;
-					}
-					else if (duration <= MinTime + (MaxTime - MinTime))
-					{
-						timeScale = 1;
-					}
-
-					break;
-				case EScalingMethod::VE_Continuous:
-
-					timeScale = ((float(duration) - float(MinTime)) / float(MaxTime));
-
-					break;
-				case EScalingMethod::VE_MinMax:
-
-					timeScale = ((duration - MinTime) / (MaxTime - MinTime));
-
-					break;
-				default:
-					break;
-				}
-
-				Node->SignificanceScale = scale;
-
-				if (MinTime == 0 && MaxTime == 0)
-				{
-					Node->TimeScale = 0;
-				}
-				else
-				{
-					Node->TimeScale = timeScale;
-				}
-
-				GLog->Log(label + ": " + FString::SanitizeFloat(timeScale));
-
-				Node->WidgetText = FText::AsCultureInvariant(label);
-
-				Node->Attributes = attributes;
-
-				Node->SetNodeLabelAndTransform();
-
-			}
+			//}
 			location->Y += NodesYDistance;
 		}
 		location->Y = 0;
 		location->X -= NodesZDistance;
 	}
 
-	FVector* graphLocation = new FVector(0, 0, 0);//((location->X + NodesZDistance) + 1000) / 2, 0, 0);
+	FVector* graphLocation = new FVector(0, 0, 0);
 	SetActorLocation(*graphLocation);
 
 
@@ -1097,159 +1097,359 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 	}
 
 	location = new FVector(0, 0, 0);
+
+
 	for (int32 index = 0; index < newEdges.Num(); index++)
 	{
-		FString label = newEdges[index].GetLabel();
-		FString fromNode = newEdges[index].GetFromNode();
-		FString toNode = newEdges[index].GetToNode();
-		int32 significance = 0;
-		float duration = 0;
-		for (int32 j = 0; j < edgesArray.Num(); j++)
+		if (!newEdges[index].GetFromNode().Contains("virtual"))
 		{
-			if (edgesArray[j]->AsObject()->GetStringField("label").Equals(label))
+			FString label = newEdges[index].GetLabel();
+			FString fromNode = "";
+			FString toNode = "";
+			label.Split(" -> ", &fromNode, &toNode);
+			int32 significance = 0;
+			float duration = 0;
+			for (int32 j = 0; j < edgesArray.Num(); j++)
 			{
-				significance = edgesArray[j]->AsObject()->GetIntegerField("frequencySignificance");
-				duration = 0;
-				if (!edgesArray[j]->AsObject()->GetStringField("label").Contains("start ->"))
+				if (edgesArray[j]->AsObject()->GetStringField("label").Equals(label))
 				{
-					duration = edgesArray[j]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration");
-				}
-			}
-		}
-
-		UWorld* const World = GetWorld();
-		if (World)
-		{
-			ANodeActor* FromNode = nullptr;
-			ANodeActor* ToNode = nullptr;
-
-			FVector startingLocation;
-			FVector endingLocation;
-
-			GLog->Log(label);
-			for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
-			{
-				if (ActorItr->GetActorLabel().Equals(fromNode.TrimEnd()))
-				{
-					FromNode = *ActorItr;
-					startingLocation.X = ActorItr->GetActorLocation().X;
-					startingLocation.Y = ActorItr->GetActorLocation().Y;
-					startingLocation.Z = 0;
-				}
-
-				if (ActorItr->GetActorLabel().Equals(toNode.TrimEnd()))
-				{
-					ToNode = *ActorItr;
-					endingLocation.X = ActorItr->GetActorLocation().X;
-					endingLocation.Y = ActorItr->GetActorLocation().Y;
-					endingLocation.Z = 0;
+					significance = edgesArray[j]->AsObject()->GetIntegerField("frequencySignificance");
+					duration = 0;
+					if (!edgesArray[j]->AsObject()->GetStringField("label").Contains("start ->"))
+					{
+						duration = edgesArray[j]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration");
+					}
 				}
 			}
 
-			if (FromNode && ToNode)
+			UWorld* const World = GetWorld();
+			if (World)
 			{
-				AEdgeActor* Edge = (AEdgeActor*)World->SpawnActor(EdgeActorBP, location);
-				Edge->SetFolderPath("Edges");
-				Edge->SetActorLabel(label);
-				Edge->FromNode = FromNode;
-				Edge->ToNode = ToNode;
-				Edge->Spline->SetLocationAtSplinePoint(0, startingLocation, ESplineCoordinateSpace::Local);
-				Edge->Spline->SetLocationAtSplinePoint(Edge->Spline->GetNumberOfSplinePoints() - 1, endingLocation, ESplineCoordinateSpace::Local);
+				ANodeActor* FromNode = nullptr;
+				ANodeActor* ToNode = nullptr;
 
-				Edge->Spline->AddSplinePointAtIndex(ComputeMiddleSplinePointLocation(Edge->Spline->GetLocationAtSplinePoint(0, ESplineCoordinateSpace::Local), Edge->Spline->GetLocationAtSplinePoint(1, ESplineCoordinateSpace::Local)), 1, ESplineCoordinateSpace::Local);
+				FVector startingLocation;
+				FVector endingLocation;
 
-				float signScale;
-				double timeScale;
-				switch (ScalingMethod)
+				for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
 				{
-				case EScalingMethod::VE_Discrete:
-
-					if (significance < MinSign + (MaxSign - MinSign) / 5)
+					if (ActorItr->GetActorLabel().Equals(fromNode.TrimEnd()))
 					{
-						signScale = 0.2f;
-					}
-					else if (significance < MinSign + (MaxSign - MinSign) * 2 / 5)
-					{
-						signScale = 0.4f;
-					}
-					else if (significance < MinSign + (MaxSign - MinSign) * 3 / 5)
-					{
-						signScale = 0.6f;
-					}
-					else if (significance < MinSign + (MaxSign - MinSign) * 4 / 5)
-					{
-						signScale = 0.8f;
-					}
-					else if (significance <= MinSign + (MaxSign - MinSign))
-					{
-						signScale = 1;
+						FromNode = *ActorItr;
+						startingLocation.X = ActorItr->GetActorLocation().X;
+						startingLocation.Y = ActorItr->GetActorLocation().Y;
+						startingLocation.Z = 0;
 					}
 
-					break;
-				case EScalingMethod::VE_Continuous:
-
-					signScale = ((float(significance) - float(MinSign)) / float(MaxSign)) + 0.2f;
-					//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
-
-					break;
-				case EScalingMethod::VE_MinMax:
-
-					signScale = ((float(significance) - float(MinSign)) / (float(MaxSign) - float(MinSign))) + 0.2f;
-					//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
-
-					break;
-				default:
-					break;
+					if (ActorItr->GetActorLabel().Equals(toNode.TrimEnd()))
+					{
+						ToNode = *ActorItr;
+						endingLocation.X = ActorItr->GetActorLocation().X;
+						endingLocation.Y = ActorItr->GetActorLocation().Y;
+						endingLocation.Z = 0;
+					}
 				}
 
-				switch (ScalingMethod)
+				if (FromNode && ToNode)
 				{
-				case EScalingMethod::VE_Discrete:
+					AEdgeActor* Edge = (AEdgeActor*)World->SpawnActor(EdgeActorBP, location);
+					Edge->SetFolderPath("Edges");
+					Edge->SetActorLabel(label);
+					Edge->FromNode = FromNode;
+					Edge->ToNode = ToNode;
+					Edge->Spline->SetLocationAtSplinePoint(0, startingLocation, ESplineCoordinateSpace::Local);
 
-					if (duration < MinTime + (MaxTime - MinTime) / 5)
+					GraphEdge currentEdge = newEdges[index];
+					int32 splineIndex = 1;
+					while (!currentEdge.GetToNode().Equals(toNode))
 					{
-						timeScale = 0.2f;
+						bool found = false;
+						for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
+						{
+							if (ActorItr->GetActorLabel().Equals(currentEdge.GetToNode().TrimEnd()))
+							{
+								found = true;
+								Edge->Spline->AddSplinePointAtIndex(ActorItr->GetActorLocation(), splineIndex, ESplineCoordinateSpace::Local);
+								splineIndex++;
+								for (int32 x = 0; x < newEdges.Num(); x++)
+								{
+									if (newEdges[x].GetFromNode().Equals(currentEdge.GetToNode()) && newEdges[x].GetLabel().Equals(label))
+									{
+										currentEdge = newEdges[x];
+										break;
+									}
+								}
+							}
+							if (found)
+							{
+								break;
+							}
+						}
 					}
-					else if (duration < MinTime + (MaxTime - MinTime) * 2 / 5)
+
+					Edge->Spline->SetLocationAtSplinePoint(Edge->Spline->GetNumberOfSplinePoints() - 1, endingLocation, ESplineCoordinateSpace::Local);
+
+
+					float signScale;
+					double timeScale;
+					switch (ScalingMethod)
 					{
-						timeScale = 0.4f;
+					case EScalingMethod::VE_Discrete:
+
+						if (significance < MinSign + (MaxSign - MinSign) / 5)
+						{
+							signScale = 0.2f;
+						}
+						else if (significance < MinSign + (MaxSign - MinSign) * 2 / 5)
+						{
+							signScale = 0.4f;
+						}
+						else if (significance < MinSign + (MaxSign - MinSign) * 3 / 5)
+						{
+							signScale = 0.6f;
+						}
+						else if (significance < MinSign + (MaxSign - MinSign) * 4 / 5)
+						{
+							signScale = 0.8f;
+						}
+						else if (significance <= MinSign + (MaxSign - MinSign))
+						{
+							signScale = 1;
+						}
+
+						break;
+					case EScalingMethod::VE_Continuous:
+
+						signScale = ((float(significance) - float(MinSign)) / float(MaxSign)) + 0.2f;
+						//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
+
+						break;
+					case EScalingMethod::VE_MinMax:
+
+						signScale = ((float(significance) - float(MinSign)) / (float(MaxSign) - float(MinSign))) + 0.2f;
+						//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
+
+						break;
+					default:
+						break;
 					}
-					else if (duration < MinTime + (MaxTime - MinTime) * 3 / 5)
+
+					switch (ScalingMethod)
 					{
-						timeScale = 0.6f;
+					case EScalingMethod::VE_Discrete:
+
+						if (duration < MinTime + (MaxTime - MinTime) / 5)
+						{
+							timeScale = 0.2f;
+						}
+						else if (duration < MinTime + (MaxTime - MinTime) * 2 / 5)
+						{
+							timeScale = 0.4f;
+						}
+						else if (duration < MinTime + (MaxTime - MinTime) * 3 / 5)
+						{
+							timeScale = 0.6f;
+						}
+						else if (duration < MinTime + (MaxTime - MinTime) * 4 / 5)
+						{
+							timeScale = 0.8f;
+						}
+						else if (duration <= MinTime + (MaxTime - MinTime))
+						{
+							timeScale = 1;
+						}
+
+						break;
+					case EScalingMethod::VE_Continuous:
+
+						timeScale = ((float(duration) - float(MinTime)) / float(MaxTime));
+
+						break;
+					case EScalingMethod::VE_MinMax:
+
+						timeScale = ((float(duration) - float(MinTime)) / (float(MaxTime) - float(MinTime)));
+
+						break;
+					default:
+						break;
 					}
-					else if (duration < MinTime + (MaxTime - MinTime) * 4 / 5)
-					{
-						timeScale = 0.8f;
-					}
-					else if (duration <= MinTime + (MaxTime - MinTime))
-					{
-						timeScale = 1;
-					}
 
-					break;
-				case EScalingMethod::VE_Continuous:
+					Edge->Significance = signScale / 2;
 
-					timeScale = ((float(duration) - float(MinTime)) / float(MaxTime));
+					Edge->TimeScale = timeScale;
 
-					break;
-				case EScalingMethod::VE_MinMax:
-
-					timeScale = ((float(duration) - float(MinTime)) / (float(MaxTime) - float(MinTime)));
-
-					break;
-				default:
-					break;
+					Edge->SetEdgeProperties();
 				}
-
-				Edge->Significance = signScale / 2;
-
-				Edge->TimeScale = timeScale;
-
-				Edge->SetEdgeProperties();
 			}
 		}
 	}
+
+	UWorld* const World = GetWorld();
+	if (World)
+	{
+		for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
+		{
+			if (ActorItr->GetActorLabel().Contains("virtual"))
+			{
+				ActorItr->Destroy();
+			}
+		}
+	}
+
+
+
+	//for (int32 index = 0; index < newEdges.Num(); index++)
+	//{
+	//	FString label = newEdges[index].GetLabel();
+	//	FString fromNode = newEdges[index].GetFromNode();
+	//	FString toNode = newEdges[index].GetToNode();
+	//	int32 significance = 0;
+	//	float duration = 0;
+	//	for (int32 j = 0; j < edgesArray.Num(); j++)
+	//	{
+	//		if (edgesArray[j]->AsObject()->GetStringField("label").Equals(label))
+	//		{
+	//			significance = edgesArray[j]->AsObject()->GetIntegerField("frequencySignificance");
+	//			duration = 0;
+	//			if (!edgesArray[j]->AsObject()->GetStringField("label").Contains("start ->"))
+	//			{
+	//				duration = edgesArray[j]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration");
+	//			}
+	//		}
+	//	}
+
+	//	UWorld* const World = GetWorld();
+	//	if (World)
+	//	{
+	//		ANodeActor* FromNode = nullptr;
+	//		ANodeActor* ToNode = nullptr;
+
+	//		FVector startingLocation;
+	//		FVector endingLocation;
+
+	//		for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
+	//		{
+	//			if (ActorItr->GetActorLabel().Equals(fromNode.TrimEnd()))
+	//			{
+	//				FromNode = *ActorItr;
+	//				startingLocation.X = ActorItr->GetActorLocation().X;
+	//				startingLocation.Y = ActorItr->GetActorLocation().Y;
+	//				startingLocation.Z = 0;
+	//			}
+
+	//			if (ActorItr->GetActorLabel().Equals(toNode.TrimEnd()))
+	//			{
+	//				ToNode = *ActorItr;
+	//				endingLocation.X = ActorItr->GetActorLocation().X;
+	//				endingLocation.Y = ActorItr->GetActorLocation().Y;
+	//				endingLocation.Z = 0;
+	//			}
+	//		}
+
+	//		if (FromNode && ToNode)
+	//		{
+	//			AEdgeActor* Edge = (AEdgeActor*)World->SpawnActor(EdgeActorBP, location);
+	//			Edge->SetFolderPath("Edges");
+	//			Edge->SetActorLabel(label);
+	//			Edge->FromNode = FromNode;
+	//			Edge->ToNode = ToNode;
+	//			Edge->Spline->SetLocationAtSplinePoint(0, startingLocation, ESplineCoordinateSpace::Local);
+	//			Edge->Spline->SetLocationAtSplinePoint(Edge->Spline->GetNumberOfSplinePoints() - 1, endingLocation, ESplineCoordinateSpace::Local);
+
+	//			Edge->Spline->AddSplinePointAtIndex(ComputeMiddleSplinePointLocation(Edge->Spline->GetLocationAtSplinePoint(0, ESplineCoordinateSpace::Local), Edge->Spline->GetLocationAtSplinePoint(1, ESplineCoordinateSpace::Local)), 1, ESplineCoordinateSpace::Local);
+
+	//			float signScale;
+	//			double timeScale;
+	//			switch (ScalingMethod)
+	//			{
+	//			case EScalingMethod::VE_Discrete:
+
+	//				if (significance < MinSign + (MaxSign - MinSign) / 5)
+	//				{
+	//					signScale = 0.2f;
+	//				}
+	//				else if (significance < MinSign + (MaxSign - MinSign) * 2 / 5)
+	//				{
+	//					signScale = 0.4f;
+	//				}
+	//				else if (significance < MinSign + (MaxSign - MinSign) * 3 / 5)
+	//				{
+	//					signScale = 0.6f;
+	//				}
+	//				else if (significance < MinSign + (MaxSign - MinSign) * 4 / 5)
+	//				{
+	//					signScale = 0.8f;
+	//				}
+	//				else if (significance <= MinSign + (MaxSign - MinSign))
+	//				{
+	//					signScale = 1;
+	//				}
+
+	//				break;
+	//			case EScalingMethod::VE_Continuous:
+
+	//				signScale = ((float(significance) - float(MinSign)) / float(MaxSign)) + 0.2f;
+	//				//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
+
+	//				break;
+	//			case EScalingMethod::VE_MinMax:
+
+	//				signScale = ((float(significance) - float(MinSign)) / (float(MaxSign) - float(MinSign))) + 0.2f;
+	//				//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
+
+	//				break;
+	//			default:
+	//				break;
+	//			}
+
+	//			switch (ScalingMethod)
+	//			{
+	//			case EScalingMethod::VE_Discrete:
+
+	//				if (duration < MinTime + (MaxTime - MinTime) / 5)
+	//				{
+	//					timeScale = 0.2f;
+	//				}
+	//				else if (duration < MinTime + (MaxTime - MinTime) * 2 / 5)
+	//				{
+	//					timeScale = 0.4f;
+	//				}
+	//				else if (duration < MinTime + (MaxTime - MinTime) * 3 / 5)
+	//				{
+	//					timeScale = 0.6f;
+	//				}
+	//				else if (duration < MinTime + (MaxTime - MinTime) * 4 / 5)
+	//				{
+	//					timeScale = 0.8f;
+	//				}
+	//				else if (duration <= MinTime + (MaxTime - MinTime))
+	//				{
+	//					timeScale = 1;
+	//				}
+
+	//				break;
+	//			case EScalingMethod::VE_Continuous:
+
+	//				timeScale = ((float(duration) - float(MinTime)) / float(MaxTime));
+
+	//				break;
+	//			case EScalingMethod::VE_MinMax:
+
+	//				timeScale = ((float(duration) - float(MinTime)) / (float(MaxTime) - float(MinTime)));
+
+	//				break;
+	//			default:
+	//				break;
+	//			}
+
+	//			Edge->Significance = signScale / 2;
+
+	//			Edge->TimeScale = timeScale;
+
+	//			Edge->SetEdgeProperties();
+	//		}
+	//	}
+	//}
 
 	retflag = false;
 }

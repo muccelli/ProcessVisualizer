@@ -42,7 +42,7 @@ TPair<TArray<TArray<FString>>, TArray<GraphEdge>> VertexOrderer::CreateVirtualVe
 	{
 		TArray<FString> currentLayer = layersVirtualized[i];
 		TArray<FString> nextLayer = layersVirtualized[i + 1];
-		for (FString node : currentLayer)
+		for (FString node : layersVirtualized[i])
 		{
 			TArray<GraphEdge> incomingEdges = TArray<GraphEdge>();
 			TArray<GraphEdge> outgoingEdges = TArray<GraphEdge>();
@@ -57,10 +57,11 @@ TPair<TArray<TArray<FString>>, TArray<GraphEdge>> VertexOrderer::CreateVirtualVe
 					outgoingEdges.Add(ge);
 				}
 			}
-			for (GraphEdge ge : incomingEdges)
+			for (GraphEdge ge : outgoingEdges)
 			{
-				FString virtualNode = "virtual" + virtualIndex++;
-				nextLayer.Add(virtualNode);
+				FString virtualNode = "virtual" + FString::FromInt(virtualIndex);
+				virtualIndex++;
+				layersVirtualized[i + 1].Add(virtualNode);
 				TArray<GraphEdge> edgesToRemove = TArray<GraphEdge>();
 				for (GraphEdge e : edges)
 				{
@@ -169,7 +170,7 @@ void VertexOrderer::Transpose(TArray<TArray<FString>> layersT, TArray<GraphEdge>
 			{
 				FString v = layersT[r][i];
 				FString w = layersT[r][i + 1];
-				if (Crossing(layersT, edgesT, v, w, r) > Crossing(layersT, edgesT, w, v, r))
+				if (Crossing(layersT, edgesT, v, w, r) < Crossing(layersT, edgesT, w, v, r))
 				{
 					improved = true;
 					layersT[r].Swap(i, i + 1);
