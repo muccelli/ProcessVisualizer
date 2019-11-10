@@ -5,6 +5,11 @@
 #include "JsonUtilities/Public/JsonUtilities.h"
 
 #include "CoreMinimal.h"
+#include "Graph.h"
+#include "GraphEdge.h"
+#include "CycleRemover.h"
+#include "LayerAssigner.h"
+#include "VertexOrderer.h"
 #include "GameFramework/Actor.h"
 #include "InputParser.generated.h"
 
@@ -20,7 +25,8 @@ UENUM(BlueprintType)		//"BlueprintType" is essential to include
 enum class EVisualizationType : uint8
 {
 	VE_Horizontal 	UMETA(DisplayName = "Horizontal"),
-	VE_Vertical 	UMETA(DisplayName = "Vertical")
+	VE_Vertical 	UMETA(DisplayName = "Vertical"),
+	VE_HorizontalImproved UMETA(DisplayName = "HorizontalImproved")
 };
 
 USTRUCT(BlueprintType)
@@ -99,11 +105,14 @@ protected:
 
 	void CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bool &retflag);
 
+	void CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject> &JsonObject, bool &retflag);
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	TArray<TArray<FString>> GetNodesPositioning(TArray<TSharedPtr<FJsonValue>>, TArray<TSharedPtr<FJsonValue>>);
+	TArray<TArray<FString>> GetNodesPositioning(TArray<TSharedPtr<FJsonValue>> nodesArray, TArray<TSharedPtr<FJsonValue>> edgesArray);
+	TPair<TArray<TArray<FString>>, TArray<GraphEdge>> GetNodesPositioningImproved(TArray<TSharedPtr<FJsonValue>> nodesArray, TArray<TSharedPtr<FJsonValue>> edgesArray);
 
 	FVector ComputeMiddleSplinePointLocation(FVector startSplinePointLocation, FVector endSplinePointLocation);
 

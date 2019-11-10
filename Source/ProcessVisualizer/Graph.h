@@ -16,6 +16,7 @@ private:
 public:
 	Graph();
 	Graph(TArray<GraphEdge> edges);
+	Graph(TArray<GraphEdge> edges, TSet<FString> nodes);
 	~Graph();
 	TArray<GraphEdge> GetEdges();
 	TSet<FString> GetNodes();

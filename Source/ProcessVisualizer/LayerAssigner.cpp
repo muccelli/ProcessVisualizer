@@ -16,6 +16,7 @@ TArray<TArray<FString>> LayerAssigner::assignLayers()
 {
 	TArray<TArray<FString>> sorted;
 	TArray<GraphEdge> edg = TArray<GraphEdge>(this->graph.GetEdges());
+	TArray<GraphEdge> edgToRemove = TArray<GraphEdge>();
 	TSet<FString> nod = TSet<FString>(this->graph.GetNodes());
 	TArray<FString> start = this->GetVerticesWithoutIncomingEdges(edg, nod);
 	while (start.Num() > 0)
@@ -25,15 +26,17 @@ TArray<TArray<FString>> LayerAssigner::assignLayers()
 		{
 			if (start.Contains(ge.GetFromNode()))
 			{
-				edg.Remove(ge);
+				edgToRemove.Add(ge);
+				GLog->Log("Edge to remove: " + ge.GetLabel());
 			}
 		}
-		for (FString fs : nod)
+		for (GraphEdge ge : edgToRemove)
 		{
-			if (start.Contains(fs))
-			{
-				nod.Remove(fs);
-			}
+			edg.Remove(ge);
+		}
+		for (FString fs : start)
+		{
+			nod.Remove(fs);
 		}
 		start = this->GetVerticesWithoutIncomingEdges(edg, nod);
 	}
@@ -61,6 +64,8 @@ TArray<FString> LayerAssigner::GetVerticesWithoutIncomingEdges(TArray<GraphEdge>
 			nodesWOIncomingEdges.Add(fs);
 		}
 	}
+
+	GLog->Log("Number of nodes w/o incoming edges = " + FString::FromInt(nodesWOIncomingEdges.Num()));
 
 	return nodesWOIncomingEdges;
 }

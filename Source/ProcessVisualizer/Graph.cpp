@@ -17,6 +17,12 @@ Graph::Graph(TArray<GraphEdge> edges)
 	}
 }
 
+Graph::Graph(TArray<GraphEdge> edges, TSet<FString> nodes)
+{
+	this->edges = edges;
+	this->nodes = nodes;
+}
+
 Graph::~Graph()
 {
 }

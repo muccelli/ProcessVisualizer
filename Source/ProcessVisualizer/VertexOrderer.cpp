@@ -29,6 +29,8 @@ TPair<TArray<TArray<FString>>, TArray<GraphEdge>> VertexOrderer::OrderVertices()
 			best = TArray<TArray<FString>>(layersVirtualized);
 		}
 	}
+	bestOrder.Key = best;
+	bestOrder.Value = edges;
 	return bestOrder;
 }
 
@@ -59,12 +61,17 @@ TPair<TArray<TArray<FString>>, TArray<GraphEdge>> VertexOrderer::CreateVirtualVe
 			{
 				FString virtualNode = "virtual" + virtualIndex++;
 				nextLayer.Add(virtualNode);
+				TArray<GraphEdge> edgesToRemove = TArray<GraphEdge>();
 				for (GraphEdge e : edges)
 				{
 					if (e.Equals(ge))
 					{
-						edges.RemoveAt(edges.IndexOfByKey(e));
+						edgesToRemove.Add(e);
 					}
+				}
+				for (GraphEdge e : edgesToRemove)
+				{
+					edges.Remove(e);
 				}
 				edges.Add(GraphEdge(ge.GetFromNode(), virtualNode, ge.GetLabel()));
 				edges.Add(GraphEdge(virtualNode, ge.GetToNode(), ge.GetLabel()));
