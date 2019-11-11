@@ -10,8 +10,16 @@
                    ]
           },
            {
-              "label" : "Register : complete",
+              "label" : "Register",
               "frequencySignificance" : 1104,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
@@ -23,42 +31,32 @@
                    ]
           },
            {
-              "label" : "Analyze Defect : start",
+              "label" : "Analyze Defect",
               "frequencySignificance" : 1104,
+              "durations" : [
+                  {
+                      "TotalDuration" : 5.014197E+12,
+                      "MeanDuration" : 4.541845E+09,
+                      "MinDuration" : 3E+09,
+                      "MaxDuration" : 6E+09
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "Tester3" : "191",
-                          "Tester2" : "202",
-                          "Tester4" : "159",
-                          "Tester6" : "195",
-                          "Tester5" : "164",
-                          "Tester1" : "193"
+                          "Tester3" : "382",
+                          "Tester2" : "404",
+                          "Tester4" : "318",
+                          "Tester6" : "390",
+                          "Tester5" : "328",
+                          "Tester1" : "386"
                           }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "Analyze Defect : complete",
-              "frequencySignificance" : 1104,
-              "attributes" : [
-                  {
+                      ],
                       "defectType" : [
                           {
                           "Total" : "6424",
                           "Arithmetic_Mean" : "5,81884057971014"
-                          }
-                      ],
-                      "org:resource" : [
-                          {
-                          "Tester3" : "191",
-                          "Tester2" : "202",
-                          "Tester4" : "159",
-                          "Tester6" : "195",
-                          "Tester5" : "164",
-                          "Tester1" : "193"
                           }
                       ],
                       "phoneType" : [
@@ -72,72 +70,55 @@
                    ]
           },
            {
-              "label" : "Repair (Complex) : start",
-              "frequencySignificance" : 725,
+              "label" : "Repair (Complex)",
+              "frequencySignificance" : 1035,
+              "durations" : [
+                  {
+                      "TotalDuration" : 4.534199E+12,
+                      "MeanDuration" : 6.262706E+09,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 3E+10
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "SolverC1" : "267",
-                          "SolverC3" : "201",
-                          "SolverC2" : "257"
+                          "SolverC1" : "534",
+                          "SolverC3" : "401",
+                          "SolverC2" : "514"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "Repair (Complex) : complete",
-              "frequencySignificance" : 724,
+              "label" : "Test Repair",
+              "frequencySignificance" : 1683,
+              "durations" : [
+                  {
+                      "TotalDuration" : 5.932787E+12,
+                      "MeanDuration" : 3.934209E+09,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 6E+09
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "SolverC1" : "267",
-                          "SolverC3" : "200",
-                          "SolverC2" : "257"
+                          "Tester3" : "528",
+                          "Tester6" : "486",
+                          "Tester4" : "470",
+                          "Tester1" : "516",
+                          "Tester5" : "516",
+                          "Tester2" : "500"
                           }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "Test Repair : start",
-              "frequencySignificance" : 1508,
-              "attributes" : [
-                  {
-                      "org:resource" : [
-                          {
-                          "Tester3" : "264",
-                          "Tester6" : "243",
-                          "Tester4" : "235",
-                          "Tester1" : "258",
-                          "Tester5" : "258",
-                          "Tester2" : "250"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "Test Repair : complete",
-              "frequencySignificance" : 1508,
-              "attributes" : [
-                  {
+                      ],
                       "numberRepairs" : [
                           {
                           "Total" : "1223",
                           "Arithmetic_Mean" : "0,811007957559682"
-                          }
-                      ],
-                      "org:resource" : [
-                          {
-                          "Tester3" : "264",
-                          "Tester6" : "243",
-                          "Tester4" : "235",
-                          "Tester1" : "258",
-                          "Tester5" : "258",
-                          "Tester2" : "250"
                           }
                       ],
                       "defectFixed" : [
@@ -150,8 +131,16 @@
                    ]
           },
            {
-              "label" : "Inform User : complete",
+              "label" : "Inform User",
               "frequencySignificance" : 1102,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
@@ -163,8 +152,16 @@
                    ]
           },
            {
-              "label" : "Archive Repair : complete",
+              "label" : "Archive Repair",
               "frequencySignificance" : 1000,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
               "attributes" : [
                   {
                       "numberRepairs" : [
@@ -188,38 +185,39 @@
                    ]
           },
            {
-              "label" : "Repair (Simple) : start",
-              "frequencySignificance" : 785,
+              "label" : "Repair (Simple)",
+              "frequencySignificance" : 944,
+              "durations" : [
+                  {
+                      "TotalDuration" : 3.496799E+12,
+                      "MeanDuration" : 4.454521E+09,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 1.2E+10
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
                           {
-                          "SolverS1" : "296",
-                          "SolverS2" : "249",
-                          "SolverS3" : "240"
+                          "SolverS1" : "592",
+                          "SolverS2" : "498",
+                          "SolverS3" : "480"
                           }
                       ]
                       }
                    ]
           },
            {
-              "label" : "Repair (Simple) : complete",
-              "frequencySignificance" : 785,
-              "attributes" : [
-                  {
-                      "org:resource" : [
-                          {
-                          "SolverS1" : "296",
-                          "SolverS2" : "249",
-                          "SolverS3" : "240"
-                          }
-                      ]
-                      }
-                   ]
-          },
-           {
-              "label" : "Restart Repair : complete",
+              "label" : "Restart Repair",
               "frequencySignificance" : 406,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
               "attributes" : [
                   {
                       "org:resource" : [
@@ -233,204 +231,148 @@
       ],
       "edges": [
            {
-              "label" : "start -> Register : complete",
+              "label" : "start -> Register",
               "fromNode" : "start",
-              "toNode" : "Register : complete",
+              "toNode" : "Register",
               "frequencySignificance" : 1104
           },
            {
-              "label" : "Register : complete -> Analyze Defect : start",
-              "fromNode" : "Register : complete",
-              "toNode" : "Analyze Defect : start",
+              "label" : "Register -> Analyze Defect",
+              "fromNode" : "Register",
+              "toNode" : "Analyze Defect",
               "frequencySignificance" : 1104,
               "durations" : [
                   {
-                      "TotalDuration" : "0",
-                      "MeanDuration" : "0",
-                      "MinDuration" : "0",
-                      "MaxDuration" : "0"
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
                    }
                ]
           },
            {
-              "label" : "Analyze Defect : start -> Analyze Defect : complete",
-              "fromNode" : "Analyze Defect : start",
-              "toNode" : "Analyze Defect : complete",
-              "frequencySignificance" : 1104,
-              "durations" : [
-                  {
-                      "TotalDuration" : "5,014197E+12",
-                      "MeanDuration" : "4,541845E+09",
-                      "MinDuration" : "3E+09",
-                      "MaxDuration" : "6E+09"
-                   }
-               ]
-          },
-           {
-              "label" : "Analyze Defect : complete -> Repair (Complex) : start",
-              "fromNode" : "Analyze Defect : complete",
-              "toNode" : "Repair (Complex) : start",
+              "label" : "Analyze Defect -> Repair (Complex)",
+              "fromNode" : "Analyze Defect",
+              "toNode" : "Repair (Complex)",
               "frequencySignificance" : 528,
               "durations" : [
                   {
-                      "TotalDuration" : "4,311001E+12",
-                      "MeanDuration" : "8,164774E+09",
-                      "MinDuration" : "6E+08",
-                      "MaxDuration" : "1,86E+10"
+                      "TotalDuration" : 4.311001E+12,
+                      "MeanDuration" : 8.164774E+09,
+                      "MinDuration" : 6E+08,
+                      "MaxDuration" : 1.86E+10
                    }
                ]
           },
            {
-              "label" : "Repair (Complex) : start -> Repair (Complex) : complete",
-              "fromNode" : "Repair (Complex) : start",
-              "toNode" : "Repair (Complex) : complete",
-              "frequencySignificance" : 414,
-              "durations" : [
-                  {
-                      "TotalDuration" : "4,534199E+12",
-                      "MeanDuration" : "1,095217E+10",
-                      "MinDuration" : "6E+09",
-                      "MaxDuration" : "3E+10"
-                   }
-               ]
-          },
-           {
-              "label" : "Repair (Complex) : complete -> Test Repair : start",
-              "fromNode" : "Repair (Complex) : complete",
-              "toNode" : "Test Repair : start",
+              "label" : "Repair (Complex) -> Test Repair",
+              "fromNode" : "Repair (Complex)",
+              "toNode" : "Test Repair",
               "frequencySignificance" : 720,
               "durations" : [
                   {
-                      "TotalDuration" : "0",
-                      "MeanDuration" : "0",
-                      "MinDuration" : "0",
-                      "MaxDuration" : "0"
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
                    }
                ]
           },
            {
-              "label" : "Test Repair : start -> Test Repair : complete",
-              "fromNode" : "Test Repair : start",
-              "toNode" : "Test Repair : complete",
-              "frequencySignificance" : 1333,
+              "label" : "Test Repair -> Inform User",
+              "fromNode" : "Test Repair",
+              "toNode" : "Inform User",
+              "frequencySignificance" : 472,
               "durations" : [
                   {
-                      "TotalDuration" : "5,932787E+12",
-                      "MeanDuration" : "4,450703E+09",
-                      "MinDuration" : "3E+09",
-                      "MaxDuration" : "6E+09"
+                      "TotalDuration" : 1.832402E+12,
+                      "MeanDuration" : 3.882208E+09,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 1.86E+10
                    }
                ]
           },
            {
-              "label" : "Analyze Defect : complete -> Repair (Simple) : start",
-              "fromNode" : "Analyze Defect : complete",
-              "toNode" : "Repair (Simple) : start",
+              "label" : "Inform User -> Archive Repair",
+              "fromNode" : "Inform User",
+              "toNode" : "Archive Repair",
+              "frequencySignificance" : 205,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2.364E+11,
+                      "MeanDuration" : 1.153171E+09,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 6E+09
+                   }
+               ]
+          },
+           {
+              "label" : "Analyze Defect -> Repair (Simple)",
+              "fromNode" : "Analyze Defect",
+              "toNode" : "Repair (Simple)",
               "frequencySignificance" : 421,
               "durations" : [
                   {
-                      "TotalDuration" : "3,588599E+12",
-                      "MeanDuration" : "8,523989E+09",
-                      "MinDuration" : "6E+08",
-                      "MaxDuration" : "1,8E+10"
+                      "TotalDuration" : 3.588599E+12,
+                      "MeanDuration" : 8.523989E+09,
+                      "MinDuration" : 6E+08,
+                      "MaxDuration" : 1.8E+10
                    }
                ]
           },
            {
-              "label" : "Repair (Simple) : start -> Repair (Simple) : complete",
-              "fromNode" : "Repair (Simple) : start",
-              "toNode" : "Repair (Simple) : complete",
-              "frequencySignificance" : 626,
-              "durations" : [
-                  {
-                      "TotalDuration" : "3,496799E+12",
-                      "MeanDuration" : "5,585941E+09",
-                      "MinDuration" : "3E+09",
-                      "MaxDuration" : "1,2E+10"
-                   }
-               ]
-          },
-           {
-              "label" : "Repair (Simple) : complete -> Test Repair : start",
-              "fromNode" : "Repair (Simple) : complete",
-              "toNode" : "Test Repair : start",
+              "label" : "Repair (Simple) -> Test Repair",
+              "fromNode" : "Repair (Simple)",
+              "toNode" : "Test Repair",
               "frequencySignificance" : 783,
               "durations" : [
                   {
-                      "TotalDuration" : "0",
-                      "MeanDuration" : "0",
-                      "MinDuration" : "0",
-                      "MaxDuration" : "0"
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
                    }
                ]
           },
            {
-              "label" : "Test Repair : complete -> Restart Repair : complete",
-              "fromNode" : "Test Repair : complete",
-              "toNode" : "Restart Repair : complete",
+              "label" : "Test Repair -> Restart Repair",
+              "fromNode" : "Test Repair",
+              "toNode" : "Restart Repair",
               "frequencySignificance" : 341,
               "durations" : [
                   {
-                      "TotalDuration" : "1,535999E+12",
-                      "MeanDuration" : "4,504395E+09",
-                      "MinDuration" : "3E+09",
-                      "MaxDuration" : "6E+09"
+                      "TotalDuration" : 1.535999E+12,
+                      "MeanDuration" : 4.504395E+09,
+                      "MinDuration" : 3E+09,
+                      "MaxDuration" : 6E+09
                    }
                ]
           },
            {
-              "label" : "Restart Repair : complete -> Repair (Simple) : start",
-              "fromNode" : "Restart Repair : complete",
-              "toNode" : "Repair (Simple) : start",
+              "label" : "Restart Repair -> Repair (Simple)",
+              "fromNode" : "Restart Repair",
+              "toNode" : "Repair (Simple)",
               "frequencySignificance" : 300,
               "durations" : [
                   {
-                      "TotalDuration" : "0",
-                      "MeanDuration" : "0",
-                      "MinDuration" : "0",
-                      "MaxDuration" : "0"
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
                    }
                ]
           },
            {
-              "label" : "Test Repair : complete -> Archive Repair : complete",
-              "fromNode" : "Test Repair : complete",
-              "toNode" : "Archive Repair : complete",
+              "label" : "Test Repair -> Archive Repair",
+              "fromNode" : "Test Repair",
+              "toNode" : "Archive Repair",
               "frequencySignificance" : 795,
               "durations" : [
                   {
-                      "TotalDuration" : "3,581997E+12",
-                      "MeanDuration" : "4,505656E+09",
-                      "MinDuration" : "3E+09",
-                      "MaxDuration" : "6E+09"
-                   }
-               ]
-          },
-           {
-              "label" : "Repair (Complex) : start -> Inform User : complete",
-              "fromNode" : "Repair (Complex) : start",
-              "toNode" : "Inform User : complete",
-              "frequencySignificance" : 310,
-              "durations" : [
-                  {
-                      "TotalDuration" : "2,521201E+12",
-                      "MeanDuration" : "8,132905E+09",
-                      "MinDuration" : "0",
-                      "MaxDuration" : "2,52E+10"
-                   }
-               ]
-          },
-           {
-              "label" : "Inform User : complete -> Repair (Complex) : complete",
-              "fromNode" : "Inform User : complete",
-              "toNode" : "Repair (Complex) : complete",
-              "frequencySignificance" : 310,
-              "durations" : [
-                  {
-                      "TotalDuration" : "2,957401E+12",
-                      "MeanDuration" : "9,540005E+09",
-                      "MinDuration" : "0",
-                      "MaxDuration" : "2,94E+10"
+                      "TotalDuration" : 3.581997E+12,
+                      "MeanDuration" : 4.505656E+09,
+                      "MinDuration" : 3E+09,
+                      "MaxDuration" : 6E+09
                    }
                ]
           }

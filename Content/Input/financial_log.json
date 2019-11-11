@@ -1,0 +1,900 @@
+{
+  "FuzzyModel" : {
+      "nodes": [
+           {
+              "label" : "start",
+              "frequencySignificance" : 13087,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "A_SUBMITTED",
+              "frequencySignificance" : 13087,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "1465744",
+                          "Arithmetic_Mean" : "112"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "A_PARTLYSUBMITTED",
+              "frequencySignificance" : 13087,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "1465744",
+                          "Arithmetic_Mean" : "112"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "A_PREACCEPTED",
+              "frequencySignificance" : 7367,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "28168920",
+                          "Arithmetic_Mean" : "3823,66227772499"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "W_Completeren aanvraag",
+              "frequencySignificance" : 17266,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "481718430",
+                          "Arithmetic_Mean" : "9958,62130984867"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "A_ACCEPTED",
+              "frequencySignificance" : 5113,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "56481953",
+                          "Arithmetic_Mean" : "11046,7344025034"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "O_SELECTED",
+              "frequencySignificance" : 7030,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "77561913",
+                          "Arithmetic_Mean" : "11032,9890469417"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "A_FINALIZED",
+              "frequencySignificance" : 5015,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "55397342",
+                          "Arithmetic_Mean" : "11046,3294117647"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "O_CREATED",
+              "frequencySignificance" : 7030,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "77561913",
+                          "Arithmetic_Mean" : "11032,9890469417"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "O_SENT",
+              "frequencySignificance" : 7030,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "77561913",
+                          "Arithmetic_Mean" : "11032,9890469417"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "W_Nabellen offertes",
+              "frequencySignificance" : 16433,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "493859422",
+                          "Arithmetic_Mean" : "11047,8149076104"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "O_SENT_BACK",
+              "frequencySignificance" : 3454,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "38087769",
+                          "Arithmetic_Mean" : "11027,1479444123"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "W_Valideren aanvraag",
+              "frequencySignificance" : 14963,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "217101030",
+                          "Arithmetic_Mean" : "10752,8989598811"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "A_REGISTERED",
+              "frequencySignificance" : 2246,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "23778136",
+                          "Arithmetic_Mean" : "10586,8815672306"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "A_APPROVED",
+              "frequencySignificance" : 2246,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "23778136",
+                          "Arithmetic_Mean" : "10586,8815672306"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "O_ACCEPTED",
+              "frequencySignificance" : 2243,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "23777800",
+                          "Arithmetic_Mean" : "10600,8916629514"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "A_ACTIVATED",
+              "frequencySignificance" : 2246,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "23778136",
+                          "Arithmetic_Mean" : "10586,8815672306"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "O_CANCELLED",
+              "frequencySignificance" : 3655,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "34167151",
+                          "Arithmetic_Mean" : "9348,05772913817"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "W_Wijzigen contractgegevens",
+              "frequencySignificance" : 12,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "119155",
+                          "Arithmetic_Mean" : "10832,2727272727"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "A_DECLINED",
+              "frequencySignificance" : 7635,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "46381945",
+                          "Arithmetic_Mean" : "6074,91093647675"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "A_CANCELLED",
+              "frequencySignificance" : 2807,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "20043852",
+                          "Arithmetic_Mean" : "7140,66690416815"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "W_Afhandelen leads",
+              "frequencySignificance" : 9575,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "112428879",
+                          "Arithmetic_Mean" : "7529,3918430217"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "O_DECLINED",
+              "frequencySignificance" : 802,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "8575375",
+                          "Arithmetic_Mean" : "10692,4875311721"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "W_Nabellen incomplete dossiers",
+              "frequencySignificance" : 6723,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "254441697",
+                          "Arithmetic_Mean" : "10953,1509685751"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "W_Beoordelen fraude",
+              "frequencySignificance" : 297,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "6177868",
+                          "Arithmetic_Mean" : "9360,40606060606"
+                          }
+                      ]
+                      }
+                   ]
+          }
+      ],
+      "edges": [
+           {
+              "label" : "start -> A_SUBMITTED",
+              "fromNode" : "start",
+              "toNode" : "A_SUBMITTED",
+              "frequencySignificance" : 13087
+          },
+           {
+              "label" : "A_SUBMITTED -> A_PARTLYSUBMITTED",
+              "fromNode" : "A_SUBMITTED",
+              "toNode" : "A_PARTLYSUBMITTED",
+              "frequencySignificance" : 13087,
+              "durations" : [
+                  {
+                      "TotalDuration" : 7.612364E+10,
+                      "MeanDuration" : 5816738,
+                      "MinDuration" : 710000,
+                      "MaxDuration" : 5.3039E+08
+                   }
+               ]
+          },
+           {
+              "label" : "A_PARTLYSUBMITTED -> A_PREACCEPTED",
+              "fromNode" : "A_PARTLYSUBMITTED",
+              "toNode" : "A_PREACCEPTED",
+              "frequencySignificance" : 4852,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.961152E+12,
+                      "MeanDuration" : 4.041946E+08,
+                      "MinDuration" : 2.7225E+08,
+                      "MaxDuration" : 1.01387E+09
+                   }
+               ]
+          },
+           {
+              "label" : "A_PREACCEPTED -> W_Completeren aanvraag",
+              "fromNode" : "A_PREACCEPTED",
+              "toNode" : "W_Completeren aanvraag",
+              "frequencySignificance" : 7367,
+              "durations" : [
+                  {
+                      "TotalDuration" : 3.84297E+10,
+                      "MeanDuration" : 5216466,
+                      "MinDuration" : 290000,
+                      "MaxDuration" : 4.9408E+08
+                   }
+               ]
+          },
+           {
+              "label" : "W_Completeren aanvraag -> A_ACCEPTED",
+              "fromNode" : "W_Completeren aanvraag",
+              "toNode" : "A_ACCEPTED",
+              "frequencySignificance" : 5113,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2.139559E+13,
+                      "MeanDuration" : 4.184548E+09,
+                      "MinDuration" : 5.782E+07,
+                      "MaxDuration" : 4.487692E+10
+                   }
+               ]
+          },
+           {
+              "label" : "A_ACCEPTED -> O_SELECTED",
+              "fromNode" : "A_ACCEPTED",
+              "toNode" : "O_SELECTED",
+              "frequencySignificance" : 2879,
+              "durations" : [
+                  {
+                      "TotalDuration" : 6.266247E+12,
+                      "MeanDuration" : 2.176536E+09,
+                      "MinDuration" : 9.037E+07,
+                      "MaxDuration" : 3.12683E+10
+                   }
+               ]
+          },
+           {
+              "label" : "A_FINALIZED -> O_CREATED",
+              "fromNode" : "A_FINALIZED",
+              "toNode" : "O_CREATED",
+              "frequencySignificance" : 2907,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.226755E+11,
+                      "MeanDuration" : 4.220003E+07,
+                      "MinDuration" : 5680000,
+                      "MaxDuration" : 2.36756E+09
+                   }
+               ]
+          },
+           {
+              "label" : "O_CREATED -> O_SENT",
+              "fromNode" : "O_CREATED",
+              "toNode" : "O_SENT",
+              "frequencySignificance" : 7030,
+              "durations" : [
+                  {
+                      "TotalDuration" : 4.170598E+09,
+                      "MeanDuration" : 593257.1,
+                      "MinDuration" : 150000,
+                      "MaxDuration" : 2.618E+07
+                   }
+               ]
+          },
+           {
+              "label" : "O_SENT -> W_Nabellen offertes",
+              "fromNode" : "O_SENT",
+              "toNode" : "W_Nabellen offertes",
+              "frequencySignificance" : 6633,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.372218E+10,
+                      "MeanDuration" : 2068774,
+                      "MinDuration" : 640000,
+                      "MaxDuration" : 7.127E+07
+                   }
+               ]
+          },
+           {
+              "label" : "W_Nabellen offertes -> O_SENT_BACK",
+              "fromNode" : "W_Nabellen offertes",
+              "toNode" : "O_SENT_BACK",
+              "frequencySignificance" : 3254,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.4556E+12,
+                      "MeanDuration" : 4.473263E+08,
+                      "MinDuration" : 7.095E+07,
+                      "MaxDuration" : 1.834964E+10
+                   }
+               ]
+          },
+           {
+              "label" : "O_SENT_BACK -> W_Valideren aanvraag",
+              "fromNode" : "O_SENT_BACK",
+              "toNode" : "W_Valideren aanvraag",
+              "frequencySignificance" : 3454,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.092241E+10,
+                      "MeanDuration" : 3162250,
+                      "MinDuration" : 610000,
+                      "MaxDuration" : 7.5147E+08
+                   }
+               ]
+          },
+           {
+              "label" : "O_ACCEPTED -> A_ACTIVATED",
+              "fromNode" : "O_ACCEPTED",
+              "toNode" : "A_ACTIVATED",
+              "frequencySignificance" : 566,
+              "durations" : [
+                  {
+                      "TotalDuration" : 4040000,
+                      "MeanDuration" : 7137.809,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 50000
+                   }
+               ]
+          },
+           {
+              "label" : "A_ACTIVATED -> W_Valideren aanvraag",
+              "fromNode" : "A_ACTIVATED",
+              "toNode" : "W_Valideren aanvraag",
+              "frequencySignificance" : 941,
+              "durations" : [
+                  {
+                      "TotalDuration" : 7.478428E+10,
+                      "MeanDuration" : 7.94732E+07,
+                      "MinDuration" : 4.584E+07,
+                      "MaxDuration" : 7.4599E+08
+                   }
+               ]
+          },
+           {
+              "label" : "A_ACCEPTED -> A_FINALIZED",
+              "fromNode" : "A_ACCEPTED",
+              "toNode" : "A_FINALIZED",
+              "frequencySignificance" : 2089,
+              "durations" : [
+                  {
+                      "TotalDuration" : 4.685451E+12,
+                      "MeanDuration" : 2.242916E+09,
+                      "MinDuration" : 1.1652E+08,
+                      "MaxDuration" : 2.639863E+10
+                   }
+               ]
+          },
+           {
+              "label" : "O_SELECTED -> O_CREATED",
+              "fromNode" : "O_SELECTED",
+              "toNode" : "O_CREATED",
+              "frequencySignificance" : 3148,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.479782E+11,
+                      "MeanDuration" : 4.700706E+07,
+                      "MinDuration" : 5800000,
+                      "MaxDuration" : 6.3662E+08
+                   }
+               ]
+          },
+           {
+              "label" : "O_CANCELLED -> O_CREATED",
+              "fromNode" : "O_CANCELLED",
+              "toNode" : "O_CREATED",
+              "frequencySignificance" : 974,
+              "durations" : [
+                  {
+                      "TotalDuration" : 3.113622E+10,
+                      "MeanDuration" : 3.196737E+07,
+                      "MinDuration" : 5020000,
+                      "MaxDuration" : 5.4025E+08
+                   }
+               ]
+          },
+           {
+              "label" : "W_Valideren aanvraag -> O_ACCEPTED",
+              "fromNode" : "W_Valideren aanvraag",
+              "toNode" : "O_ACCEPTED",
+              "frequencySignificance" : 1136,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.058804E+13,
+                      "MeanDuration" : 9.320457E+09,
+                      "MinDuration" : 2.9713E+08,
+                      "MaxDuration" : 5.734151E+10
+                   }
+               ]
+          },
+           {
+              "label" : "A_PARTLYSUBMITTED -> A_DECLINED",
+              "fromNode" : "A_PARTLYSUBMITTED",
+              "toNode" : "A_DECLINED",
+              "frequencySignificance" : 3429,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.303002E+12,
+                      "MeanDuration" : 3.799948E+08,
+                      "MinDuration" : 1.651E+07,
+                      "MaxDuration" : 1.19527E+09
+                   }
+               ]
+          },
+           {
+              "label" : "A_PARTLYSUBMITTED -> W_Afhandelen leads",
+              "fromNode" : "A_PARTLYSUBMITTED",
+              "toNode" : "W_Afhandelen leads",
+              "frequencySignificance" : 4739,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.311766E+12,
+                      "MeanDuration" : 2.768022E+08,
+                      "MinDuration" : 1.898E+07,
+                      "MaxDuration" : 1.16827E+09
+                   }
+               ]
+          },
+           {
+              "label" : "W_Afhandelen leads -> A_PREACCEPTED",
+              "fromNode" : "W_Afhandelen leads",
+              "toNode" : "A_PREACCEPTED",
+              "frequencySignificance" : 2515,
+              "durations" : [
+                  {
+                      "TotalDuration" : 4.314724E+12,
+                      "MeanDuration" : 1.715596E+09,
+                      "MinDuration" : 5.515E+07,
+                      "MaxDuration" : 4.163343E+10
+                   }
+               ]
+          },
+           {
+              "label" : "O_SENT -> W_Nabellen incomplete dossiers",
+              "fromNode" : "O_SENT",
+              "toNode" : "W_Nabellen incomplete dossiers",
+              "frequencySignificance" : 396,
+              "durations" : [
+                  {
+                      "TotalDuration" : 7.690597E+08,
+                      "MeanDuration" : 1942070,
+                      "MinDuration" : 700000,
+                      "MaxDuration" : 1.556E+07
+                   }
+               ]
+          },
+           {
+              "label" : "W_Nabellen incomplete dossiers -> O_SENT_BACK",
+              "fromNode" : "W_Nabellen incomplete dossiers",
+              "toNode" : "O_SENT_BACK",
+              "frequencySignificance" : 200,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.769884E+11,
+                      "MeanDuration" : 8.849422E+08,
+                      "MinDuration" : 8.168E+07,
+                      "MaxDuration" : 1.033418E+10
+                   }
+               ]
+          },
+           {
+              "label" : "O_ACCEPTED -> A_REGISTERED",
+              "fromNode" : "O_ACCEPTED",
+              "toNode" : "A_REGISTERED",
+              "frequencySignificance" : 771,
+              "durations" : [
+                  {
+                      "TotalDuration" : 3850000,
+                      "MeanDuration" : 4993.515,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 120000
+                   }
+               ]
+          },
+           {
+              "label" : "A_PARTLYSUBMITTED -> W_Beoordelen fraude",
+              "fromNode" : "A_PARTLYSUBMITTED",
+              "toNode" : "W_Beoordelen fraude",
+              "frequencySignificance" : 67,
+              "durations" : [
+                  {
+                      "TotalDuration" : 6.00711E+09,
+                      "MeanDuration" : 8.965836E+07,
+                      "MinDuration" : 4.433E+07,
+                      "MaxDuration" : 2.6976E+08
+                   }
+               ]
+          },
+           {
+              "label" : "A_ACCEPTED -> A_CANCELLED",
+              "fromNode" : "A_ACCEPTED",
+              "toNode" : "A_CANCELLED",
+              "frequencySignificance" : 46,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.42485E+11,
+                      "MeanDuration" : 3.097499E+09,
+                      "MinDuration" : 1.3534E+08,
+                      "MaxDuration" : 4.771159E+10
+                   }
+               ]
+          },
+           {
+              "label" : "W_Nabellen incomplete dossiers -> W_Wijzigen contractgegevens",
+              "fromNode" : "W_Nabellen incomplete dossiers",
+              "toNode" : "W_Wijzigen contractgegevens",
+              "frequencySignificance" : 1,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1.223509E+13,
+                      "MeanDuration" : 1.223509E+13,
+                      "MinDuration" : 1.223509E+13,
+                      "MaxDuration" : 1.223509E+13
+                   }
+               ]
+          }
+      ]
+  }
+}
