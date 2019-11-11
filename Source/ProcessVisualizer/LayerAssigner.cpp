@@ -41,6 +41,12 @@ TArray<TArray<FString>> LayerAssigner::assignLayers()
 		start = this->GetVerticesWithoutIncomingEdges(edg, nod);
 	}
 
+	/*for (GraphEdge ge : this->graph.GetEdges())
+	{
+		GLog->Log("To invert?");
+		GLog->Log(ge.IsToInvert() ? TEXT("true") : TEXT("false"));
+	}*/
+
 	return sorted;
 }
 

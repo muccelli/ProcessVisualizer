@@ -18,7 +18,7 @@ public:
 	bool toInvert;
 
 	GraphEdge(FString from, FString to);
-	GraphEdge(FString from, FString to, FString label);
+	GraphEdge(FString from, FString to, FString label, bool toInvert);
 	GraphEdge(FString from, FString to, bool toInvert);
 	~GraphEdge();
 

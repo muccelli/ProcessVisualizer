@@ -158,7 +158,7 @@ TPair<TArray<TArray<FString>>, TArray<GraphEdge>> AInputParser::GetNodesPosition
 	TArray<GraphEdge> edges = TArray<GraphEdge>();
 	for (int32 i = 0; i < edgesArray.Num(); i++)
 	{
-		edges.Add(GraphEdge(edgesArray[i]->AsObject()->GetStringField("fromNode"), edgesArray[i]->AsObject()->GetStringField("toNode"), edgesArray[i]->AsObject()->GetStringField("label")));
+		edges.Add(GraphEdge(edgesArray[i]->AsObject()->GetStringField("fromNode"), edgesArray[i]->AsObject()->GetStringField("toNode"), edgesArray[i]->AsObject()->GetStringField("label"), false));
 	}
 
 	TSet<FString> nodes = TSet<FString>();
@@ -194,7 +194,7 @@ TPair<TArray<TArray<FString>>, TArray<GraphEdge>> AInputParser::GetNodesPosition
 	VertexOrderer vo = VertexOrderer(graph, nodesPositioning);
 	TPair<TArray<TArray<FString>>, TArray<GraphEdge>> positioningEdgesPair = vo.OrderVertices();
 
-	GLog->Log("Number of layers after vertex oredering = " + FString::FromInt(positioningEdgesPair.Key.Num()));
+	GLog->Log("Number of layers after vertex ordering = " + FString::FromInt(positioningEdgesPair.Key.Num()));
 
 	for (int32 i = 0; i < positioningEdgesPair.Key.Num(); i++)
 	{
@@ -1103,10 +1103,19 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 	{
 		if (!newEdges[index].GetFromNode().Contains("virtual"))
 		{
-			FString label = newEdges[index].GetLabel();
+			FString label = "";
 			FString fromNode = "";
 			FString toNode = "";
-			label.Split(" -> ", &fromNode, &toNode);
+			if (!newEdges[index].IsToInvert())
+			{
+				label = newEdges[index].GetLabel();
+				label.Split(" -> ", &fromNode, &toNode);
+			}
+			else
+			{
+				newEdges[index].GetLabel().Split(" -> ", &toNode, &fromNode);
+				label = fromNode + " -> " + toNode;
+			}
 			int32 significance = 0;
 			float duration = 0;
 			for (int32 j = 0; j < edgesArray.Num(); j++)
@@ -1161,33 +1170,75 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 
 					GraphEdge currentEdge = newEdges[index];
 					int32 splineIndex = 1;
-					while (!currentEdge.GetToNode().Equals(toNode))
+					if (!newEdges[index].IsToInvert())
 					{
-						bool found = false;
-						for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
+						while (!currentEdge.GetToNode().Equals(toNode))
 						{
-							if (ActorItr->GetActorLabel().Equals(currentEdge.GetToNode().TrimEnd()))
+							bool found = false;
+							for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
 							{
-								found = true;
-								Edge->Spline->AddSplinePointAtIndex(ActorItr->GetActorLocation(), splineIndex, ESplineCoordinateSpace::Local);
-								splineIndex++;
-								for (int32 x = 0; x < newEdges.Num(); x++)
+								if (ActorItr->GetActorLabel().Equals(currentEdge.GetToNode().TrimEnd()))
 								{
-									if (newEdges[x].GetFromNode().Equals(currentEdge.GetToNode()) && newEdges[x].GetLabel().Equals(label))
+									found = true;
+									Edge->Spline->AddSplinePointAtIndex(ActorItr->GetActorLocation(), splineIndex, ESplineCoordinateSpace::Local);
+									splineIndex++;
+									for (int32 x = 0; x < newEdges.Num(); x++)
 									{
-										currentEdge = newEdges[x];
-										break;
+										if (newEdges[x].GetFromNode().Equals(currentEdge.GetToNode()) && newEdges[x].GetLabel().Equals(label))
+										{
+											currentEdge = newEdges[x];
+											break;
+										}
 									}
 								}
+								if (found)
+								{
+									break;
+								}
 							}
-							if (found)
+						}
+					}
+					else
+					{
+						for (int32 y = 0; y < newEdges.Num(); y++)
+						{
+							if (newEdges[y].GetFromNode().Contains("virtual") && newEdges[y].GetToNode().Contains(fromNode) && newEdges[y].GetLabel().Equals(newEdges[index].GetLabel()))
 							{
-								break;
+								currentEdge = newEdges[y];
+							}
+						}
+						while (!currentEdge.GetFromNode().Equals(toNode))
+						{
+							bool found = false;
+							for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
+							{
+								if (ActorItr->GetActorLabel().Equals(currentEdge.GetFromNode().TrimEnd()))
+								{
+									found = true;
+									Edge->Spline->AddSplinePointAtIndex(ActorItr->GetActorLocation(), splineIndex, ESplineCoordinateSpace::Local);
+									splineIndex++;
+									for (int32 x = 0; x < newEdges.Num(); x++)
+									{
+										if (newEdges[x].GetToNode().Equals(currentEdge.GetFromNode()) && newEdges[x].GetLabel().Equals(newEdges[index].GetLabel()))
+										{
+											currentEdge = newEdges[x];
+											break;
+										}
+									}
+								}
+								if (found)
+								{
+									break;
+								}
 							}
 						}
 					}
 
 					Edge->Spline->SetLocationAtSplinePoint(Edge->Spline->GetNumberOfSplinePoints() - 1, endingLocation, ESplineCoordinateSpace::Local);
+					if (splineIndex == 1)
+					{
+						Edge->Spline->AddSplinePointAtIndex(ComputeMiddleSplinePointLocation(Edge->Spline->GetLocationAtSplinePoint(0, ESplineCoordinateSpace::Local), Edge->Spline->GetLocationAtSplinePoint(1, ESplineCoordinateSpace::Local)), 1, ESplineCoordinateSpace::Local);
+					}
 
 
 					float signScale;
@@ -1295,161 +1346,6 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 			}
 		}
 	}
-
-
-
-	//for (int32 index = 0; index < newEdges.Num(); index++)
-	//{
-	//	FString label = newEdges[index].GetLabel();
-	//	FString fromNode = newEdges[index].GetFromNode();
-	//	FString toNode = newEdges[index].GetToNode();
-	//	int32 significance = 0;
-	//	float duration = 0;
-	//	for (int32 j = 0; j < edgesArray.Num(); j++)
-	//	{
-	//		if (edgesArray[j]->AsObject()->GetStringField("label").Equals(label))
-	//		{
-	//			significance = edgesArray[j]->AsObject()->GetIntegerField("frequencySignificance");
-	//			duration = 0;
-	//			if (!edgesArray[j]->AsObject()->GetStringField("label").Contains("start ->"))
-	//			{
-	//				duration = edgesArray[j]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration");
-	//			}
-	//		}
-	//	}
-
-	//	UWorld* const World = GetWorld();
-	//	if (World)
-	//	{
-	//		ANodeActor* FromNode = nullptr;
-	//		ANodeActor* ToNode = nullptr;
-
-	//		FVector startingLocation;
-	//		FVector endingLocation;
-
-	//		for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
-	//		{
-	//			if (ActorItr->GetActorLabel().Equals(fromNode.TrimEnd()))
-	//			{
-	//				FromNode = *ActorItr;
-	//				startingLocation.X = ActorItr->GetActorLocation().X;
-	//				startingLocation.Y = ActorItr->GetActorLocation().Y;
-	//				startingLocation.Z = 0;
-	//			}
-
-	//			if (ActorItr->GetActorLabel().Equals(toNode.TrimEnd()))
-	//			{
-	//				ToNode = *ActorItr;
-	//				endingLocation.X = ActorItr->GetActorLocation().X;
-	//				endingLocation.Y = ActorItr->GetActorLocation().Y;
-	//				endingLocation.Z = 0;
-	//			}
-	//		}
-
-	//		if (FromNode && ToNode)
-	//		{
-	//			AEdgeActor* Edge = (AEdgeActor*)World->SpawnActor(EdgeActorBP, location);
-	//			Edge->SetFolderPath("Edges");
-	//			Edge->SetActorLabel(label);
-	//			Edge->FromNode = FromNode;
-	//			Edge->ToNode = ToNode;
-	//			Edge->Spline->SetLocationAtSplinePoint(0, startingLocation, ESplineCoordinateSpace::Local);
-	//			Edge->Spline->SetLocationAtSplinePoint(Edge->Spline->GetNumberOfSplinePoints() - 1, endingLocation, ESplineCoordinateSpace::Local);
-
-	//			Edge->Spline->AddSplinePointAtIndex(ComputeMiddleSplinePointLocation(Edge->Spline->GetLocationAtSplinePoint(0, ESplineCoordinateSpace::Local), Edge->Spline->GetLocationAtSplinePoint(1, ESplineCoordinateSpace::Local)), 1, ESplineCoordinateSpace::Local);
-
-	//			float signScale;
-	//			double timeScale;
-	//			switch (ScalingMethod)
-	//			{
-	//			case EScalingMethod::VE_Discrete:
-
-	//				if (significance < MinSign + (MaxSign - MinSign) / 5)
-	//				{
-	//					signScale = 0.2f;
-	//				}
-	//				else if (significance < MinSign + (MaxSign - MinSign) * 2 / 5)
-	//				{
-	//					signScale = 0.4f;
-	//				}
-	//				else if (significance < MinSign + (MaxSign - MinSign) * 3 / 5)
-	//				{
-	//					signScale = 0.6f;
-	//				}
-	//				else if (significance < MinSign + (MaxSign - MinSign) * 4 / 5)
-	//				{
-	//					signScale = 0.8f;
-	//				}
-	//				else if (significance <= MinSign + (MaxSign - MinSign))
-	//				{
-	//					signScale = 1;
-	//				}
-
-	//				break;
-	//			case EScalingMethod::VE_Continuous:
-
-	//				signScale = ((float(significance) - float(MinSign)) / float(MaxSign)) + 0.2f;
-	//				//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
-
-	//				break;
-	//			case EScalingMethod::VE_MinMax:
-
-	//				signScale = ((float(significance) - float(MinSign)) / (float(MaxSign) - float(MinSign))) + 0.2f;
-	//				//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
-
-	//				break;
-	//			default:
-	//				break;
-	//			}
-
-	//			switch (ScalingMethod)
-	//			{
-	//			case EScalingMethod::VE_Discrete:
-
-	//				if (duration < MinTime + (MaxTime - MinTime) / 5)
-	//				{
-	//					timeScale = 0.2f;
-	//				}
-	//				else if (duration < MinTime + (MaxTime - MinTime) * 2 / 5)
-	//				{
-	//					timeScale = 0.4f;
-	//				}
-	//				else if (duration < MinTime + (MaxTime - MinTime) * 3 / 5)
-	//				{
-	//					timeScale = 0.6f;
-	//				}
-	//				else if (duration < MinTime + (MaxTime - MinTime) * 4 / 5)
-	//				{
-	//					timeScale = 0.8f;
-	//				}
-	//				else if (duration <= MinTime + (MaxTime - MinTime))
-	//				{
-	//					timeScale = 1;
-	//				}
-
-	//				break;
-	//			case EScalingMethod::VE_Continuous:
-
-	//				timeScale = ((float(duration) - float(MinTime)) / float(MaxTime));
-
-	//				break;
-	//			case EScalingMethod::VE_MinMax:
-
-	//				timeScale = ((float(duration) - float(MinTime)) / (float(MaxTime) - float(MinTime)));
-
-	//				break;
-	//			default:
-	//				break;
-	//			}
-
-	//			Edge->Significance = signScale / 2;
-
-	//			Edge->TimeScale = timeScale;
-
-	//			Edge->SetEdgeProperties();
-	//		}
-	//	}
-	//}
 
 	retflag = false;
 }

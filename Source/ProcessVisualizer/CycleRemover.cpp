@@ -61,5 +61,11 @@ Graph CycleRemover::RemoveCycles()
 	{
 		DFSRemove(node);
 	}
-	return Graph(this->edges);
+	Graph g = Graph(this->edges);
+	/*for (GraphEdge ge : g.GetEdges())
+	{
+		GLog->Log("To invert?");
+		GLog->Log(ge.IsToInvert() ? TEXT("true") : TEXT("false"));
+	}*/
+	return g;
 }

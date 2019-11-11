@@ -11,12 +11,12 @@ GraphEdge::GraphEdge(FString from, FString to)
 	this->toInvert = false;
 }
 
-GraphEdge::GraphEdge(FString from, FString to, FString label)
+GraphEdge::GraphEdge(FString from, FString to, FString label, bool toInvert)
 {
 	this->fromNode = from;
 	this->toNode = to;
 	this->label = label;
-	this->toInvert = false;
+	this->toInvert = toInvert;
 }
 
 GraphEdge::GraphEdge(FString from, FString to, bool toInvert)

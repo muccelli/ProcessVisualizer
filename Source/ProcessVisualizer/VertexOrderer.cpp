@@ -19,14 +19,25 @@ TPair<TArray<TArray<FString>>, TArray<GraphEdge>> VertexOrderer::OrderVertices()
 	TPair<TArray<TArray<FString>>, TArray<GraphEdge>> virtualized = CreateVirtualVerticesAndEdges(this->layers, this->graph.GetEdges());
 	TArray<TArray<FString>> layersVirtualized = virtualized.Key;
 	TArray<GraphEdge> edges = virtualized.Value;
-	TArray<TArray<FString>> best = TArray<TArray<FString>>(layersVirtualized);
+
+	TArray<TArray<FString>> best = layersVirtualized;
 	for (int32 i = 0; i < 24; i++)
 	{
-		MedianHeuristic(layersVirtualized, edges, i);
-		Transpose(layersVirtualized, edges);
-		if (Crossing(layersVirtualized, edges) > Crossing(best, edges))
+		layersVirtualized = MedianHeuristic(layersVirtualized, edges, i);
+		int32 nCrossingVirtualized = Crossing(layersVirtualized, edges);
+		GLog->Log(FString::FromInt(nCrossingVirtualized));
+
+		layersVirtualized = Transpose(layersVirtualized, edges);
+		nCrossingVirtualized = Crossing(layersVirtualized, edges);
+		int32 nCrossingBest = Crossing(best, edges);
+		GLog->Log(FString::FromInt(nCrossingVirtualized) + " > " + FString::FromInt(nCrossingBest));
+		if (nCrossingBest > nCrossingVirtualized)
 		{
-			best = TArray<TArray<FString>>(layersVirtualized);
+			best = layersVirtualized;
+		}
+		else
+		{
+			layersVirtualized = best;
 		}
 	}
 	bestOrder.Key = best;
@@ -74,8 +85,8 @@ TPair<TArray<TArray<FString>>, TArray<GraphEdge>> VertexOrderer::CreateVirtualVe
 				{
 					edges.Remove(e);
 				}
-				edges.Add(GraphEdge(ge.GetFromNode(), virtualNode, ge.GetLabel()));
-				edges.Add(GraphEdge(virtualNode, ge.GetToNode(), ge.GetLabel()));
+				edges.Add(GraphEdge(ge.GetFromNode(), virtualNode, ge.GetLabel(), ge.IsToInvert()));
+				edges.Add(GraphEdge(virtualNode, ge.GetToNode(), ge.GetLabel(), ge.IsToInvert()));
 			}
 			/*for (GraphEdge ge : outgoingEdges)
 			{
@@ -106,7 +117,7 @@ int32 VertexOrderer::GetLayerNumber(FString node, TArray<TArray<FString>> lay)
 	return -1;
 }
 
-void VertexOrderer::MedianHeuristic(TArray<TArray<FString>> layersM, TArray<GraphEdge> edges, int32 i)
+TArray<TArray<FString>> VertexOrderer::MedianHeuristic(TArray<TArray<FString>> layersM, TArray<GraphEdge> edges, int32 i)
 {
 	if (i % 2 == 0)
 	{
@@ -127,14 +138,27 @@ void VertexOrderer::MedianHeuristic(TArray<TArray<FString>> layersM, TArray<Grap
 						}
 					}
 				}
-				median.Add(node, MedianValue(node, P));
+				//GLog->Log("|||||||");
+				int32 medianValue = MedianValue(P);
+				median.Add(node, medianValue);
+				//GLog->Log("medianvalue: " + FString::FromInt(medianValue));
 			}
-			SortRank(layersM[r], median);
+			/*GLog->Log("Rank " + FString::FromInt(r) + " BM");
+			for (FString fs : layersM[r])
+			{
+				GLog->Log(fs);
+			}*/
+			layersM[r] = SortRank(layersM[r], median);
+			/*GLog->Log("Rank " + FString::FromInt(r) + " AM");
+			for (FString fs : layersM[r])
+			{
+				GLog->Log(fs);
+			}*/
 		}
 	}
 	else
 	{
-		for (int32 r = layersM.Num() - 1; r < 0; r--)
+		for (int32 r = layersM.Num() - 2; r > 0; r--)
 		{
 			TMap<FString, int32> median = TMap<FString, int32>();
 			for (FString node : layersM[r])
@@ -151,26 +175,27 @@ void VertexOrderer::MedianHeuristic(TArray<TArray<FString>> layersM, TArray<Grap
 						}
 					}
 				}
-				median.Add(node, MedianValue(node, P));
+				median.Add(node, MedianValue(P));
 			}
 			SortRank(layersM[r], median);
 		}
 	}
+	return layersM;
 }
 
-void VertexOrderer::Transpose(TArray<TArray<FString>> layersT, TArray<GraphEdge> edgesT)
+TArray<TArray<FString>> VertexOrderer::Transpose(TArray<TArray<FString>> layersT, TArray<GraphEdge> edgesT)
 {
 	bool improved = true;
 	while (improved)
 	{
 		improved = false;
-		for (int r = 0; r < layersT.Num() - 1; r++)
+		for (int r = 0; r < layersT.Num() - 2; r++)
 		{
 			for (int i = 0; i < layersT[r].Num() - 1; i++)
 			{
 				FString v = layersT[r][i];
 				FString w = layersT[r][i + 1];
-				if (Crossing(layersT, edgesT, v, w, r) < Crossing(layersT, edgesT, w, v, r))
+				if (Crossing(layersT, edgesT, v, w, r) > Crossing(layersT, edgesT, w, v, r))
 				{
 					improved = true;
 					layersT[r].Swap(i, i + 1);
@@ -178,6 +203,7 @@ void VertexOrderer::Transpose(TArray<TArray<FString>> layersT, TArray<GraphEdge>
 			}
 		}
 	}
+	return layersT;
 }
 
 int32 VertexOrderer::Crossing(TArray<TArray<FString>> layersC, TArray<GraphEdge> edgesC)
@@ -189,9 +215,15 @@ int32 VertexOrderer::Crossing(TArray<TArray<FString>> layersC, TArray<GraphEdge>
 		{
 			for (int i = 0; i < layersC[r].Num() - 1; i++)
 			{
-				FString v = layersC[r][i];
-				FString w = layersC[r][i + 1];
-				numberCrossing += Crossing(layersC, edgesC, v, w, r);
+				for (int j = i + 1; j < layersC[r].Num(); j++)
+				{
+					if (i != j)
+					{
+						FString v = layersC[r][i];
+						FString w = layersC[r][j];
+						numberCrossing += Crossing(layersC, edgesC, v, w, r);
+					}
+				}
 			}
 		}
 	}
@@ -243,7 +275,7 @@ int32 VertexOrderer::Crossing(TArray<TArray<FString>> layersC, TArray<GraphEdge>
 	return numberCrossing;
 }
 
-int32 VertexOrderer::MedianValue(FString node, TArray<int32> P)
+int32 VertexOrderer::MedianValue(TArray<int32> P)
 {
 	int32 m = P.Num() / 2;
 	if (P.Num() == 0)
@@ -266,8 +298,12 @@ int32 VertexOrderer::MedianValue(FString node, TArray<int32> P)
 	}
 }
 
-void VertexOrderer::SortRank(TArray<FString> layer, TMap<FString, int32> median)
+TArray<FString> VertexOrderer::SortRank(TArray<FString> layer, TMap<FString, int32> median)
 {
+	/*for (FString fs : layer)
+	{
+		GLog->Log("BS" + fs);
+	}*/
 	TMap<FString, int32> positionToKeep = TMap<FString, int32>();
 	for (FString fs : layer)
 	{
@@ -277,9 +313,19 @@ void VertexOrderer::SortRank(TArray<FString> layer, TMap<FString, int32> median)
 			median.Remove(fs);
 		}
 	}
+	/*GLog->Log("BS");
+	for (TPair<FString, int32> p : median)
+	{
+		GLog->Log(p.Key + " " + FString::FromInt(p.Value));
+	}*/
 	median.ValueSort([](const int32 A, const int32 B) {
 		return A < B;
 	});
+	/*GLog->Log("AS");
+	for (TPair<FString, int32> p : median)
+	{
+		GLog->Log(p.Key + " " + FString::FromInt(p.Value));
+	}*/
 	layer.Empty();
 	for (TPair<FString, int32> p : median)
 	{
@@ -289,4 +335,9 @@ void VertexOrderer::SortRank(TArray<FString> layer, TMap<FString, int32> median)
 	{
 		layer.Insert(p.Key, p.Value);
 	}
+	/*for (FString fs : layer)
+	{
+		GLog->Log("AS" + fs);
+	}*/
+	return layer;
 }
