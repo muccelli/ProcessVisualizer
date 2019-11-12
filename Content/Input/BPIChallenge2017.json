@@ -186,10 +186,10 @@
               "frequencySignificance" : 20520,
               "durations" : [
                   {
-                      "TotalDuration" : 7.941648E+14,
-                      "MeanDuration" : 2.273589E+11,
-                      "MinDuration" : 1.9637E+08,
-                      "MaxDuration" : 2.513121E+12
+                      "TotalDuration" : 79423587480,
+                      "MeanDuration" : 22737929.4245634,
+                      "MinDuration" : 19637,
+                      "MaxDuration" : 251312118
                    }
                ],
               "attributes" : [
@@ -313,10 +313,10 @@
               "frequencySignificance" : 84334,
               "durations" : [
                   {
-                      "TotalDuration" : 1.67468E+11,
-                      "MeanDuration" : 8766120,
+                      "TotalDuration" : 16746796,
+                      "MeanDuration" : 876.612018425461,
                       "MinDuration" : 0,
-                      "MaxDuration" : 1.319878E+11
+                      "MaxDuration" : 13198777
                    }
                ],
               "attributes" : [
@@ -471,10 +471,10 @@
               "frequencySignificance" : 31509,
               "durations" : [
                   {
-                      "TotalDuration" : 2.243563E+13,
-                      "MeanDuration" : 7.120388E+08,
+                      "TotalDuration" : 2243602590,
+                      "MeanDuration" : 71205.1347234124,
                       "MinDuration" : 0,
-                      "MaxDuration" : 4.340387E+12
+                      "MaxDuration" : 434038785
                    }
                ],
               "attributes" : [
@@ -615,10 +615,10 @@
               "frequencySignificance" : 31509,
               "durations" : [
                   {
-                      "TotalDuration" : 1.38985E+16,
-                      "MeanDuration" : 4.410961E+11,
+                      "TotalDuration" : 1389894074950,
+                      "MeanDuration" : 44111018.2789044,
                       "MinDuration" : 0,
-                      "MaxDuration" : 2.598063E+13
+                      "MaxDuration" : 2598063183
                    }
                ],
               "attributes" : [
@@ -758,10 +758,10 @@
               "frequencySignificance" : 42995,
               "durations" : [
                   {
-                      "TotalDuration" : 1.240583E+16,
-                      "MeanDuration" : 2.885413E+11,
+                      "TotalDuration" : 1240613378012,
+                      "MeanDuration" : 28854829.1199442,
                       "MinDuration" : 0,
-                      "MaxDuration" : 9.588863E+13
+                      "MaxDuration" : 9592461962
                    }
                ],
               "attributes" : [
@@ -1100,10 +1100,10 @@
               "frequencySignificance" : 39707,
               "durations" : [
                   {
-                      "TotalDuration" : 1.512788E+14,
-                      "MeanDuration" : 3.809877E+09,
+                      "TotalDuration" : 15127884079,
+                      "MeanDuration" : 380987.837887526,
                       "MinDuration" : 0,
-                      "MaxDuration" : 1.277933E+13
+                      "MaxDuration" : 1277933507
                    }
                ],
               "attributes" : [
@@ -1244,10 +1244,10 @@
               "frequencySignificance" : 76525,
               "durations" : [
                   {
-                      "TotalDuration" : 4.998414E+13,
-                      "MeanDuration" : 1.461525E+11,
+                      "TotalDuration" : 4998413442,
+                      "MeanDuration" : 14615243.9824561,
                       "MinDuration" : 0,
-                      "MaxDuration" : 1.13145E+13
+                      "MaxDuration" : 1131450213
                    }
                ],
               "attributes" : [
@@ -1421,10 +1421,10 @@
               "frequencySignificance" : 31362,
               "durations" : [
                   {
-                      "TotalDuration" : 1.218588E+09,
-                      "MeanDuration" : 38855.55,
-                      "MinDuration" : 10000,
-                      "MaxDuration" : 3540000
+                      "TotalDuration" : 121881,
+                      "MeanDuration" : 3.88626363114597,
+                      "MinDuration" : 1,
+                      "MaxDuration" : 354
                    }
                ],
               "attributes" : [
@@ -1564,10 +1564,10 @@
               "frequencySignificance" : 94957,
               "durations" : [
                   {
-                      "TotalDuration" : 1.388443E+16,
-                      "MeanDuration" : 8.760997E+11,
+                      "TotalDuration" : 1388255126816,
+                      "MeanDuration" : 87598127.6385664,
                       "MinDuration" : 0,
-                      "MaxDuration" : 2.41731E+13
+                      "MaxDuration" : 2417310003
                    }
                ],
               "attributes" : [
@@ -1730,10 +1730,10 @@
               "frequencySignificance" : 38816,
               "durations" : [
                   {
-                      "TotalDuration" : 1.82794E+17,
-                      "MeanDuration" : 4.709243E+12,
-                      "MinDuration" : 10000,
-                      "MaxDuration" : 7.951723E+13
+                      "TotalDuration" : 18280121161331,
+                      "MeanDuration" : 470942940.059022,
+                      "MinDuration" : 1,
+                      "MaxDuration" : 7953683651
                    }
                ],
               "attributes" : [
@@ -1887,10 +1887,10 @@
               "frequencySignificance" : 23305,
               "durations" : [
                   {
-                      "TotalDuration" : 1.2329E+15,
-                      "MeanDuration" : 5.290282E+10,
+                      "TotalDuration" : 123275578167,
+                      "MeanDuration" : 5289662.22557391,
                       "MinDuration" : 0,
-                      "MaxDuration" : 2.012511E+13
+                      "MaxDuration" : 2012510863
                    }
                ],
               "attributes" : [
@@ -1964,10 +1964,10 @@
               "frequencySignificance" : 55197,
               "durations" : [
                   {
-                      "TotalDuration" : 1.66458E+15,
-                      "MeanDuration" : 5.95983E+11,
+                      "TotalDuration" : 166458143368,
+                      "MeanDuration" : 59598332.7490154,
                       "MinDuration" : 0,
-                      "MaxDuration" : 6.698211E+13
+                      "MaxDuration" : 6701811361
                    }
                ],
               "attributes" : [
@@ -2135,10 +2135,10 @@
               "frequencySignificance" : 23055,
               "durations" : [
                   {
-                      "TotalDuration" : 1.820302E+16,
-                      "MeanDuration" : 7.895475E+11,
-                      "MinDuration" : 10000,
-                      "MaxDuration" : 1.212392E+13
+                      "TotalDuration" : 1820436176267,
+                      "MeanDuration" : 78960580.1894166,
+                      "MinDuration" : 1,
+                      "MaxDuration" : 1212391912
                    }
                ],
               "attributes" : [
@@ -2266,10 +2266,10 @@
               "frequencySignificance" : 17228,
               "durations" : [
                   {
-                      "TotalDuration" : 9.559607E+15,
-                      "MeanDuration" : 5.548878E+11,
+                      "TotalDuration" : 955819931697,
+                      "MeanDuration" : 55480608.991003,
                       "MinDuration" : 0,
-                      "MaxDuration" : 3.954345E+13
+                      "MaxDuration" : 3954345533
                    }
                ],
               "attributes" : [
@@ -2406,10 +2406,10 @@
               "frequencySignificance" : 3753,
               "durations" : [
                   {
-                      "TotalDuration" : 5.415791E+15,
-                      "MeanDuration" : 1.443056E+12,
+                      "TotalDuration" : 541575722960,
+                      "MeanDuration" : 144304748.990141,
                       "MinDuration" : 0,
-                      "MaxDuration" : 7.619895E+13
+                      "MaxDuration" : 7619894942
                    }
                ],
               "attributes" : [
@@ -2662,10 +2662,10 @@
               "frequencySignificance" : 20898,
               "durations" : [
                   {
-                      "TotalDuration" : 8.287309E+14,
-                      "MeanDuration" : 3.965599E+10,
+                      "TotalDuration" : 82858678778,
+                      "MeanDuration" : 3964909.50224902,
                       "MinDuration" : 0,
-                      "MaxDuration" : 5.862768E+13
+                      "MaxDuration" : 5859168118
                    }
                ],
               "attributes" : [
@@ -2825,10 +2825,10 @@
               "frequencySignificance" : 10431,
               "durations" : [
                   {
-                      "TotalDuration" : 4.199466E+16,
-                      "MeanDuration" : 4.025948E+12,
+                      "TotalDuration" : 4199634896488,
+                      "MeanDuration" : 402610957.385486,
                       "MinDuration" : 0,
-                      "MaxDuration" : 1.204244E+14
+                      "MaxDuration" : 12046042699
                    }
                ],
               "attributes" : [
@@ -2963,10 +2963,10 @@
               "frequencySignificance" : 2026,
               "durations" : [
                   {
-                      "TotalDuration" : 1.629049E+13,
-                      "MeanDuration" : 8.040714E+09,
+                      "TotalDuration" : 1629048618,
+                      "MeanDuration" : 804071.381046397,
                       "MinDuration" : 0,
-                      "MaxDuration" : 7.686728E+12
+                      "MaxDuration" : 768672798
                    }
                ],
               "attributes" : [
@@ -3097,10 +3097,10 @@
               "frequencySignificance" : 658,
               "durations" : [
                   {
-                      "TotalDuration" : 4.248334E+14,
-                      "MeanDuration" : 1.506502E+12,
+                      "TotalDuration" : 42497749089,
+                      "MeanDuration" : 150701237.904255,
                       "MinDuration" : 0,
-                      "MaxDuration" : 1.71859E+13
+                      "MaxDuration" : 1718590301
                    }
                ],
               "attributes" : [
@@ -3282,10 +3282,10 @@
               "frequencySignificance" : 20423,
               "durations" : [
                   {
-                      "TotalDuration" : 6.936909E+10,
-                      "MeanDuration" : 3396616,
-                      "MinDuration" : 290000,
-                      "MaxDuration" : 2.5599E+08
+                      "TotalDuration" : 6936921,
+                      "MeanDuration" : 339.662194584537,
+                      "MinDuration" : 29,
+                      "MaxDuration" : 25599
                    }
                ]
           },
@@ -3296,10 +3296,10 @@
               "frequencySignificance" : 20423,
               "durations" : [
                   {
-                      "TotalDuration" : 7.167305E+10,
-                      "MeanDuration" : 3509428,
-                      "MinDuration" : 980000,
-                      "MaxDuration" : 5.9749E+08
+                      "TotalDuration" : 7167272,
+                      "MeanDuration" : 350.941193752142,
+                      "MinDuration" : 98,
+                      "MaxDuration" : 59749
                    }
                ]
           },
@@ -3310,10 +3310,10 @@
               "frequencySignificance" : 20423,
               "durations" : [
                   {
-                      "TotalDuration" : 2.514237E+09,
-                      "MeanDuration" : 123108.1,
-                      "MinDuration" : 40000,
-                      "MaxDuration" : 2.683E+07
+                      "TotalDuration" : 251449,
+                      "MeanDuration" : 12.3120501395485,
+                      "MinDuration" : 4,
+                      "MaxDuration" : 2683
                    }
                ]
           },
@@ -3324,10 +3324,10 @@
               "frequencySignificance" : 22249,
               "durations" : [
                   {
-                      "TotalDuration" : 7.234047E+15,
-                      "MeanDuration" : 3.251403E+11,
-                      "MinDuration" : 6.222E+07,
-                      "MaxDuration" : 2.585335E+13
+                      "TotalDuration" : 723458871185,
+                      "MeanDuration" : 32516466.8607578,
+                      "MinDuration" : 6222,
+                      "MaxDuration" : 2585335151
                    }
                ]
           },
@@ -3338,10 +3338,10 @@
               "frequencySignificance" : 29966,
               "durations" : [
                   {
-                      "TotalDuration" : 2.297641E+14,
-                      "MeanDuration" : 7.667492E+09,
-                      "MinDuration" : 1.2E+08,
-                      "MaxDuration" : 2.327401E+13
+                      "TotalDuration" : 22987162405,
+                      "MeanDuration" : 767108.136054195,
+                      "MinDuration" : 12000,
+                      "MaxDuration" : 2331001565
                    }
                ]
           },
@@ -3352,10 +3352,10 @@
               "frequencySignificance" : 42995,
               "durations" : [
                   {
-                      "TotalDuration" : 4.569314E+11,
-                      "MeanDuration" : 1.062755E+07,
-                      "MinDuration" : 4630000,
-                      "MaxDuration" : 5.0942E+08
+                      "TotalDuration" : 45692908,
+                      "MeanDuration" : 1062.74934294685,
+                      "MinDuration" : 463,
+                      "MaxDuration" : 50942
                    }
                ]
           },
@@ -3366,10 +3366,10 @@
               "frequencySignificance" : 35604,
               "durations" : [
                   {
-                      "TotalDuration" : 1.507651E+14,
-                      "MeanDuration" : 4.2345E+09,
-                      "MinDuration" : 5.833E+07,
-                      "MaxDuration" : 1.312222E+13
+                      "TotalDuration" : 15080155578,
+                      "MeanDuration" : 423552.285642063,
+                      "MinDuration" : 5833,
+                      "MaxDuration" : 1312221839
                    }
                ]
           },
@@ -3380,10 +3380,10 @@
               "frequencySignificance" : 30912,
               "durations" : [
                   {
-                      "TotalDuration" : 7.301477E+09,
-                      "MeanDuration" : 236202,
-                      "MinDuration" : 100000,
-                      "MaxDuration" : 6.231E+07
+                      "TotalDuration" : 730230,
+                      "MeanDuration" : 23.6228649068323,
+                      "MinDuration" : 10,
+                      "MaxDuration" : 6231
                    }
                ]
           },
@@ -3394,10 +3394,10 @@
               "frequencySignificance" : 31362,
               "durations" : [
                   {
-                      "TotalDuration" : 3.768285E+09,
-                      "MeanDuration" : 120154.5,
-                      "MinDuration" : 40000,
-                      "MaxDuration" : 1.098E+07
+                      "TotalDuration" : 376912,
+                      "MeanDuration" : 12.018111089854,
+                      "MinDuration" : 4,
+                      "MaxDuration" : 1098
                    }
                ]
           },
@@ -3408,10 +3408,10 @@
               "frequencySignificance" : 31362,
               "durations" : [
                   {
-                      "TotalDuration" : 1.100084E+09,
-                      "MeanDuration" : 35076.98,
-                      "MinDuration" : 10000,
-                      "MaxDuration" : 2870000
+                      "TotalDuration" : 110030,
+                      "MeanDuration" : 3.50838594477393,
+                      "MinDuration" : 1,
+                      "MaxDuration" : 287
                    }
                ]
           },
@@ -3422,10 +3422,10 @@
               "frequencySignificance" : 30396,
               "durations" : [
                   {
-                      "TotalDuration" : 1.484741E+14,
-                      "MeanDuration" : 4.884659E+09,
-                      "MinDuration" : 1.546E+07,
-                      "MaxDuration" : 6.884123E+11
+                      "TotalDuration" : 14847358047,
+                      "MeanDuration" : 488464.207362811,
+                      "MinDuration" : 1546,
+                      "MaxDuration" : 68841231
                    }
                ]
           },
@@ -3436,10 +3436,10 @@
               "frequencySignificance" : 21880,
               "durations" : [
                   {
-                      "TotalDuration" : 3.129134E+09,
-                      "MeanDuration" : 143013.4,
-                      "MinDuration" : 40000,
-                      "MaxDuration" : 1.274E+07
+                      "TotalDuration" : 312971,
+                      "MeanDuration" : 14.3039762340037,
+                      "MinDuration" : 4,
+                      "MaxDuration" : 1274
                    }
                ]
           },
@@ -3450,10 +3450,10 @@
               "frequencySignificance" : 38816,
               "durations" : [
                   {
-                      "TotalDuration" : 2.128591E+11,
-                      "MeanDuration" : 5483799,
-                      "MinDuration" : 480000,
-                      "MaxDuration" : 4.402E+08
+                      "TotalDuration" : 21285737,
+                      "MeanDuration" : 548.375334913438,
+                      "MinDuration" : 48,
+                      "MaxDuration" : 44020
                    }
                ]
           },
@@ -3464,10 +3464,10 @@
               "frequencySignificance" : 20673,
               "durations" : [
                   {
-                      "TotalDuration" : 1.265835E+13,
-                      "MeanDuration" : 6.12313E+08,
-                      "MinDuration" : 1.154E+07,
-                      "MaxDuration" : 3.749925E+10
+                      "TotalDuration" : 1265837672,
+                      "MeanDuration" : 61231.4454602622,
+                      "MinDuration" : 1154,
+                      "MaxDuration" : 3749925
                    }
                ]
           },
@@ -3478,10 +3478,10 @@
               "frequencySignificance" : 21235,
               "durations" : [
                   {
-                      "TotalDuration" : 4.102094E+14,
-                      "MeanDuration" : 1.931761E+10,
-                      "MinDuration" : 1.525E+07,
-                      "MaxDuration" : 6.889031E+12
+                      "TotalDuration" : 41017350224,
+                      "MeanDuration" : 1931591.72234518,
+                      "MinDuration" : 1525,
+                      "MaxDuration" : 688903091
                    }
                ]
           },
@@ -3492,10 +3492,10 @@
               "frequencySignificance" : 23055,
               "durations" : [
                   {
-                      "TotalDuration" : 7.199428E+08,
-                      "MeanDuration" : 31227.19,
-                      "MinDuration" : 10000,
-                      "MaxDuration" : 2850000
+                      "TotalDuration" : 72009,
+                      "MeanDuration" : 3.12335718932986,
+                      "MinDuration" : 1,
+                      "MaxDuration" : 285
                    }
                ]
           },
@@ -3506,10 +3506,10 @@
               "frequencySignificance" : 22277,
               "durations" : [
                   {
-                      "TotalDuration" : 3.593482E+13,
-                      "MeanDuration" : 1.613091E+09,
-                      "MinDuration" : 1.426E+07,
-                      "MaxDuration" : 4.869921E+11
+                      "TotalDuration" : 3593486061,
+                      "MeanDuration" : 161309.245454954,
+                      "MinDuration" : 1426,
+                      "MaxDuration" : 48699206
                    }
                ]
           },
@@ -3520,10 +3520,10 @@
               "frequencySignificance" : 11738,
               "durations" : [
                   {
-                      "TotalDuration" : 7.483153E+15,
-                      "MeanDuration" : 6.375152E+11,
-                      "MinDuration" : 4.71E+07,
-                      "MaxDuration" : 1.213701E+13
+                      "TotalDuration" : 748397889192,
+                      "MeanDuration" : 63758552.4954847,
+                      "MinDuration" : 4710,
+                      "MaxDuration" : 1213701174
                    }
                ]
           },
@@ -3534,10 +3534,10 @@
               "frequencySignificance" : 17228,
               "durations" : [
                   {
-                      "TotalDuration" : 1.459294E+09,
-                      "MeanDuration" : 84704.77,
-                      "MinDuration" : 20000,
-                      "MaxDuration" : 2.258E+07
+                      "TotalDuration" : 145950,
+                      "MeanDuration" : 8.47167401903877,
+                      "MinDuration" : 2,
+                      "MaxDuration" : 2258
                    }
                ]
           },
@@ -3548,10 +3548,10 @@
               "frequencySignificance" : 12291,
               "durations" : [
                   {
-                      "TotalDuration" : 6.41455E+08,
-                      "MeanDuration" : 52189,
-                      "MinDuration" : 10000,
-                      "MaxDuration" : 5070000
+                      "TotalDuration" : 64145,
+                      "MeanDuration" : 5.21885932796355,
+                      "MinDuration" : 1,
+                      "MaxDuration" : 507
                    }
                ]
           },
@@ -3562,10 +3562,10 @@
               "frequencySignificance" : 3254,
               "durations" : [
                   {
-                      "TotalDuration" : 2.899255E+15,
-                      "MeanDuration" : 8.909817E+11,
-                      "MinDuration" : 1.536E+08,
-                      "MaxDuration" : 1.037079E+13
+                      "TotalDuration" : 289950796953,
+                      "MeanDuration" : 89105960.9566687,
+                      "MinDuration" : 15360,
+                      "MaxDuration" : 1037079015
                    }
                ]
           },
@@ -3576,10 +3576,10 @@
               "frequencySignificance" : 3720,
               "durations" : [
                   {
-                      "TotalDuration" : 1.712989E+09,
-                      "MeanDuration" : 460480.9,
-                      "MinDuration" : 160000,
-                      "MaxDuration" : 3.449E+07
+                      "TotalDuration" : 171298,
+                      "MeanDuration" : 46.0478494623656,
+                      "MinDuration" : 16,
+                      "MaxDuration" : 3449
                    }
                ]
           },
@@ -3590,10 +3590,10 @@
               "frequencySignificance" : 3289,
               "durations" : [
                   {
-                      "TotalDuration" : 5.497179E+08,
-                      "MeanDuration" : 167138.3,
-                      "MinDuration" : 70000,
-                      "MaxDuration" : 7790000
+                      "TotalDuration" : 54972,
+                      "MeanDuration" : 16.7138948008513,
+                      "MinDuration" : 7,
+                      "MaxDuration" : 779
                    }
                ]
           },
@@ -3604,10 +3604,10 @@
               "frequencySignificance" : 8539,
               "durations" : [
                   {
-                      "TotalDuration" : 1.706397E+17,
-                      "MeanDuration" : 1.998357E+13,
-                      "MinDuration" : 1.0964E+08,
-                      "MaxDuration" : 2.674651E+13
+                      "TotalDuration" : 17063935459086,
+                      "MeanDuration" : 1998352905.38541,
+                      "MinDuration" : 10964,
+                      "MaxDuration" : 2678250781
                    }
                ]
           },
@@ -3618,10 +3618,10 @@
               "frequencySignificance" : 10270,
               "durations" : [
                   {
-                      "TotalDuration" : 4.367553E+09,
-                      "MeanDuration" : 425272.9,
-                      "MinDuration" : 160000,
-                      "MaxDuration" : 4.627E+07
+                      "TotalDuration" : 436760,
+                      "MeanDuration" : 42.5277507302824,
+                      "MinDuration" : 16,
+                      "MaxDuration" : 4627
                    }
                ]
           },
@@ -3632,10 +3632,10 @@
               "frequencySignificance" : 9659,
               "durations" : [
                   {
-                      "TotalDuration" : 1.259417E+15,
-                      "MeanDuration" : 1.303879E+11,
-                      "MinDuration" : 60000,
-                      "MaxDuration" : 2.486513E+13
+                      "TotalDuration" : 125952676072,
+                      "MeanDuration" : 13039929.19267,
+                      "MinDuration" : 6,
+                      "MaxDuration" : 2490112633
                    }
                ]
           },
@@ -3646,10 +3646,10 @@
               "frequencySignificance" : 9231,
               "durations" : [
                   {
-                      "TotalDuration" : 1.696673E+15,
-                      "MeanDuration" : 1.838016E+11,
-                      "MinDuration" : 2.1786E+08,
-                      "MaxDuration" : 1.756299E+13
+                      "TotalDuration" : 169684894879,
+                      "MeanDuration" : 18382070.7267902,
+                      "MinDuration" : 21786,
+                      "MaxDuration" : 1756299104
                    }
                ]
           },
@@ -3660,10 +3660,10 @@
               "frequencySignificance" : 1895,
               "durations" : [
                   {
-                      "TotalDuration" : 1.492838E+13,
-                      "MeanDuration" : 7.877774E+09,
-                      "MinDuration" : 6.509E+07,
-                      "MaxDuration" : 6.006012E+12
+                      "TotalDuration" : 1492838571,
+                      "MeanDuration" : 787777.610026385,
+                      "MinDuration" : 6509,
+                      "MaxDuration" : 600601174
                    }
                ]
           },
@@ -3674,10 +3674,10 @@
               "frequencySignificance" : 3389,
               "durations" : [
                   {
-                      "TotalDuration" : 3.744122E+08,
-                      "MeanDuration" : 110478.7,
-                      "MinDuration" : 10000,
-                      "MaxDuration" : 1.614E+07
+                      "TotalDuration" : 37441,
+                      "MeanDuration" : 11.0478017114193,
+                      "MinDuration" : 1,
+                      "MaxDuration" : 1614
                    }
                ]
           },
@@ -3688,10 +3688,10 @@
               "frequencySignificance" : 868,
               "durations" : [
                   {
-                      "TotalDuration" : 8.791713E+14,
-                      "MeanDuration" : 1.01287E+12,
-                      "MinDuration" : 2.692E+07,
-                      "MaxDuration" : 1.825855E+13
+                      "TotalDuration" : 87913599352,
+                      "MeanDuration" : 101282948.562212,
+                      "MinDuration" : 2692,
+                      "MaxDuration" : 1825854518
                    }
                ]
           },
@@ -3702,10 +3702,10 @@
               "frequencySignificance" : 102,
               "durations" : [
                   {
-                      "TotalDuration" : 1.059478E+13,
-                      "MeanDuration" : 1.038704E+11,
-                      "MinDuration" : 7.207E+07,
-                      "MaxDuration" : 5.556042E+12
+                      "TotalDuration" : 1059477693,
+                      "MeanDuration" : 10387036.2058824,
+                      "MinDuration" : 7207,
+                      "MaxDuration" : 555604194
                    }
                ]
           },
@@ -3716,10 +3716,10 @@
               "frequencySignificance" : 102,
               "durations" : [
                   {
-                      "TotalDuration" : 1.923E+07,
-                      "MeanDuration" : 188529.4,
-                      "MinDuration" : 70000,
-                      "MaxDuration" : 2070000
+                      "TotalDuration" : 1923,
+                      "MeanDuration" : 18.8529411764706,
+                      "MinDuration" : 7,
+                      "MaxDuration" : 207
                    }
                ]
           },
@@ -3730,10 +3730,10 @@
               "frequencySignificance" : 1,
               "durations" : [
                   {
-                      "TotalDuration" : 1.152941E+14,
-                      "MeanDuration" : 1.152941E+14,
-                      "MinDuration" : 1.152941E+14,
-                      "MaxDuration" : 1.152941E+14
+                      "TotalDuration" : 11525807178,
+                      "MeanDuration" : 11525807178,
+                      "MinDuration" : 11525807178,
+                      "MaxDuration" : 11525807178
                    }
                ]
           },
@@ -3744,10 +3744,10 @@
               "frequencySignificance" : 45,
               "durations" : [
                   {
-                      "TotalDuration" : 5.125171E+10,
-                      "MeanDuration" : 1.138927E+09,
-                      "MinDuration" : 1.199E+08,
-                      "MaxDuration" : 1.186111E+10
+                      "TotalDuration" : 5125171,
+                      "MeanDuration" : 113892.688888889,
+                      "MinDuration" : 11990,
+                      "MaxDuration" : 1186111
                    }
                ]
           },
@@ -3758,10 +3758,10 @@
               "frequencySignificance" : 3,
               "durations" : [
                   {
-                      "TotalDuration" : 1.12887E+12,
-                      "MeanDuration" : 3.762899E+11,
-                      "MinDuration" : 1.1166E+09,
-                      "MaxDuration" : 1.117371E+12
+                      "TotalDuration" : 112886969,
+                      "MeanDuration" : 37628989.6666667,
+                      "MinDuration" : 111660,
+                      "MaxDuration" : 111737142
                    }
                ]
           }

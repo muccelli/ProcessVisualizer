@@ -1038,7 +1038,11 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 						break;
 					}
 
+					Node->Significance = significance;
+
 					Node->SignificanceScale = scale;
+
+					Node->Duration = duration;
 
 					if (MinTime == 0 && MaxTime == 0)
 					{

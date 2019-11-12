@@ -7398,10 +7398,10 @@
               "frequencySignificance" : 9498,
               "durations" : [
                   {
-                      "TotalDuration" : 3.982473E+15,
-                      "MeanDuration" : 4.19296E+11,
-                      "MinDuration" : 1E+07,
-                      "MaxDuration" : 2.710349E+14
+                      "TotalDuration" : 398199108000,
+                      "MeanDuration" : 41924521.7940619,
+                      "MinDuration" : 1000,
+                      "MaxDuration" : 27107088000
                    }
                ]
           },
@@ -7412,10 +7412,10 @@
               "frequencySignificance" : 10729,
               "durations" : [
                   {
-                      "TotalDuration" : 1.058604E+16,
-                      "MeanDuration" : 9.866757E+11,
-                      "MinDuration" : 1E+07,
-                      "MaxDuration" : 2.461866E+14
+                      "TotalDuration" : 1058432285000,
+                      "MeanDuration" : 98651531.8296207,
+                      "MinDuration" : 1000,
+                      "MaxDuration" : 24618655000
                    }
                ]
           },
@@ -7426,10 +7426,10 @@
               "frequencySignificance" : 8084,
               "durations" : [
                   {
-                      "TotalDuration" : 1.423391E+16,
-                      "MeanDuration" : 1.76075E+12,
-                      "MinDuration" : 1E+07,
-                      "MaxDuration" : 2.253827E+14
+                      "TotalDuration" : 1423190936000,
+                      "MeanDuration" : 176050338.446314,
+                      "MinDuration" : 1000,
+                      "MaxDuration" : 22538272000
                    }
                ]
           },
@@ -7440,10 +7440,10 @@
               "frequencySignificance" : 5,
               "durations" : [
                   {
-                      "TotalDuration" : 1.02287E+13,
-                      "MeanDuration" : 2.04574E+12,
-                      "MinDuration" : 1.79E+09,
-                      "MaxDuration" : 5.14983E+12
+                      "TotalDuration" : 1022870000,
+                      "MeanDuration" : 204574000,
+                      "MinDuration" : 179000,
+                      "MaxDuration" : 514983000
                    }
                ]
           },
@@ -7454,10 +7454,10 @@
               "frequencySignificance" : 5,
               "durations" : [
                   {
-                      "TotalDuration" : 3.352E+10,
-                      "MeanDuration" : 6.704E+09,
-                      "MinDuration" : 4.7E+08,
-                      "MaxDuration" : 2.208E+10
+                      "TotalDuration" : 3352000,
+                      "MeanDuration" : 670400,
+                      "MinDuration" : 47000,
+                      "MaxDuration" : 2208000
                    }
                ]
           }

@@ -35,7 +35,13 @@ public:
 	FText WidgetText;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Significance;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float SignificanceScale;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Duration;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float TimeScale;

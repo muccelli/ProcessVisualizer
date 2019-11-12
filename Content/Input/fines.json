@@ -296,10 +296,10 @@
               "frequencySignificance" : 43,
               "durations" : [
                   {
-                      "TotalDuration" : 50000,
-                      "MeanDuration" : 1162.791,
+                      "TotalDuration" : 5,
+                      "MeanDuration" : 0.116279069767442,
                       "MinDuration" : 0,
-                      "MaxDuration" : 40000
+                      "MaxDuration" : 4
                    }
                ]
           },
@@ -310,10 +310,10 @@
               "frequencySignificance" : 39,
               "durations" : [
                   {
-                      "TotalDuration" : 40000,
-                      "MeanDuration" : 1025.641,
+                      "TotalDuration" : 4,
+                      "MeanDuration" : 0.102564102564103,
                       "MinDuration" : 0,
-                      "MaxDuration" : 10000
+                      "MaxDuration" : 1
                    }
                ]
           },
@@ -352,10 +352,10 @@
               "frequencySignificance" : 8,
               "durations" : [
                   {
-                      "TotalDuration" : 10000,
-                      "MeanDuration" : 1250,
+                      "TotalDuration" : 1,
+                      "MeanDuration" : 0.125,
                       "MinDuration" : 0,
-                      "MaxDuration" : 10000
+                      "MaxDuration" : 1
                    }
                ]
           },
@@ -380,10 +380,10 @@
               "frequencySignificance" : 9,
               "durations" : [
                   {
-                      "TotalDuration" : 10000,
-                      "MeanDuration" : 1111.111,
+                      "TotalDuration" : 1,
+                      "MeanDuration" : 0.111111111111111,
                       "MinDuration" : 0,
-                      "MaxDuration" : 10000
+                      "MaxDuration" : 1
                    }
                ]
           },
@@ -422,10 +422,10 @@
               "frequencySignificance" : 10,
               "durations" : [
                   {
-                      "TotalDuration" : 20000,
-                      "MeanDuration" : 2000,
+                      "TotalDuration" : 2,
+                      "MeanDuration" : 0.2,
                       "MinDuration" : 0,
-                      "MaxDuration" : 10000
+                      "MaxDuration" : 1
                    }
                ]
           },
@@ -436,10 +436,10 @@
               "frequencySignificance" : 24,
               "durations" : [
                   {
-                      "TotalDuration" : 10000,
-                      "MeanDuration" : 416.6667,
+                      "TotalDuration" : 1,
+                      "MeanDuration" : 0.0416666666666667,
                       "MinDuration" : 0,
-                      "MaxDuration" : 10000
+                      "MaxDuration" : 1
                    }
                ]
           },
@@ -506,10 +506,10 @@
               "frequencySignificance" : 4,
               "durations" : [
                   {
-                      "TotalDuration" : 30000,
-                      "MeanDuration" : 7500,
+                      "TotalDuration" : 3,
+                      "MeanDuration" : 0.75,
                       "MinDuration" : 0,
-                      "MaxDuration" : 10000
+                      "MaxDuration" : 1
                    }
                ]
           },
@@ -548,10 +548,10 @@
               "frequencySignificance" : 3,
               "durations" : [
                   {
-                      "TotalDuration" : 40000,
-                      "MeanDuration" : 13333.33,
+                      "TotalDuration" : 4,
+                      "MeanDuration" : 1.33333333333333,
                       "MinDuration" : 0,
-                      "MaxDuration" : 40000
+                      "MaxDuration" : 4
                    }
                ]
           },
