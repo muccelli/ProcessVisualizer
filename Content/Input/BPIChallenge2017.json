@@ -773,8 +773,8 @@
                       ],
                       "FirstWithdrawalAmount" : [
                           {
-                          "Total" : "4521313488",
-                          "Arithmetic_Mean" : "105159,053099198"
+                          "Total" : "360914604,419999",
+                          "Arithmetic_Mean" : "8394,3389794162"
                           }
                       ],
                       "NumberOfTerms" : [
@@ -915,8 +915,8 @@
                       ],
                       "MonthlyCost" : [
                           {
-                          "Total" : "787070294",
-                          "Arithmetic_Mean" : "18306,0889405745"
+                          "Total" : "12098935,2500006",
+                          "Arithmetic_Mean" : "281,403308524262"
                           }
                       ],
                       "EventOrigin" : [
@@ -938,8 +938,8 @@
                       ],
                       "OfferedAmount" : [
                           {
-                          "Total" : "7962914891",
-                          "Arithmetic_Mean" : "185205,602767764"
+                          "Total" : "795997388,81",
+                          "Arithmetic_Mean" : "18513,7199397604"
                           }
                       ]
                       }

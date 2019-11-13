@@ -1,0 +1,552 @@
+{
+  "FuzzyModel" : {
+      "nodes": [
+           {
+              "label" : "start",
+              "frequencySignificance" : 150370,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "Create Fine",
+              "frequencySignificance" : 150370,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "amount" : [
+                          {
+                          "Total" : "6723851,63999683",
+                          "Arithmetic_Mean" : "44,7153796634756"
+                          }
+                      ],
+                      "org:resource" : [
+                          {
+                          "Total" : "66952048",
+                          "Arithmetic_Mean" : "445,248706523908"
+                          }
+                      ],
+                      "dismissal" : [
+                          {
+                          "NIL" : "149866",
+                          "N" : "28",
+                          "K" : "3",
+                          "5" : "10",
+                          "3" : "3",
+                          "A" : "213",
+                          "I" : "29",
+                          "D" : "34",
+                          "T" : "111",
+                          "E" : "7",
+                          "@" : "9",
+                          "M" : "5",
+                          "Q" : "1",
+                          "F" : "4",
+                          "V" : "10",
+                          "U" : "11",
+                          "C" : "8",
+                          "B" : "2",
+                          "$" : "1",
+                          "Z" : "6",
+                          "J" : "1",
+                          "R" : "4",
+                          "2" : "2",
+                          "4" : "2"
+                          }
+                      ],
+                      "vehicleClass" : [
+                          {
+                          "A" : "146712",
+                          "C" : "2456",
+                          "M" : "1198",
+                          "R" : "4"
+                          }
+                      ],
+                      "totalPaymentAmount" : [
+                          {
+                          "Total" : "0",
+                          "Arithmetic_Mean" : "0"
+                          }
+                      ],
+                      "article" : [
+                          {
+                          "Total" : "17028900",
+                          "Arithmetic_Mean" : "113,246658243001"
+                          }
+                      ],
+                      "points" : [
+                          {
+                          "Total" : "11861",
+                          "Arithmetic_Mean" : "0,0788787657112456"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Send Fine",
+              "frequencySignificance" : 103987,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "expense" : [
+                          {
+                          "Total" : "1242539,03999964",
+                          "Arithmetic_Mean" : "11,9489843922763"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Insert Fine Notification",
+              "frequencySignificance" : 79860,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "notificationType" : [
+                          {
+                          "P" : "79726",
+                          "C" : "134"
+                          }
+                      ],
+                      "lastSent" : [
+                          {
+                          "P" : "46476",
+                          "N" : "30313",
+                          "C" : "1440"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Add penalty",
+              "frequencySignificance" : 79860,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "amount" : [
+                          {
+                          "Total" : "7937576,02999753",
+                          "Arithmetic_Mean" : "99,3936392436456"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Send for Credit Collection",
+              "frequencySignificance" : 59013,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "Payment",
+              "frequencySignificance" : 77601,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "totalPaymentAmount" : [
+                          {
+                          "Total" : "4061440,94999999",
+                          "Arithmetic_Mean" : "52,3374821200756"
+                          }
+                      ],
+                      "paymentAmount" : [
+                          {
+                          "Total" : "3601464,52999973",
+                          "Arithmetic_Mean" : "46,4100273192321"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Insert Date Appeal to Prefecture",
+              "frequencySignificance" : 4188,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "Send Appeal to Prefecture",
+              "frequencySignificance" : 4141,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "dismissal" : [
+                          {
+                          "#" : "1980",
+                          "NIL" : "2156",
+                          "D" : "2",
+                          "C" : "2",
+                          "$" : "1"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Receive Result Appeal from Prefecture",
+              "frequencySignificance" : 999,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "Notify Result Appeal to Offender",
+              "frequencySignificance" : 896,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "Appeal to Judge",
+              "frequencySignificance" : 555,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:resource" : [
+                          {
+                          "Total" : "0",
+                          "Arithmetic_Mean" : "0"
+                          }
+                      ],
+                      "dismissal" : [
+                          {
+                          "G" : "93",
+                          "NIL" : "462"
+                          }
+                      ],
+                      "matricola" : [
+                          {
+                          "Total" : "0",
+                          "Arithmetic_Mean" : "0"
+                          }
+                      ]
+                      }
+                   ]
+          }
+      ],
+      "edges": [
+           {
+              "label" : "start -> Create Fine",
+              "fromNode" : "start",
+              "toNode" : "Create Fine",
+              "frequencySignificance" : 150370
+          },
+           {
+              "label" : "Create Fine -> Send Fine",
+              "fromNode" : "Create Fine",
+              "toNode" : "Send Fine",
+              "frequencySignificance" : 103392,
+              "durations" : [
+                  {
+                      "TotalDuration" : 782600551200000,
+                      "MeanDuration" : 7569256337.04735,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 63244800000
+                   }
+               ]
+          },
+           {
+              "label" : "Send Fine -> Insert Fine Notification",
+              "fromNode" : "Send Fine",
+              "toNode" : "Insert Fine Notification",
+              "frequencySignificance" : 79757,
+              "durations" : [
+                  {
+                      "TotalDuration" : 119778969600000,
+                      "MeanDuration" : 1501798833.95815,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 37324800000
+                   }
+               ]
+          },
+           {
+              "label" : "Insert Fine Notification -> Add penalty",
+              "fromNode" : "Insert Fine Notification",
+              "toNode" : "Add penalty",
+              "frequencySignificance" : 72334,
+              "durations" : [
+                  {
+                      "TotalDuration" : 375016129200000,
+                      "MeanDuration" : 5184506998.09218,
+                      "MinDuration" : 5180400000,
+                      "MaxDuration" : 5187600000
+                   }
+               ]
+          },
+           {
+              "label" : "Add penalty -> Send for Credit Collection",
+              "fromNode" : "Add penalty",
+              "toNode" : "Send for Credit Collection",
+              "frequencySignificance" : 57182,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2.605534452E+15,
+                      "MeanDuration" : 45565640446.2943,
+                      "MinDuration" : 18061200000,
+                      "MaxDuration" : 287794800000
+                   }
+               ]
+          },
+           {
+              "label" : "Insert Fine Notification -> Insert Date Appeal to Prefecture",
+              "fromNode" : "Insert Fine Notification",
+              "toNode" : "Insert Date Appeal to Prefecture",
+              "frequencySignificance" : 3327,
+              "durations" : [
+                  {
+                      "TotalDuration" : 9534042000000,
+                      "MeanDuration" : 2865657348.96303,
+                      "MinDuration" : 86400000,
+                      "MaxDuration" : 5101200000
+                   }
+               ]
+          },
+           {
+              "label" : "Insert Date Appeal to Prefecture -> Add penalty",
+              "fromNode" : "Insert Date Appeal to Prefecture",
+              "toNode" : "Add penalty",
+              "frequencySignificance" : 2933,
+              "durations" : [
+                  {
+                      "TotalDuration" : 6117026400000,
+                      "MeanDuration" : 2085586907.60314,
+                      "MinDuration" : 86400000,
+                      "MaxDuration" : 5101200000
+                   }
+               ]
+          },
+           {
+              "label" : "Add penalty -> Send Appeal to Prefecture",
+              "fromNode" : "Add penalty",
+              "toNode" : "Send Appeal to Prefecture",
+              "frequencySignificance" : 2915,
+              "durations" : [
+                  {
+                      "TotalDuration" : 57846106800000,
+                      "MeanDuration" : 19844290497.4271,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 364698000000
+                   }
+               ]
+          },
+           {
+              "label" : "Create Fine -> Payment",
+              "fromNode" : "Create Fine",
+              "toNode" : "Payment",
+              "frequencySignificance" : 46952,
+              "durations" : [
+                  {
+                      "TotalDuration" : 42522919200000,
+                      "MeanDuration" : 905667899.131027,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 83113200000
+                   }
+               ]
+          },
+           {
+              "label" : "Payment -> Send for Credit Collection",
+              "fromNode" : "Payment",
+              "toNode" : "Send for Credit Collection",
+              "frequencySignificance" : 1538,
+              "durations" : [
+                  {
+                      "TotalDuration" : 59038992000000,
+                      "MeanDuration" : 38386860858.2575,
+                      "MinDuration" : 2937600000,
+                      "MaxDuration" : 113792400000
+                   }
+               ]
+          },
+           {
+              "label" : "Send Appeal to Prefecture -> Receive Result Appeal from Prefecture",
+              "fromNode" : "Send Appeal to Prefecture",
+              "toNode" : "Receive Result Appeal from Prefecture",
+              "frequencySignificance" : 606,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2778022800000,
+                      "MeanDuration" : 4584196039.60396,
+                      "MinDuration" : 86400000,
+                      "MaxDuration" : 19436400000
+                   }
+               ]
+          },
+           {
+              "label" : "Receive Result Appeal from Prefecture -> Notify Result Appeal to Offender",
+              "fromNode" : "Receive Result Appeal from Prefecture",
+              "toNode" : "Notify Result Appeal to Offender",
+              "frequencySignificance" : 829,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2089857600000,
+                      "MeanDuration" : 2520937997.58745,
+                      "MinDuration" : 86400000,
+                      "MaxDuration" : 16326000000
+                   }
+               ]
+          },
+           {
+              "label" : "Notify Result Appeal to Offender -> Payment",
+              "fromNode" : "Notify Result Appeal to Offender",
+              "toNode" : "Payment",
+              "frequencySignificance" : 391,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2930101200000,
+                      "MeanDuration" : 7493864961.63683,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 82170000000
+                   }
+               ]
+          },
+           {
+              "label" : "Add penalty -> Receive Result Appeal from Prefecture",
+              "fromNode" : "Add penalty",
+              "toNode" : "Receive Result Appeal from Prefecture",
+              "frequencySignificance" : 351,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1514739600000,
+                      "MeanDuration" : 4315497435.89744,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 20646000000
+                   }
+               ]
+          },
+           {
+              "label" : "Insert Fine Notification -> Appeal to Judge",
+              "fromNode" : "Insert Fine Notification",
+              "toNode" : "Appeal to Judge",
+              "frequencySignificance" : 290,
+              "durations" : [
+                  {
+                      "TotalDuration" : 758282400000,
+                      "MeanDuration" : 2614766896.55172,
+                      "MinDuration" : 86400000,
+                      "MaxDuration" : 5101200000
+                   }
+               ]
+          },
+           {
+              "label" : "Appeal to Judge -> Add penalty",
+              "fromNode" : "Appeal to Judge",
+              "toNode" : "Add penalty",
+              "frequencySignificance" : 281,
+              "durations" : [
+                  {
+                      "TotalDuration" : 696704400000,
+                      "MeanDuration" : 2479375088.96797,
+                      "MinDuration" : 86400000,
+                      "MaxDuration" : 5101200000
+                   }
+               ]
+          },
+           {
+              "label" : "Send for Credit Collection -> Send Appeal to Prefecture",
+              "fromNode" : "Send for Credit Collection",
+              "toNode" : "Send Appeal to Prefecture",
+              "frequencySignificance" : 16,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1138809600000,
+                      "MeanDuration" : 71175600000,
+                      "MinDuration" : 37674000000,
+                      "MaxDuration" : 86403600000
+                   }
+               ]
+          }
+      ]
+  }
+}
