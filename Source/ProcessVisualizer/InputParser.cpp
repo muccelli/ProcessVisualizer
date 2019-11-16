@@ -874,18 +874,28 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 	int32 MinSign = 99999;
 	double MaxTime = 0;
 	double MinTime = nodesArray[1]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetIntegerField("MeanDuration");
+	
+	int32 totalNumberofCases = 0;
+
 	for (int32 index = 0; index < nodesArray.Num(); index++)
 	{
-		if (nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance") > MaxSign)
+		if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("start_node") && !nodesArray[index]->AsObject()->GetStringField("label").Equals("end_node"))
 		{
-			MaxSign = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
+			if (nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance") > MaxSign)
+			{
+				MaxSign = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
+			}
+			if (nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance") < MinSign)
+			{
+				MinSign = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
+			}
 		}
-		if (nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance") < MinSign)
+		else if (nodesArray[index]->AsObject()->GetStringField("label").Equals("start_node"))
 		{
-			MinSign = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
+			totalNumberofCases = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
 		}
 
-		if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("start"))
+		if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("start_node") && !nodesArray[index]->AsObject()->GetStringField("label").Equals("end_node"))
 		{
 			if (nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration") > MaxTime)
 			{
@@ -917,7 +927,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 					{
 						significance = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
 
-						if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("start"))
+						if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("start_node") && !nodesArray[index]->AsObject()->GetStringField("label").Equals("end_node"))
 						{
 							duration = nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration");
 						}
@@ -1079,15 +1089,19 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 	MinTime = edgesArray[1]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetIntegerField("MeanDuration");
 	for (int32 index = 0; index < edgesArray.Num(); index++)
 	{
-		if (edgesArray[index]->AsObject()->GetIntegerField("frequencySignificance") > MaxSign)
+		if (!edgesArray[index]->AsObject()->GetStringField("label").Contains("start_node ->") && !edgesArray[index]->AsObject()->GetStringField("label").Contains(" -> end_node"))
 		{
-			MaxSign = edgesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
+			if (edgesArray[index]->AsObject()->GetIntegerField("frequencySignificance") > MaxSign)
+			{
+				MaxSign = edgesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
+			}
+			if (edgesArray[index]->AsObject()->GetIntegerField("frequencySignificance") < MinSign)
+			{
+				MinSign = edgesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
+			}
 		}
-		if (edgesArray[index]->AsObject()->GetIntegerField("frequencySignificance") < MinSign)
-		{
-			MinSign = edgesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
-		}
-		if (!edgesArray[index]->AsObject()->GetStringField("label").Contains("start ->"))
+
+		if (!edgesArray[index]->AsObject()->GetStringField("label").Contains("start_node ->") && !edgesArray[index]->AsObject()->GetStringField("label").Contains(" -> end_node"))
 		{
 			if (edgesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration") > MaxTime)
 			{
@@ -1101,7 +1115,6 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 	}
 
 	location = new FVector(0, 0, 0);
-
 
 	for (int32 index = 0; index < newEdges.Num(); index++)
 	{
@@ -1128,7 +1141,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 				{
 					significance = edgesArray[j]->AsObject()->GetIntegerField("frequencySignificance");
 					duration = 0;
-					if (!edgesArray[j]->AsObject()->GetStringField("label").Contains("start ->"))
+					if (!edgesArray[j]->AsObject()->GetStringField("label").Contains("start_node ->") && !edgesArray[j]->AsObject()->GetStringField("label").Contains(" -> end_node"))
 					{
 						duration = edgesArray[j]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration");
 					}
@@ -1329,7 +1342,11 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 						break;
 					}
 
-					Edge->Significance = signScale / 2;
+					Edge->Significance = significance;
+
+					Edge->SignificanceScale = signScale / 2;
+
+					Edge->Duration = duration;
 
 					Edge->TimeScale = timeScale;
 
@@ -1348,6 +1365,32 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 			{
 				ActorItr->Destroy();
 			}
+			else
+			{
+				int32 outgoingEdgesSignificance = 0;
+				TArray<AEdgeActor*> outgoingEdges = TArray<AEdgeActor*>();
+				for (TActorIterator<AEdgeActor> ActorItrEdge(World); ActorItrEdge; ++ActorItrEdge)
+				{
+					if (ActorItrEdge->FromNode->GetActorLabel().Equals(ActorItr->GetActorLabel()))
+					{
+						outgoingEdgesSignificance += ActorItrEdge->Significance;
+						outgoingEdges.Add(*ActorItrEdge);
+					}
+				}
+				for (TActorIterator<AEdgeActor> ActorItrEdge(World); ActorItrEdge; ++ActorItrEdge)
+				{
+					if (ActorItrEdge->FromNode->GetActorLabel().Equals(ActorItr->GetActorLabel()))
+					{
+						ActorItrEdge->PercentageFrequencyFromParentNode = (ActorItrEdge->Significance * 100) / outgoingEdgesSignificance;
+					}
+				}
+				ActorItr->PercentageFrequencyToTotal = (ActorItr->Significance * 100) / totalNumberofCases;
+			}
+		}
+
+		for (TActorIterator<AEdgeActor> ActorItr(World); ActorItr; ++ActorItr)
+		{
+			ActorItr->PercentageFrequencyToTotal = (ActorItr->Significance * 100) / totalNumberofCases;
 		}
 	}
 

@@ -41,6 +41,9 @@ public:
 	float SignificanceScale;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float PercentageFrequencyToTotal;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float Duration;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)

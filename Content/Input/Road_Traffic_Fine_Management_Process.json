@@ -2,7 +2,7 @@
   "FuzzyModel" : {
       "nodes": [
            {
-              "label" : "start",
+              "label" : "start_node",
               "frequencySignificance" : 150370,
               "attributes" : [
                   {
@@ -110,6 +110,14 @@
                           "Arithmetic_Mean" : "11,9489843922763"
                           }
                       ]
+                      }
+                   ]
+          },
+           {
+              "label" : "end_node",
+              "frequencySignificance" : 150370,
+              "attributes" : [
+                  {
                       }
                    ]
           },
@@ -318,8 +326,8 @@
       ],
       "edges": [
            {
-              "label" : "start -> Create Fine",
-              "fromNode" : "start",
+              "label" : "start_node -> Create Fine",
+              "fromNode" : "start_node",
               "toNode" : "Create Fine",
               "frequencySignificance" : 150370
           },
@@ -380,6 +388,18 @@
                ]
           },
            {
+              "label" : "Send for Credit Collection -> end_node",
+              "fromNode" : "Send for Credit Collection",
+              "toNode" : "end_node",
+              "frequencySignificance" : 58997
+          },
+           {
+              "label" : "Payment -> end_node",
+              "fromNode" : "Payment",
+              "toNode" : "end_node",
+              "frequencySignificance" : 67201
+          },
+           {
               "label" : "Insert Fine Notification -> Insert Date Appeal to Prefecture",
               "fromNode" : "Insert Fine Notification",
               "toNode" : "Insert Date Appeal to Prefecture",
@@ -422,6 +442,12 @@
                ]
           },
            {
+              "label" : "Send Appeal to Prefecture -> end_node",
+              "fromNode" : "Send Appeal to Prefecture",
+              "toNode" : "end_node",
+              "frequencySignificance" : 3144
+          },
+           {
               "label" : "Create Fine -> Payment",
               "fromNode" : "Create Fine",
               "toNode" : "Payment",
@@ -432,20 +458,6 @@
                       "MeanDuration" : 905667899.131027,
                       "MinDuration" : 0,
                       "MaxDuration" : 83113200000
-                   }
-               ]
-          },
-           {
-              "label" : "Payment -> Send for Credit Collection",
-              "fromNode" : "Payment",
-              "toNode" : "Send for Credit Collection",
-              "frequencySignificance" : 1538,
-              "durations" : [
-                  {
-                      "TotalDuration" : 59038992000000,
-                      "MeanDuration" : 38386860858.2575,
-                      "MinDuration" : 2937600000,
-                      "MaxDuration" : 113792400000
                    }
                ]
           },
@@ -506,6 +518,20 @@
                ]
           },
            {
+              "label" : "Notify Result Appeal to Offender -> Send for Credit Collection",
+              "fromNode" : "Notify Result Appeal to Offender",
+              "toNode" : "Send for Credit Collection",
+              "frequencySignificance" : 257,
+              "durations" : [
+                  {
+                      "TotalDuration" : 13217004000000,
+                      "MeanDuration" : 51428031128.4047,
+                      "MinDuration" : 23418000000,
+                      "MaxDuration" : 127350000000
+                   }
+               ]
+          },
+           {
               "label" : "Insert Fine Notification -> Appeal to Judge",
               "fromNode" : "Insert Fine Notification",
               "toNode" : "Appeal to Judge",
@@ -530,20 +556,6 @@
                       "MeanDuration" : 2479375088.96797,
                       "MinDuration" : 86400000,
                       "MaxDuration" : 5101200000
-                   }
-               ]
-          },
-           {
-              "label" : "Send for Credit Collection -> Send Appeal to Prefecture",
-              "fromNode" : "Send for Credit Collection",
-              "toNode" : "Send Appeal to Prefecture",
-              "frequencySignificance" : 16,
-              "durations" : [
-                  {
-                      "TotalDuration" : 1138809600000,
-                      "MeanDuration" : 71175600000,
-                      "MinDuration" : 37674000000,
-                      "MaxDuration" : 86403600000
                    }
                ]
           }

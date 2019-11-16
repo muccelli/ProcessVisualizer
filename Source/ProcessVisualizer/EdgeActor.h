@@ -38,7 +38,19 @@ public:
 	float Significance;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float SignificanceScale;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Duration;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float TimeScale;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float PercentageFrequencyToTotal;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float PercentageFrequencyFromParentNode;
 
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
 	void SetEdgeProperties();

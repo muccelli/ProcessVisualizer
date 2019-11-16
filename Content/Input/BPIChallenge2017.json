@@ -2,10 +2,40 @@
   "FuzzyModel" : {
       "nodes": [
            {
-              "label" : "start",
+              "label" : "start_node",
               "frequencySignificance" : 31509,
               "attributes" : [
                   {
+                      "LoanGoal" : [
+                          {
+                          "Existing loan takeover" : "5601",
+                          "Home improvement" : "7669",
+                          "Car" : "9328",
+                          "Other, see explanation" : "2985",
+                          "Remaining debt home" : "842",
+                          "Not speficied" : "1065",
+                          "Unknown" : "2365",
+                          "Caravan / Camper" : "369",
+                          "Tax payments" : "152",
+                          "Extra spending limit" : "625",
+                          "Motorcycle" : "275",
+                          "Boat" : "201",
+                          "Business goal" : "30",
+                          "Debt restructuring" : "2"
+                          }
+                      ],
+                      "ApplicationType" : [
+                          {
+                          "New credit" : "28120",
+                          "Limit raise" : "3389"
+                          }
+                      ],
+                      "RequestedAmount" : [
+                          {
+                          "Total" : "511509039,36",
+                          "Arithmetic_Mean" : "16233,7439893364"
+                          }
+                      ]
                       }
                    ]
           },
@@ -2402,6 +2432,14 @@
                    ]
           },
            {
+              "label" : "end_node",
+              "frequencySignificance" : 31509,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
               "label" : "A_Denied",
               "frequencySignificance" : 3753,
               "durations" : [
@@ -3270,8 +3308,8 @@
       ],
       "edges": [
            {
-              "label" : "start -> A_Create Application",
-              "fromNode" : "start",
+              "label" : "start_node -> A_Create Application",
+              "fromNode" : "start_node",
               "toNode" : "A_Create Application",
               "frequencySignificance" : 31509
           },
@@ -3556,6 +3594,12 @@
                ]
           },
            {
+              "label" : "W_Validate application -> end_node",
+              "fromNode" : "W_Validate application",
+              "toNode" : "end_node",
+              "frequencySignificance" : 12662
+          },
+           {
               "label" : "W_Validate application -> A_Denied",
               "fromNode" : "W_Validate application",
               "toNode" : "A_Denied",
@@ -3640,6 +3684,12 @@
                ]
           },
            {
+              "label" : "W_Call after offers -> end_node",
+              "fromNode" : "W_Call after offers",
+              "toNode" : "end_node",
+              "frequencySignificance" : 9457
+          },
+           {
               "label" : "A_Concept -> A_Accepted",
               "fromNode" : "A_Concept",
               "toNode" : "A_Accepted",
@@ -3696,20 +3746,6 @@
                ]
           },
            {
-              "label" : "W_Assess potential fraud -> A_Denied",
-              "fromNode" : "W_Assess potential fraud",
-              "toNode" : "A_Denied",
-              "frequencySignificance" : 102,
-              "durations" : [
-                  {
-                      "TotalDuration" : 1059477693,
-                      "MeanDuration" : 10387036.2058824,
-                      "MinDuration" : 7207,
-                      "MaxDuration" : 555604194
-                   }
-               ]
-          },
-           {
               "label" : "O_Refused -> W_Assess potential fraud",
               "fromNode" : "O_Refused",
               "toNode" : "W_Assess potential fraud",
@@ -3738,6 +3774,12 @@
                ]
           },
            {
+              "label" : "W_Personal Loan collection -> end_node",
+              "fromNode" : "W_Personal Loan collection",
+              "toNode" : "end_node",
+              "frequencySignificance" : 2
+          },
+           {
               "label" : "A_Complete -> W_Shortened completion ",
               "fromNode" : "A_Complete",
               "toNode" : "W_Shortened completion ",
@@ -3752,18 +3794,10 @@
                ]
           },
            {
-              "label" : "W_Shortened completion  -> O_Create Offer",
+              "label" : "W_Shortened completion  -> end_node",
               "fromNode" : "W_Shortened completion ",
-              "toNode" : "O_Create Offer",
-              "frequencySignificance" : 3,
-              "durations" : [
-                  {
-                      "TotalDuration" : 112886969,
-                      "MeanDuration" : 37628989.6666667,
-                      "MinDuration" : 111660,
-                      "MaxDuration" : 111737142
-                   }
-               ]
+              "toNode" : "end_node",
+              "frequencySignificance" : 5
           }
       ]
   }
