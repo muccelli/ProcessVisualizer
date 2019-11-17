@@ -4,6 +4,15 @@
            {
               "label" : "start_node",
               "frequencySignificance" : 31509,
+              "durations" : [
+                  {
+                      "TotalDuration" : 89953875732820,
+                      "MeanDuration" : 2854862919.57282,
+                      "MedianDuration" : 2855063688,
+                      "MinDuration" : 201066,
+                      "MaxDuration" : 29036037480
+                   }
+               ],
               "attributes" : [
                   {
                       "LoanGoal" : [
@@ -46,6 +55,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -187,6 +197,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -218,6 +229,7 @@
                   {
                       "TotalDuration" : 79423587480,
                       "MeanDuration" : 22737929.4245634,
+                      "MedianDuration" : 5283619,
                       "MinDuration" : 19637,
                       "MaxDuration" : 251312118
                    }
@@ -345,6 +357,7 @@
                   {
                       "TotalDuration" : 16746796,
                       "MeanDuration" : 876.612018425461,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 13198777
                    }
@@ -503,6 +516,7 @@
                   {
                       "TotalDuration" : 2243602590,
                       "MeanDuration" : 71205.1347234124,
+                      "MedianDuration" : 33253,
                       "MinDuration" : 0,
                       "MaxDuration" : 434038785
                    }
@@ -647,6 +661,7 @@
                   {
                       "TotalDuration" : 1389894074950,
                       "MeanDuration" : 44111018.2789044,
+                      "MedianDuration" : 2,
                       "MinDuration" : 0,
                       "MaxDuration" : 2598063183
                    }
@@ -790,6 +805,7 @@
                   {
                       "TotalDuration" : 1240613378012,
                       "MeanDuration" : 28854829.1199442,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 9592461962
                    }
@@ -804,7 +820,7 @@
                       "FirstWithdrawalAmount" : [
                           {
                           "Total" : "360914604,419999",
-                          "Arithmetic_Mean" : "8394,3389794162"
+                          "Arithmetic_Mean" : "8394,33897941619"
                           }
                       ],
                       "NumberOfTerms" : [
@@ -945,8 +961,8 @@
                       ],
                       "MonthlyCost" : [
                           {
-                          "Total" : "12098935,2500006",
-                          "Arithmetic_Mean" : "281,403308524262"
+                          "Total" : "12098935,2500001",
+                          "Arithmetic_Mean" : "281,403308524248"
                           }
                       ],
                       "EventOrigin" : [
@@ -982,6 +998,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -1132,6 +1149,7 @@
                   {
                       "TotalDuration" : 15127884079,
                       "MeanDuration" : 380987.837887526,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 1277933507
                    }
@@ -1276,6 +1294,7 @@
                   {
                       "TotalDuration" : 4998413442,
                       "MeanDuration" : 14615243.9824561,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 1131450213
                    }
@@ -1453,6 +1472,7 @@
                   {
                       "TotalDuration" : 121881,
                       "MeanDuration" : 3.88626363114597,
+                      "MedianDuration" : 3,
                       "MinDuration" : 1,
                       "MaxDuration" : 354
                    }
@@ -1596,6 +1616,7 @@
                   {
                       "TotalDuration" : 1388255126816,
                       "MeanDuration" : 87598127.6385664,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 2417310003
                    }
@@ -1762,6 +1783,7 @@
                   {
                       "TotalDuration" : 18280121161331,
                       "MeanDuration" : 470942940.059022,
+                      "MedianDuration" : 370473933.5,
                       "MinDuration" : 1,
                       "MaxDuration" : 7953683651
                    }
@@ -1919,6 +1941,7 @@
                   {
                       "TotalDuration" : 123275578167,
                       "MeanDuration" : 5289662.22557391,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 2012510863
                    }
@@ -1996,6 +2019,7 @@
                   {
                       "TotalDuration" : 166458143368,
                       "MeanDuration" : 59598332.7490154,
+                      "MedianDuration" : 5991589,
                       "MinDuration" : 0,
                       "MaxDuration" : 6701811361
                    }
@@ -2167,6 +2191,7 @@
                   {
                       "TotalDuration" : 1820436176267,
                       "MeanDuration" : 78960580.1894166,
+                      "MedianDuration" : 2069080,
                       "MinDuration" : 1,
                       "MaxDuration" : 1212391912
                    }
@@ -2298,6 +2323,7 @@
                   {
                       "TotalDuration" : 955819931697,
                       "MeanDuration" : 55480608.991003,
+                      "MedianDuration" : 1745834,
                       "MinDuration" : 0,
                       "MaxDuration" : 3954345533
                    }
@@ -2368,6 +2394,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -2446,6 +2473,7 @@
                   {
                       "TotalDuration" : 541575722960,
                       "MeanDuration" : 144304748.990141,
+                      "MedianDuration" : 10254045,
                       "MinDuration" : 0,
                       "MaxDuration" : 7619894942
                    }
@@ -2575,6 +2603,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -2702,6 +2731,7 @@
                   {
                       "TotalDuration" : 82858678778,
                       "MeanDuration" : 3964909.50224902,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 5859168118
                    }
@@ -2865,6 +2895,7 @@
                   {
                       "TotalDuration" : 4199634896488,
                       "MeanDuration" : 402610957.385486,
+                      "MedianDuration" : 337982915,
                       "MinDuration" : 0,
                       "MaxDuration" : 12046042699
                    }
@@ -3003,6 +3034,7 @@
                   {
                       "TotalDuration" : 1629048618,
                       "MeanDuration" : 804071.381046397,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 768672798
                    }
@@ -3137,6 +3169,7 @@
                   {
                       "TotalDuration" : 42497749089,
                       "MeanDuration" : 150701237.904255,
+                      "MedianDuration" : 18007540.5,
                       "MinDuration" : 0,
                       "MaxDuration" : 1718590301
                    }
@@ -3226,6 +3259,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -3265,6 +3299,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -3322,6 +3357,7 @@
                   {
                       "TotalDuration" : 6936921,
                       "MeanDuration" : 339.662194584537,
+                      "MedianDuration" : 56,
                       "MinDuration" : 29,
                       "MaxDuration" : 25599
                    }
@@ -3336,6 +3372,7 @@
                   {
                       "TotalDuration" : 7167272,
                       "MeanDuration" : 350.941193752142,
+                      "MedianDuration" : 298,
                       "MinDuration" : 98,
                       "MaxDuration" : 59749
                    }
@@ -3350,6 +3387,7 @@
                   {
                       "TotalDuration" : 251449,
                       "MeanDuration" : 12.3120501395485,
+                      "MedianDuration" : 8,
                       "MinDuration" : 4,
                       "MaxDuration" : 2683
                    }
@@ -3364,6 +3402,7 @@
                   {
                       "TotalDuration" : 723458871185,
                       "MeanDuration" : 32516466.8607578,
+                      "MedianDuration" : 601028,
                       "MinDuration" : 6222,
                       "MaxDuration" : 2585335151
                    }
@@ -3378,6 +3417,7 @@
                   {
                       "TotalDuration" : 22987162405,
                       "MeanDuration" : 767108.136054195,
+                      "MedianDuration" : 182005.5,
                       "MinDuration" : 12000,
                       "MaxDuration" : 2331001565
                    }
@@ -3392,6 +3432,7 @@
                   {
                       "TotalDuration" : 45692908,
                       "MeanDuration" : 1062.74934294685,
+                      "MedianDuration" : 1020,
                       "MinDuration" : 463,
                       "MaxDuration" : 50942
                    }
@@ -3406,6 +3447,7 @@
                   {
                       "TotalDuration" : 15080155578,
                       "MeanDuration" : 423552.285642063,
+                      "MedianDuration" : 22853.5,
                       "MinDuration" : 5833,
                       "MaxDuration" : 1312221839
                    }
@@ -3420,6 +3462,7 @@
                   {
                       "TotalDuration" : 730230,
                       "MeanDuration" : 23.6228649068323,
+                      "MedianDuration" : 16,
                       "MinDuration" : 10,
                       "MaxDuration" : 6231
                    }
@@ -3434,6 +3477,7 @@
                   {
                       "TotalDuration" : 376912,
                       "MeanDuration" : 12.018111089854,
+                      "MedianDuration" : 8,
                       "MinDuration" : 4,
                       "MaxDuration" : 1098
                    }
@@ -3448,6 +3492,7 @@
                   {
                       "TotalDuration" : 110030,
                       "MeanDuration" : 3.50838594477393,
+                      "MedianDuration" : 2,
                       "MinDuration" : 1,
                       "MaxDuration" : 287
                    }
@@ -3462,6 +3507,7 @@
                   {
                       "TotalDuration" : 14847358047,
                       "MeanDuration" : 488464.207362811,
+                      "MedianDuration" : 138327,
                       "MinDuration" : 1546,
                       "MaxDuration" : 68841231
                    }
@@ -3476,6 +3522,7 @@
                   {
                       "TotalDuration" : 312971,
                       "MeanDuration" : 14.3039762340037,
+                      "MedianDuration" : 8,
                       "MinDuration" : 4,
                       "MaxDuration" : 1274
                    }
@@ -3490,6 +3537,7 @@
                   {
                       "TotalDuration" : 21285737,
                       "MeanDuration" : 548.375334913438,
+                      "MedianDuration" : 739,
                       "MinDuration" : 48,
                       "MaxDuration" : 44020
                    }
@@ -3504,6 +3552,7 @@
                   {
                       "TotalDuration" : 1265837672,
                       "MeanDuration" : 61231.4454602622,
+                      "MedianDuration" : 17472,
                       "MinDuration" : 1154,
                       "MaxDuration" : 3749925
                    }
@@ -3518,6 +3567,7 @@
                   {
                       "TotalDuration" : 41017350224,
                       "MeanDuration" : 1931591.72234518,
+                      "MedianDuration" : 170837,
                       "MinDuration" : 1525,
                       "MaxDuration" : 688903091
                    }
@@ -3532,6 +3582,7 @@
                   {
                       "TotalDuration" : 72009,
                       "MeanDuration" : 3.12335718932986,
+                      "MedianDuration" : 2,
                       "MinDuration" : 1,
                       "MaxDuration" : 285
                    }
@@ -3546,6 +3597,7 @@
                   {
                       "TotalDuration" : 3593486061,
                       "MeanDuration" : 161309.245454954,
+                      "MedianDuration" : 28924,
                       "MinDuration" : 1426,
                       "MaxDuration" : 48699206
                    }
@@ -3560,6 +3612,7 @@
                   {
                       "TotalDuration" : 748397889192,
                       "MeanDuration" : 63758552.4954847,
+                      "MedianDuration" : 6304281,
                       "MinDuration" : 4710,
                       "MaxDuration" : 1213701174
                    }
@@ -3574,6 +3627,7 @@
                   {
                       "TotalDuration" : 145950,
                       "MeanDuration" : 8.47167401903877,
+                      "MedianDuration" : 4,
                       "MinDuration" : 2,
                       "MaxDuration" : 2258
                    }
@@ -3588,6 +3642,7 @@
                   {
                       "TotalDuration" : 64145,
                       "MeanDuration" : 5.21885932796355,
+                      "MedianDuration" : 3,
                       "MinDuration" : 1,
                       "MaxDuration" : 507
                    }
@@ -3608,6 +3663,7 @@
                   {
                       "TotalDuration" : 289950796953,
                       "MeanDuration" : 89105960.9566687,
+                      "MedianDuration" : 2624991,
                       "MinDuration" : 15360,
                       "MaxDuration" : 1037079015
                    }
@@ -3622,6 +3678,7 @@
                   {
                       "TotalDuration" : 171298,
                       "MeanDuration" : 46.0478494623656,
+                      "MedianDuration" : 33,
                       "MinDuration" : 16,
                       "MaxDuration" : 3449
                    }
@@ -3636,6 +3693,7 @@
                   {
                       "TotalDuration" : 54972,
                       "MeanDuration" : 16.7138948008513,
+                      "MedianDuration" : 11,
                       "MinDuration" : 7,
                       "MaxDuration" : 779
                    }
@@ -3650,6 +3708,7 @@
                   {
                       "TotalDuration" : 17063935459086,
                       "MeanDuration" : 1998352905.38541,
+                      "MedianDuration" : 2307343541,
                       "MinDuration" : 10964,
                       "MaxDuration" : 2678250781
                    }
@@ -3664,6 +3723,7 @@
                   {
                       "TotalDuration" : 436760,
                       "MeanDuration" : 42.5277507302824,
+                      "MedianDuration" : 28,
                       "MinDuration" : 16,
                       "MaxDuration" : 4627
                    }
@@ -3678,6 +3738,7 @@
                   {
                       "TotalDuration" : 125952676072,
                       "MeanDuration" : 13039929.19267,
+                      "MedianDuration" : 10,
                       "MinDuration" : 6,
                       "MaxDuration" : 2490112633
                    }
@@ -3698,6 +3759,7 @@
                   {
                       "TotalDuration" : 169684894879,
                       "MeanDuration" : 18382070.7267902,
+                      "MedianDuration" : 266310,
                       "MinDuration" : 21786,
                       "MaxDuration" : 1756299104
                    }
@@ -3712,6 +3774,7 @@
                   {
                       "TotalDuration" : 1492838571,
                       "MeanDuration" : 787777.610026385,
+                      "MedianDuration" : 17715,
                       "MinDuration" : 6509,
                       "MaxDuration" : 600601174
                    }
@@ -3726,6 +3789,7 @@
                   {
                       "TotalDuration" : 37441,
                       "MeanDuration" : 11.0478017114193,
+                      "MedianDuration" : 3,
                       "MinDuration" : 1,
                       "MaxDuration" : 1614
                    }
@@ -3740,6 +3804,7 @@
                   {
                       "TotalDuration" : 87913599352,
                       "MeanDuration" : 101282948.562212,
+                      "MedianDuration" : 489294,
                       "MinDuration" : 2692,
                       "MaxDuration" : 1825854518
                    }
@@ -3754,6 +3819,7 @@
                   {
                       "TotalDuration" : 1923,
                       "MeanDuration" : 18.8529411764706,
+                      "MedianDuration" : 11,
                       "MinDuration" : 7,
                       "MaxDuration" : 207
                    }
@@ -3768,6 +3834,7 @@
                   {
                       "TotalDuration" : 11525807178,
                       "MeanDuration" : 11525807178,
+                      "MedianDuration" : 11525807178,
                       "MinDuration" : 11525807178,
                       "MaxDuration" : 11525807178
                    }
@@ -3788,6 +3855,7 @@
                   {
                       "TotalDuration" : 5125171,
                       "MeanDuration" : 113892.688888889,
+                      "MedianDuration" : 51000,
                       "MinDuration" : 11990,
                       "MaxDuration" : 1186111
                    }

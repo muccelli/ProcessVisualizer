@@ -1349,8 +1349,6 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 					Edge->Duration = duration;
 
 					Edge->TimeScale = timeScale;
-
-					Edge->SetEdgeProperties();
 				}
 			}
 		}
@@ -1391,6 +1389,8 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 		for (TActorIterator<AEdgeActor> ActorItr(World); ActorItr; ++ActorItr)
 		{
 			ActorItr->PercentageFrequencyToTotal = (ActorItr->Significance * 100) / totalNumberofCases;
+
+			ActorItr->SetEdgeProperties();
 		}
 	}
 

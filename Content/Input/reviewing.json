@@ -4,6 +4,15 @@
            {
               "label" : "start_node",
               "frequencySignificance" : 100,
+              "durations" : [
+                  {
+                      "TotalDuration" : 7591363200000,
+                      "MeanDuration" : 75913632000,
+                      "MedianDuration" : 84715200000,
+                      "MinDuration" : 2764800000,
+                      "MaxDuration" : 145411200000
+                   }
+               ],
               "attributes" : [
                   {
                       "description" : [
@@ -21,6 +30,7 @@
                   {
                       "TotalDuration" : 18921600000,
                       "MeanDuration" : 189216000,
+                      "MedianDuration" : 172800000,
                       "MinDuration" : 0,
                       "MaxDuration" : 432000000
                    }
@@ -43,6 +53,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -76,6 +87,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -109,6 +121,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -142,6 +155,7 @@
                   {
                       "TotalDuration" : 24019200000,
                       "MeanDuration" : 240192000,
+                      "MedianDuration" : 259200000,
                       "MinDuration" : 0,
                       "MaxDuration" : 1036800000
                    }
@@ -164,6 +178,7 @@
                   {
                       "TotalDuration" : 139881600000,
                       "MeanDuration" : 223453035.14377,
+                      "MedianDuration" : 259200000,
                       "MinDuration" : 0,
                       "MaxDuration" : 950400000
                    }
@@ -177,14 +192,22 @@
                       ],
                       "rejects" : [
                           {
-                          "Total" : "1003",
-                          "Arithmetic_Mean" : "1,60223642172524"
+                          "3" : "82",
+                          "4" : "24",
+                          "5" : "4",
+                          "0" : "88",
+                          "1" : "215",
+                          "2" : "213"
                           }
                       ],
                       "accepts" : [
                           {
-                          "Total" : "937",
-                          "Arithmetic_Mean" : "1,49680511182109"
+                          "0" : "72",
+                          "1" : "261",
+                          "2" : "214",
+                          "3" : "70",
+                          "4" : "7",
+                          "5" : "2"
                           }
                       ]
                       }
@@ -197,6 +220,7 @@
                   {
                       "TotalDuration" : 111974400000,
                       "MeanDuration" : 212879087.452471,
+                      "MedianDuration" : 259200000,
                       "MinDuration" : 0,
                       "MaxDuration" : 691200000
                    }
@@ -219,6 +243,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -252,6 +277,7 @@
                   {
                       "TotalDuration" : 10800000000,
                       "MeanDuration" : 196363636.363636,
+                      "MedianDuration" : 172800000,
                       "MinDuration" : 0,
                       "MaxDuration" : 432000000
                    }
@@ -282,6 +308,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -303,6 +330,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -324,6 +352,7 @@
                   {
                       "TotalDuration" : 9590400000,
                       "MeanDuration" : 213120000,
+                      "MedianDuration" : 259200000,
                       "MinDuration" : 0,
                       "MaxDuration" : 864000000
                    }
@@ -346,6 +375,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -367,6 +397,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -398,6 +429,7 @@
                   {
                       "TotalDuration" : 3024000000,
                       "MeanDuration" : 159157894.736842,
+                      "MedianDuration" : 86400000,
                       "MinDuration" : 0,
                       "MaxDuration" : 691200000
                    }
@@ -412,6 +444,7 @@
                   {
                       "TotalDuration" : 1555200000,
                       "MeanDuration" : 129600000,
+                      "MedianDuration" : 172800000,
                       "MinDuration" : 0,
                       "MaxDuration" : 345600000
                    }
@@ -426,6 +459,7 @@
                   {
                       "TotalDuration" : 6652800000,
                       "MeanDuration" : 604800000,
+                      "MedianDuration" : 259200000,
                       "MinDuration" : 0,
                       "MaxDuration" : 2592000000
                    }
@@ -440,6 +474,7 @@
                   {
                       "TotalDuration" : 787536000000,
                       "MeanDuration" : 7875360000,
+                      "MedianDuration" : 4190400000,
                       "MinDuration" : 0,
                       "MaxDuration" : 56505600000
                    }
@@ -454,6 +489,7 @@
                   {
                       "TotalDuration" : 509068800000,
                       "MeanDuration" : 967811406.844106,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 22723200000
                    }
@@ -468,6 +504,7 @@
                   {
                       "TotalDuration" : 57283200000,
                       "MeanDuration" : 217806844.106464,
+                      "MedianDuration" : 259200000,
                       "MinDuration" : 0,
                       "MaxDuration" : 864000000
                    }
@@ -482,6 +519,7 @@
                   {
                       "TotalDuration" : 2650924800000,
                       "MeanDuration" : 10079561977.1863,
+                      "MedianDuration" : 5961600000,
                       "MinDuration" : 0,
                       "MaxDuration" : 68428800000
                    }
@@ -496,6 +534,7 @@
                   {
                       "TotalDuration" : 5011200000,
                       "MeanDuration" : 91112727.2727273,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 777600000
                    }
@@ -516,6 +555,7 @@
                   {
                       "TotalDuration" : 5270400000,
                       "MeanDuration" : 239563636.363636,
+                      "MedianDuration" : 129600000,
                       "MinDuration" : 0,
                       "MaxDuration" : 864000000
                    }
@@ -530,6 +570,7 @@
                   {
                       "TotalDuration" : 108432000000,
                       "MeanDuration" : 412288973.38403,
+                      "MedianDuration" : 432000000,
                       "MinDuration" : 0,
                       "MaxDuration" : 1468800000
                    }
@@ -544,6 +585,7 @@
                   {
                       "TotalDuration" : 2741558400000,
                       "MeanDuration" : 10424176425.8555,
+                      "MedianDuration" : 6566400000,
                       "MinDuration" : 0,
                       "MaxDuration" : 58579200000
                    }
@@ -558,6 +600,7 @@
                   {
                       "TotalDuration" : 2073600000,
                       "MeanDuration" : 46080000,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 432000000
                    }
@@ -578,6 +621,7 @@
                   {
                       "TotalDuration" : 2160000000,
                       "MeanDuration" : 113684210.526316,
+                      "MedianDuration" : 86400000,
                       "MinDuration" : 0,
                       "MaxDuration" : 259200000
                    }
@@ -592,6 +636,7 @@
                   {
                       "TotalDuration" : 1814400000,
                       "MeanDuration" : 120960000,
+                      "MedianDuration" : 86400000,
                       "MinDuration" : 0,
                       "MaxDuration" : 345600000
                    }
@@ -606,6 +651,7 @@
                   {
                       "TotalDuration" : 17366400000,
                       "MeanDuration" : 667938461.538462,
+                      "MedianDuration" : 475200000,
                       "MinDuration" : 0,
                       "MaxDuration" : 2678400000
                    }
@@ -620,6 +666,7 @@
                   {
                       "TotalDuration" : 2592000000,
                       "MeanDuration" : 162000000,
+                      "MedianDuration" : 129600000,
                       "MinDuration" : 0,
                       "MaxDuration" : 432000000
                    }
@@ -634,6 +681,7 @@
                   {
                       "TotalDuration" : 12614400000,
                       "MeanDuration" : 630720000,
+                      "MedianDuration" : 648000000,
                       "MinDuration" : 0,
                       "MaxDuration" : 2764800000
                    }
@@ -648,6 +696,7 @@
                   {
                       "TotalDuration" : 1468800000,
                       "MeanDuration" : 91800000,
+                      "MedianDuration" : 43200000,
                       "MinDuration" : 0,
                       "MaxDuration" : 345600000
                    }
@@ -662,6 +711,7 @@
                   {
                       "TotalDuration" : 2419200000,
                       "MeanDuration" : 134400000,
+                      "MedianDuration" : 86400000,
                       "MinDuration" : 0,
                       "MaxDuration" : 345600000
                    }
