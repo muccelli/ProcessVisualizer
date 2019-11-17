@@ -43,6 +43,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float Duration;
 
+	UPROPERTY(BlueprintReadWrite)
+	TMap<FString, float> Durations;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float TimeScale;
 

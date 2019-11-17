@@ -28,6 +28,9 @@ public:
 	UPROPERTY(BlueprintReadWrite)
 	TMap<FString, FValuesToFrequencyMap> Attributes;
 
+	UPROPERTY(BlueprintReadWrite)
+	TMap<FString, float> Durations;
+
 	UPROPERTY()
 	USceneComponent* Root;
 

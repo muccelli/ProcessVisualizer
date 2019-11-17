@@ -921,15 +921,21 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 				int32 significance = 0;
 				double duration = 0;
 				TMap<FString, FValuesToFrequencyMap> attributes = TMap<FString, FValuesToFrequencyMap>();
+				TMap<FString, float> durations = TMap<FString, float>();
 				for (int32 index = 0; index < nodesArray.Num(); index++)
 				{
 					if (nodesArray[index]->AsObject()->GetStringField("label").Equals(label))
 					{
 						significance = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
 
-						if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("start_node") && !nodesArray[index]->AsObject()->GetStringField("label").Equals("end_node"))
+						if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("end_node"))
 						{
 							duration = nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration");
+							durations.Add("TotalDuration", nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("TotalDuration"));
+							durations.Add("MeanDuration", nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration"));
+							durations.Add("MedianDuration", nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MedianDuration"));
+							durations.Add("MinDuration", nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MinDuration"));
+							durations.Add("MaxDuration", nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MaxDuration"));
 						}
 
 						for (auto itr = nodesArray[index]->AsObject()->GetArrayField("attributes")[0]->AsObject()->Values.CreateConstIterator(); itr; ++itr)
@@ -1054,6 +1060,8 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 
 					Node->Duration = duration;
 
+					Node->Durations = durations;
+
 					if (MinTime == 0 && MaxTime == 0)
 					{
 						Node->TimeScale = 0;
@@ -1135,6 +1143,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 			}
 			int32 significance = 0;
 			float duration = 0;
+			TMap<FString, float> durations = TMap<FString, float>();
 			for (int32 j = 0; j < edgesArray.Num(); j++)
 			{
 				if (edgesArray[j]->AsObject()->GetStringField("label").Equals(label))
@@ -1143,7 +1152,12 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 					duration = 0;
 					if (!edgesArray[j]->AsObject()->GetStringField("label").Contains("start_node ->") && !edgesArray[j]->AsObject()->GetStringField("label").Contains(" -> end_node"))
 					{
-						duration = edgesArray[j]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration");
+						duration = edgesArray[j]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration"); 
+						durations.Add("TotalDuration", edgesArray[j]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("TotalDuration"));
+						durations.Add("MeanDuration", edgesArray[j]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration"));
+						durations.Add("MedianDuration", edgesArray[j]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MedianDuration"));
+						durations.Add("MinDuration", edgesArray[j]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MinDuration"));
+						durations.Add("MaxDuration", edgesArray[j]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MaxDuration"));
 					}
 				}
 			}
@@ -1347,6 +1361,8 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 					Edge->SignificanceScale = signScale / 2;
 
 					Edge->Duration = duration;
+
+					Edge->Durations = durations;
 
 					Edge->TimeScale = timeScale;
 				}
