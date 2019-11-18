@@ -42,7 +42,10 @@
                       "RequestedAmount" : [
                           {
                           "Total" : "511509039,36",
-                          "Arithmetic_Mean" : "16233,7439893364"
+                          "Mean" : "16233,7439893364",
+                          "Median" : "12500",
+                          "Min" : "0",
+                          "Max" : "450000"
                           }
                       ]
                       }
@@ -820,13 +823,19 @@
                       "FirstWithdrawalAmount" : [
                           {
                           "Total" : "360914604,419999",
-                          "Arithmetic_Mean" : "8394,33897941619"
+                          "Mean" : "8394,3389794162",
+                          "Median" : "5000",
+                          "Min" : "0",
+                          "Max" : "75000"
                           }
                       ],
                       "NumberOfTerms" : [
                           {
                           "Total" : "3570390",
-                          "Arithmetic_Mean" : "83,0419816257704"
+                          "Mean" : "83,0419816257704",
+                          "Median" : "77",
+                          "Min" : "5",
+                          "Max" : "180"
                           }
                       ],
                       "Accepted" : [
@@ -961,8 +970,11 @@
                       ],
                       "MonthlyCost" : [
                           {
-                          "Total" : "12098935,2500001",
-                          "Arithmetic_Mean" : "281,403308524248"
+                          "Total" : "12098935,2499998",
+                          "Mean" : "281,403308524243",
+                          "Median" : "244,52",
+                          "Min" : "43,05",
+                          "Max" : "6673,83"
                           }
                       ],
                       "EventOrigin" : [
@@ -979,13 +991,19 @@
                       "CreditScore" : [
                           {
                           "Total" : "13700181",
-                          "Arithmetic_Mean" : "318,645912315385"
+                          "Mean" : "318,645912315385",
+                          "Median" : "0",
+                          "Min" : "0",
+                          "Max" : "1145"
                           }
                       ],
                       "OfferedAmount" : [
                           {
                           "Total" : "795997388,81",
-                          "Arithmetic_Mean" : "18513,7199397604"
+                          "Mean" : "18513,7199397604",
+                          "Median" : "15000",
+                          "Min" : "5000",
+                          "Max" : "75000"
                           }
                       ]
                       }

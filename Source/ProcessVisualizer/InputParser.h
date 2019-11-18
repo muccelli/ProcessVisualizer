@@ -50,19 +50,12 @@ public:
 
 	void SortByValue()
 	{
-		/*GLog->Log("Non sorted");
-		for (auto pair : attrValuesToFrequency)
+		if (!attrValuesToFrequency.Contains("Total") && !attrValuesToFrequency.Contains("Mean") && !attrValuesToFrequency.Contains("Median") && !attrValuesToFrequency.Contains("Min") && !attrValuesToFrequency.Contains("Max"))
 		{
-			GLog->Log(pair.Key + ": " + pair.Value);
-		}*/
-		attrValuesToFrequency.ValueSort([](const FString& A, const FString& B) {
-			return FCString::Atof(*A) > FCString::Atof(*B);
-		});
-		/*GLog->Log("Sorted");
-		for (auto pair : attrValuesToFrequency)
-		{
-			GLog->Log(pair.Key + ": " + pair.Value);
-		}*/
+			attrValuesToFrequency.ValueSort([](const FString& A, const FString& B) {
+				return FCString::Atof(*A) > FCString::Atof(*B);
+			});
+		}
 	}
 
 	TMap<FString, FString> GetValuesToPercentage()
