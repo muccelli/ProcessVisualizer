@@ -918,169 +918,157 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 		for (int32 j = 0; j < nodesLayers[i].Num(); j++)
 		{
 			FString label = nodesLayers[i][j];
-			//if (!label.Contains("virtual"))
-			//{
-				int32 significance = 0;
-				double duration = 0;
-				TMap<FString, FValuesToFrequencyMap> attributes = TMap<FString, FValuesToFrequencyMap>();
-				TMap<FString, float> durations = TMap<FString, float>();
-				for (int32 index = 0; index < nodesArray.Num(); index++)
+			int32 significance = 0;
+			double duration = 0;
+			TMap<FString, FValuesToFrequencyMap> attributes = TMap<FString, FValuesToFrequencyMap>();
+			TMap<FString, float> durations = TMap<FString, float>();
+			for (int32 index = 0; index < nodesArray.Num(); index++)
+			{
+				if (nodesArray[index]->AsObject()->GetStringField("label").Equals(label))
 				{
-					if (nodesArray[index]->AsObject()->GetStringField("label").Equals(label))
+					significance = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
+
+					if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("end_node"))
 					{
-						significance = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
+						duration = nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration");
+						durations.Add("TotalDuration", nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("TotalDuration"));
+						durations.Add("MeanDuration", nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration"));
+						durations.Add("MedianDuration", nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MedianDuration"));
+						durations.Add("MinDuration", nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MinDuration"));
+						durations.Add("MaxDuration", nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MaxDuration"));
+					}
 
-						if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("end_node"))
+					for (auto itr = nodesArray[index]->AsObject()->GetArrayField("attributes")[0]->AsObject()->Values.CreateConstIterator(); itr; ++itr)
+					{
+						FValuesToFrequencyMap currAttr = FValuesToFrequencyMap();
+						for (auto attrItr = nodesArray[index]->AsObject()->GetArrayField("attributes")[0]->AsObject()->GetArrayField((*itr).Key)[0]->AsObject()->Values.CreateConstIterator(); attrItr; ++attrItr)
 						{
-							duration = nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration");
-							durations.Add("TotalDuration", nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("TotalDuration"));
-							durations.Add("MeanDuration", nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MeanDuration"));
-							durations.Add("MedianDuration", nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MedianDuration"));
-							durations.Add("MinDuration", nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MinDuration"));
-							durations.Add("MaxDuration", nodesArray[index]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetNumberField("MaxDuration"));
+							currAttr.AddToMap((*attrItr).Key, (*attrItr).Value->AsString());
 						}
-
-						for (auto itr = nodesArray[index]->AsObject()->GetArrayField("attributes")[0]->AsObject()->Values.CreateConstIterator(); itr; ++itr)
-						{
-							FValuesToFrequencyMap currAttr = FValuesToFrequencyMap();
-							for (auto attrItr = nodesArray[index]->AsObject()->GetArrayField("attributes")[0]->AsObject()->GetArrayField((*itr).Key)[0]->AsObject()->Values.CreateConstIterator(); attrItr; ++attrItr)
-							{
-								currAttr.AddToMap((*attrItr).Key, (*attrItr).Value->AsString());
-							}
-							currAttr.SortByValue();
-							attributes.Add((*itr).Key, currAttr);
-						}
+						currAttr.SortByValue();
+						attributes.Add((*itr).Key, currAttr);
 					}
 				}
+			}
 
-				/*for (auto& fs : attributes)
+			UWorld* const World = GetWorld();
+			if (World)
+			{
+				//ANodeActor* Node = (ANodeActor*) World->SpawnActor(ANodeActor::StaticClass(), location);
+				ANodeActor* Node = (ANodeActor*)World->SpawnActor(NodeActorBP, location);
+				Node->SetFolderPath("Nodes");
+				Node->SetActorLabel(label);
+
+				// set scale
+				float scale;
+				double timeScale = 0;
+
+				switch (ScalingMethod)
 				{
-					GLog->Log(fs.Key + ": ");
-					for (auto& ff : fs.Value.GetValuesToPercentage())
+				case EScalingMethod::VE_Discrete:
+
+					if (significance < MinSign + (MaxSign - MinSign) / 5)
 					{
-						GLog->Log("    " + ff.Key + ": " + ff.Value);
+						scale = 0.2f;
 					}
-				}*/
-
-				UWorld* const World = GetWorld();
-				if (World)
-				{
-					//ANodeActor* Node = (ANodeActor*) World->SpawnActor(ANodeActor::StaticClass(), location);
-					ANodeActor* Node = (ANodeActor*)World->SpawnActor(NodeActorBP, location);
-					Node->SetFolderPath("Nodes");
-					Node->SetActorLabel(label);
-
-					// set scale
-					float scale;
-					double timeScale = 0;
-
-					switch (ScalingMethod)
+					else if (significance < MinSign + (MaxSign - MinSign) * 2 / 5)
 					{
-					case EScalingMethod::VE_Discrete:
-
-						if (significance < MinSign + (MaxSign - MinSign) / 5)
-						{
-							scale = 0.2f;
-						}
-						else if (significance < MinSign + (MaxSign - MinSign) * 2 / 5)
-						{
-							scale = 0.4f;
-						}
-						else if (significance < MinSign + (MaxSign - MinSign) * 3 / 5)
-						{
-							scale = 0.6f;
-						}
-						else if (significance < MinSign + (MaxSign - MinSign) * 4 / 5)
-						{
-							scale = 0.8f;
-						}
-						else if (significance <= MinSign + (MaxSign - MinSign))
-						{
-							scale = 1;
-						}
-
-						break;
-					case EScalingMethod::VE_Continuous:
-
-						scale = ((float(significance) - float(MinSign)) / float(MaxSign)) + 0.2f;
-						//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
-
-						break;
-					case EScalingMethod::VE_MinMax:
-
-						scale = ((float(significance) - float(MinSign)) / (float(MaxSign) - float(MinSign))) + 0.2f;
-						//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
-
-						break;
-					default:
-						break;
+						scale = 0.4f;
+					}
+					else if (significance < MinSign + (MaxSign - MinSign) * 3 / 5)
+					{
+						scale = 0.6f;
+					}
+					else if (significance < MinSign + (MaxSign - MinSign) * 4 / 5)
+					{
+						scale = 0.8f;
+					}
+					else if (significance <= MinSign + (MaxSign - MinSign))
+					{
+						scale = 1;
 					}
 
-					switch (ScalingMethod)
-					{
-					case EScalingMethod::VE_Discrete:
+					break;
+				case EScalingMethod::VE_Continuous:
 
-						if (duration < MinTime + (MaxTime - MinTime) / 5)
-						{
-							timeScale = 0.2f;
-						}
-						else if (duration < MinTime + (MaxTime - MinTime) * 2 / 5)
-						{
-							timeScale = 0.4f;
-						}
-						else if (duration < MinTime + (MaxTime - MinTime) * 3 / 5)
-						{
-							timeScale = 0.6f;
-						}
-						else if (duration < MinTime + (MaxTime - MinTime) * 4 / 5)
-						{
-							timeScale = 0.8f;
-						}
-						else if (duration <= MinTime + (MaxTime - MinTime))
-						{
-							timeScale = 1;
-						}
+					scale = ((float(significance) - float(MinSign)) / float(MaxSign)) + 0.2f;
+					//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
 
-						break;
-					case EScalingMethod::VE_Continuous:
+					break;
+				case EScalingMethod::VE_MinMax:
 
-						timeScale = ((float(duration) - float(MinTime)) / float(MaxTime));
+					scale = ((float(significance) - float(MinSign)) / (float(MaxSign) - float(MinSign))) + 0.2f;
+					//GLog->Log("(significance:" + FString::FromInt(significance) + " - Min:" + FString::FromInt(Min) + ") / Max:" + FString::FromInt(Max) + " = scale:" + FString::SanitizeFloat(scale));
 
-						break;
-					case EScalingMethod::VE_MinMax:
-
-						timeScale = ((duration - MinTime) / (MaxTime - MinTime));
-
-						break;
-					default:
-						break;
-					}
-
-					Node->Significance = significance;
-
-					Node->SignificanceScale = scale;
-
-					Node->Duration = duration;
-
-					Node->Durations = durations;
-
-					if (MinTime == 0 && MaxTime == 0)
-					{
-						Node->TimeScale = 0;
-					}
-					else
-					{
-						Node->TimeScale = timeScale;
-					}
-
-					Node->WidgetText = FText::AsCultureInvariant(label);
-
-					Node->Attributes = attributes;
-
-					Node->SetNodeLabelAndTransform();
-
+					break;
+				default:
+					break;
 				}
-			//}
+
+				switch (ScalingMethod)
+				{
+				case EScalingMethod::VE_Discrete:
+
+					if (duration < MinTime + (MaxTime - MinTime) / 5)
+					{
+						timeScale = 0.2f;
+					}
+					else if (duration < MinTime + (MaxTime - MinTime) * 2 / 5)
+					{
+						timeScale = 0.4f;
+					}
+					else if (duration < MinTime + (MaxTime - MinTime) * 3 / 5)
+					{
+						timeScale = 0.6f;
+					}
+					else if (duration < MinTime + (MaxTime - MinTime) * 4 / 5)
+					{
+						timeScale = 0.8f;
+					}
+					else if (duration <= MinTime + (MaxTime - MinTime))
+					{
+						timeScale = 1;
+					}
+
+					break;
+				case EScalingMethod::VE_Continuous:
+
+					timeScale = ((float(duration) - float(MinTime)) / float(MaxTime));
+
+					break;
+				case EScalingMethod::VE_MinMax:
+
+					timeScale = ((duration - MinTime) / (MaxTime - MinTime));
+
+					break;
+				default:
+					break;
+				}
+
+				Node->Significance = significance;
+
+				Node->SignificanceScale = scale;
+
+				Node->Duration = duration;
+
+				Node->Durations = durations;
+
+				if (MinTime == 0 && MaxTime == 0)
+				{
+					Node->TimeScale = 0;
+				}
+				else
+				{
+					Node->TimeScale = timeScale;
+				}
+
+				Node->WidgetText = FText::AsCultureInvariant(label);
+
+				Node->Attributes = attributes;
+
+				Node->SetNodeLabelAndTransform();
+
+			}
 			location->Y += NodesYDistance;
 		}
 		location->Y = 0;
