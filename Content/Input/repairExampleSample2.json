@@ -2,10 +2,24 @@
   "FuzzyModel" : {
       "nodes": [
            {
-              "label" : "start",
+              "label" : "start_node",
               "frequencySignificance" : 1000,
+              "durations" : [
+                  {
+                      "TotalDuration" : 5722080000,
+                      "MeanDuration" : 5722080,
+                      "MedianDuration" : 5160000,
+                      "MinDuration" : 2820000,
+                      "MaxDuration" : 15960000
+                   }
+               ],
               "attributes" : [
                   {
+                      "description" : [
+                          {
+                          "Simulated process instance" : "1000"
+                          }
+                      ]
                       }
                    ]
           },
@@ -16,6 +30,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -37,6 +52,7 @@
                   {
                       "TotalDuration" : 454800000,
                       "MeanDuration" : 454800,
+                      "MedianDuration" : 480000,
                       "MinDuration" : 300000,
                       "MaxDuration" : 600000
                    }
@@ -55,8 +71,16 @@
                       ],
                       "defectType" : [
                           {
-                          "Total" : "5902",
-                          "Arithmetic_Mean" : "5,902"
+                          "6" : "119",
+                          "3" : "71",
+                          "8" : "121",
+                          "9" : "105",
+                          "10" : "119",
+                          "4" : "98",
+                          "5" : "74",
+                          "7" : "122",
+                          "2" : "85",
+                          "1" : "86"
                           }
                       ],
                       "phoneType" : [
@@ -76,6 +100,7 @@
                   {
                       "TotalDuration" : 425580000,
                       "MeanDuration" : 633303.571428571,
+                      "MedianDuration" : 660000,
                       "MinDuration" : 0,
                       "MaxDuration" : 3000000
                    }
@@ -99,6 +124,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -107,8 +133,10 @@
                   {
                       "numberRepairs" : [
                           {
-                          "Total" : "697",
-                          "Arithmetic_Mean" : "0,697"
+                          "0" : "573",
+                          "2" : "110",
+                          "1" : "237",
+                          "3" : "80"
                           }
                       ],
                       "org:resource" : [
@@ -126,12 +154,21 @@
                    ]
           },
            {
+              "label" : "end_node",
+              "frequencySignificance" : 1000,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
               "label" : "Repair (Simple)",
               "frequencySignificance" : 834,
               "durations" : [
                   {
                       "TotalDuration" : 311340000,
                       "MeanDuration" : 446685.796269727,
+                      "MedianDuration" : 420000,
                       "MinDuration" : 0,
                       "MaxDuration" : 1200000
                    }
@@ -155,6 +192,7 @@
                   {
                       "TotalDuration" : 535020000,
                       "MeanDuration" : 392243.401759531,
+                      "MedianDuration" : 420000,
                       "MinDuration" : 0,
                       "MaxDuration" : 600000
                    }
@@ -173,8 +211,10 @@
                       ],
                       "numberRepairs" : [
                           {
-                          "Total" : "1089",
-                          "Arithmetic_Mean" : "0,798387096774194"
+                          "1" : "451",
+                          "2" : "199",
+                          "0" : "634",
+                          "3" : "80"
                           }
                       ],
                       "defectFixed" : [
@@ -193,6 +233,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -214,6 +255,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -231,8 +273,8 @@
       ],
       "edges": [
            {
-              "label" : "start -> Register",
-              "fromNode" : "start",
+              "label" : "start_node -> Register",
+              "fromNode" : "start_node",
               "toNode" : "Register",
               "frequencySignificance" : 1000
           },
@@ -245,6 +287,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -259,10 +302,17 @@
                   {
                       "TotalDuration" : 403320000,
                       "MeanDuration" : 823102.040816327,
+                      "MedianDuration" : 840000,
                       "MinDuration" : 60000,
                       "MaxDuration" : 1860000
                    }
                ]
+          },
+           {
+              "label" : "Archive Repair -> end_node",
+              "fromNode" : "Archive Repair",
+              "toNode" : "end_node",
+              "frequencySignificance" : 1000
           },
            {
               "label" : "Analyze Defect -> Repair (Simple)",
@@ -273,6 +323,7 @@
                   {
                       "TotalDuration" : 318120000,
                       "MeanDuration" : 848320,
+                      "MedianDuration" : 780000,
                       "MinDuration" : 60000,
                       "MaxDuration" : 1800000
                    }
@@ -287,6 +338,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -301,6 +353,7 @@
                   {
                       "TotalDuration" : 138960000,
                       "MeanDuration" : 452638.436482085,
+                      "MedianDuration" : 480000,
                       "MinDuration" : 300000,
                       "MaxDuration" : 600000
                    }
@@ -315,6 +368,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -329,6 +383,7 @@
                   {
                       "TotalDuration" : 357180000,
                       "MeanDuration" : 450416.141235813,
+                      "MedianDuration" : 480000,
                       "MinDuration" : 300000,
                       "MaxDuration" : 600000
                    }
@@ -343,6 +398,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -357,6 +413,7 @@
                   {
                       "TotalDuration" : 162900000,
                       "MeanDuration" : 380607.476635514,
+                      "MedianDuration" : 300000,
                       "MinDuration" : 0,
                       "MaxDuration" : 1860000
                    }
@@ -371,6 +428,7 @@
                   {
                       "TotalDuration" : 23640000,
                       "MeanDuration" : 115882.352941176,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 600000
                    }

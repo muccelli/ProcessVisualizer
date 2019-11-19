@@ -2,8 +2,17 @@
   "FuzzyModel" : {
       "nodes": [
            {
-              "label" : "start",
+              "label" : "start_node",
               "frequencySignificance" : 7554,
+              "durations" : [
+                  {
+                      "TotalDuration" : 7883772512000,
+                      "MeanDuration" : 1043655349.74848,
+                      "MedianDuration" : 652281000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 66644793000
+                   }
+               ],
               "attributes" : [
                   {
                       }
@@ -16,6 +25,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -2705,6 +2715,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -5114,6 +5125,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -7317,12 +7329,21 @@
                    ]
           },
            {
+              "label" : "end_node",
+              "frequencySignificance" : 7554,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
               "label" : "Unmatched",
               "frequencySignificance" : 5,
               "durations" : [
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -7386,8 +7407,8 @@
       ],
       "edges": [
            {
-              "label" : "start -> Accepted",
-              "fromNode" : "start",
+              "label" : "start_node -> Accepted",
+              "fromNode" : "start_node",
               "toNode" : "Accepted",
               "frequencySignificance" : 6394
           },
@@ -7400,6 +7421,7 @@
                   {
                       "TotalDuration" : 398199108000,
                       "MeanDuration" : 41924521.7940619,
+                      "MedianDuration" : 205000,
                       "MinDuration" : 1000,
                       "MaxDuration" : 27107088000
                    }
@@ -7414,6 +7436,7 @@
                   {
                       "TotalDuration" : 1058432285000,
                       "MeanDuration" : 98651531.8296207,
+                      "MedianDuration" : 2603000,
                       "MinDuration" : 1000,
                       "MaxDuration" : 24618655000
                    }
@@ -7428,10 +7451,17 @@
                   {
                       "TotalDuration" : 1423190936000,
                       "MeanDuration" : 176050338.446314,
+                      "MedianDuration" : 484000,
                       "MinDuration" : 1000,
                       "MaxDuration" : 22538272000
                    }
                ]
+          },
+           {
+              "label" : "Completed -> end_node",
+              "fromNode" : "Completed",
+              "toNode" : "end_node",
+              "frequencySignificance" : 7546
           },
            {
               "label" : "Completed -> Unmatched",
@@ -7442,6 +7472,7 @@
                   {
                       "TotalDuration" : 1022870000,
                       "MeanDuration" : 204574000,
+                      "MedianDuration" : 83275000,
                       "MinDuration" : 179000,
                       "MaxDuration" : 514983000
                    }
@@ -7456,6 +7487,7 @@
                   {
                       "TotalDuration" : 3352000,
                       "MeanDuration" : 670400,
+                      "MedianDuration" : 234000,
                       "MinDuration" : 47000,
                       "MaxDuration" : 2208000
                    }

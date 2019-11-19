@@ -2,10 +2,24 @@
   "FuzzyModel" : {
       "nodes": [
            {
-              "label" : "start",
+              "label" : "start_node",
               "frequencySignificance" : 3512,
+              "durations" : [
+                  {
+                      "TotalDuration" : 43013809000,
+                      "MeanDuration" : 12247667.7107062,
+                      "MedianDuration" : 10572500,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 41932000
+                   }
+               ],
               "attributes" : [
                   {
+                      "description" : [
+                          {
+                          "Simulated process instance" : "3512"
+                          }
+                      ]
                       }
                    ]
           },
@@ -16,6 +30,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -43,6 +58,7 @@
                   {
                       "TotalDuration" : 52879000,
                       "MeanDuration" : 30743.6046511628,
+                      "MedianDuration" : 22000,
                       "MinDuration" : 0,
                       "MaxDuration" : 224000
                    }
@@ -69,6 +85,7 @@
                   {
                       "TotalDuration" : 791900000,
                       "MeanDuration" : 519278.68852459,
+                      "MedianDuration" : 362000,
                       "MinDuration" : 0,
                       "MaxDuration" : 3747000
                    }
@@ -90,6 +107,7 @@
                   {
                       "TotalDuration" : 59279000,
                       "MeanDuration" : 20094.5762711864,
+                      "MedianDuration" : 14000,
                       "MinDuration" : 0,
                       "MaxDuration" : 216000
                    }
@@ -111,6 +129,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -120,7 +139,10 @@
                       "duration" : [
                           {
                           "Total" : "78075584",
-                          "Arithmetic_Mean" : "11115,5444191344"
+                          "Mean" : "11115,5444191344",
+                          "Median" : "9306",
+                          "Min" : "0",
+                          "Max" : "40704"
                           }
                       ],
                       "org:resource" : [
@@ -143,12 +165,21 @@
                    ]
           },
            {
+              "label" : "end_node",
+              "frequencySignificance" : 3512,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
               "label" : "S check if sufficient information is available",
               "frequencySignificance" : 1792,
               "durations" : [
                   {
                       "TotalDuration" : 56528000,
                       "MeanDuration" : 31544.6428571429,
+                      "MedianDuration" : 21000,
                       "MinDuration" : 0,
                       "MaxDuration" : 209000
                    }
@@ -175,6 +206,7 @@
                   {
                       "TotalDuration" : 733416000,
                       "MeanDuration" : 514677.894736842,
+                      "MedianDuration" : 352000,
                       "MinDuration" : 0,
                       "MaxDuration" : 4280000
                    }
@@ -196,6 +228,7 @@
                   {
                       "TotalDuration" : 1627376000,
                       "MeanDuration" : 661266.151970744,
+                      "MedianDuration" : 458000,
                       "MinDuration" : 0,
                       "MaxDuration" : 5795000
                    }
@@ -217,6 +250,7 @@
                   {
                       "TotalDuration" : 349713000,
                       "MeanDuration" : 176980.263157895,
+                      "MedianDuration" : 123000,
                       "MinDuration" : 0,
                       "MaxDuration" : 1633000
                    }
@@ -238,6 +272,7 @@
                   {
                       "TotalDuration" : 245139000,
                       "MeanDuration" : 124058.198380567,
+                      "MedianDuration" : 87000,
                       "MinDuration" : 0,
                       "MaxDuration" : 1071000
                    }
@@ -259,6 +294,7 @@
                   {
                       "TotalDuration" : 59787000,
                       "MeanDuration" : 30256.5789473684,
+                      "MedianDuration" : 21000,
                       "MinDuration" : 0,
                       "MaxDuration" : 206000
                    }
@@ -276,8 +312,8 @@
       ],
       "edges": [
            {
-              "label" : "start -> incoming claim",
-              "fromNode" : "start",
+              "label" : "start_node -> incoming claim",
+              "fromNode" : "start_node",
               "toNode" : "incoming claim",
               "frequencySignificance" : 3512
           },
@@ -290,6 +326,7 @@
                   {
                       "TotalDuration" : 3915204000,
                       "MeanDuration" : 2276281.39534884,
+                      "MedianDuration" : 1194000,
                       "MinDuration" : 0,
                       "MaxDuration" : 20976000
                    }
@@ -304,6 +341,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -318,10 +356,17 @@
                   {
                       "TotalDuration" : 15244375000,
                       "MeanDuration" : 9996311.47540984,
+                      "MedianDuration" : 8385000,
                       "MinDuration" : 0,
                       "MaxDuration" : 36610000
                    }
                ]
+          },
+           {
+              "label" : "end -> end_node",
+              "fromNode" : "end",
+              "toNode" : "end_node",
+              "frequencySignificance" : 3512
           },
            {
               "label" : "incoming claim -> S check if sufficient information is available",
@@ -332,6 +377,7 @@
                   {
                       "TotalDuration" : 765617000,
                       "MeanDuration" : 427241.629464286,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 6425000
                    }
@@ -346,6 +392,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -360,6 +407,7 @@
                   {
                       "TotalDuration" : 15136579000,
                       "MeanDuration" : 10622160.7017544,
+                      "MedianDuration" : 8898000,
                       "MinDuration" : 0,
                       "MaxDuration" : 37113000
                    }
@@ -374,6 +422,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -388,6 +437,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -402,6 +452,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -416,6 +467,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -430,6 +482,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
@@ -444,6 +497,7 @@
                   {
                       "TotalDuration" : 0,
                       "MeanDuration" : 0,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
                    }
