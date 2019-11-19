@@ -876,11 +876,13 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 	double MinTime = nodesArray[1]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetIntegerField("MeanDuration");
 	
 	int32 totalNumberofCases = 0;
+	int32 totalNumberOfEvent = 0;
 
 	for (int32 index = 0; index < nodesArray.Num(); index++)
 	{
 		if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("start_node") && !nodesArray[index]->AsObject()->GetStringField("label").Equals("end_node"))
 		{
+			totalNumberOfEvent += nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
 			if (nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance") > MaxSign)
 			{
 				MaxSign = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
@@ -1398,7 +1400,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 						ActorItrEdge->PercentageFrequencyFromParentNode = (ActorItrEdge->Significance * 100) / outgoingEdgesSignificance;
 					}
 				}
-				ActorItr->PercentageFrequencyToTotal = (ActorItr->Significance * 100) / totalNumberofCases;
+				ActorItr->PercentageFrequencyToTotal = (ActorItr->Significance * 100) / totalNumberOfEvent;
 			}
 		}
 
