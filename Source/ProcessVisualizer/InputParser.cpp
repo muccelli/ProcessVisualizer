@@ -279,7 +279,9 @@ void AInputParser::CreateVerticalGraph(TSharedPtr<FJsonObject> &JsonObject, bool
 			{
 				//ANodeActor* Node = (ANodeActor*) World->SpawnActor(ANodeActor::StaticClass(), location);
 				ANodeActor* Node = (ANodeActor*)World->SpawnActor(NodeActorBP, location);
+#if WITH_EDITOR
 				Node->SetFolderPath("Nodes");
+#endif
 				Node->SetActorLabel(label);
 
 				// set scale
