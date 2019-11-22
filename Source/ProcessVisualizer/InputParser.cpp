@@ -1059,7 +1059,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 
 				Node->Significance = significance;
 
-				Node->CaseFrequency = caseFrequency;
+				Node->CaseFrequency = float(caseFrequency) * 100 / totalNumberofCases;
 
 				Node->SignificanceScale = scale;
 
@@ -1366,7 +1366,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 
 					Edge->Significance = significance;
 
-					Edge->CaseFrequency = caseFrequency;
+					Edge->CaseFrequency = float(caseFrequency) * 100 / totalNumberofCases;
 
 					Edge->SignificanceScale = signScale / 2;
 
