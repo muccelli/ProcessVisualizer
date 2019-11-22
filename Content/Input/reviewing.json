@@ -4,6 +4,7 @@
            {
               "label" : "start_node",
               "frequencySignificance" : 100,
+              "caseFrequencySignificance" : 0,
               "durations" : [
                   {
                       "TotalDuration" : 7591363200000,
@@ -26,6 +27,7 @@
            {
               "label" : "invite reviewers",
               "frequencySignificance" : 100,
+              "caseFrequencySignificance" : 100,
               "durations" : [
                   {
                       "TotalDuration" : 18921600000,
@@ -49,6 +51,7 @@
            {
               "label" : "get review 2",
               "frequencySignificance" : 45,
+              "caseFrequencySignificance" : 45,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -83,6 +86,7 @@
            {
               "label" : "get review 3",
               "frequencySignificance" : 50,
+              "caseFrequencySignificance" : 50,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -117,6 +121,7 @@
            {
               "label" : "get review 1",
               "frequencySignificance" : 45,
+              "caseFrequencySignificance" : 45,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -151,6 +156,7 @@
            {
               "label" : "collect reviews",
               "frequencySignificance" : 100,
+              "caseFrequencySignificance" : 100,
               "durations" : [
                   {
                       "TotalDuration" : 24019200000,
@@ -174,6 +180,7 @@
            {
               "label" : "decide",
               "frequencySignificance" : 626,
+              "caseFrequencySignificance" : 100,
               "durations" : [
                   {
                       "TotalDuration" : 139881600000,
@@ -216,6 +223,7 @@
            {
               "label" : "invite additional reviewer",
               "frequencySignificance" : 526,
+              "caseFrequencySignificance" : 93,
               "durations" : [
                   {
                       "TotalDuration" : 111974400000,
@@ -239,6 +247,7 @@
            {
               "label" : "get review X",
               "frequencySignificance" : 263,
+              "caseFrequencySignificance" : 93,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -273,6 +282,7 @@
            {
               "label" : "reject",
               "frequencySignificance" : 55,
+              "caseFrequencySignificance" : 55,
               "durations" : [
                   {
                       "TotalDuration" : 10800000000,
@@ -296,6 +306,7 @@
            {
               "label" : "end_node",
               "frequencySignificance" : 100,
+              "caseFrequencySignificance" : 0,
               "attributes" : [
                   {
                       }
@@ -304,6 +315,7 @@
            {
               "label" : "time-out 1",
               "frequencySignificance" : 55,
+              "caseFrequencySignificance" : 55,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -326,6 +338,7 @@
            {
               "label" : "time-out X",
               "frequencySignificance" : 263,
+              "caseFrequencySignificance" : 77,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -348,6 +361,7 @@
            {
               "label" : "accept",
               "frequencySignificance" : 45,
+              "caseFrequencySignificance" : 45,
               "durations" : [
                   {
                       "TotalDuration" : 9590400000,
@@ -371,6 +385,7 @@
            {
               "label" : "time-out 2",
               "frequencySignificance" : 55,
+              "caseFrequencySignificance" : 55,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -393,6 +408,7 @@
            {
               "label" : "time-out 3",
               "frequencySignificance" : 50,
+              "caseFrequencySignificance" : 50,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -425,6 +441,7 @@
               "fromNode" : "invite reviewers",
               "toNode" : "get review 2",
               "frequencySignificance" : 19,
+              "caseFrequencySignificance" : 19,
               "durations" : [
                   {
                       "TotalDuration" : 3024000000,
@@ -440,11 +457,12 @@
               "fromNode" : "get review 2",
               "toNode" : "get review 3",
               "frequencySignificance" : 12,
+              "caseFrequencySignificance" : 12,
               "durations" : [
                   {
                       "TotalDuration" : 1555200000,
                       "MeanDuration" : 129600000,
-                      "MedianDuration" : 172800000,
+                      "MedianDuration" : 129600000,
                       "MinDuration" : 0,
                       "MaxDuration" : 345600000
                    }
@@ -455,6 +473,7 @@
               "fromNode" : "get review 1",
               "toNode" : "collect reviews",
               "frequencySignificance" : 11,
+              "caseFrequencySignificance" : 11,
               "durations" : [
                   {
                       "TotalDuration" : 6652800000,
@@ -470,11 +489,12 @@
               "fromNode" : "collect reviews",
               "toNode" : "decide",
               "frequencySignificance" : 100,
+              "caseFrequencySignificance" : 100,
               "durations" : [
                   {
                       "TotalDuration" : 787536000000,
                       "MeanDuration" : 7875360000,
-                      "MedianDuration" : 4190400000,
+                      "MedianDuration" : 3931200000,
                       "MinDuration" : 0,
                       "MaxDuration" : 56505600000
                    }
@@ -485,6 +505,7 @@
               "fromNode" : "decide",
               "toNode" : "invite additional reviewer",
               "frequencySignificance" : 526,
+              "caseFrequencySignificance" : 93,
               "durations" : [
                   {
                       "TotalDuration" : 509068800000,
@@ -500,6 +521,7 @@
               "fromNode" : "invite additional reviewer",
               "toNode" : "get review X",
               "frequencySignificance" : 263,
+              "caseFrequencySignificance" : 93,
               "durations" : [
                   {
                       "TotalDuration" : 57283200000,
@@ -515,6 +537,7 @@
               "fromNode" : "get review X",
               "toNode" : "decide",
               "frequencySignificance" : 263,
+              "caseFrequencySignificance" : 93,
               "durations" : [
                   {
                       "TotalDuration" : 2650924800000,
@@ -530,6 +553,7 @@
               "fromNode" : "decide",
               "toNode" : "reject",
               "frequencySignificance" : 55,
+              "caseFrequencySignificance" : 55,
               "durations" : [
                   {
                       "TotalDuration" : 5011200000,
@@ -551,11 +575,12 @@
               "fromNode" : "time-out 1",
               "toNode" : "collect reviews",
               "frequencySignificance" : 22,
+              "caseFrequencySignificance" : 22,
               "durations" : [
                   {
                       "TotalDuration" : 5270400000,
                       "MeanDuration" : 239563636.363636,
-                      "MedianDuration" : 129600000,
+                      "MedianDuration" : 86400000,
                       "MinDuration" : 0,
                       "MaxDuration" : 864000000
                    }
@@ -566,6 +591,7 @@
               "fromNode" : "invite additional reviewer",
               "toNode" : "time-out X",
               "frequencySignificance" : 263,
+              "caseFrequencySignificance" : 77,
               "durations" : [
                   {
                       "TotalDuration" : 108432000000,
@@ -581,6 +607,7 @@
               "fromNode" : "time-out X",
               "toNode" : "decide",
               "frequencySignificance" : 263,
+              "caseFrequencySignificance" : 77,
               "durations" : [
                   {
                       "TotalDuration" : 2741558400000,
@@ -596,6 +623,7 @@
               "fromNode" : "decide",
               "toNode" : "accept",
               "frequencySignificance" : 45,
+              "caseFrequencySignificance" : 45,
               "durations" : [
                   {
                       "TotalDuration" : 2073600000,
@@ -617,6 +645,7 @@
               "fromNode" : "invite reviewers",
               "toNode" : "get review 3",
               "frequencySignificance" : 19,
+              "caseFrequencySignificance" : 19,
               "durations" : [
                   {
                       "TotalDuration" : 2160000000,
@@ -628,10 +657,27 @@
                ]
           },
            {
+              "label" : "get review 1 -> get review 2",
+              "fromNode" : "get review 1",
+              "toNode" : "get review 2",
+              "frequencySignificance" : 10,
+              "caseFrequencySignificance" : 10,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1123200000,
+                      "MeanDuration" : 112320000,
+                      "MedianDuration" : 86400000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 259200000
+                   }
+               ]
+          },
+           {
               "label" : "get review 3 -> time-out 2",
               "fromNode" : "get review 3",
               "toNode" : "time-out 2",
               "frequencySignificance" : 15,
+              "caseFrequencySignificance" : 15,
               "durations" : [
                   {
                       "TotalDuration" : 1814400000,
@@ -643,15 +689,32 @@
                ]
           },
            {
+              "label" : "invite reviewers -> time-out 2",
+              "fromNode" : "invite reviewers",
+              "toNode" : "time-out 2",
+              "frequencySignificance" : 12,
+              "caseFrequencySignificance" : 12,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1987200000,
+                      "MeanDuration" : 165600000,
+                      "MedianDuration" : 172800000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 345600000
+                   }
+               ]
+          },
+           {
               "label" : "time-out 2 -> collect reviews",
               "fromNode" : "time-out 2",
               "toNode" : "collect reviews",
               "frequencySignificance" : 26,
+              "caseFrequencySignificance" : 26,
               "durations" : [
                   {
                       "TotalDuration" : 17366400000,
                       "MeanDuration" : 667938461.538462,
-                      "MedianDuration" : 475200000,
+                      "MedianDuration" : 388800000,
                       "MinDuration" : 0,
                       "MaxDuration" : 2678400000
                    }
@@ -662,11 +725,12 @@
               "fromNode" : "invite reviewers",
               "toNode" : "time-out 1",
               "frequencySignificance" : 16,
+              "caseFrequencySignificance" : 16,
               "durations" : [
                   {
                       "TotalDuration" : 2592000000,
                       "MeanDuration" : 162000000,
-                      "MedianDuration" : 129600000,
+                      "MedianDuration" : 86400000,
                       "MinDuration" : 0,
                       "MaxDuration" : 432000000
                    }
@@ -677,13 +741,30 @@
               "fromNode" : "time-out 3",
               "toNode" : "collect reviews",
               "frequencySignificance" : 20,
+              "caseFrequencySignificance" : 20,
               "durations" : [
                   {
                       "TotalDuration" : 12614400000,
                       "MeanDuration" : 630720000,
-                      "MedianDuration" : 648000000,
+                      "MedianDuration" : 561600000,
                       "MinDuration" : 0,
                       "MaxDuration" : 2764800000
+                   }
+               ]
+          },
+           {
+              "label" : "get review 1 -> time-out 3",
+              "fromNode" : "get review 1",
+              "toNode" : "time-out 3",
+              "frequencySignificance" : 10,
+              "caseFrequencySignificance" : 10,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1987200000,
+                      "MeanDuration" : 198720000,
+                      "MedianDuration" : 172800000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 432000000
                    }
                ]
           },
@@ -692,11 +773,12 @@
               "fromNode" : "invite reviewers",
               "toNode" : "get review 1",
               "frequencySignificance" : 16,
+              "caseFrequencySignificance" : 16,
               "durations" : [
                   {
                       "TotalDuration" : 1468800000,
                       "MeanDuration" : 91800000,
-                      "MedianDuration" : 43200000,
+                      "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 345600000
                    }
@@ -707,6 +789,7 @@
               "fromNode" : "invite reviewers",
               "toNode" : "time-out 3",
               "frequencySignificance" : 18,
+              "caseFrequencySignificance" : 18,
               "durations" : [
                   {
                       "TotalDuration" : 2419200000,

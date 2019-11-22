@@ -26,6 +26,9 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString Label;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	USplineComponent* Spline;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
@@ -54,6 +57,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float PercentageFrequencyFromParentNode;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float CaseFrequency;
 
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
 	void SetEdgeProperties();

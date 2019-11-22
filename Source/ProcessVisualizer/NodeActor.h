@@ -38,6 +38,9 @@ public:
 	FText WidgetText;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString Label;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float Significance;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
@@ -45,6 +48,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float PercentageFrequencyToTotal;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float CaseFrequency;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float Duration;

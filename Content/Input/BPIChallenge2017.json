@@ -4,6 +4,7 @@
            {
               "label" : "start_node",
               "frequencySignificance" : 31509,
+              "caseFrequencySignificance" : 0,
               "durations" : [
                   {
                       "TotalDuration" : 89953875732820,
@@ -54,6 +55,7 @@
            {
               "label" : "A_Create Application",
               "frequencySignificance" : 31509,
+              "caseFrequencySignificance" : 31509,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -196,6 +198,7 @@
            {
               "label" : "A_Submitted",
               "frequencySignificance" : 20423,
+              "caseFrequencySignificance" : 20423,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -228,6 +231,7 @@
            {
               "label" : "W_Handle leads",
               "frequencySignificance" : 20520,
+              "caseFrequencySignificance" : 20423,
               "durations" : [
                   {
                       "TotalDuration" : 79423587480,
@@ -356,6 +360,7 @@
            {
               "label" : "W_Complete application",
               "frequencySignificance" : 84334,
+              "caseFrequencySignificance" : 31509,
               "durations" : [
                   {
                       "TotalDuration" : 16746796,
@@ -515,6 +520,7 @@
            {
               "label" : "A_Concept",
               "frequencySignificance" : 31509,
+              "caseFrequencySignificance" : 31509,
               "durations" : [
                   {
                       "TotalDuration" : 2243602590,
@@ -660,6 +666,7 @@
            {
               "label" : "A_Accepted",
               "frequencySignificance" : 31509,
+              "caseFrequencySignificance" : 31509,
               "durations" : [
                   {
                       "TotalDuration" : 1389894074950,
@@ -804,6 +811,7 @@
            {
               "label" : "O_Create Offer",
               "frequencySignificance" : 42995,
+              "caseFrequencySignificance" : 31509,
               "durations" : [
                   {
                       "TotalDuration" : 1240613378012,
@@ -1012,6 +1020,7 @@
            {
               "label" : "O_Created",
               "frequencySignificance" : 42995,
+              "caseFrequencySignificance" : 31509,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -1163,6 +1172,7 @@
            {
               "label" : "O_Sent (mail and online)",
               "frequencySignificance" : 39707,
+              "caseFrequencySignificance" : 31050,
               "durations" : [
                   {
                       "TotalDuration" : 15127884079,
@@ -1308,6 +1318,7 @@
            {
               "label" : "W_Call after offers",
               "frequencySignificance" : 76525,
+              "caseFrequencySignificance" : 31362,
               "durations" : [
                   {
                       "TotalDuration" : 4998413442,
@@ -1486,6 +1497,7 @@
            {
               "label" : "A_Complete",
               "frequencySignificance" : 31362,
+              "caseFrequencySignificance" : 31362,
               "durations" : [
                   {
                       "TotalDuration" : 121881,
@@ -1630,6 +1642,7 @@
            {
               "label" : "W_Validate application",
               "frequencySignificance" : 94957,
+              "caseFrequencySignificance" : 21870,
               "durations" : [
                   {
                       "TotalDuration" : 1388255126816,
@@ -1797,6 +1810,7 @@
            {
               "label" : "A_Validating",
               "frequencySignificance" : 38816,
+              "caseFrequencySignificance" : 21870,
               "durations" : [
                   {
                       "TotalDuration" : 18280121161331,
@@ -1955,6 +1969,7 @@
            {
               "label" : "O_Returned",
               "frequencySignificance" : 23305,
+              "caseFrequencySignificance" : 21768,
               "durations" : [
                   {
                       "TotalDuration" : 123275578167,
@@ -2033,6 +2048,7 @@
            {
               "label" : "W_Call incomplete files",
               "frequencySignificance" : 55197,
+              "caseFrequencySignificance" : 15003,
               "durations" : [
                   {
                       "TotalDuration" : 166458143368,
@@ -2205,6 +2221,7 @@
            {
               "label" : "A_Incomplete",
               "frequencySignificance" : 23055,
+              "caseFrequencySignificance" : 15003,
               "durations" : [
                   {
                       "TotalDuration" : 1820436176267,
@@ -2337,6 +2354,7 @@
            {
               "label" : "O_Accepted",
               "frequencySignificance" : 17228,
+              "caseFrequencySignificance" : 17228,
               "durations" : [
                   {
                       "TotalDuration" : 955819931697,
@@ -2408,6 +2426,7 @@
            {
               "label" : "A_Pending",
               "frequencySignificance" : 17228,
+              "caseFrequencySignificance" : 17228,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -2479,6 +2498,7 @@
            {
               "label" : "end_node",
               "frequencySignificance" : 31509,
+              "caseFrequencySignificance" : 0,
               "attributes" : [
                   {
                       }
@@ -2487,6 +2507,7 @@
            {
               "label" : "A_Denied",
               "frequencySignificance" : 3753,
+              "caseFrequencySignificance" : 3752,
               "durations" : [
                   {
                       "TotalDuration" : 541575722960,
@@ -2617,6 +2638,7 @@
            {
               "label" : "O_Refused",
               "frequencySignificance" : 4695,
+              "caseFrequencySignificance" : 3720,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -2745,6 +2767,7 @@
            {
               "label" : "O_Cancelled",
               "frequencySignificance" : 20898,
+              "caseFrequencySignificance" : 15682,
               "durations" : [
                   {
                       "TotalDuration" : 82858678778,
@@ -2909,6 +2932,7 @@
            {
               "label" : "A_Cancelled",
               "frequencySignificance" : 10431,
+              "caseFrequencySignificance" : 10431,
               "durations" : [
                   {
                       "TotalDuration" : 4199634896488,
@@ -3048,6 +3072,7 @@
            {
               "label" : "O_Sent (online only)",
               "frequencySignificance" : 2026,
+              "caseFrequencySignificance" : 1800,
               "durations" : [
                   {
                       "TotalDuration" : 1629048618,
@@ -3183,6 +3208,7 @@
            {
               "label" : "W_Assess potential fraud",
               "frequencySignificance" : 658,
+              "caseFrequencySignificance" : 303,
               "durations" : [
                   {
                       "TotalDuration" : 42497749089,
@@ -3273,6 +3299,7 @@
            {
               "label" : "W_Personal Loan collection",
               "frequencySignificance" : 5,
+              "caseFrequencySignificance" : 2,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -3313,6 +3340,7 @@
            {
               "label" : "W_Shortened completion ",
               "frequencySignificance" : 124,
+              "caseFrequencySignificance" : 74,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -3371,6 +3399,7 @@
               "fromNode" : "A_Create Application",
               "toNode" : "A_Submitted",
               "frequencySignificance" : 20423,
+              "caseFrequencySignificance" : 20423,
               "durations" : [
                   {
                       "TotalDuration" : 6936921,
@@ -3386,6 +3415,7 @@
               "fromNode" : "A_Submitted",
               "toNode" : "W_Handle leads",
               "frequencySignificance" : 20423,
+              "caseFrequencySignificance" : 20423,
               "durations" : [
                   {
                       "TotalDuration" : 7167272,
@@ -3401,6 +3431,7 @@
               "fromNode" : "W_Handle leads",
               "toNode" : "W_Complete application",
               "frequencySignificance" : 20423,
+              "caseFrequencySignificance" : 20423,
               "durations" : [
                   {
                       "TotalDuration" : 251449,
@@ -3412,10 +3443,27 @@
                ]
           },
            {
+              "label" : "W_Complete application -> A_Concept",
+              "fromNode" : "W_Complete application",
+              "toNode" : "A_Concept",
+              "frequencySignificance" : 28120,
+              "caseFrequencySignificance" : 28120,
+              "durations" : [
+                  {
+                      "TotalDuration" : 164062,
+                      "MeanDuration" : 5.83435277382646,
+                      "MedianDuration" : 4,
+                      "MinDuration" : 1,
+                      "MaxDuration" : 3814
+                   }
+               ]
+          },
+           {
               "label" : "W_Complete application -> A_Accepted",
               "fromNode" : "W_Complete application",
               "toNode" : "A_Accepted",
               "frequencySignificance" : 22249,
+              "caseFrequencySignificance" : 22249,
               "durations" : [
                   {
                       "TotalDuration" : 723458871185,
@@ -3431,11 +3479,12 @@
               "fromNode" : "A_Accepted",
               "toNode" : "O_Create Offer",
               "frequencySignificance" : 29966,
+              "caseFrequencySignificance" : 29966,
               "durations" : [
                   {
                       "TotalDuration" : 22987162405,
                       "MeanDuration" : 767108.136054195,
-                      "MedianDuration" : 182005.5,
+                      "MedianDuration" : 182001,
                       "MinDuration" : 12000,
                       "MaxDuration" : 2331001565
                    }
@@ -3446,6 +3495,7 @@
               "fromNode" : "O_Create Offer",
               "toNode" : "O_Created",
               "frequencySignificance" : 42995,
+              "caseFrequencySignificance" : 31509,
               "durations" : [
                   {
                       "TotalDuration" : 45692908,
@@ -3461,11 +3511,12 @@
               "fromNode" : "O_Created",
               "toNode" : "O_Sent (mail and online)",
               "frequencySignificance" : 35604,
+              "caseFrequencySignificance" : 30386,
               "durations" : [
                   {
                       "TotalDuration" : 15080155578,
                       "MeanDuration" : 423552.285642063,
-                      "MedianDuration" : 22853.5,
+                      "MedianDuration" : 22851,
                       "MinDuration" : 5833,
                       "MaxDuration" : 1312221839
                    }
@@ -3476,6 +3527,7 @@
               "fromNode" : "O_Sent (mail and online)",
               "toNode" : "W_Complete application",
               "frequencySignificance" : 30912,
+              "caseFrequencySignificance" : 30912,
               "durations" : [
                   {
                       "TotalDuration" : 730230,
@@ -3491,6 +3543,7 @@
               "fromNode" : "W_Complete application",
               "toNode" : "W_Call after offers",
               "frequencySignificance" : 31362,
+              "caseFrequencySignificance" : 31362,
               "durations" : [
                   {
                       "TotalDuration" : 376912,
@@ -3506,6 +3559,7 @@
               "fromNode" : "W_Call after offers",
               "toNode" : "A_Complete",
               "frequencySignificance" : 31362,
+              "caseFrequencySignificance" : 31362,
               "durations" : [
                   {
                       "TotalDuration" : 110030,
@@ -3521,11 +3575,12 @@
               "fromNode" : "A_Complete",
               "toNode" : "W_Call after offers",
               "frequencySignificance" : 30396,
+              "caseFrequencySignificance" : 30396,
               "durations" : [
                   {
                       "TotalDuration" : 14847358047,
                       "MeanDuration" : 488464.207362811,
-                      "MedianDuration" : 138327,
+                      "MedianDuration" : 138312.5,
                       "MinDuration" : 1546,
                       "MaxDuration" : 68841231
                    }
@@ -3536,6 +3591,7 @@
               "fromNode" : "W_Call after offers",
               "toNode" : "W_Validate application",
               "frequencySignificance" : 21880,
+              "caseFrequencySignificance" : 21870,
               "durations" : [
                   {
                       "TotalDuration" : 312971,
@@ -3551,6 +3607,7 @@
               "fromNode" : "W_Validate application",
               "toNode" : "A_Validating",
               "frequencySignificance" : 38816,
+              "caseFrequencySignificance" : 21870,
               "durations" : [
                   {
                       "TotalDuration" : 21285737,
@@ -3566,6 +3623,7 @@
               "fromNode" : "A_Validating",
               "toNode" : "O_Returned",
               "frequencySignificance" : 20673,
+              "caseFrequencySignificance" : 20406,
               "durations" : [
                   {
                       "TotalDuration" : 1265837672,
@@ -3581,6 +3639,7 @@
               "fromNode" : "O_Returned",
               "toNode" : "W_Validate application",
               "frequencySignificance" : 21235,
+              "caseFrequencySignificance" : 20675,
               "durations" : [
                   {
                       "TotalDuration" : 41017350224,
@@ -3592,10 +3651,27 @@
                ]
           },
            {
+              "label" : "W_Validate application -> W_Call incomplete files",
+              "fromNode" : "W_Validate application",
+              "toNode" : "W_Call incomplete files",
+              "frequencySignificance" : 23052,
+              "caseFrequencySignificance" : 15003,
+              "durations" : [
+                  {
+                      "TotalDuration" : 248167,
+                      "MeanDuration" : 10.7655301058476,
+                      "MedianDuration" : 7,
+                      "MinDuration" : 4,
+                      "MaxDuration" : 792
+                   }
+               ]
+          },
+           {
               "label" : "W_Call incomplete files -> A_Incomplete",
               "fromNode" : "W_Call incomplete files",
               "toNode" : "A_Incomplete",
               "frequencySignificance" : 23055,
+              "caseFrequencySignificance" : 15003,
               "durations" : [
                   {
                       "TotalDuration" : 72009,
@@ -3611,6 +3687,7 @@
               "fromNode" : "A_Incomplete",
               "toNode" : "W_Call incomplete files",
               "frequencySignificance" : 22277,
+              "caseFrequencySignificance" : 14731,
               "durations" : [
                   {
                       "TotalDuration" : 3593486061,
@@ -3626,11 +3703,12 @@
               "fromNode" : "W_Validate application",
               "toNode" : "O_Accepted",
               "frequencySignificance" : 11738,
+              "caseFrequencySignificance" : 11738,
               "durations" : [
                   {
                       "TotalDuration" : 748397889192,
                       "MeanDuration" : 63758552.4954847,
-                      "MedianDuration" : 6304281,
+                      "MedianDuration" : 6301616.5,
                       "MinDuration" : 4710,
                       "MaxDuration" : 1213701174
                    }
@@ -3641,6 +3719,7 @@
               "fromNode" : "O_Accepted",
               "toNode" : "A_Pending",
               "frequencySignificance" : 17228,
+              "caseFrequencySignificance" : 17228,
               "durations" : [
                   {
                       "TotalDuration" : 145950,
@@ -3656,6 +3735,7 @@
               "fromNode" : "A_Pending",
               "toNode" : "W_Validate application",
               "frequencySignificance" : 12291,
+              "caseFrequencySignificance" : 12291,
               "durations" : [
                   {
                       "TotalDuration" : 64145,
@@ -3677,11 +3757,12 @@
               "fromNode" : "W_Validate application",
               "toNode" : "A_Denied",
               "frequencySignificance" : 3254,
+              "caseFrequencySignificance" : 3254,
               "durations" : [
                   {
                       "TotalDuration" : 289950796953,
                       "MeanDuration" : 89105960.9566687,
-                      "MedianDuration" : 2624991,
+                      "MedianDuration" : 2611880,
                       "MinDuration" : 15360,
                       "MaxDuration" : 1037079015
                    }
@@ -3692,6 +3773,7 @@
               "fromNode" : "A_Denied",
               "toNode" : "O_Refused",
               "frequencySignificance" : 3720,
+              "caseFrequencySignificance" : 3720,
               "durations" : [
                   {
                       "TotalDuration" : 171298,
@@ -3707,6 +3789,7 @@
               "fromNode" : "O_Refused",
               "toNode" : "W_Validate application",
               "frequencySignificance" : 3289,
+              "caseFrequencySignificance" : 3289,
               "durations" : [
                   {
                       "TotalDuration" : 54972,
@@ -3722,6 +3805,7 @@
               "fromNode" : "W_Call after offers",
               "toNode" : "A_Cancelled",
               "frequencySignificance" : 8539,
+              "caseFrequencySignificance" : 8539,
               "durations" : [
                   {
                       "TotalDuration" : 17063935459086,
@@ -3737,6 +3821,7 @@
               "fromNode" : "A_Cancelled",
               "toNode" : "O_Cancelled",
               "frequencySignificance" : 10270,
+              "caseFrequencySignificance" : 10270,
               "durations" : [
                   {
                       "TotalDuration" : 436760,
@@ -3752,6 +3837,7 @@
               "fromNode" : "O_Cancelled",
               "toNode" : "W_Call after offers",
               "frequencySignificance" : 9659,
+              "caseFrequencySignificance" : 9574,
               "durations" : [
                   {
                       "TotalDuration" : 125952676072,
@@ -3773,6 +3859,7 @@
               "fromNode" : "A_Concept",
               "toNode" : "A_Accepted",
               "frequencySignificance" : 9231,
+              "caseFrequencySignificance" : 9231,
               "durations" : [
                   {
                       "TotalDuration" : 169684894879,
@@ -3788,6 +3875,7 @@
               "fromNode" : "O_Created",
               "toNode" : "O_Sent (online only)",
               "frequencySignificance" : 1895,
+              "caseFrequencySignificance" : 1760,
               "durations" : [
                   {
                       "TotalDuration" : 1492838571,
@@ -3799,17 +3887,18 @@
                ]
           },
            {
-              "label" : "A_Create Application -> A_Concept",
-              "fromNode" : "A_Create Application",
-              "toNode" : "A_Concept",
-              "frequencySignificance" : 3389,
+              "label" : "O_Sent (online only) -> W_Complete application",
+              "fromNode" : "O_Sent (online only)",
+              "toNode" : "W_Complete application",
+              "frequencySignificance" : 450,
+              "caseFrequencySignificance" : 450,
               "durations" : [
                   {
-                      "TotalDuration" : 37441,
-                      "MeanDuration" : 11.0478017114193,
-                      "MedianDuration" : 3,
-                      "MinDuration" : 1,
-                      "MaxDuration" : 1614
+                      "TotalDuration" : 11501,
+                      "MeanDuration" : 25.5577777777778,
+                      "MedianDuration" : 16,
+                      "MinDuration" : 10,
+                      "MaxDuration" : 300
                    }
                ]
           },
@@ -3818,43 +3907,30 @@
               "fromNode" : "O_Sent (online only)",
               "toNode" : "W_Call incomplete files",
               "frequencySignificance" : 868,
+              "caseFrequencySignificance" : 838,
               "durations" : [
                   {
                       "TotalDuration" : 87913599352,
                       "MeanDuration" : 101282948.562212,
-                      "MedianDuration" : 489294,
+                      "MedianDuration" : 485317,
                       "MinDuration" : 2692,
                       "MaxDuration" : 1825854518
                    }
                ]
           },
            {
-              "label" : "O_Refused -> W_Assess potential fraud",
-              "fromNode" : "O_Refused",
+              "label" : "W_Validate application -> W_Assess potential fraud",
+              "fromNode" : "W_Validate application",
               "toNode" : "W_Assess potential fraud",
-              "frequencySignificance" : 102,
+              "frequencySignificance" : 248,
+              "caseFrequencySignificance" : 241,
               "durations" : [
                   {
-                      "TotalDuration" : 1923,
-                      "MeanDuration" : 18.8529411764706,
-                      "MedianDuration" : 11,
-                      "MinDuration" : 7,
-                      "MaxDuration" : 207
-                   }
-               ]
-          },
-           {
-              "label" : "W_Call incomplete files -> W_Personal Loan collection",
-              "fromNode" : "W_Call incomplete files",
-              "toNode" : "W_Personal Loan collection",
-              "frequencySignificance" : 1,
-              "durations" : [
-                  {
-                      "TotalDuration" : 11525807178,
-                      "MeanDuration" : 11525807178,
-                      "MedianDuration" : 11525807178,
-                      "MinDuration" : 11525807178,
-                      "MaxDuration" : 11525807178
+                      "TotalDuration" : 3067,
+                      "MeanDuration" : 12.366935483871,
+                      "MedianDuration" : 7,
+                      "MinDuration" : 4,
+                      "MaxDuration" : 352
                    }
                ]
           },
@@ -3865,10 +3941,43 @@
               "frequencySignificance" : 2
           },
            {
+              "label" : "W_Validate application -> W_Personal Loan collection",
+              "fromNode" : "W_Validate application",
+              "toNode" : "W_Personal Loan collection",
+              "frequencySignificance" : 2,
+              "caseFrequencySignificance" : 1,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1742381847,
+                      "MeanDuration" : 871190923.5,
+                      "MedianDuration" : 871190923.5,
+                      "MinDuration" : 31782,
+                      "MaxDuration" : 1742350065
+                   }
+               ]
+          },
+           {
+              "label" : "W_Complete application -> W_Shortened completion ",
+              "fromNode" : "W_Complete application",
+              "toNode" : "W_Shortened completion ",
+              "frequencySignificance" : 25,
+              "caseFrequencySignificance" : 22,
+              "durations" : [
+                  {
+                      "TotalDuration" : 9954232569,
+                      "MeanDuration" : 398169302.76,
+                      "MedianDuration" : 65246,
+                      "MinDuration" : 3,
+                      "MaxDuration" : 9665894573
+                   }
+               ]
+          },
+           {
               "label" : "A_Complete -> W_Shortened completion ",
               "fromNode" : "A_Complete",
               "toNode" : "W_Shortened completion ",
               "frequencySignificance" : 45,
+              "caseFrequencySignificance" : 45,
               "durations" : [
                   {
                       "TotalDuration" : 5125171,
@@ -3880,10 +3989,20 @@
                ]
           },
            {
-              "label" : "W_Shortened completion  -> end_node",
+              "label" : "W_Shortened completion  -> W_Call after offers",
               "fromNode" : "W_Shortened completion ",
-              "toNode" : "end_node",
-              "frequencySignificance" : 5
+              "toNode" : "W_Call after offers",
+              "frequencySignificance" : 68,
+              "caseFrequencySignificance" : 50,
+              "durations" : [
+                  {
+                      "TotalDuration" : 8674342315,
+                      "MeanDuration" : 127563857.573529,
+                      "MedianDuration" : 5055.5,
+                      "MinDuration" : 2,
+                      "MaxDuration" : 553633075
+                   }
+               ]
           }
       ]
   }

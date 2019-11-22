@@ -1,0 +1,1296 @@
+{
+  "FuzzyModel" : {
+      "nodes": [
+           {
+              "label" : "start_node",
+              "frequencySignificance" : 1050,
+              "caseFrequencySignificance" : 0,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2582720637000,
+                      "MeanDuration" : 2459733940,
+                      "MedianDuration" : 464356000,
+                      "MinDuration" : 122000,
+                      "MaxDuration" : 36488789000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "ER Registration",
+              "frequencySignificance" : 1050,
+              "caseFrequencySignificance" : 1050,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "InfectionSuspected" : [
+                          {
+                          "true" : "848",
+                          "false" : "202"
+                          }
+                      ],
+                      "org:group" : [
+                          {
+                          "A" : "985",
+                          "L" : "65"
+                          }
+                      ],
+                      "DiagnosticBlood" : [
+                          {
+                          "true" : "823",
+                          "false" : "227"
+                          }
+                      ],
+                      "DisfuncOrg" : [
+                          {
+                          "true" : "69",
+                          "false" : "981"
+                          }
+                      ],
+                      "SIRSCritTachypnea" : [
+                          {
+                          "true" : "601",
+                          "false" : "449"
+                          }
+                      ],
+                      "Hypotensie" : [
+                          {
+                          "true" : "54",
+                          "false" : "996"
+                          }
+                      ],
+                      "SIRSCritHeartRate" : [
+                          {
+                          "true" : "811",
+                          "false" : "239"
+                          }
+                      ],
+                      "Infusion" : [
+                          {
+                          "true" : "796",
+                          "false" : "254"
+                          }
+                      ],
+                      "DiagnosticArtAstrup" : [
+                          {
+                          "true" : "297",
+                          "false" : "753"
+                          }
+                      ],
+                      "Age" : [
+                          {
+                          "85" : "142",
+                          "45" : "26",
+                          "55" : "55",
+                          "70" : "105",
+                          "75" : "130",
+                          "50" : "33",
+                          "60" : "66",
+                          "80" : "123",
+                          "90" : "148",
+                          "30" : "18",
+                          "20" : "11",
+                          "65" : "73",
+                          "35" : "26",
+                          "40" : "21",
+                          "25" : "18"
+                          }
+                      ],
+                      "DiagnosticIC" : [
+                          {
+                          "true" : "848",
+                          "false" : "202"
+                          }
+                      ],
+                      "DiagnosticSputum" : [
+                          {
+                          "false" : "1021",
+                          "true" : "29"
+                          }
+                      ],
+                      "DiagnosticLiquor" : [
+                          {
+                          "false" : "1045",
+                          "true" : "5"
+                          }
+                      ],
+                      "DiagnosticOther" : [
+                          {
+                          "false" : "1040",
+                          "true" : "10"
+                          }
+                      ],
+                      "SIRSCriteria2OrMore" : [
+                          {
+                          "true" : "853",
+                          "false" : "197"
+                          }
+                      ],
+                      "DiagnosticXthorax" : [
+                          {
+                          "true" : "785",
+                          "false" : "265"
+                          }
+                      ],
+                      "SIRSCritTemperature" : [
+                          {
+                          "true" : "801",
+                          "false" : "249"
+                          }
+                      ],
+                      "DiagnosticUrinaryCulture" : [
+                          {
+                          "true" : "476",
+                          "false" : "574"
+                          }
+                      ],
+                      "SIRSCritLeucos" : [
+                          {
+                          "false" : "1001",
+                          "true" : "49"
+                          }
+                      ],
+                      "Oligurie" : [
+                          {
+                          "false" : "1025",
+                          "true" : "25"
+                          }
+                      ],
+                      "Diagnose" : [
+                          {
+                          "A" : "1",
+                          "B" : "76",
+                          "C" : "144",
+                          "D" : "22",
+                          "E" : "64",
+                          "F" : "8",
+                          "G" : "38",
+                          "H" : "50",
+                          "I" : "1",
+                          "J" : "2",
+                          "K" : "20",
+                          "L" : "1",
+                          "M" : "10",
+                          "N" : "9",
+                          "O" : "1",
+                          "P" : "4",
+                          "Q" : "11",
+                          "R" : "21",
+                          "S" : "12",
+                          "T" : "4",
+                          "U" : "9",
+                          "V" : "1",
+                          "W" : "7",
+                          "X" : "1",
+                          "Y" : "10",
+                          "Z" : "9",
+                          "AA" : "10",
+                          "BA" : "3",
+                          "CA" : "8",
+                          "DA" : "1",
+                          "EA" : "2",
+                          "FA" : "2",
+                          "GA" : "3",
+                          "HA" : "4",
+                          "IA" : "1",
+                          "JA" : "1",
+                          "KA" : "7",
+                          "LA" : "7",
+                          "MA" : "3",
+                          "NA" : "1",
+                          "OA" : "1",
+                          "PA" : "1",
+                          "QA" : "1",
+                          "RA" : "1",
+                          "SA" : "1",
+                          "TA" : "1",
+                          "UA" : "1",
+                          "VA" : "3",
+                          "WA" : "2",
+                          "XA" : "2",
+                          "YA" : "2",
+                          "ZA" : "4",
+                          "BB" : "8",
+                          "CB" : "1",
+                          "DB" : "1",
+                          "FB" : "1",
+                          "GB" : "7",
+                          "HB" : "1",
+                          "IB" : "1",
+                          "JB" : "1",
+                          "KB" : "1",
+                          "LB" : "2",
+                          "MB" : "1",
+                          "NB" : "1",
+                          "OB" : "4",
+                          "PB" : "1",
+                          "QB" : "1",
+                          "RB" : "4",
+                          "SB" : "2",
+                          "TB" : "4",
+                          "UB" : "1",
+                          "VB" : "5",
+                          "WB" : "1",
+                          "XB" : "1",
+                          "YB" : "1",
+                          "ZB" : "3",
+                          "AC" : "3",
+                          "BC" : "1",
+                          "CC" : "1",
+                          "EB" : "1",
+                          "DC" : "1",
+                          "EC" : "1",
+                          "FC" : "1",
+                          "GC" : "1",
+                          "HC" : "1",
+                          "JC" : "4",
+                          "KC" : "2",
+                          "LC" : "3",
+                          "MC" : "1",
+                          "OC" : "1",
+                          "PC" : "2",
+                          "QC" : "1",
+                          "RC" : "5",
+                          "SC" : "1",
+                          "TC" : "1",
+                          "UC" : "3",
+                          "VC" : "1",
+                          "WC" : "2",
+                          "XC" : "1",
+                          "YC" : "1",
+                          "ZC" : "2",
+                          "AD" : "1",
+                          "BD" : "1",
+                          "CD" : "1",
+                          "DD" : "1",
+                          "ED" : "2",
+                          "FD" : "1",
+                          "GD" : "1",
+                          "HD" : "2",
+                          "ID" : "1",
+                          "JD" : "1",
+                          "KD" : "1",
+                          "MD" : "3",
+                          "ND" : "1",
+                          "OD" : "1",
+                          "PD" : "1",
+                          "QD" : "1",
+                          "IC" : "4",
+                          "RD" : "1",
+                          "SD" : "1",
+                          "TD" : "1",
+                          "UD" : "1",
+                          "VD" : "1",
+                          "WD" : "1",
+                          "YD" : "1",
+                          "ZD" : "1",
+                          "AE" : "1",
+                          "BE" : "1",
+                          "CE" : "1",
+                          "DE" : "1",
+                          "EE" : "1",
+                          "AB" : "1",
+                          "FE" : "1",
+                          "GE" : "1",
+                          "HE" : "1",
+                          "IE" : "1",
+                          "JE" : "1",
+                          "KE" : "1",
+                          "LE" : "1",
+                          "ME" : "1",
+                          "OE" : "1",
+                          "PE" : "1",
+                          "QE" : "1"
+                          }
+                      ],
+                      "Hypoxie" : [
+                          {
+                          "false" : "1030",
+                          "true" : "20"
+                          }
+                      ],
+                      "DiagnosticUrinarySediment" : [
+                          {
+                          "true" : "519",
+                          "false" : "531"
+                          }
+                      ],
+                      "DiagnosticECG" : [
+                          {
+                          "true" : "765",
+                          "false" : "285"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Leucocytes",
+              "frequencySignificance" : 3383,
+              "caseFrequencySignificance" : 1012,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Leucocytes" : [
+                          {
+                          "Total" : "43522,7999999998",
+                          "Mean" : "12,9493603094317",
+                          "Median" : "11",
+                          "Min" : "0,2",
+                          "Max" : "381,3"
+                          }
+                      ],
+                      "org:group" : [
+                          {
+                          "B" : "3383"
+                          }
+                      ],
+                      "Diagnose" : [
+                          {
+                          "A" : "1",
+                          "K" : "1",
+                          "C" : "1",
+                          "AB" : "1",
+                          "EB" : "1",
+                          "D" : "1",
+                          "B" : "4",
+                          "E" : "2",
+                          "R" : "1",
+                          "VA" : "1",
+                          "UA" : "1",
+                          "XD" : "1"
+                          }
+                      ],
+                      "Age" : [
+                          {
+                          "90" : "2",
+                          "40" : "2",
+                          "60" : "3",
+                          "50" : "1",
+                          "75" : "2",
+                          "65" : "2",
+                          "85" : "2",
+                          "70" : "1",
+                          "55" : "2",
+                          "45" : "1"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "CRP",
+              "frequencySignificance" : 3262,
+              "caseFrequencySignificance" : 1007,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "CRP" : [
+                          {
+                          "Total" : "355228",
+                          "Mean" : "113,745757284662",
+                          "Median" : "95",
+                          "Min" : "5",
+                          "Max" : "573"
+                          }
+                      ],
+                      "org:group" : [
+                          {
+                          "B" : "3262"
+                          }
+                      ],
+                      "Age" : [
+                          {
+                          "35" : "1",
+                          "65" : "1",
+                          "55" : "1",
+                          "45" : "1",
+                          "90" : "1",
+                          "85" : "1",
+                          "50" : "1",
+                          "60" : "1",
+                          "80" : "1",
+                          "25" : "1"
+                          }
+                      ],
+                      "Diagnose" : [
+                          {
+                          "K" : "1",
+                          "P" : "1",
+                          "Q" : "1",
+                          "GA" : "1",
+                          "E" : "1"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "LacticAcid",
+              "frequencySignificance" : 1466,
+              "caseFrequencySignificance" : 860,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:group" : [
+                          {
+                          "B" : "1466"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "ER Triage",
+              "frequencySignificance" : 1053,
+              "caseFrequencySignificance" : 1050,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:group" : [
+                          {
+                          "C" : "1053"
+                          }
+                      ],
+                      "Diagnose" : [
+                          {
+                          "S" : "1",
+                          "Q" : "1",
+                          "B" : "1",
+                          "G" : "1"
+                          }
+                      ],
+                      "Age" : [
+                          {
+                          "75" : "1",
+                          "85" : "1",
+                          "55" : "1",
+                          "65" : "1",
+                          "90" : "1",
+                          "70" : "1"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "ER Sepsis Triage",
+              "frequencySignificance" : 1049,
+              "caseFrequencySignificance" : 1049,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:group" : [
+                          {
+                          "A" : "984",
+                          "L" : "65"
+                          }
+                      ],
+                      "Diagnose" : [
+                          {
+                          "CA" : "1",
+                          "N" : "1",
+                          "LD" : "1",
+                          "JC" : "1",
+                          "G" : "1"
+                          }
+                      ],
+                      "Age" : [
+                          {
+                          "70" : "1",
+                          "50" : "1",
+                          "75" : "1",
+                          "90" : "1",
+                          "80" : "2",
+                          "60" : "1"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "IV Liquid",
+              "frequencySignificance" : 753,
+              "caseFrequencySignificance" : 753,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:group" : [
+                          {
+                          "A" : "715",
+                          "L" : "38"
+                          }
+                      ],
+                      "Age" : [
+                          {
+                          "75" : "1",
+                          "80" : "3",
+                          "85" : "3",
+                          "35" : "1",
+                          "65" : "1",
+                          "70" : "2",
+                          "90" : "2",
+                          "55" : "1"
+                          }
+                      ],
+                      "Diagnose" : [
+                          {
+                          "H" : "1",
+                          "C" : "2",
+                          "N" : "1",
+                          "IC" : "1",
+                          "KA" : "1",
+                          "NC" : "1",
+                          "B" : "1",
+                          "G" : "4",
+                          "W" : "1"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "IV Antibiotics",
+              "frequencySignificance" : 823,
+              "caseFrequencySignificance" : 823,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:group" : [
+                          {
+                          "A" : "778",
+                          "L" : "45"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Admission NC",
+              "frequencySignificance" : 1182,
+              "caseFrequencySignificance" : 800,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:group" : [
+                          {
+                          "D" : "47",
+                          "F" : "216",
+                          "G" : "148",
+                          "H" : "55",
+                          "I" : "126",
+                          "J" : "17",
+                          "K" : "17",
+                          "M" : "84",
+                          "N" : "46",
+                          "O" : "186",
+                          "Q" : "63",
+                          "R" : "57",
+                          "S" : "33",
+                          "T" : "35",
+                          "U" : "18",
+                          "V" : "25",
+                          "P" : "5",
+                          "X" : "1",
+                          "W" : "2",
+                          "Y" : "1"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Release A",
+              "frequencySignificance" : 671,
+              "caseFrequencySignificance" : 671,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:group" : [
+                          {
+                          "E" : "671"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "end_node",
+              "frequencySignificance" : 1050,
+              "caseFrequencySignificance" : 0,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "Return ER",
+              "frequencySignificance" : 294,
+              "caseFrequencySignificance" : 294,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:group" : [
+                          {
+                          "?" : "294"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Admission IC",
+              "frequencySignificance" : 117,
+              "caseFrequencySignificance" : 110,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:group" : [
+                          {
+                          "J" : "9",
+                          "P" : "54",
+                          "K" : "1",
+                          "W" : "53"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Release B",
+              "frequencySignificance" : 56,
+              "caseFrequencySignificance" : 56,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:group" : [
+                          {
+                          "E" : "56"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Release C",
+              "frequencySignificance" : 25,
+              "caseFrequencySignificance" : 25,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:group" : [
+                          {
+                          "E" : "25"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Release D",
+              "frequencySignificance" : 24,
+              "caseFrequencySignificance" : 24,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:group" : [
+                          {
+                          "E" : "24"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Release E",
+              "frequencySignificance" : 6,
+              "caseFrequencySignificance" : 6,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "org:group" : [
+                          {
+                          "E" : "6"
+                          }
+                      ]
+                      }
+                   ]
+          }
+      ],
+      "edges": [
+           {
+              "label" : "start_node -> ER Registration",
+              "fromNode" : "start_node",
+              "toNode" : "ER Registration",
+              "frequencySignificance" : 995
+          },
+           {
+              "label" : "Leucocytes -> CRP",
+              "fromNode" : "Leucocytes",
+              "toNode" : "CRP",
+              "frequencySignificance" : 1778,
+              "caseFrequencySignificance" : 758,
+              "durations" : [
+                  {
+                      "TotalDuration" : 36717540000,
+                      "MeanDuration" : 20651034.8706412,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 874800000
+                   }
+               ]
+          },
+           {
+              "label" : "CRP -> LacticAcid",
+              "fromNode" : "CRP",
+              "toNode" : "LacticAcid",
+              "frequencySignificance" : 629,
+              "caseFrequencySignificance" : 417,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2322780000,
+                      "MeanDuration" : 3692813.99046105,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 92220000
+                   }
+               ]
+          },
+           {
+              "label" : "ER Triage -> ER Sepsis Triage",
+              "fromNode" : "ER Triage",
+              "toNode" : "ER Sepsis Triage",
+              "frequencySignificance" : 905,
+              "caseFrequencySignificance" : 905,
+              "durations" : [
+                  {
+                      "TotalDuration" : 157716000,
+                      "MeanDuration" : 174271.82320442,
+                      "MedianDuration" : 25000,
+                      "MinDuration" : 7000,
+                      "MaxDuration" : 40399000
+                   }
+               ]
+          },
+           {
+              "label" : "ER Sepsis Triage -> IV Liquid",
+              "fromNode" : "ER Sepsis Triage",
+              "toNode" : "IV Liquid",
+              "frequencySignificance" : 285,
+              "caseFrequencySignificance" : 285,
+              "durations" : [
+                  {
+                      "TotalDuration" : 212861000,
+                      "MeanDuration" : 746880.701754386,
+                      "MedianDuration" : 23000,
+                      "MinDuration" : 6000,
+                      "MaxDuration" : 21832000
+                   }
+               ]
+          },
+           {
+              "label" : "IV Liquid -> IV Antibiotics",
+              "fromNode" : "IV Liquid",
+              "toNode" : "IV Antibiotics",
+              "frequencySignificance" : 501,
+              "caseFrequencySignificance" : 501,
+              "durations" : [
+                  {
+                      "TotalDuration" : 404700000,
+                      "MeanDuration" : 807784.431137725,
+                      "MedianDuration" : 6000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 18592000
+                   }
+               ]
+          },
+           {
+              "label" : "IV Antibiotics -> Admission NC",
+              "fromNode" : "IV Antibiotics",
+              "toNode" : "Admission NC",
+              "frequencySignificance" : 489,
+              "caseFrequencySignificance" : 489,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1903635000,
+                      "MeanDuration" : 3892914.11042945,
+                      "MedianDuration" : 352000,
+                      "MinDuration" : 22000,
+                      "MaxDuration" : 152355000
+                   }
+               ]
+          },
+           {
+              "label" : "Admission NC -> CRP",
+              "fromNode" : "Admission NC",
+              "toNode" : "CRP",
+              "frequencySignificance" : 369,
+              "caseFrequencySignificance" : 339,
+              "durations" : [
+                  {
+                      "TotalDuration" : 44698697000,
+                      "MeanDuration" : 121134680.216802,
+                      "MedianDuration" : 86734000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 673993000
+                   }
+               ]
+          },
+           {
+              "label" : "Leucocytes -> Release A",
+              "fromNode" : "Leucocytes",
+              "toNode" : "Release A",
+              "frequencySignificance" : 225,
+              "caseFrequencySignificance" : 225,
+              "durations" : [
+                  {
+                      "TotalDuration" : 38059269000,
+                      "MeanDuration" : 169152306.666667,
+                      "MedianDuration" : 108900000,
+                      "MinDuration" : 960000,
+                      "MaxDuration" : 1651500000
+                   }
+               ]
+          },
+           {
+              "label" : "Release A -> end_node",
+              "fromNode" : "Release A",
+              "toNode" : "end_node",
+              "frequencySignificance" : 393
+          },
+           {
+              "label" : "ER Registration -> ER Triage",
+              "fromNode" : "ER Registration",
+              "toNode" : "ER Triage",
+              "frequencySignificance" : 971,
+              "caseFrequencySignificance" : 971,
+              "durations" : [
+                  {
+                      "TotalDuration" : 617033000,
+                      "MeanDuration" : 635461.380020597,
+                      "MedianDuration" : 474000,
+                      "MinDuration" : 41000,
+                      "MaxDuration" : 5221000
+                   }
+               ]
+          },
+           {
+              "label" : "LacticAcid -> Leucocytes",
+              "fromNode" : "LacticAcid",
+              "toNode" : "Leucocytes",
+              "frequencySignificance" : 565,
+              "caseFrequencySignificance" : 366,
+              "durations" : [
+                  {
+                      "TotalDuration" : 6389880000,
+                      "MeanDuration" : 11309522.1238938,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 316800000
+                   }
+               ]
+          },
+           {
+              "label" : "CRP -> Release A",
+              "fromNode" : "CRP",
+              "toNode" : "Release A",
+              "frequencySignificance" : 322,
+              "caseFrequencySignificance" : 322,
+              "durations" : [
+                  {
+                      "TotalDuration" : 54384929000,
+                      "MeanDuration" : 168897295.031056,
+                      "MedianDuration" : 112500000,
+                      "MinDuration" : 7200000,
+                      "MaxDuration" : 1306800000
+                   }
+               ]
+          },
+           {
+              "label" : "ER Sepsis Triage -> Leucocytes",
+              "fromNode" : "ER Sepsis Triage",
+              "toNode" : "Leucocytes",
+              "frequencySignificance" : 269,
+              "caseFrequencySignificance" : 269,
+              "durations" : [
+                  {
+                      "TotalDuration" : 299678000,
+                      "MeanDuration" : 1114044.60966543,
+                      "MedianDuration" : 843000,
+                      "MinDuration" : 27000,
+                      "MaxDuration" : 11352000
+                   }
+               ]
+          },
+           {
+              "label" : "Admission NC -> Leucocytes",
+              "fromNode" : "Admission NC",
+              "toNode" : "Leucocytes",
+              "frequencySignificance" : 408,
+              "caseFrequencySignificance" : 367,
+              "durations" : [
+                  {
+                      "TotalDuration" : 48084981000,
+                      "MeanDuration" : 117855345.588235,
+                      "MedianDuration" : 89890500,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 594000000
+                   }
+               ]
+          },
+           {
+              "label" : "ER Sepsis Triage -> CRP",
+              "fromNode" : "ER Sepsis Triage",
+              "toNode" : "CRP",
+              "frequencySignificance" : 192,
+              "caseFrequencySignificance" : 192,
+              "durations" : [
+                  {
+                      "TotalDuration" : 207266000,
+                      "MeanDuration" : 1079510.41666667,
+                      "MedianDuration" : 873000,
+                      "MinDuration" : 10000,
+                      "MaxDuration" : 4949000
+                   }
+               ]
+          },
+           {
+              "label" : "Release A -> Return ER",
+              "fromNode" : "Release A",
+              "toNode" : "Return ER",
+              "frequencySignificance" : 276,
+              "caseFrequencySignificance" : 276,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1963495689000,
+                      "MeanDuration" : 7114114815.21739,
+                      "MedianDuration" : 4083842000,
+                      "MinDuration" : 25191000,
+                      "MaxDuration" : 36051318000
+                   }
+               ]
+          },
+           {
+              "label" : "Return ER -> end_node",
+              "fromNode" : "Return ER",
+              "toNode" : "end_node",
+              "frequencySignificance" : 291
+          },
+           {
+              "label" : "Admission NC -> Release B",
+              "fromNode" : "Admission NC",
+              "toNode" : "Release B",
+              "frequencySignificance" : 17,
+              "caseFrequencySignificance" : 17,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2120311000,
+                      "MeanDuration" : 124724176.470588,
+                      "MedianDuration" : 74384000,
+                      "MinDuration" : 1197000,
+                      "MaxDuration" : 445315000
+                   }
+               ]
+          },
+           {
+              "label" : "Release B -> end_node",
+              "fromNode" : "Release B",
+              "toNode" : "end_node",
+              "frequencySignificance" : 55
+          },
+           {
+              "label" : "Admission IC -> LacticAcid",
+              "fromNode" : "Admission IC",
+              "toNode" : "LacticAcid",
+              "frequencySignificance" : 41,
+              "caseFrequencySignificance" : 40,
+              "durations" : [
+                  {
+                      "TotalDuration" : 716012000,
+                      "MeanDuration" : 17463707.3170732,
+                      "MedianDuration" : 11318000,
+                      "MinDuration" : 754000,
+                      "MaxDuration" : 65190000
+                   }
+               ]
+          },
+           {
+              "label" : "CRP -> Release B",
+              "fromNode" : "CRP",
+              "toNode" : "Release B",
+              "frequencySignificance" : 19,
+              "caseFrequencySignificance" : 19,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2126940000,
+                      "MeanDuration" : 111944210.526316,
+                      "MedianDuration" : 81900000,
+                      "MinDuration" : 5400000,
+                      "MaxDuration" : 389700000
+                   }
+               ]
+          },
+           {
+              "label" : "IV Antibiotics -> Admission IC",
+              "fromNode" : "IV Antibiotics",
+              "toNode" : "Admission IC",
+              "frequencySignificance" : 46,
+              "caseFrequencySignificance" : 46,
+              "durations" : [
+                  {
+                      "TotalDuration" : 118284000,
+                      "MeanDuration" : 2571391.30434783,
+                      "MedianDuration" : 162500,
+                      "MinDuration" : 37000,
+                      "MaxDuration" : 17609000
+                   }
+               ]
+          },
+           {
+              "label" : "CRP -> Release C",
+              "fromNode" : "CRP",
+              "toNode" : "Release C",
+              "frequencySignificance" : 13,
+              "caseFrequencySignificance" : 13,
+              "durations" : [
+                  {
+                      "TotalDuration" : 5150400000,
+                      "MeanDuration" : 396184615.384615,
+                      "MedianDuration" : 351000000,
+                      "MinDuration" : 9000000,
+                      "MaxDuration" : 1650600000
+                   }
+               ]
+          },
+           {
+              "label" : "Release C -> end_node",
+              "fromNode" : "Release C",
+              "toNode" : "end_node",
+              "frequencySignificance" : 19
+          },
+           {
+              "label" : "Leucocytes -> Release D",
+              "fromNode" : "Leucocytes",
+              "toNode" : "Release D",
+              "frequencySignificance" : 11,
+              "caseFrequencySignificance" : 11,
+              "durations" : [
+                  {
+                      "TotalDuration" : 3397420000,
+                      "MeanDuration" : 308856363.636364,
+                      "MedianDuration" : 190741000,
+                      "MinDuration" : 92979000,
+                      "MaxDuration" : 959400000
+                   }
+               ]
+          },
+           {
+              "label" : "Release D -> end_node",
+              "fromNode" : "Release D",
+              "toNode" : "end_node",
+              "frequencySignificance" : 14
+          },
+           {
+              "label" : "Admission IC -> Leucocytes",
+              "fromNode" : "Admission IC",
+              "toNode" : "Leucocytes",
+              "frequencySignificance" : 38,
+              "caseFrequencySignificance" : 37,
+              "durations" : [
+                  {
+                      "TotalDuration" : 779127000,
+                      "MeanDuration" : 20503342.1052632,
+                      "MedianDuration" : 11116000,
+                      "MinDuration" : 236000,
+                      "MaxDuration" : 81413000
+                   }
+               ]
+          },
+           {
+              "label" : "Leucocytes -> Release B",
+              "fromNode" : "Leucocytes",
+              "toNode" : "Release B",
+              "frequencySignificance" : 14,
+              "caseFrequencySignificance" : 14,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2501465000,
+                      "MeanDuration" : 178676071.428571,
+                      "MedianDuration" : 102627500,
+                      "MinDuration" : 13080000,
+                      "MaxDuration" : 562500000
+                   }
+               ]
+          },
+           {
+              "label" : "CRP -> Release D",
+              "fromNode" : "CRP",
+              "toNode" : "Release D",
+              "frequencySignificance" : 12,
+              "caseFrequencySignificance" : 12,
+              "durations" : [
+                  {
+                      "TotalDuration" : 3663879000,
+                      "MeanDuration" : 305323250,
+                      "MedianDuration" : 223650000,
+                      "MinDuration" : 7200000,
+                      "MaxDuration" : 886500000
+                   }
+               ]
+          },
+           {
+              "label" : "CRP -> Release E",
+              "fromNode" : "CRP",
+              "toNode" : "Release E",
+              "frequencySignificance" : 3,
+              "caseFrequencySignificance" : 3,
+              "durations" : [
+                  {
+                      "TotalDuration" : 161100000,
+                      "MeanDuration" : 53700000,
+                      "MedianDuration" : 60300000,
+                      "MinDuration" : 10800000,
+                      "MaxDuration" : 90000000
+                   }
+               ]
+          },
+           {
+              "label" : "Release E -> end_node",
+              "fromNode" : "Release E",
+              "toNode" : "end_node",
+              "frequencySignificance" : 5
+          }
+      ]
+  }
+}

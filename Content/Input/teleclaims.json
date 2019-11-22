@@ -4,6 +4,7 @@
            {
               "label" : "start_node",
               "frequencySignificance" : 3512,
+              "caseFrequencySignificance" : 0,
               "durations" : [
                   {
                       "TotalDuration" : 43013809000,
@@ -26,6 +27,7 @@
            {
               "label" : "incoming claim",
               "frequencySignificance" : 3512,
+              "caseFrequencySignificance" : 3512,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -54,6 +56,7 @@
            {
               "label" : "B check if sufficient information is available",
               "frequencySignificance" : 1720,
+              "caseFrequencySignificance" : 1720,
               "durations" : [
                   {
                       "TotalDuration" : 52879000,
@@ -81,6 +84,7 @@
            {
               "label" : "B register claim",
               "frequencySignificance" : 1525,
+              "caseFrequencySignificance" : 1525,
               "durations" : [
                   {
                       "TotalDuration" : 791900000,
@@ -103,6 +107,7 @@
            {
               "label" : "determine likelihood of claim",
               "frequencySignificance" : 2950,
+              "caseFrequencySignificance" : 2950,
               "durations" : [
                   {
                       "TotalDuration" : 59279000,
@@ -125,6 +130,7 @@
            {
               "label" : "end",
               "frequencySignificance" : 3512,
+              "caseFrequencySignificance" : 3512,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -167,6 +173,7 @@
            {
               "label" : "end_node",
               "frequencySignificance" : 3512,
+              "caseFrequencySignificance" : 0,
               "attributes" : [
                   {
                       }
@@ -175,6 +182,7 @@
            {
               "label" : "S check if sufficient information is available",
               "frequencySignificance" : 1792,
+              "caseFrequencySignificance" : 1792,
               "durations" : [
                   {
                       "TotalDuration" : 56528000,
@@ -202,6 +210,7 @@
            {
               "label" : "S register claim",
               "frequencySignificance" : 1425,
+              "caseFrequencySignificance" : 1425,
               "durations" : [
                   {
                       "TotalDuration" : 733416000,
@@ -224,6 +233,7 @@
            {
               "label" : "assess claim",
               "frequencySignificance" : 2461,
+              "caseFrequencySignificance" : 2461,
               "durations" : [
                   {
                       "TotalDuration" : 1627376000,
@@ -246,6 +256,7 @@
            {
               "label" : "advise claimant on reimbursement",
               "frequencySignificance" : 1976,
+              "caseFrequencySignificance" : 1976,
               "durations" : [
                   {
                       "TotalDuration" : 349713000,
@@ -268,6 +279,7 @@
            {
               "label" : "initiate payment",
               "frequencySignificance" : 1976,
+              "caseFrequencySignificance" : 1976,
               "durations" : [
                   {
                       "TotalDuration" : 245139000,
@@ -290,6 +302,7 @@
            {
               "label" : "close claim",
               "frequencySignificance" : 1976,
+              "caseFrequencySignificance" : 1976,
               "durations" : [
                   {
                       "TotalDuration" : 59787000,
@@ -322,11 +335,12 @@
               "fromNode" : "incoming claim",
               "toNode" : "B check if sufficient information is available",
               "frequencySignificance" : 1720,
+              "caseFrequencySignificance" : 1720,
               "durations" : [
                   {
                       "TotalDuration" : 3915204000,
                       "MeanDuration" : 2276281.39534884,
-                      "MedianDuration" : 1194000,
+                      "MedianDuration" : 1192500,
                       "MinDuration" : 0,
                       "MaxDuration" : 20976000
                    }
@@ -337,6 +351,7 @@
               "fromNode" : "B check if sufficient information is available",
               "toNode" : "B register claim",
               "frequencySignificance" : 1525,
+              "caseFrequencySignificance" : 1525,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -352,6 +367,7 @@
               "fromNode" : "B register claim",
               "toNode" : "determine likelihood of claim",
               "frequencySignificance" : 1525,
+              "caseFrequencySignificance" : 1525,
               "durations" : [
                   {
                       "TotalDuration" : 15244375000,
@@ -373,6 +389,7 @@
               "fromNode" : "incoming claim",
               "toNode" : "S check if sufficient information is available",
               "frequencySignificance" : 1792,
+              "caseFrequencySignificance" : 1792,
               "durations" : [
                   {
                       "TotalDuration" : 765617000,
@@ -388,6 +405,7 @@
               "fromNode" : "S check if sufficient information is available",
               "toNode" : "S register claim",
               "frequencySignificance" : 1425,
+              "caseFrequencySignificance" : 1425,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -403,6 +421,7 @@
               "fromNode" : "S register claim",
               "toNode" : "determine likelihood of claim",
               "frequencySignificance" : 1425,
+              "caseFrequencySignificance" : 1425,
               "durations" : [
                   {
                       "TotalDuration" : 15136579000,
@@ -418,6 +437,7 @@
               "fromNode" : "determine likelihood of claim",
               "toNode" : "assess claim",
               "frequencySignificance" : 2461,
+              "caseFrequencySignificance" : 2461,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -433,6 +453,23 @@
               "fromNode" : "assess claim",
               "toNode" : "advise claimant on reimbursement",
               "frequencySignificance" : 994,
+              "caseFrequencySignificance" : 994,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
+          },
+           {
+              "label" : "advise claimant on reimbursement -> initiate payment",
+              "fromNode" : "advise claimant on reimbursement",
+              "toNode" : "initiate payment",
+              "frequencySignificance" : 994,
+              "caseFrequencySignificance" : 994,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -448,6 +485,7 @@
               "fromNode" : "initiate payment",
               "toNode" : "close claim",
               "frequencySignificance" : 1504,
+              "caseFrequencySignificance" : 1504,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -463,6 +501,7 @@
               "fromNode" : "close claim",
               "toNode" : "end",
               "frequencySignificance" : 1466,
+              "caseFrequencySignificance" : 1466,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -478,21 +517,7 @@
               "fromNode" : "assess claim",
               "toNode" : "initiate payment",
               "frequencySignificance" : 982,
-              "durations" : [
-                  {
-                      "TotalDuration" : 0,
-                      "MeanDuration" : 0,
-                      "MedianDuration" : 0,
-                      "MinDuration" : 0,
-                      "MaxDuration" : 0
-                   }
-               ]
-          },
-           {
-              "label" : "advise claimant on reimbursement -> end",
-              "fromNode" : "advise claimant on reimbursement",
-              "toNode" : "end",
-              "frequencySignificance" : 510,
+              "caseFrequencySignificance" : 982,
               "durations" : [
                   {
                       "TotalDuration" : 0,

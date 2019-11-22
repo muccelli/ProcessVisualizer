@@ -282,7 +282,7 @@ void AInputParser::CreateVerticalGraph(TSharedPtr<FJsonObject> &JsonObject, bool
 #if WITH_EDITOR
 				Node->SetFolderPath("Nodes");
 #endif
-				Node->SetActorLabel(label);
+				Node->Label = label;
 
 				// set scale
 				float scale;
@@ -383,13 +383,13 @@ void AInputParser::CreateVerticalGraph(TSharedPtr<FJsonObject> &JsonObject, bool
 
 			for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
 			{
-				if (ActorItr->GetActorLabel() == fromNode)
+				if (ActorItr->Label == fromNode)
 				{
 					FromNode = *ActorItr;
 					startingLocation = ActorItr->GetActorLocation();
 				}
 
-				if (ActorItr->GetActorLabel() == toNode)
+				if (ActorItr->Label == toNode)
 				{
 					ToNode = *ActorItr;
 					endingLocation = ActorItr->GetActorLocation();
@@ -399,8 +399,10 @@ void AInputParser::CreateVerticalGraph(TSharedPtr<FJsonObject> &JsonObject, bool
 			if (FromNode && ToNode)
 			{
 				AEdgeActor* Edge = (AEdgeActor*)World->SpawnActor(EdgeActorBP, location);
+#if WITH_EDITOR
 				Edge->SetFolderPath("Edges");
-				Edge->SetActorLabel(label);
+#endif
+				Edge->Label = label;
 				Edge->FromNode = FromNode;
 				Edge->ToNode = ToNode;
 				Edge->Spline->SetLocationAtSplinePoint(0, startingLocation, ESplineCoordinateSpace::Local);
@@ -554,8 +556,10 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 			{
 				//ANodeActor* Node = (ANodeActor*) World->SpawnActor(ANodeActor::StaticClass(), location);
 				ANodeActor* Node = (ANodeActor*)World->SpawnActor(NodeActorBP, location);
+#if WITH_EDITOR
 				Node->SetFolderPath("Nodes");
-				Node->SetActorLabel(label);
+#endif
+				Node->Label = label;
 
 				// set scale
 				float scale;
@@ -728,7 +732,7 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 			GLog->Log(label);
 			for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
 			{
-				if (ActorItr->GetActorLabel().Equals(fromNode.TrimEnd()))
+				if (ActorItr->Label.Equals(fromNode.TrimEnd()))
 				{
 					FromNode = *ActorItr;
 					startingLocation.X = ActorItr->GetActorLocation().X;
@@ -736,7 +740,7 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 					startingLocation.Z = 0;
 				}
 
-				if (ActorItr->GetActorLabel().Equals(toNode.TrimEnd()))
+				if (ActorItr->Label.Equals(toNode.TrimEnd()))
 				{
 					ToNode = *ActorItr;
 					endingLocation.X = ActorItr->GetActorLocation().X;
@@ -748,8 +752,10 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 			if (FromNode && ToNode)
 			{
 				AEdgeActor* Edge = (AEdgeActor*)World->SpawnActor(EdgeActorBP, location);
+#if WITH_EDITOR
 				Edge->SetFolderPath("Edges");
-				Edge->SetActorLabel(label);
+#endif
+				Edge->Label = label;
 				Edge->FromNode = FromNode;
 				Edge->ToNode = ToNode;
 				Edge->Spline->SetLocationAtSplinePoint(0, startingLocation, ESplineCoordinateSpace::Local);
@@ -921,6 +927,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 		{
 			FString label = nodesLayers[i][j];
 			int32 significance = 0;
+			int32 caseFrequency = 0;
 			double duration = 0;
 			TMap<FString, FValuesToFrequencyMap> attributes = TMap<FString, FValuesToFrequencyMap>();
 			TMap<FString, float> durations = TMap<FString, float>();
@@ -929,6 +936,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 				if (nodesArray[index]->AsObject()->GetStringField("label").Equals(label))
 				{
 					significance = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
+					caseFrequency = nodesArray[index]->AsObject()->GetIntegerField("caseFrequencySignificance");
 
 					if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("end_node"))
 					{
@@ -958,8 +966,10 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 			{
 				//ANodeActor* Node = (ANodeActor*) World->SpawnActor(ANodeActor::StaticClass(), location);
 				ANodeActor* Node = (ANodeActor*)World->SpawnActor(NodeActorBP, location);
+#if WITH_EDITOR
 				Node->SetFolderPath("Nodes");
-				Node->SetActorLabel(label);
+#endif
+				Node->Label = label;
 
 				// set scale
 				float scale;
@@ -1049,6 +1059,8 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 
 				Node->Significance = significance;
 
+				Node->CaseFrequency = caseFrequency;
+
 				Node->SignificanceScale = scale;
 
 				Node->Duration = duration;
@@ -1134,6 +1146,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 				label = fromNode + " -> " + toNode;
 			}
 			int32 significance = 0;
+			int32 caseFrequency = 0;
 			float duration = 0;
 			TMap<FString, float> durations = TMap<FString, float>();
 			for (int32 j = 0; j < edgesArray.Num(); j++)
@@ -1141,6 +1154,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 				if (edgesArray[j]->AsObject()->GetStringField("label").Equals(label))
 				{
 					significance = edgesArray[j]->AsObject()->GetIntegerField("frequencySignificance");
+					caseFrequency = edgesArray[j]->AsObject()->GetIntegerField("caseFrequencySignificance");
 					duration = 0;
 					if (!edgesArray[j]->AsObject()->GetStringField("label").Contains("start_node ->") && !edgesArray[j]->AsObject()->GetStringField("label").Contains(" -> end_node"))
 					{
@@ -1165,7 +1179,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 
 				for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
 				{
-					if (ActorItr->GetActorLabel().Equals(fromNode.TrimEnd()))
+					if (ActorItr->Label.TrimEnd().Equals(fromNode.TrimEnd()))
 					{
 						FromNode = *ActorItr;
 						startingLocation.X = ActorItr->GetActorLocation().X;
@@ -1173,7 +1187,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 						startingLocation.Z = 0;
 					}
 
-					if (ActorItr->GetActorLabel().Equals(toNode.TrimEnd()))
+					if (ActorItr->Label.TrimEnd().Equals(toNode.TrimEnd()))
 					{
 						ToNode = *ActorItr;
 						endingLocation.X = ActorItr->GetActorLocation().X;
@@ -1185,8 +1199,10 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 				if (FromNode && ToNode)
 				{
 					AEdgeActor* Edge = (AEdgeActor*)World->SpawnActor(EdgeActorBP, location);
+#if WITH_EDITOR
 					Edge->SetFolderPath("Edges");
-					Edge->SetActorLabel(label);
+#endif
+					Edge->Label = label;
 					Edge->FromNode = FromNode;
 					Edge->ToNode = ToNode;
 					Edge->Spline->SetLocationAtSplinePoint(0, startingLocation, ESplineCoordinateSpace::Local);
@@ -1200,7 +1216,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 							bool found = false;
 							for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
 							{
-								if (ActorItr->GetActorLabel().Equals(currentEdge.GetToNode().TrimEnd()))
+								if (ActorItr->Label.Equals(currentEdge.GetToNode().TrimEnd()))
 								{
 									found = true;
 									Edge->Spline->AddSplinePointAtIndex(ActorItr->GetActorLocation(), splineIndex, ESplineCoordinateSpace::Local);
@@ -1235,7 +1251,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 							bool found = false;
 							for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
 							{
-								if (ActorItr->GetActorLabel().Equals(currentEdge.GetFromNode().TrimEnd()))
+								if (ActorItr->Label.Equals(currentEdge.GetFromNode().TrimEnd()))
 								{
 									found = true;
 									Edge->Spline->AddSplinePointAtIndex(ActorItr->GetActorLocation(), splineIndex, ESplineCoordinateSpace::Local);
@@ -1350,6 +1366,8 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 
 					Edge->Significance = significance;
 
+					Edge->CaseFrequency = caseFrequency;
+
 					Edge->SignificanceScale = signScale / 2;
 
 					Edge->Duration = duration;
@@ -1367,7 +1385,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 	{
 		for (TActorIterator<ANodeActor> ActorItr(World); ActorItr; ++ActorItr)
 		{
-			if (ActorItr->GetActorLabel().Contains("virtual"))
+			if (ActorItr->Label.Contains("virtual"))
 			{
 				ActorItr->Destroy();
 			}
@@ -1377,7 +1395,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 				TArray<AEdgeActor*> outgoingEdges = TArray<AEdgeActor*>();
 				for (TActorIterator<AEdgeActor> ActorItrEdge(World); ActorItrEdge; ++ActorItrEdge)
 				{
-					if (ActorItrEdge->FromNode->GetActorLabel().Equals(ActorItr->GetActorLabel()))
+					if (ActorItrEdge->FromNode->Label.Equals(ActorItr->Label))
 					{
 						outgoingEdgesSignificance += ActorItrEdge->Significance;
 						outgoingEdges.Add(*ActorItrEdge);
@@ -1385,7 +1403,7 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 				}
 				for (TActorIterator<AEdgeActor> ActorItrEdge(World); ActorItrEdge; ++ActorItrEdge)
 				{
-					if (ActorItrEdge->FromNode->GetActorLabel().Equals(ActorItr->GetActorLabel()))
+					if (ActorItrEdge->FromNode->Label.Equals(ActorItr->Label))
 					{
 						ActorItrEdge->PercentageFrequencyFromParentNode = (ActorItrEdge->Significance * 100) / outgoingEdgesSignificance;
 					}

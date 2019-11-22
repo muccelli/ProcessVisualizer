@@ -1,0 +1,852 @@
+{
+  "FuzzyModel" : {
+      "nodes": [
+           {
+              "label" : "start_node",
+              "frequencySignificance" : 25,
+              "caseFrequencySignificance" : 0,
+              "durations" : [
+                  {
+                      "TotalDuration" : 4208916000,
+                      "MeanDuration" : 168356640,
+                      "MedianDuration" : 163423000,
+                      "MinDuration" : 149496000,
+                      "MaxDuration" : 252597000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "creator" : [
+                          {
+                          "Fluxicon Disco" : "25"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Start",
+              "frequencySignificance" : 25,
+              "caseFrequencySignificance" : 25,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "Start" : "50"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "washing",
+              "frequencySignificance" : 139,
+              "caseFrequencySignificance" : 25,
+              "durations" : [
+                  {
+                      "TotalDuration" : 17149000,
+                      "MeanDuration" : 131915.384615385,
+                      "MedianDuration" : 29000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 1102000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "washing" : "260"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "watchingtv",
+              "frequencySignificance" : 144,
+              "caseFrequencySignificance" : 25,
+              "durations" : [
+                  {
+                      "TotalDuration" : 755750000,
+                      "MeanDuration" : 5598148.14814815,
+                      "MedianDuration" : 4528000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 20936000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "watchingtv" : "270"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "toilet",
+              "frequencySignificance" : 130,
+              "caseFrequencySignificance" : 25,
+              "durations" : [
+                  {
+                      "TotalDuration" : 10021000,
+                      "MeanDuration" : 100210,
+                      "MedianDuration" : 27000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 808000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "toilet" : "200"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "sleeping",
+              "frequencySignificance" : 32,
+              "caseFrequencySignificance" : 25,
+              "durations" : [
+                  {
+                      "TotalDuration" : 802350000,
+                      "MeanDuration" : 25882258.0645161,
+                      "MedianDuration" : 30554000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 36825000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "sleeping" : "62"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "prepareBreakfast",
+              "frequencySignificance" : 28,
+              "caseFrequencySignificance" : 25,
+              "durations" : [
+                  {
+                      "TotalDuration" : 6888000,
+                      "MeanDuration" : 264923.076923077,
+                      "MedianDuration" : 229000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 777000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "prepareBreakfast" : "52"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "eatingBreakfast",
+              "frequencySignificance" : 29,
+              "caseFrequencySignificance" : 24,
+              "durations" : [
+                  {
+                      "TotalDuration" : 10787000,
+                      "MeanDuration" : 431480,
+                      "MedianDuration" : 349000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 2010000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "eatingBreakfast" : "50"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "shower",
+              "frequencySignificance" : 18,
+              "caseFrequencySignificance" : 18,
+              "durations" : [
+                  {
+                      "TotalDuration" : 7016000,
+                      "MeanDuration" : 389777.777777778,
+                      "MedianDuration" : 378000,
+                      "MinDuration" : 76000,
+                      "MaxDuration" : 825000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "shower" : "36"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "grooming",
+              "frequencySignificance" : 56,
+              "caseFrequencySignificance" : 14,
+              "durations" : [
+                  {
+                      "TotalDuration" : 12638000,
+                      "MeanDuration" : 225678.571428571,
+                      "MedianDuration" : 33500,
+                      "MinDuration" : 2000,
+                      "MaxDuration" : 4775000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "grooming" : "112"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "snack",
+              "frequencySignificance" : 41,
+              "caseFrequencySignificance" : 21,
+              "durations" : [
+                  {
+                      "TotalDuration" : 32453000,
+                      "MeanDuration" : 791536.585365854,
+                      "MedianDuration" : 319000,
+                      "MinDuration" : 3000,
+                      "MaxDuration" : 5638000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "snack" : "82"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "prepareLunch",
+              "frequencySignificance" : 20,
+              "caseFrequencySignificance" : 17,
+              "durations" : [
+                  {
+                      "TotalDuration" : 9520000,
+                      "MeanDuration" : 560000,
+                      "MedianDuration" : 612000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 1179000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "prepareLunch" : "34"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "eatingLunch",
+              "frequencySignificance" : 19,
+              "caseFrequencySignificance" : 17,
+              "durations" : [
+                  {
+                      "TotalDuration" : 20995000,
+                      "MeanDuration" : 1235000,
+                      "MedianDuration" : 1338000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 2215000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "eatingLunch" : "34"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "outdoors",
+              "frequencySignificance" : 35,
+              "caseFrequencySignificance" : 22,
+              "durations" : [
+                  {
+                      "TotalDuration" : 261743000,
+                      "MeanDuration" : 7478371.42857143,
+                      "MedianDuration" : 5428000,
+                      "MinDuration" : 5000,
+                      "MaxDuration" : 22374000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "outdoors" : "70"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "prepareDinner",
+              "frequencySignificance" : 9,
+              "caseFrequencySignificance" : 7,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2769000,
+                      "MeanDuration" : 395571.428571429,
+                      "MedianDuration" : 308000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 918000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "prepareDinner" : "14"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "eatingDinner",
+              "frequencySignificance" : 9,
+              "caseFrequencySignificance" : 8,
+              "durations" : [
+                  {
+                      "TotalDuration" : 10898000,
+                      "MeanDuration" : 1362250,
+                      "MedianDuration" : 1323500,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 5592000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "eatingDinner" : "16"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "End",
+              "frequencySignificance" : 25,
+              "caseFrequencySignificance" : 25,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "Column_4" : [
+                          {
+                          "End" : "50"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "end_node",
+              "frequencySignificance" : 25,
+              "caseFrequencySignificance" : 0,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          }
+      ],
+      "edges": [
+           {
+              "label" : "start_node -> Start",
+              "fromNode" : "start_node",
+              "toNode" : "Start",
+              "frequencySignificance" : 25
+          },
+           {
+              "label" : "Start -> washing",
+              "fromNode" : "Start",
+              "toNode" : "washing",
+              "frequencySignificance" : 9,
+              "caseFrequencySignificance" : 9,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
+          },
+           {
+              "label" : "watchingtv -> toilet",
+              "fromNode" : "watchingtv",
+              "toNode" : "toilet",
+              "frequencySignificance" : 37,
+              "caseFrequencySignificance" : 19,
+              "durations" : [
+                  {
+                      "TotalDuration" : 10634000,
+                      "MeanDuration" : 287405.405405405,
+                      "MedianDuration" : 122000,
+                      "MinDuration" : 3000,
+                      "MaxDuration" : 2062000
+                   }
+               ]
+          },
+           {
+              "label" : "sleeping -> toilet",
+              "fromNode" : "sleeping",
+              "toNode" : "toilet",
+              "frequencySignificance" : 20,
+              "caseFrequencySignificance" : 19,
+              "durations" : [
+                  {
+                      "TotalDuration" : 9370000,
+                      "MeanDuration" : 468500,
+                      "MedianDuration" : 311000,
+                      "MinDuration" : 77000,
+                      "MaxDuration" : 3693000
+                   }
+               ]
+          },
+           {
+              "label" : "toilet -> prepareBreakfast",
+              "fromNode" : "toilet",
+              "toNode" : "prepareBreakfast",
+              "frequencySignificance" : 10,
+              "caseFrequencySignificance" : 10,
+              "durations" : [
+                  {
+                      "TotalDuration" : 610000,
+                      "MeanDuration" : 61000,
+                      "MedianDuration" : 47500,
+                      "MinDuration" : 3000,
+                      "MaxDuration" : 134000
+                   }
+               ]
+          },
+           {
+              "label" : "prepareBreakfast -> eatingBreakfast",
+              "fromNode" : "prepareBreakfast",
+              "toNode" : "eatingBreakfast",
+              "frequencySignificance" : 26,
+              "caseFrequencySignificance" : 24,
+              "durations" : [
+                  {
+                      "TotalDuration" : 6994000,
+                      "MeanDuration" : 269000,
+                      "MedianDuration" : 46500,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 1920000
+                   }
+               ]
+          },
+           {
+              "label" : "eatingBreakfast -> watchingtv",
+              "fromNode" : "eatingBreakfast",
+              "toNode" : "watchingtv",
+              "frequencySignificance" : 13,
+              "caseFrequencySignificance" : 12,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2225000,
+                      "MeanDuration" : 171153.846153846,
+                      "MedianDuration" : 35000,
+                      "MinDuration" : 14000,
+                      "MaxDuration" : 1790000
+                   }
+               ]
+          },
+           {
+              "label" : "washing -> shower",
+              "fromNode" : "washing",
+              "toNode" : "shower",
+              "frequencySignificance" : 12,
+              "caseFrequencySignificance" : 12,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1421000,
+                      "MeanDuration" : 118416.666666667,
+                      "MedianDuration" : 92500,
+                      "MinDuration" : 34000,
+                      "MaxDuration" : 226000
+                   }
+               ]
+          },
+           {
+              "label" : "washing -> grooming",
+              "fromNode" : "washing",
+              "toNode" : "grooming",
+              "frequencySignificance" : 37,
+              "caseFrequencySignificance" : 14,
+              "durations" : [
+                  {
+                      "TotalDuration" : 4126000,
+                      "MeanDuration" : 111513.513513514,
+                      "MedianDuration" : 35000,
+                      "MinDuration" : 1000,
+                      "MaxDuration" : 723000
+                   }
+               ]
+          },
+           {
+              "label" : "watchingtv -> prepareLunch",
+              "fromNode" : "watchingtv",
+              "toNode" : "prepareLunch",
+              "frequencySignificance" : 12,
+              "caseFrequencySignificance" : 12,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1893000,
+                      "MeanDuration" : 157750,
+                      "MedianDuration" : 74500,
+                      "MinDuration" : 16000,
+                      "MaxDuration" : 502000
+                   }
+               ]
+          },
+           {
+              "label" : "prepareLunch -> eatingLunch",
+              "fromNode" : "prepareLunch",
+              "toNode" : "eatingLunch",
+              "frequencySignificance" : 18,
+              "caseFrequencySignificance" : 16,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2170000,
+                      "MeanDuration" : 120555.555555556,
+                      "MedianDuration" : 41500,
+                      "MinDuration" : 3000,
+                      "MaxDuration" : 360000
+                   }
+               ]
+          },
+           {
+              "label" : "eatingLunch -> watchingtv",
+              "fromNode" : "eatingLunch",
+              "toNode" : "watchingtv",
+              "frequencySignificance" : 9,
+              "caseFrequencySignificance" : 9,
+              "durations" : [
+                  {
+                      "TotalDuration" : 500000,
+                      "MeanDuration" : 55555.5555555556,
+                      "MedianDuration" : 59000,
+                      "MinDuration" : 5000,
+                      "MaxDuration" : 119000
+                   }
+               ]
+          },
+           {
+              "label" : "outdoors -> watchingtv",
+              "fromNode" : "outdoors",
+              "toNode" : "watchingtv",
+              "frequencySignificance" : 17,
+              "caseFrequencySignificance" : 16,
+              "durations" : [
+                  {
+                      "TotalDuration" : 9870000,
+                      "MeanDuration" : 580588.235294118,
+                      "MedianDuration" : 163000,
+                      "MinDuration" : 7000,
+                      "MaxDuration" : 5841000
+                   }
+               ]
+          },
+           {
+              "label" : "toilet -> grooming",
+              "fromNode" : "toilet",
+              "toNode" : "grooming",
+              "frequencySignificance" : 8,
+              "caseFrequencySignificance" : 7,
+              "durations" : [
+                  {
+                      "TotalDuration" : 80000,
+                      "MeanDuration" : 10000,
+                      "MedianDuration" : 7000,
+                      "MinDuration" : 4000,
+                      "MaxDuration" : 28000
+                   }
+               ]
+          },
+           {
+              "label" : "grooming -> watchingtv",
+              "fromNode" : "grooming",
+              "toNode" : "watchingtv",
+              "frequencySignificance" : 9,
+              "caseFrequencySignificance" : 8,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1011000,
+                      "MeanDuration" : 112333.333333333,
+                      "MedianDuration" : 52000,
+                      "MinDuration" : 11000,
+                      "MaxDuration" : 415000
+                   }
+               ]
+          },
+           {
+              "label" : "snack -> watchingtv",
+              "fromNode" : "snack",
+              "toNode" : "watchingtv",
+              "frequencySignificance" : 27,
+              "caseFrequencySignificance" : 18,
+              "durations" : [
+                  {
+                      "TotalDuration" : 3434000,
+                      "MeanDuration" : 127185.185185185,
+                      "MedianDuration" : 48000,
+                      "MinDuration" : 5000,
+                      "MaxDuration" : 922000
+                   }
+               ]
+          },
+           {
+              "label" : "prepareDinner -> eatingDinner",
+              "fromNode" : "prepareDinner",
+              "toNode" : "eatingDinner",
+              "frequencySignificance" : 8,
+              "caseFrequencySignificance" : 7,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1549000,
+                      "MeanDuration" : 193625,
+                      "MedianDuration" : 103000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 920000
+                   }
+               ]
+          },
+           {
+              "label" : "eatingDinner -> washing",
+              "fromNode" : "eatingDinner",
+              "toNode" : "washing",
+              "frequencySignificance" : 3,
+              "caseFrequencySignificance" : 3,
+              "durations" : [
+                  {
+                      "TotalDuration" : 898000,
+                      "MeanDuration" : 299333.333333333,
+                      "MedianDuration" : 119000,
+                      "MinDuration" : 8000,
+                      "MaxDuration" : 771000
+                   }
+               ]
+          },
+           {
+              "label" : "watchingtv -> End",
+              "fromNode" : "watchingtv",
+              "toNode" : "End",
+              "frequencySignificance" : 17,
+              "caseFrequencySignificance" : 17,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
+          },
+           {
+              "label" : "End -> end_node",
+              "fromNode" : "End",
+              "toNode" : "end_node",
+              "frequencySignificance" : 24
+          },
+           {
+              "label" : "grooming -> sleeping",
+              "fromNode" : "grooming",
+              "toNode" : "sleeping",
+              "frequencySignificance" : 7,
+              "caseFrequencySignificance" : 6,
+              "durations" : [
+                  {
+                      "TotalDuration" : 567000,
+                      "MeanDuration" : 81000,
+                      "MedianDuration" : 79000,
+                      "MinDuration" : 4000,
+                      "MaxDuration" : 167000
+                   }
+               ]
+          },
+           {
+              "label" : "eatingBreakfast -> washing",
+              "fromNode" : "eatingBreakfast",
+              "toNode" : "washing",
+              "frequencySignificance" : 7,
+              "caseFrequencySignificance" : 7,
+              "durations" : [
+                  {
+                      "TotalDuration" : 621000,
+                      "MeanDuration" : 88714.2857142857,
+                      "MedianDuration" : 48000,
+                      "MinDuration" : 24000,
+                      "MaxDuration" : 212000
+                   }
+               ]
+          },
+           {
+              "label" : "watchingtv -> prepareDinner",
+              "fromNode" : "watchingtv",
+              "toNode" : "prepareDinner",
+              "frequencySignificance" : 5,
+              "caseFrequencySignificance" : 5,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2713000,
+                      "MeanDuration" : 542600,
+                      "MedianDuration" : 299000,
+                      "MinDuration" : 8000,
+                      "MaxDuration" : 1420000
+                   }
+               ]
+          },
+           {
+              "label" : "eatingDinner -> watchingtv",
+              "fromNode" : "eatingDinner",
+              "toNode" : "watchingtv",
+              "frequencySignificance" : 3,
+              "caseFrequencySignificance" : 3,
+              "durations" : [
+                  {
+                      "TotalDuration" : 94000,
+                      "MeanDuration" : 31333.3333333333,
+                      "MedianDuration" : 17000,
+                      "MinDuration" : 12000,
+                      "MaxDuration" : 65000
+                   }
+               ]
+          },
+           {
+              "label" : "washing -> sleeping",
+              "fromNode" : "washing",
+              "toNode" : "sleeping",
+              "frequencySignificance" : 7,
+              "caseFrequencySignificance" : 7,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1183000,
+                      "MeanDuration" : 169000,
+                      "MedianDuration" : 116000,
+                      "MinDuration" : 14000,
+                      "MaxDuration" : 659000
+                   }
+               ]
+          },
+           {
+              "label" : "grooming -> snack",
+              "fromNode" : "grooming",
+              "toNode" : "snack",
+              "frequencySignificance" : 4,
+              "caseFrequencySignificance" : 4,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1294000,
+                      "MeanDuration" : 323500,
+                      "MedianDuration" : 17000,
+                      "MinDuration" : 12000,
+                      "MaxDuration" : 1248000
+                   }
+               ]
+          },
+           {
+              "label" : "toilet -> outdoors",
+              "fromNode" : "toilet",
+              "toNode" : "outdoors",
+              "frequencySignificance" : 9,
+              "caseFrequencySignificance" : 9,
+              "durations" : [
+                  {
+                      "TotalDuration" : 1804000,
+                      "MeanDuration" : 200444.444444444,
+                      "MedianDuration" : 180000,
+                      "MinDuration" : 45000,
+                      "MaxDuration" : 523000
+                   }
+               ]
+          },
+           {
+              "label" : "Start -> sleeping",
+              "fromNode" : "Start",
+              "toNode" : "sleeping",
+              "frequencySignificance" : 5,
+              "caseFrequencySignificance" : 5,
+              "durations" : [
+                  {
+                      "TotalDuration" : 0,
+                      "MeanDuration" : 0,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 0
+                   }
+               ]
+          },
+           {
+              "label" : "shower -> prepareBreakfast",
+              "fromNode" : "shower",
+              "toNode" : "prepareBreakfast",
+              "frequencySignificance" : 9,
+              "caseFrequencySignificance" : 9,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2708000,
+                      "MeanDuration" : 300888.888888889,
+                      "MedianDuration" : 262000,
+                      "MinDuration" : 45000,
+                      "MaxDuration" : 1076000
+                   }
+               ]
+          }
+      ]
+  }
+}

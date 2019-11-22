@@ -4,6 +4,7 @@
            {
               "label" : "start_node",
               "frequencySignificance" : 1104,
+              "caseFrequencySignificance" : 0,
               "durations" : [
                   {
                       "TotalDuration" : 6259200000,
@@ -26,6 +27,7 @@
            {
               "label" : "Register",
               "frequencySignificance" : 1104,
+              "caseFrequencySignificance" : 1104,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -48,6 +50,7 @@
            {
               "label" : "Analyze Defect",
               "frequencySignificance" : 1104,
+              "caseFrequencySignificance" : 1104,
               "durations" : [
                   {
                       "TotalDuration" : 501420000,
@@ -96,6 +99,7 @@
            {
               "label" : "Repair (Complex)",
               "frequencySignificance" : 1035,
+              "caseFrequencySignificance" : 659,
               "durations" : [
                   {
                       "TotalDuration" : 453420000,
@@ -120,6 +124,7 @@
            {
               "label" : "Test Repair",
               "frequencySignificance" : 1683,
+              "caseFrequencySignificance" : 1102,
               "durations" : [
                   {
                       "TotalDuration" : 593280000,
@@ -161,6 +166,7 @@
            {
               "label" : "Inform User",
               "frequencySignificance" : 1102,
+              "caseFrequencySignificance" : 1102,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -183,6 +189,7 @@
            {
               "label" : "Archive Repair",
               "frequencySignificance" : 1000,
+              "caseFrequencySignificance" : 1000,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -219,6 +226,7 @@
            {
               "label" : "end_node",
               "frequencySignificance" : 1104,
+              "caseFrequencySignificance" : 0,
               "attributes" : [
                   {
                       }
@@ -227,6 +235,7 @@
            {
               "label" : "Repair (Simple)",
               "frequencySignificance" : 944,
+              "caseFrequencySignificance" : 484,
               "durations" : [
                   {
                       "TotalDuration" : 349680000,
@@ -251,6 +260,7 @@
            {
               "label" : "Restart Repair",
               "frequencySignificance" : 406,
+              "caseFrequencySignificance" : 293,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -283,6 +293,7 @@
               "fromNode" : "Register",
               "toNode" : "Analyze Defect",
               "frequencySignificance" : 1104,
+              "caseFrequencySignificance" : 1104,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -298,6 +309,7 @@
               "fromNode" : "Analyze Defect",
               "toNode" : "Repair (Complex)",
               "frequencySignificance" : 528,
+              "caseFrequencySignificance" : 528,
               "durations" : [
                   {
                       "TotalDuration" : 431100000,
@@ -313,6 +325,7 @@
               "fromNode" : "Repair (Complex)",
               "toNode" : "Test Repair",
               "frequencySignificance" : 720,
+              "caseFrequencySignificance" : 654,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -328,6 +341,7 @@
               "fromNode" : "Test Repair",
               "toNode" : "Inform User",
               "frequencySignificance" : 472,
+              "caseFrequencySignificance" : 472,
               "durations" : [
                   {
                       "TotalDuration" : 183240000,
@@ -335,21 +349,6 @@
                       "MedianDuration" : 300000,
                       "MinDuration" : 0,
                       "MaxDuration" : 1860000
-                   }
-               ]
-          },
-           {
-              "label" : "Inform User -> Archive Repair",
-              "fromNode" : "Inform User",
-              "toNode" : "Archive Repair",
-              "frequencySignificance" : 205,
-              "durations" : [
-                  {
-                      "TotalDuration" : 23640000,
-                      "MeanDuration" : 115317.073170732,
-                      "MedianDuration" : 0,
-                      "MinDuration" : 0,
-                      "MaxDuration" : 600000
                    }
                ]
           },
@@ -364,6 +363,7 @@
               "fromNode" : "Analyze Defect",
               "toNode" : "Repair (Simple)",
               "frequencySignificance" : 421,
+              "caseFrequencySignificance" : 421,
               "durations" : [
                   {
                       "TotalDuration" : 358860000,
@@ -379,6 +379,7 @@
               "fromNode" : "Repair (Simple)",
               "toNode" : "Test Repair",
               "frequencySignificance" : 783,
+              "caseFrequencySignificance" : 484,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -394,6 +395,7 @@
               "fromNode" : "Test Repair",
               "toNode" : "Restart Repair",
               "frequencySignificance" : 341,
+              "caseFrequencySignificance" : 257,
               "durations" : [
                   {
                       "TotalDuration" : 153600000,
@@ -409,6 +411,7 @@
               "fromNode" : "Restart Repair",
               "toNode" : "Repair (Simple)",
               "frequencySignificance" : 300,
+              "caseFrequencySignificance" : 212,
               "durations" : [
                   {
                       "TotalDuration" : 0,
@@ -420,10 +423,27 @@
                ]
           },
            {
+              "label" : "Inform User -> Repair (Simple)",
+              "fromNode" : "Inform User",
+              "toNode" : "Repair (Simple)",
+              "frequencySignificance" : 223,
+              "caseFrequencySignificance" : 223,
+              "durations" : [
+                  {
+                      "TotalDuration" : 75060000,
+                      "MeanDuration" : 336591.928251121,
+                      "MedianDuration" : 300000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 1020000
+                   }
+               ]
+          },
+           {
               "label" : "Test Repair -> Archive Repair",
               "fromNode" : "Test Repair",
               "toNode" : "Archive Repair",
               "frequencySignificance" : 795,
+              "caseFrequencySignificance" : 795,
               "durations" : [
                   {
                       "TotalDuration" : 358200000,
@@ -431,6 +451,22 @@
                       "MedianDuration" : 480000,
                       "MinDuration" : 300000,
                       "MaxDuration" : 600000
+                   }
+               ]
+          },
+           {
+              "label" : "Inform User -> Repair (Complex)",
+              "fromNode" : "Inform User",
+              "toNode" : "Repair (Complex)",
+              "frequencySignificance" : 402,
+              "caseFrequencySignificance" : 402,
+              "durations" : [
+                  {
+                      "TotalDuration" : 321960000,
+                      "MeanDuration" : 800895.52238806,
+                      "MedianDuration" : 540000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 2940000
                    }
                ]
           }
