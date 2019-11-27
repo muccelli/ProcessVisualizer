@@ -9399,22 +9399,6 @@
                ]
           },
            {
-              "label" : "SRM: Change was Transmitted -> Create Purchase Order Item",
-              "fromNode" : "SRM: Change was Transmitted",
-              "toNode" : "Create Purchase Order Item",
-              "frequencySignificance" : 821,
-              "caseFrequencySignificance" : 821,
-              "durations" : [
-                  {
-                      "TotalDuration" : 480000,
-                      "MeanDuration" : 584.652862362972,
-                      "MedianDuration" : 0,
-                      "MinDuration" : 0,
-                      "MaxDuration" : 60000
-                   }
-               ]
-          },
-           {
               "label" : "Create Purchase Order Item -> Vendor creates invoice",
               "fromNode" : "Create Purchase Order Item",
               "toNode" : "Vendor creates invoice",
@@ -9427,22 +9411,6 @@
                       "MedianDuration" : 560910000,
                       "MinDuration" : 1620000,
                       "MaxDuration" : 24993840000
-                   }
-               ]
-          },
-           {
-              "label" : "Vendor creates invoice -> Record Goods Receipt",
-              "fromNode" : "Vendor creates invoice",
-              "toNode" : "Record Goods Receipt",
-              "frequencySignificance" : 110215,
-              "caseFrequencySignificance" : 107787,
-              "durations" : [
-                  {
-                      "TotalDuration" : 23404138740000,
-                      "MeanDuration" : 212349850.201878,
-                      "MedianDuration" : 123600000,
-                      "MinDuration" : 360000,
-                      "MaxDuration" : 16486920000
                    }
                ]
           },
@@ -9485,38 +9453,6 @@
               "frequencySignificance" : 181328
           },
            {
-              "label" : "Record Goods Receipt -> Record Service Entry Sheet",
-              "fromNode" : "Record Goods Receipt",
-              "toNode" : "Record Service Entry Sheet",
-              "frequencySignificance" : 23151,
-              "caseFrequencySignificance" : 5105,
-              "durations" : [
-                  {
-                      "TotalDuration" : 78089220000,
-                      "MeanDuration" : 3373038.74562654,
-                      "MedianDuration" : 0,
-                      "MinDuration" : 0,
-                      "MaxDuration" : 3017520000
-                   }
-               ]
-          },
-           {
-              "label" : "Record Service Entry Sheet -> Record Invoice Receipt",
-              "fromNode" : "Record Service Entry Sheet",
-              "toNode" : "Record Invoice Receipt",
-              "frequencySignificance" : 2029,
-              "caseFrequencySignificance" : 731,
-              "durations" : [
-                  {
-                      "TotalDuration" : 1671387180000,
-                      "MeanDuration" : 823749226.219813,
-                      "MedianDuration" : 112020000,
-                      "MinDuration" : 0,
-                      "MaxDuration" : 29198460000
-                   }
-               ]
-          },
-           {
               "label" : "SRM: In Transfer to Execution Syst. -> SRM: Transfer Failed (E.Sys.)",
               "fromNode" : "SRM: In Transfer to Execution Syst.",
               "toNode" : "SRM: Transfer Failed (E.Sys.)",
@@ -9555,50 +9491,18 @@
                ]
           },
            {
-              "label" : "Record Service Entry Sheet -> Vendor creates invoice",
-              "fromNode" : "Record Service Entry Sheet",
+              "label" : "SRM: Change was Transmitted -> Vendor creates invoice",
+              "fromNode" : "SRM: Change was Transmitted",
               "toNode" : "Vendor creates invoice",
-              "frequencySignificance" : 2823,
-              "caseFrequencySignificance" : 1791,
+              "frequencySignificance" : 295,
+              "caseFrequencySignificance" : 295,
               "durations" : [
                   {
-                      "TotalDuration" : 2299767180000,
-                      "MeanDuration" : 814653623.804463,
-                      "MedianDuration" : 379200000,
-                      "MinDuration" : 1260000,
-                      "MaxDuration" : 9946140000
-                   }
-               ]
-          },
-           {
-              "label" : "Vendor creates invoice -> Vendor creates debit memo",
-              "fromNode" : "Vendor creates invoice",
-              "toNode" : "Vendor creates debit memo",
-              "frequencySignificance" : 2715,
-              "caseFrequencySignificance" : 2571,
-              "durations" : [
-                  {
-                      "TotalDuration" : 120531600000,
-                      "MeanDuration" : 44394696.1325967,
-                      "MedianDuration" : 0,
-                      "MinDuration" : 0,
-                      "MaxDuration" : 8985600000
-                   }
-               ]
-          },
-           {
-              "label" : "Vendor creates debit memo -> Record Goods Receipt",
-              "fromNode" : "Vendor creates debit memo",
-              "toNode" : "Record Goods Receipt",
-              "frequencySignificance" : 1144,
-              "caseFrequencySignificance" : 1121,
-              "durations" : [
-                  {
-                      "TotalDuration" : 339692940000,
-                      "MeanDuration" : 296934388.111888,
-                      "MedianDuration" : 204660000,
-                      "MinDuration" : 360000,
-                      "MaxDuration" : 7408200000
+                      "TotalDuration" : 240976680000,
+                      "MeanDuration" : 816870101.694915,
+                      "MedianDuration" : 290100000,
+                      "MinDuration" : 22080000,
+                      "MaxDuration" : 10058820000
                    }
                ]
           },
@@ -9657,54 +9561,6 @@
                ]
           },
            {
-              "label" : "Change Price -> Vendor creates invoice",
-              "fromNode" : "Change Price",
-              "toNode" : "Vendor creates invoice",
-              "frequencySignificance" : 3396,
-              "caseFrequencySignificance" : 3392,
-              "durations" : [
-                  {
-                      "TotalDuration" : 3393833760000,
-                      "MeanDuration" : 999362120.141343,
-                      "MedianDuration" : 374220000,
-                      "MinDuration" : 1380000,
-                      "MaxDuration" : 18864060000
-                   }
-               ]
-          },
-           {
-              "label" : "Record Invoice Receipt -> Cancel Invoice Receipt",
-              "fromNode" : "Record Invoice Receipt",
-              "toNode" : "Cancel Invoice Receipt",
-              "frequencySignificance" : 2697,
-              "caseFrequencySignificance" : 2527,
-              "durations" : [
-                  {
-                      "TotalDuration" : 6924243900000,
-                      "MeanDuration" : 2567387430.47831,
-                      "MedianDuration" : 954000000,
-                      "MinDuration" : 0,
-                      "MaxDuration" : 23158680000
-                   }
-               ]
-          },
-           {
-              "label" : "Cancel Invoice Receipt -> Clear Invoice",
-              "fromNode" : "Cancel Invoice Receipt",
-              "toNode" : "Clear Invoice",
-              "frequencySignificance" : 3002,
-              "caseFrequencySignificance" : 2839,
-              "durations" : [
-                  {
-                      "TotalDuration" : 1766160180000,
-                      "MeanDuration" : 588327841.439041,
-                      "MedianDuration" : 60000,
-                      "MinDuration" : 0,
-                      "MaxDuration" : 14009880000
-                   }
-               ]
-          },
-           {
               "label" : "SRM: Ordered -> SRM: Deleted",
               "fromNode" : "SRM: Ordered",
               "toNode" : "SRM: Deleted",
@@ -9721,20 +9577,10 @@
                ]
           },
            {
-              "label" : "Change Price -> Record Goods Receipt",
-              "fromNode" : "Change Price",
-              "toNode" : "Record Goods Receipt",
-              "frequencySignificance" : 3102,
-              "caseFrequencySignificance" : 3040,
-              "durations" : [
-                  {
-                      "TotalDuration" : 3135682680000,
-                      "MeanDuration" : 1010858375.24178,
-                      "MedianDuration" : 543150000,
-                      "MinDuration" : 0,
-                      "MaxDuration" : 11136900000
-                   }
-               ]
+              "label" : "Record Service Entry Sheet -> end_node",
+              "fromNode" : "Record Service Entry Sheet",
+              "toNode" : "end_node",
+              "frequencySignificance" : 921
           },
            {
               "label" : "Record Invoice Receipt -> Remove Payment Block",
@@ -9775,36 +9621,10 @@
               "frequencySignificance" : 6
           },
            {
-              "label" : "Vendor creates debit memo -> Cancel Invoice Receipt",
-              "fromNode" : "Vendor creates debit memo",
-              "toNode" : "Cancel Invoice Receipt",
-              "frequencySignificance" : 996,
-              "caseFrequencySignificance" : 993,
-              "durations" : [
-                  {
-                      "TotalDuration" : 2767049940000,
-                      "MeanDuration" : 2778162590.36145,
-                      "MedianDuration" : 1256940000,
-                      "MinDuration" : 16500000,
-                      "MaxDuration" : 9654660000
-                   }
-               ]
-          },
-           {
-              "label" : "Vendor creates debit memo -> Record Invoice Receipt",
-              "fromNode" : "Vendor creates debit memo",
-              "toNode" : "Record Invoice Receipt",
-              "frequencySignificance" : 1317,
-              "caseFrequencySignificance" : 1296,
-              "durations" : [
-                  {
-                      "TotalDuration" : 2040947520000,
-                      "MeanDuration" : 1549694396.35535,
-                      "MedianDuration" : 817140000,
-                      "MinDuration" : 16500000,
-                      "MaxDuration" : 16562880000
-                   }
-               ]
+              "label" : "start_node -> Vendor creates debit memo",
+              "fromNode" : "start_node",
+              "toNode" : "Vendor creates debit memo",
+              "frequencySignificance" : 122
           },
            {
               "label" : "Change Quantity -> Record Goods Receipt",
@@ -9821,28 +9641,6 @@
                       "MaxDuration" : 16867440000
                    }
                ]
-          },
-           {
-              "label" : "Record Goods Receipt -> Cancel Goods Receipt",
-              "fromNode" : "Record Goods Receipt",
-              "toNode" : "Cancel Goods Receipt",
-              "frequencySignificance" : 1063,
-              "caseFrequencySignificance" : 929,
-              "durations" : [
-                  {
-                      "TotalDuration" : 389773980000,
-                      "MeanDuration" : 366673546.566322,
-                      "MedianDuration" : 1200000,
-                      "MinDuration" : 0,
-                      "MaxDuration" : 14586420000
-                   }
-               ]
-          },
-           {
-              "label" : "Change Final Invoice Indicator -> end_node",
-              "fromNode" : "Change Final Invoice Indicator",
-              "toNode" : "end_node",
-              "frequencySignificance" : 3
           },
            {
               "label" : "Delete Purchase Order Item -> end_node",
@@ -9931,6 +9729,22 @@
                ]
           },
            {
+              "label" : "Create Purchase Order Item -> Record Service Entry Sheet",
+              "fromNode" : "Create Purchase Order Item",
+              "toNode" : "Record Service Entry Sheet",
+              "frequencySignificance" : 2072,
+              "caseFrequencySignificance" : 2072,
+              "durations" : [
+                  {
+                      "TotalDuration" : 70484820000,
+                      "MeanDuration" : 34017770.2702703,
+                      "MedianDuration" : 0,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 12555240000
+                   }
+               ]
+          },
+           {
               "label" : "start_node -> Create Purchase Order Item",
               "fromNode" : "start_node",
               "toNode" : "Create Purchase Order Item",
@@ -9997,54 +9811,6 @@
                       "MedianDuration" : 1038450000,
                       "MinDuration" : 32880000,
                       "MaxDuration" : 9204960000
-                   }
-               ]
-          },
-           {
-              "label" : "Cancel Subsequent Invoice -> Clear Invoice",
-              "fromNode" : "Cancel Subsequent Invoice",
-              "toNode" : "Clear Invoice",
-              "frequencySignificance" : 226,
-              "caseFrequencySignificance" : 225,
-              "durations" : [
-                  {
-                      "TotalDuration" : 444124200000,
-                      "MeanDuration" : 1965151327.43363,
-                      "MedianDuration" : 1380480000,
-                      "MinDuration" : 60000,
-                      "MaxDuration" : 9169020000
-                   }
-               ]
-          },
-           {
-              "label" : "Change Delivery Indicator -> Record Invoice Receipt",
-              "fromNode" : "Change Delivery Indicator",
-              "toNode" : "Record Invoice Receipt",
-              "frequencySignificance" : 705,
-              "caseFrequencySignificance" : 702,
-              "durations" : [
-                  {
-                      "TotalDuration" : 1263785160000,
-                      "MeanDuration" : 1792603063.82979,
-                      "MedianDuration" : 1047300000,
-                      "MinDuration" : 240000,
-                      "MaxDuration" : 17404080000
-                   }
-               ]
-          },
-           {
-              "label" : "Change Quantity -> Vendor creates invoice",
-              "fromNode" : "Change Quantity",
-              "toNode" : "Vendor creates invoice",
-              "frequencySignificance" : 5994,
-              "caseFrequencySignificance" : 5918,
-              "durations" : [
-                  {
-                      "TotalDuration" : 6399569460000,
-                      "MeanDuration" : 1067662572.57257,
-                      "MedianDuration" : 547830000,
-                      "MinDuration" : 780000,
-                      "MaxDuration" : 14201760000
                    }
                ]
           },
@@ -10177,20 +9943,10 @@
                ]
           },
            {
-              "label" : "Change Price -> Remove Payment Block",
-              "fromNode" : "Change Price",
-              "toNode" : "Remove Payment Block",
-              "frequencySignificance" : 1721,
-              "caseFrequencySignificance" : 1717,
-              "durations" : [
-                  {
-                      "TotalDuration" : 209753580000,
-                      "MeanDuration" : 121878895.990703,
-                      "MedianDuration" : 60000,
-                      "MinDuration" : 0,
-                      "MaxDuration" : 9248820000
-                   }
-               ]
+              "label" : "Cancel Invoice Receipt -> end_node",
+              "fromNode" : "Cancel Invoice Receipt",
+              "toNode" : "end_node",
+              "frequencySignificance" : 1348
           },
            {
               "label" : "Create Purchase Order Item -> Block Purchase Order Item",
@@ -10225,66 +9981,18 @@
                ]
           },
            {
-              "label" : "Change Approval for Purchase Order -> Vendor creates invoice",
+              "label" : "Change Approval for Purchase Order -> Cancel Invoice Receipt",
               "fromNode" : "Change Approval for Purchase Order",
-              "toNode" : "Vendor creates invoice",
-              "frequencySignificance" : 884,
-              "caseFrequencySignificance" : 883,
+              "toNode" : "Cancel Invoice Receipt",
+              "frequencySignificance" : 2,
+              "caseFrequencySignificance" : 2,
               "durations" : [
                   {
-                      "TotalDuration" : 3306533640000,
-                      "MeanDuration" : 3740422669.68326,
-                      "MedianDuration" : 2206320000,
-                      "MinDuration" : 15780000,
-                      "MaxDuration" : 27256980000
-                   }
-               ]
-          },
-           {
-              "label" : "Vendor creates invoice -> Record Subsequent Invoice",
-              "fromNode" : "Vendor creates invoice",
-              "toNode" : "Record Subsequent Invoice",
-              "frequencySignificance" : 29,
-              "caseFrequencySignificance" : 29,
-              "durations" : [
-                  {
-                      "TotalDuration" : 38129820000,
-                      "MeanDuration" : 1314821379.31034,
-                      "MedianDuration" : 1012620000,
-                      "MinDuration" : 46320000,
-                      "MaxDuration" : 4708500000
-                   }
-               ]
-          },
-           {
-              "label" : "Record Subsequent Invoice -> Clear Invoice",
-              "fromNode" : "Record Subsequent Invoice",
-              "toNode" : "Clear Invoice",
-              "frequencySignificance" : 97,
-              "caseFrequencySignificance" : 95,
-              "durations" : [
-                  {
-                      "TotalDuration" : 135630840000,
-                      "MeanDuration" : 1398256082.47423,
-                      "MedianDuration" : 607260000,
-                      "MinDuration" : 0,
-                      "MaxDuration" : 6829020000
-                   }
-               ]
-          },
-           {
-              "label" : "Block Purchase Order Item -> Reactivate Purchase Order Item",
-              "fromNode" : "Block Purchase Order Item",
-              "toNode" : "Reactivate Purchase Order Item",
-              "frequencySignificance" : 117,
-              "caseFrequencySignificance" : 116,
-              "durations" : [
-                  {
-                      "TotalDuration" : 81174060000,
-                      "MeanDuration" : 693795384.615385,
-                      "MedianDuration" : 73620000,
-                      "MinDuration" : 60000,
-                      "MaxDuration" : 13474680000
+                      "TotalDuration" : 17985600000,
+                      "MeanDuration" : 8992800000,
+                      "MedianDuration" : 8992800000,
+                      "MinDuration" : 2334780000,
+                      "MaxDuration" : 15650820000
                    }
                ]
           },
@@ -10305,20 +10013,10 @@
                ]
           },
            {
-              "label" : "Set Payment Block -> Clear Invoice",
-              "fromNode" : "Set Payment Block",
-              "toNode" : "Clear Invoice",
-              "frequencySignificance" : 42,
-              "caseFrequencySignificance" : 40,
-              "durations" : [
-                  {
-                      "TotalDuration" : 30718560000,
-                      "MeanDuration" : 731394285.714286,
-                      "MedianDuration" : 624300000,
-                      "MinDuration" : 4620000,
-                      "MaxDuration" : 1194120000
-                   }
-               ]
+              "label" : "Change Price -> end_node",
+              "fromNode" : "Change Price",
+              "toNode" : "end_node",
+              "frequencySignificance" : 529
           },
            {
               "label" : "Record Invoice Receipt -> Set Payment Block",
@@ -10387,38 +10085,6 @@
                ]
           },
            {
-              "label" : "Cancel Goods Receipt -> Cancel Invoice Receipt",
-              "fromNode" : "Cancel Goods Receipt",
-              "toNode" : "Cancel Invoice Receipt",
-              "frequencySignificance" : 300,
-              "caseFrequencySignificance" : 300,
-              "durations" : [
-                  {
-                      "TotalDuration" : 3357823920000,
-                      "MeanDuration" : 11192746400,
-                      "MedianDuration" : 15744960000,
-                      "MinDuration" : 8640000,
-                      "MaxDuration" : 30153300000
-                   }
-               ]
-          },
-           {
-              "label" : "Update Order Confirmation -> Vendor creates invoice",
-              "fromNode" : "Update Order Confirmation",
-              "toNode" : "Vendor creates invoice",
-              "frequencySignificance" : 74,
-              "caseFrequencySignificance" : 74,
-              "durations" : [
-                  {
-                      "TotalDuration" : 58076100000,
-                      "MeanDuration" : 784812162.162162,
-                      "MedianDuration" : 426810000,
-                      "MinDuration" : 2760000,
-                      "MaxDuration" : 4015860000
-                   }
-               ]
-          },
-           {
               "label" : "Cancel Goods Receipt -> end_node",
               "fromNode" : "Cancel Goods Receipt",
               "toNode" : "end_node",
@@ -10457,22 +10123,6 @@
                ]
           },
            {
-              "label" : "Change Approval for Purchase Order -> Record Invoice Receipt",
-              "fromNode" : "Change Approval for Purchase Order",
-              "toNode" : "Record Invoice Receipt",
-              "frequencySignificance" : 676,
-              "caseFrequencySignificance" : 673,
-              "durations" : [
-                  {
-                      "TotalDuration" : 215841000000,
-                      "MeanDuration" : 319291420.118343,
-                      "MedianDuration" : 99120000,
-                      "MinDuration" : 0,
-                      "MaxDuration" : 12625980000
-                   }
-               ]
-          },
-           {
               "label" : "Change Approval for Purchase Order -> end_node",
               "fromNode" : "Change Approval for Purchase Order",
               "toNode" : "end_node",
@@ -10507,22 +10157,6 @@
                       "MedianDuration" : 69060000,
                       "MinDuration" : 60000,
                       "MaxDuration" : 9431760000
-                   }
-               ]
-          },
-           {
-              "label" : "Cancel Goods Receipt -> Vendor creates debit memo",
-              "fromNode" : "Cancel Goods Receipt",
-              "toNode" : "Vendor creates debit memo",
-              "frequencySignificance" : 513,
-              "caseFrequencySignificance" : 513,
-              "durations" : [
-                  {
-                      "TotalDuration" : 1566922500000,
-                      "MeanDuration" : 3054429824.5614,
-                      "MedianDuration" : 1320900000,
-                      "MinDuration" : 2940000,
-                      "MaxDuration" : 9192720000
                    }
                ]
           },
@@ -10571,22 +10205,6 @@
                       "MedianDuration" : 0,
                       "MinDuration" : 0,
                       "MaxDuration" : 0
-                   }
-               ]
-          },
-           {
-              "label" : "Change Approval for Purchase Order -> Receive Order Confirmation",
-              "fromNode" : "Change Approval for Purchase Order",
-              "toNode" : "Receive Order Confirmation",
-              "frequencySignificance" : 715,
-              "caseFrequencySignificance" : 715,
-              "durations" : [
-                  {
-                      "TotalDuration" : 13006860000,
-                      "MeanDuration" : 18191412.5874126,
-                      "MedianDuration" : 3000000,
-                      "MinDuration" : 1140000,
-                      "MaxDuration" : 230460000
                    }
                ]
           },
@@ -10669,6 +10287,12 @@
                       "MaxDuration" : 254640000
                    }
                ]
+          },
+           {
+              "label" : "Record Subsequent Invoice -> end_node",
+              "fromNode" : "Record Subsequent Invoice",
+              "toNode" : "end_node",
+              "frequencySignificance" : 9
           },
            {
               "label" : "Create Purchase Requisition Item -> Release Purchase Requisition",

@@ -5883,54 +5883,6 @@
                ]
           },
            {
-              "label" : "CODE OK -> MANUAL",
-              "fromNode" : "CODE OK",
-              "toNode" : "MANUAL",
-              "frequencySignificance" : 126,
-              "caseFrequencySignificance" : 113,
-              "durations" : [
-                  {
-                      "TotalDuration" : 379414453000,
-                      "MeanDuration" : 3011225817.46032,
-                      "MedianDuration" : 585014500,
-                      "MinDuration" : 17000,
-                      "MaxDuration" : 51790680000
-                   }
-               ]
-          },
-           {
-              "label" : "MANUAL -> RELEASE",
-              "fromNode" : "MANUAL",
-              "toNode" : "RELEASE",
-              "frequencySignificance" : 83,
-              "caseFrequencySignificance" : 82,
-              "durations" : [
-                  {
-                      "TotalDuration" : 1326366000,
-                      "MeanDuration" : 15980313.253012,
-                      "MedianDuration" : 865000,
-                      "MinDuration" : 8000,
-                      "MaxDuration" : 78991000
-                   }
-               ]
-          },
-           {
-              "label" : "CHANGE DIAGN -> CHANGE END",
-              "fromNode" : "CHANGE DIAGN",
-              "toNode" : "CHANGE END",
-              "frequencySignificance" : 7,
-              "caseFrequencySignificance" : 7,
-              "durations" : [
-                  {
-                      "TotalDuration" : 14771171000,
-                      "MeanDuration" : 2110167285.71429,
-                      "MedianDuration" : 1646371000,
-                      "MinDuration" : 94145000,
-                      "MaxDuration" : 6218402000
-                   }
-               ]
-          },
-           {
               "label" : "NEW -> JOIN-PAT",
               "fromNode" : "NEW",
               "toNode" : "JOIN-PAT",
@@ -5957,22 +5909,6 @@
               "fromNode" : "JOIN-PAT",
               "toNode" : "end_node",
               "frequencySignificance" : 47
-          },
-           {
-              "label" : "CHANGE DIAGN -> JOIN-PAT",
-              "fromNode" : "CHANGE DIAGN",
-              "toNode" : "JOIN-PAT",
-              "frequencySignificance" : 28,
-              "caseFrequencySignificance" : 28,
-              "durations" : [
-                  {
-                      "TotalDuration" : 49613217000,
-                      "MeanDuration" : 1771900607.14286,
-                      "MedianDuration" : 814980500,
-                      "MinDuration" : 2658000,
-                      "MaxDuration" : 7422213000
-                   }
-               ]
           },
            {
               "label" : "JOIN-PAT -> FIN",
@@ -6023,22 +5959,6 @@
                ]
           },
            {
-              "label" : "BILLED -> MANUAL",
-              "fromNode" : "BILLED",
-              "toNode" : "MANUAL",
-              "frequencySignificance" : 68,
-              "caseFrequencySignificance" : 68,
-              "durations" : [
-                  {
-                      "TotalDuration" : 827698985000,
-                      "MeanDuration" : 12172043897.0588,
-                      "MedianDuration" : 8297354500,
-                      "MinDuration" : 29345000,
-                      "MaxDuration" : 57274398000
-                   }
-               ]
-          },
-           {
               "label" : "CODE NOK -> BILLED",
               "fromNode" : "CODE NOK",
               "toNode" : "BILLED",
@@ -6051,6 +5971,22 @@
                       "MedianDuration" : 5059904000,
                       "MinDuration" : 22000,
                       "MaxDuration" : 49182584000
+                   }
+               ]
+          },
+           {
+              "label" : "REJECT -> MANUAL",
+              "fromNode" : "REJECT",
+              "toNode" : "MANUAL",
+              "frequencySignificance" : 24,
+              "caseFrequencySignificance" : 24,
+              "durations" : [
+                  {
+                      "TotalDuration" : 9844707000,
+                      "MeanDuration" : 410196125,
+                      "MedianDuration" : 86000,
+                      "MinDuration" : 15000,
+                      "MaxDuration" : 9067899000
                    }
                ]
           },

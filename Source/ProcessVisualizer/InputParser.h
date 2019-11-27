@@ -29,6 +29,16 @@ enum class EVisualizationType : uint8
 	VE_HorizontalImproved UMETA(DisplayName = "HorizontalImproved")
 };
 
+UENUM(BlueprintType)		//"BlueprintType" is essential to include
+enum class EHeightVariable : uint8
+{
+	VE_TotalDuration 	UMETA(DisplayName = "TotalDuration"),
+	VE_MeanDuration 	UMETA(DisplayName = "MeanDuration"),
+	VE_MedianDuration   UMETA(DisplayName = "MedianDuration"),
+	VE_MinDuration      UMETA(DisplayName = "MinDuration"),
+	VE_MaxDuration      UMETA(DisplayName = "MaxDuration")
+};
+
 USTRUCT(BlueprintType)
 struct FValuesToFrequencyMap
 {
@@ -123,6 +133,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Enum)
 	EVisualizationType VisualizationType;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Enum)
+	EHeightVariable HeightVariable;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float NodesYDistance;
