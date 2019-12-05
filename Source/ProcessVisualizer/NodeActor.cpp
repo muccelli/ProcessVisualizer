@@ -28,7 +28,7 @@ void ANodeActor::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-void ANodeActor::SetNodeLabelAndTransform_Implementation()
+void ANodeActor::SetNodeProperties_Implementation()
 {
 }
 

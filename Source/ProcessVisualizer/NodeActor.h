@@ -35,7 +35,7 @@ public:
 	USceneComponent* Root;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FText WidgetText;
+	FText LabelText;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FString Label;
@@ -59,5 +59,5 @@ public:
 	float TimeScale;
 
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
-	void SetNodeLabelAndTransform();
+	void SetNodeProperties();
 };

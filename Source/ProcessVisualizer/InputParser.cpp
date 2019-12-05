@@ -331,9 +331,9 @@ void AInputParser::CreateVerticalGraph(TSharedPtr<FJsonObject> &JsonObject, bool
 
 				Node->SignificanceScale = scale;
 
-				Node->WidgetText = FText::AsCultureInvariant(label);
+				Node->LabelText = FText::AsCultureInvariant(label);
 
-				Node->SetNodeLabelAndTransform();
+				Node->SetNodeProperties();
 
 			}
 			location->X += FMath::RandRange(-XNodeDeviation, XNodeDeviation);
@@ -484,13 +484,16 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 	double MinTime = nodesArray[1]->AsObject()->GetArrayField("durations")[0]->AsObject()->GetIntegerField("MeanDuration");
 	for (int32 index = 0; index < nodesArray.Num(); index++)
 	{
-		if (nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance") > MaxSign)
+		if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("start_node") && !nodesArray[index]->AsObject()->GetStringField("label").Equals("end_node"))
 		{
-			MaxSign = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
-		}
-		if (nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance") < MinSign)
-		{
-			MinSign = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
+			if (nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance") > MaxSign)
+			{
+				MaxSign = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
+			}
+			if (nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance") < MinSign)
+			{
+				MinSign = nodesArray[index]->AsObject()->GetIntegerField("frequencySignificance");
+			}
 		}
 
 		if (!nodesArray[index]->AsObject()->GetStringField("label").Equals("start"))
@@ -660,11 +663,11 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 
 				GLog->Log(label + ": " + FString::SanitizeFloat(timeScale));
 
-				Node->WidgetText = FText::AsCultureInvariant(label);
+				Node->LabelText = FText::AsCultureInvariant(label);
 
 				Node->Attributes = attributes;
 
-				Node->SetNodeLabelAndTransform();
+				Node->SetNodeProperties();
 
 			}
 			location->Y += NodesYDistance;
@@ -673,7 +676,7 @@ void AInputParser::CreateHorizontalGraph(TSharedPtr<FJsonObject> &JsonObject, bo
 		location->X -= NodesZDistance;
 	}
 
-	FVector* graphLocation = new FVector(0, 0, 0);//((location->X + NodesZDistance) + 1000) / 2, 0, 0);
+	FVector* graphLocation = new FVector(0, 0, 0);
 	SetActorLocation(*graphLocation);
 
 
@@ -1104,11 +1107,11 @@ void AInputParser::CreateHorizontalImprovedGraph(TSharedPtr<FJsonObject>& JsonOb
 					Node->TimeScale = timeScale;
 				}
 
-				Node->WidgetText = FText::AsCultureInvariant(label);
+				Node->LabelText = FText::AsCultureInvariant(label);
 
 				Node->Attributes = attributes;
 
-				Node->SetNodeLabelAndTransform();
+				Node->SetNodeProperties();
 
 			}
 			location->Y += NodesYDistance;

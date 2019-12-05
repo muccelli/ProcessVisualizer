@@ -1,0 +1,3593 @@
+{
+  "FuzzyModel" : {
+      "nodes": [
+           {
+              "label" : "start_node",
+              "frequencySignificance" : 723,
+              "caseFrequencySignificance" : 0,
+              "durations" : [
+                  {
+                      "TotalDuration" : 19704000,
+                      "MeanDuration" : 27253.112033195,
+                      "MedianDuration" : 18000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 279000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "variant" : [
+                          {
+                          "Variant 37" : "1",
+                          "Variant 5" : "8",
+                          "Variant 38" : "1",
+                          "Variant 39" : "1",
+                          "Variant 2" : "13",
+                          "Variant 40" : "1",
+                          "Variant 41" : "1",
+                          "Variant 21" : "2",
+                          "Variant 42" : "1",
+                          "Variant 43" : "1",
+                          "Variant 44" : "1",
+                          "Variant 45" : "1",
+                          "Variant 8" : "5",
+                          "Variant 46" : "1",
+                          "Variant 47" : "1",
+                          "Variant 48" : "1",
+                          "Variant 49" : "1",
+                          "Variant 50" : "1",
+                          "Variant 51" : "1",
+                          "Variant 52" : "1",
+                          "Variant 53" : "1",
+                          "Variant 54" : "1",
+                          "Variant 4" : "9",
+                          "Variant 29" : "2",
+                          "Variant 55" : "1",
+                          "Variant 56" : "1",
+                          "Variant 57" : "1",
+                          "Variant 58" : "1",
+                          "Variant 59" : "1",
+                          "Variant 60" : "1",
+                          "Variant 61" : "1",
+                          "Variant 10" : "4",
+                          "Variant 62" : "1",
+                          "Variant 63" : "1",
+                          "Variant 64" : "1",
+                          "Variant 65" : "1",
+                          "Variant 66" : "1",
+                          "Variant 67" : "1",
+                          "Variant 68" : "1",
+                          "Variant 69" : "1",
+                          "Variant 30" : "2",
+                          "Variant 70" : "1",
+                          "Variant 71" : "1",
+                          "Variant 36" : "2",
+                          "Variant 72" : "1",
+                          "Variant 73" : "1",
+                          "Variant 74" : "1",
+                          "Variant 75" : "1",
+                          "Variant 76" : "1",
+                          "Variant 77" : "1",
+                          "Variant 78" : "1",
+                          "Variant 79" : "1",
+                          "Variant 80" : "1",
+                          "Variant 81" : "1",
+                          "Variant 82" : "1",
+                          "Variant 1" : "17",
+                          "Variant 83" : "1",
+                          "Variant 84" : "1",
+                          "Variant 85" : "1",
+                          "Variant 86" : "1",
+                          "Variant 87" : "1",
+                          "Variant 88" : "1",
+                          "Variant 14" : "3",
+                          "Variant 89" : "1",
+                          "Variant 90" : "1",
+                          "Variant 91" : "1",
+                          "Variant 92" : "1",
+                          "Variant 93" : "1",
+                          "Variant 94" : "1",
+                          "Variant 95" : "1",
+                          "Variant 96" : "1",
+                          "Variant 97" : "1",
+                          "Variant 98" : "1",
+                          "Variant 35" : "2",
+                          "Variant 3" : "10",
+                          "Variant 99" : "1",
+                          "Variant 100" : "1",
+                          "Variant 101" : "1",
+                          "Variant 102" : "1",
+                          "Variant 103" : "1",
+                          "Variant 104" : "1",
+                          "Variant 105" : "1",
+                          "Variant 24" : "2",
+                          "Variant 106" : "1",
+                          "Variant 107" : "1",
+                          "Variant 108" : "1",
+                          "Variant 109" : "1",
+                          "Variant 110" : "1",
+                          "Variant 111" : "1",
+                          "Variant 112" : "1",
+                          "Variant 113" : "1",
+                          "Variant 114" : "1",
+                          "Variant 115" : "1",
+                          "Variant 116" : "1",
+                          "Variant 117" : "1",
+                          "Variant 118" : "1",
+                          "Variant 25" : "2",
+                          "Variant 9" : "5",
+                          "Variant 119" : "1",
+                          "Variant 120" : "1",
+                          "Variant 121" : "1",
+                          "Variant 122" : "1",
+                          "Variant 123" : "1",
+                          "Variant 124" : "1",
+                          "Variant 125" : "1",
+                          "Variant 15" : "3",
+                          "Variant 126" : "1",
+                          "Variant 127" : "1",
+                          "Variant 128" : "1",
+                          "Variant 129" : "1",
+                          "Variant 130" : "1",
+                          "Variant 131" : "1",
+                          "Variant 132" : "1",
+                          "Variant 133" : "1",
+                          "Variant 134" : "1",
+                          "Variant 135" : "1",
+                          "Variant 136" : "1",
+                          "Variant 137" : "1",
+                          "Variant 138" : "1",
+                          "Variant 139" : "1",
+                          "Variant 140" : "1",
+                          "Variant 34" : "2",
+                          "Variant 141" : "1",
+                          "Variant 142" : "1",
+                          "Variant 143" : "1",
+                          "Variant 144" : "1",
+                          "Variant 145" : "1",
+                          "Variant 146" : "1",
+                          "Variant 147" : "1",
+                          "Variant 148" : "1",
+                          "Variant 149" : "1",
+                          "Variant 150" : "1",
+                          "Variant 151" : "1",
+                          "Variant 152" : "1",
+                          "Variant 153" : "1",
+                          "Variant 154" : "1",
+                          "Variant 155" : "1",
+                          "Variant 156" : "1",
+                          "Variant 157" : "1",
+                          "Variant 158" : "1",
+                          "Variant 159" : "1",
+                          "Variant 160" : "1",
+                          "Variant 161" : "1",
+                          "Variant 162" : "1",
+                          "Variant 20" : "3",
+                          "Variant 163" : "1",
+                          "Variant 164" : "1",
+                          "Variant 165" : "1",
+                          "Variant 166" : "1",
+                          "Variant 167" : "1",
+                          "Variant 168" : "1",
+                          "Variant 169" : "1",
+                          "Variant 170" : "1",
+                          "Variant 171" : "1",
+                          "Variant 172" : "1",
+                          "Variant 173" : "1",
+                          "Variant 174" : "1",
+                          "Variant 175" : "1",
+                          "Variant 176" : "1",
+                          "Variant 177" : "1",
+                          "Variant 178" : "1",
+                          "Variant 179" : "1",
+                          "Variant 180" : "1",
+                          "Variant 181" : "1",
+                          "Variant 182" : "1",
+                          "Variant 183" : "1",
+                          "Variant 184" : "1",
+                          "Variant 185" : "1",
+                          "Variant 186" : "1",
+                          "Variant 187" : "1",
+                          "Variant 188" : "1",
+                          "Variant 189" : "1",
+                          "Variant 190" : "1",
+                          "Variant 191" : "1",
+                          "Variant 192" : "1",
+                          "Variant 193" : "1",
+                          "Variant 194" : "1",
+                          "Variant 195" : "1",
+                          "Variant 196" : "1",
+                          "Variant 197" : "1",
+                          "Variant 198" : "1",
+                          "Variant 199" : "1",
+                          "Variant 200" : "1",
+                          "Variant 201" : "1",
+                          "Variant 202" : "1",
+                          "Variant 203" : "1",
+                          "Variant 204" : "1",
+                          "Variant 205" : "1",
+                          "Variant 206" : "1",
+                          "Variant 207" : "1",
+                          "Variant 208" : "1",
+                          "Variant 19" : "3",
+                          "Variant 209" : "1",
+                          "Variant 210" : "1",
+                          "Variant 211" : "1",
+                          "Variant 212" : "1",
+                          "Variant 213" : "1",
+                          "Variant 214" : "1",
+                          "Variant 215" : "1",
+                          "Variant 216" : "1",
+                          "Variant 217" : "1",
+                          "Variant 218" : "1",
+                          "Variant 219" : "1",
+                          "Variant 220" : "1",
+                          "Variant 221" : "1",
+                          "Variant 222" : "1",
+                          "Variant 223" : "1",
+                          "Variant 224" : "1",
+                          "Variant 225" : "1",
+                          "Variant 226" : "1",
+                          "Variant 227" : "1",
+                          "Variant 228" : "1",
+                          "Variant 229" : "1",
+                          "Variant 230" : "1",
+                          "Variant 23" : "2",
+                          "Variant 231" : "1",
+                          "Variant 232" : "1",
+                          "Variant 233" : "1",
+                          "Variant 234" : "1",
+                          "Variant 235" : "1",
+                          "Variant 236" : "1",
+                          "Variant 237" : "1",
+                          "Variant 238" : "1",
+                          "Variant 239" : "1",
+                          "Variant 240" : "1",
+                          "Variant 241" : "1",
+                          "Variant 242" : "1",
+                          "Variant 243" : "1",
+                          "Variant 17" : "3",
+                          "Variant 244" : "1",
+                          "Variant 245" : "1",
+                          "Variant 246" : "1",
+                          "Variant 247" : "1",
+                          "Variant 248" : "1",
+                          "Variant 249" : "1",
+                          "Variant 250" : "1",
+                          "Variant 251" : "1",
+                          "Variant 33" : "2",
+                          "Variant 252" : "1",
+                          "Variant 253" : "1",
+                          "Variant 254" : "1",
+                          "Variant 255" : "1",
+                          "Variant 256" : "1",
+                          "Variant 257" : "1",
+                          "Variant 6" : "6",
+                          "Variant 258" : "1",
+                          "Variant 259" : "1",
+                          "Variant 13" : "3",
+                          "Variant 260" : "1",
+                          "Variant 261" : "1",
+                          "Variant 262" : "1",
+                          "Variant 263" : "1",
+                          "Variant 264" : "1",
+                          "Variant 265" : "1",
+                          "Variant 266" : "1",
+                          "Variant 267" : "1",
+                          "Variant 268" : "1",
+                          "Variant 269" : "1",
+                          "Variant 270" : "1",
+                          "Variant 271" : "1",
+                          "Variant 272" : "1",
+                          "Variant 273" : "1",
+                          "Variant 274" : "1",
+                          "Variant 275" : "1",
+                          "Variant 18" : "3",
+                          "Variant 276" : "1",
+                          "Variant 277" : "1",
+                          "Variant 278" : "1",
+                          "Variant 279" : "1",
+                          "Variant 280" : "1",
+                          "Variant 26" : "2",
+                          "Variant 281" : "1",
+                          "Variant 282" : "1",
+                          "Variant 283" : "1",
+                          "Variant 284" : "1",
+                          "Variant 16" : "3",
+                          "Variant 285" : "1",
+                          "Variant 31" : "2",
+                          "Variant 286" : "1",
+                          "Variant 287" : "1",
+                          "Variant 288" : "1",
+                          "Variant 289" : "1",
+                          "Variant 290" : "1",
+                          "Variant 291" : "1",
+                          "Variant 292" : "1",
+                          "Variant 293" : "1",
+                          "Variant 294" : "1",
+                          "Variant 295" : "1",
+                          "Variant 296" : "1",
+                          "Variant 297" : "1",
+                          "Variant 298" : "1",
+                          "Variant 299" : "1",
+                          "Variant 300" : "1",
+                          "Variant 301" : "1",
+                          "Variant 302" : "1",
+                          "Variant 303" : "1",
+                          "Variant 304" : "1",
+                          "Variant 305" : "1",
+                          "Variant 306" : "1",
+                          "Variant 307" : "1",
+                          "Variant 308" : "1",
+                          "Variant 309" : "1",
+                          "Variant 310" : "1",
+                          "Variant 311" : "1",
+                          "Variant 312" : "1",
+                          "Variant 313" : "1",
+                          "Variant 314" : "1",
+                          "Variant 315" : "1",
+                          "Variant 316" : "1",
+                          "Variant 317" : "1",
+                          "Variant 318" : "1",
+                          "Variant 319" : "1",
+                          "Variant 320" : "1",
+                          "Variant 321" : "1",
+                          "Variant 322" : "1",
+                          "Variant 323" : "1",
+                          "Variant 324" : "1",
+                          "Variant 325" : "1",
+                          "Variant 326" : "1",
+                          "Variant 327" : "1",
+                          "Variant 328" : "1",
+                          "Variant 7" : "6",
+                          "Variant 329" : "1",
+                          "Variant 330" : "1",
+                          "Variant 331" : "1",
+                          "Variant 27" : "2",
+                          "Variant 332" : "1",
+                          "Variant 333" : "1",
+                          "Variant 334" : "1",
+                          "Variant 335" : "1",
+                          "Variant 336" : "1",
+                          "Variant 337" : "1",
+                          "Variant 338" : "1",
+                          "Variant 339" : "1",
+                          "Variant 340" : "1",
+                          "Variant 341" : "1",
+                          "Variant 342" : "1",
+                          "Variant 343" : "1",
+                          "Variant 344" : "1",
+                          "Variant 345" : "1",
+                          "Variant 346" : "1",
+                          "Variant 347" : "1",
+                          "Variant 348" : "1",
+                          "Variant 349" : "1",
+                          "Variant 350" : "1",
+                          "Variant 351" : "1",
+                          "Variant 12" : "3",
+                          "Variant 352" : "1",
+                          "Variant 353" : "1",
+                          "Variant 354" : "1",
+                          "Variant 355" : "1",
+                          "Variant 356" : "1",
+                          "Variant 357" : "1",
+                          "Variant 358" : "1",
+                          "Variant 359" : "1",
+                          "Variant 360" : "1",
+                          "Variant 361" : "1",
+                          "Variant 362" : "1",
+                          "Variant 363" : "1",
+                          "Variant 364" : "1",
+                          "Variant 365" : "1",
+                          "Variant 366" : "1",
+                          "Variant 367" : "1",
+                          "Variant 368" : "1",
+                          "Variant 369" : "1",
+                          "Variant 370" : "1",
+                          "Variant 371" : "1",
+                          "Variant 372" : "1",
+                          "Variant 373" : "1",
+                          "Variant 374" : "1",
+                          "Variant 375" : "1",
+                          "Variant 376" : "1",
+                          "Variant 377" : "1",
+                          "Variant 378" : "1",
+                          "Variant 379" : "1",
+                          "Variant 380" : "1",
+                          "Variant 381" : "1",
+                          "Variant 382" : "1",
+                          "Variant 383" : "1",
+                          "Variant 384" : "1",
+                          "Variant 385" : "1",
+                          "Variant 386" : "1",
+                          "Variant 387" : "1",
+                          "Variant 388" : "1",
+                          "Variant 389" : "1",
+                          "Variant 390" : "1",
+                          "Variant 391" : "1",
+                          "Variant 392" : "1",
+                          "Variant 393" : "1",
+                          "Variant 394" : "1",
+                          "Variant 395" : "1",
+                          "Variant 396" : "1",
+                          "Variant 397" : "1",
+                          "Variant 398" : "1",
+                          "Variant 399" : "1",
+                          "Variant 400" : "1",
+                          "Variant 401" : "1",
+                          "Variant 402" : "1",
+                          "Variant 403" : "1",
+                          "Variant 404" : "1",
+                          "Variant 405" : "1",
+                          "Variant 406" : "1",
+                          "Variant 407" : "1",
+                          "Variant 408" : "1",
+                          "Variant 409" : "1",
+                          "Variant 410" : "1",
+                          "Variant 411" : "1",
+                          "Variant 412" : "1",
+                          "Variant 413" : "1",
+                          "Variant 414" : "1",
+                          "Variant 415" : "1",
+                          "Variant 416" : "1",
+                          "Variant 417" : "1",
+                          "Variant 418" : "1",
+                          "Variant 419" : "1",
+                          "Variant 420" : "1",
+                          "Variant 421" : "1",
+                          "Variant 422" : "1",
+                          "Variant 423" : "1",
+                          "Variant 424" : "1",
+                          "Variant 28" : "2",
+                          "Variant 425" : "1",
+                          "Variant 426" : "1",
+                          "Variant 427" : "1",
+                          "Variant 428" : "1",
+                          "Variant 429" : "1",
+                          "Variant 430" : "1",
+                          "Variant 431" : "1",
+                          "Variant 432" : "1",
+                          "Variant 433" : "1",
+                          "Variant 434" : "1",
+                          "Variant 435" : "1",
+                          "Variant 436" : "1",
+                          "Variant 437" : "1",
+                          "Variant 438" : "1",
+                          "Variant 439" : "1",
+                          "Variant 440" : "1",
+                          "Variant 441" : "1",
+                          "Variant 442" : "1",
+                          "Variant 443" : "1",
+                          "Variant 444" : "1",
+                          "Variant 445" : "1",
+                          "Variant 446" : "1",
+                          "Variant 447" : "1",
+                          "Variant 448" : "1",
+                          "Variant 449" : "1",
+                          "Variant 450" : "1",
+                          "Variant 451" : "1",
+                          "Variant 452" : "1",
+                          "Variant 453" : "1",
+                          "Variant 11" : "3",
+                          "Variant 454" : "1",
+                          "Variant 455" : "1",
+                          "Variant 456" : "1",
+                          "Variant 457" : "1",
+                          "Variant 458" : "1",
+                          "Variant 459" : "1",
+                          "Variant 460" : "1",
+                          "Variant 461" : "1",
+                          "Variant 462" : "1",
+                          "Variant 463" : "1",
+                          "Variant 464" : "1",
+                          "Variant 465" : "1",
+                          "Variant 466" : "1",
+                          "Variant 467" : "1",
+                          "Variant 468" : "1",
+                          "Variant 469" : "1",
+                          "Variant 470" : "1",
+                          "Variant 471" : "1",
+                          "Variant 472" : "1",
+                          "Variant 473" : "1",
+                          "Variant 474" : "1",
+                          "Variant 475" : "1",
+                          "Variant 476" : "1",
+                          "Variant 477" : "1",
+                          "Variant 478" : "1",
+                          "Variant 479" : "1",
+                          "Variant 480" : "1",
+                          "Variant 481" : "1",
+                          "Variant 482" : "1",
+                          "Variant 483" : "1",
+                          "Variant 484" : "1",
+                          "Variant 485" : "1",
+                          "Variant 486" : "1",
+                          "Variant 487" : "1",
+                          "Variant 488" : "1",
+                          "Variant 489" : "1",
+                          "Variant 490" : "1",
+                          "Variant 491" : "1",
+                          "Variant 492" : "1",
+                          "Variant 32" : "2",
+                          "Variant 493" : "1",
+                          "Variant 494" : "1",
+                          "Variant 495" : "1",
+                          "Variant 496" : "1",
+                          "Variant 497" : "1",
+                          "Variant 498" : "1",
+                          "Variant 499" : "1",
+                          "Variant 500" : "1",
+                          "Variant 501" : "1",
+                          "Variant 502" : "1",
+                          "Variant 503" : "1",
+                          "Variant 504" : "1",
+                          "Variant 505" : "1",
+                          "Variant 506" : "1",
+                          "Variant 507" : "1",
+                          "Variant 508" : "1",
+                          "Variant 509" : "1",
+                          "Variant 510" : "1",
+                          "Variant 511" : "1",
+                          "Variant 512" : "1",
+                          "Variant 513" : "1",
+                          "Variant 514" : "1",
+                          "Variant 515" : "1",
+                          "Variant 516" : "1",
+                          "Variant 517" : "1",
+                          "Variant 518" : "1",
+                          "Variant 519" : "1",
+                          "Variant 520" : "1",
+                          "Variant 521" : "1",
+                          "Variant 522" : "1",
+                          "Variant 523" : "1",
+                          "Variant 524" : "1",
+                          "Variant 525" : "1",
+                          "Variant 526" : "1",
+                          "Variant 527" : "1",
+                          "Variant 528" : "1",
+                          "Variant 529" : "1",
+                          "Variant 530" : "1",
+                          "Variant 531" : "1",
+                          "Variant 22" : "2",
+                          "Variant 532" : "1",
+                          "Variant 533" : "1",
+                          "Variant 534" : "1",
+                          "Variant 535" : "1",
+                          "Variant 536" : "1",
+                          "Variant 537" : "1",
+                          "Variant 538" : "1",
+                          "Variant 539" : "1",
+                          "Variant 540" : "1",
+                          "Variant 541" : "1",
+                          "Variant 542" : "1",
+                          "Variant 543" : "1",
+                          "Variant 544" : "1",
+                          "Variant 545" : "1",
+                          "Variant 546" : "1",
+                          "Variant 547" : "1",
+                          "Variant 548" : "1",
+                          "Variant 549" : "1",
+                          "Variant 550" : "1",
+                          "Variant 551" : "1",
+                          "Variant 552" : "1",
+                          "Variant 553" : "1",
+                          "Variant 554" : "1",
+                          "Variant 555" : "1",
+                          "Variant 556" : "1",
+                          "Variant 557" : "1",
+                          "Variant 558" : "1",
+                          "Variant 559" : "1",
+                          "Variant 560" : "1",
+                          "Variant 561" : "1",
+                          "Variant 562" : "1",
+                          "Variant 563" : "1",
+                          "Variant 564" : "1",
+                          "Variant 565" : "1",
+                          "Variant 566" : "1",
+                          "Variant 567" : "1",
+                          "Variant 568" : "1",
+                          "Variant 569" : "1",
+                          "Variant 570" : "1",
+                          "Variant 571" : "1",
+                          "Variant 572" : "1",
+                          "Variant 573" : "1",
+                          "Variant 574" : "1",
+                          "Variant 575" : "1",
+                          "Variant 576" : "1",
+                          "Variant 577" : "1",
+                          "Variant 578" : "1",
+                          "Variant 579" : "1",
+                          "Variant 580" : "1",
+                          "Variant 581" : "1",
+                          "Variant 582" : "1",
+                          "Variant 583" : "1",
+                          "Variant 584" : "1",
+                          "Variant 585" : "1",
+                          "Variant 586" : "1",
+                          "Variant 587" : "1",
+                          "Variant 588" : "1",
+                          "Variant 589" : "1",
+                          "Variant 590" : "1",
+                          "Variant 591" : "1",
+                          "Variant 592" : "1",
+                          "Variant 593" : "1",
+                          "Variant 594" : "1",
+                          "Variant 595" : "1",
+                          "Variant 596" : "1",
+                          "Variant 597" : "1",
+                          "Variant 598" : "1",
+                          "Variant 599" : "1",
+                          "Variant 600" : "1",
+                          "Variant 601" : "1",
+                          "Variant 602" : "1",
+                          "Variant 603" : "1",
+                          "Variant 604" : "1",
+                          "Variant 605" : "1",
+                          "Variant 606" : "1",
+                          "Variant 607" : "1",
+                          "Variant 608" : "1",
+                          "Variant 609" : "1",
+                          "Variant 610" : "1",
+                          "Variant 611" : "1",
+                          "Variant 612" : "1",
+                          "Variant 613" : "1",
+                          "Variant 614" : "1"
+                          }
+                      ],
+                      "variant-index" : [
+                          {
+                          "Total" : "189868",
+                          "Mean" : "262,611341632089",
+                          "Median" : "253",
+                          "Min" : "1",
+                          "Max" : "614"
+                          }
+                      ],
+                      "creator" : [
+                          {
+                          "Fluxicon Disco" : "723"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Dejan Lovren",
+              "frequencySignificance" : 349,
+              "caseFrequencySignificance" : 229,
+              "durations" : [
+                  {
+                      "TotalDuration" : 592000,
+                      "MeanDuration" : 1630.85399449036,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 9000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "670",
+                          "Shot" : "12",
+                          "Ball Recovery" : "24",
+                          "Foul Committed" : "8",
+                          "Pressure" : "4",
+                          "Interception" : "2",
+                          "Miscontrol" : "4",
+                          "Clearance" : "2"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "Free Kick" : "18",
+                          "None" : "596",
+                          "Recovery" : "92",
+                          "Throw-in" : "4",
+                          "Open Play" : "12",
+                          "Interception" : "2",
+                          "Goal Kick" : "2"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "From Free Kick" : "104",
+                          "Regular Play" : "342",
+                          "From Throw In" : "132",
+                          "From Goal Kick" : "30",
+                          "From Counter" : "68",
+                          "From Kick Off" : "14",
+                          "From Keeper" : "10",
+                          "From Corner" : "22",
+                          "Other" : "4"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "None" : "656",
+                          "True" : "70"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "724",
+                          "True" : "2"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "Total" : "-1,51061374918184E+18",
+                          "Mean" : "-2,25464738683857E+15",
+                          "Median" : "-11071488",
+                          "Min" : "-4,266275E+16",
+                          "Max" : "4,808873E+16"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "Total" : "4,29137797766483E+18",
+                          "Mean" : "6,4050417577087E+15",
+                          "Median" : "24758837",
+                          "Min" : "0",
+                          "Max" : "7,071068E+16"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Marcelo Brozović" : "98",
+                          "Domagoj Vida" : "112",
+                          "Šime Vrsaljko" : "124",
+                          "Danijel Subašić" : "78",
+                          "Ante Rebić" : "26",
+                          "Ivan Rakitić" : "66",
+                          "Mateo Kovačić" : "10",
+                          "Luka Modrić" : "80",
+                          "Vedran Ćorluka" : "6",
+                          "Marko Pjaca" : "2",
+                          "Andrej Kramarić" : "2",
+                          "Mario Mandžukić" : "14",
+                          "Ivan Perišić" : "8",
+                          "Ivan Strinić" : "6"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Dejan Lovren" : "726"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Right Center Back" : "714",
+                          "Left Center Back" : "12"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Marcelo Brozović",
+              "frequencySignificance" : 364,
+              "caseFrequencySignificance" : 230,
+              "durations" : [
+                  {
+                      "TotalDuration" : 584000,
+                      "MeanDuration" : 1524.80417754569,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 7000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "698",
+                          "Ball Recovery" : "28",
+                          "Dribble" : "4",
+                          "Pressure" : "12",
+                          "Foul Committed" : "6",
+                          "Interception" : "4",
+                          "Clearance" : "2",
+                          "Shot" : "10",
+                          "Miscontrol" : "2"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "656",
+                          "Recovery" : "76",
+                          "Free Kick" : "18",
+                          "Throw-in" : "6",
+                          "Penalty" : "2",
+                          "Open Play" : "8"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "From Free Kick" : "98",
+                          "Regular Play" : "370",
+                          "From Throw In" : "126",
+                          "From Goal Kick" : "10",
+                          "From Counter" : "92",
+                          "From Corner" : "20",
+                          "From Kick Off" : "22",
+                          "Other" : "6",
+                          "From Keeper" : "22"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "None" : "620",
+                          "True" : "146"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "756",
+                          "True" : "10"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "Total" : "3,72975938888657E+17",
+                          "Mean" : "534349482648506",
+                          "Median" : "0",
+                          "Min" : "-5,1237166E+16",
+                          "Max" : "4,048918E+16"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "Total" : "4,46437668089599E+18",
+                          "Mean" : "6,39595513022349E+15",
+                          "Median" : "19786258,5",
+                          "Min" : "50",
+                          "Max" : "7,28011E+16"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Luka Modrić" : "150",
+                          "Ivan Rakitić" : "114",
+                          "Domagoj Vida" : "68",
+                          "Ivan Perišić" : "30",
+                          "Dejan Lovren" : "66",
+                          "Ivan Strinić" : "74",
+                          "Mario Mandžukić" : "14",
+                          "Danijel Subašić" : "8",
+                          "Ante Rebić" : "26",
+                          "Šime Vrsaljko" : "74",
+                          "Josip Pivarić" : "26",
+                          "Mateo Kovačić" : "8",
+                          "Vedran Ćorluka" : "4",
+                          "Andrej Kramarić" : "18"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Marcelo Brozović" : "766"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Center Defensive Midfield" : "414",
+                          "Center Attacking Midfield" : "12",
+                          "Left Center Midfield" : "26",
+                          "Left Defensive Midfield" : "20",
+                          "Left Wing" : "88",
+                          "Left Midfield" : "34",
+                          "Center Midfield" : "172"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Luka Modrić",
+              "frequencySignificance" : 525,
+              "caseFrequencySignificance" : 341,
+              "durations" : [
+                  {
+                      "TotalDuration" : 861000,
+                      "MeanDuration" : 1461.79966044143,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 6000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "992",
+                          "Dribble" : "36",
+                          "Ball Recovery" : "78",
+                          "Shot" : "24",
+                          "Pressure" : "22",
+                          "Interception" : "6",
+                          "Miscontrol" : "12",
+                          "Foul Committed" : "6",
+                          "Block" : "2"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "986",
+                          "Corner" : "60",
+                          "Open Play" : "16",
+                          "Free Kick" : "54",
+                          "Recovery" : "44",
+                          "Penalty" : "8",
+                          "Interception" : "4",
+                          "Throw-in" : "4",
+                          "Kick Off" : "2"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "From Free Kick" : "148",
+                          "Regular Play" : "496",
+                          "From Goal Kick" : "32",
+                          "From Counter" : "132",
+                          "From Corner" : "86",
+                          "From Throw In" : "210",
+                          "From Keeper" : "42",
+                          "Other" : "14",
+                          "From Kick Off" : "18"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "None" : "960",
+                          "True" : "218"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "1144",
+                          "True" : "34"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "Total" : "1,93963839041584E+17",
+                          "Mean" : "195528063549983",
+                          "Median" : "-1152572",
+                          "Min" : "-3,109983E+16",
+                          "Max" : "4,266275E+16"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "Total" : "6,07959167231329E+18",
+                          "Mean" : "6,12862063741259E+15",
+                          "Median" : "23021729",
+                          "Min" : "0",
+                          "Max" : "7,28011E+16"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Dejan Lovren" : "76",
+                          "Ivan Strinić" : "54",
+                          "Šime Vrsaljko" : "176",
+                          "Ante Rebić" : "74",
+                          "Marcelo Brozović" : "110",
+                          "Ivan Perišić" : "72",
+                          "Mario Mandžukić" : "78",
+                          "Ivan Rakitić" : "92",
+                          "Josip Pivarić" : "16",
+                          "Andrej Kramarić" : "60",
+                          "Mateo Kovačić" : "32",
+                          "Milan Badelj" : "14",
+                          "Tin Jedvaj" : "18",
+                          "Duje Ćaleta-Car" : "2",
+                          "Marko Pjaca" : "30",
+                          "Vedran Ćorluka" : "2",
+                          "Domagoj Vida" : "28"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Luka Modrić" : "1178"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Right Center Midfield" : "652",
+                          "Left Defensive Midfield" : "30",
+                          "Center Attacking Midfield" : "68",
+                          "Right Defensive Midfield" : "214",
+                          "Right Midfield" : "42",
+                          "Right Attacking Midfield" : "172"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Domagoj Vida",
+              "frequencySignificance" : 294,
+              "caseFrequencySignificance" : 191,
+              "durations" : [
+                  {
+                      "TotalDuration" : 534000,
+                      "MeanDuration" : 1722.58064516129,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 17000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "566",
+                          "Pressure" : "10",
+                          "Clearance" : "8",
+                          "Ball Recovery" : "22",
+                          "Miscontrol" : "2",
+                          "Foul Committed" : "4",
+                          "Shot" : "8"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "516",
+                          "Free Kick" : "6",
+                          "Recovery" : "86",
+                          "Interception" : "2",
+                          "Open Play" : "6",
+                          "Throw-in" : "2",
+                          "Penalty" : "2"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "From Free Kick" : "80",
+                          "Regular Play" : "298",
+                          "From Throw In" : "108",
+                          "From Goal Kick" : "24",
+                          "From Counter" : "72",
+                          "From Keeper" : "4",
+                          "From Kick Off" : "18",
+                          "From Corner" : "10",
+                          "Other" : "6"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "None" : "566",
+                          "True" : "54"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "620"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "Total" : "8,94137793858119E+17",
+                          "Mean" : "1,5797487523995E+15",
+                          "Median" : "1706738,5",
+                          "Min" : "-1,8925469E+16",
+                          "Max" : "5,1237166E+16"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "Total" : "4,13468953916886E+18",
+                          "Mean" : "7,30510519287785E+15",
+                          "Median" : "21587032",
+                          "Min" : "50",
+                          "Max" : "7,28011E+16"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Ivan Strinić" : "80",
+                          "Ivan Rakitić" : "138",
+                          "Ante Rebić" : "12",
+                          "Dejan Lovren" : "74",
+                          "Marcelo Brozović" : "62",
+                          "Luka Modrić" : "48",
+                          "Danijel Subašić" : "46",
+                          "Josip Pivarić" : "12",
+                          "Milan Badelj" : "2",
+                          "Andrej Kramarić" : "10",
+                          "Ivan Perišić" : "22",
+                          "Mario Mandžukić" : "16",
+                          "Šime Vrsaljko" : "10",
+                          "Marko Pjaca" : "2"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Domagoj Vida" : "620"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Left Center Back" : "606",
+                          "Right Center Back" : "4",
+                          "Right Back" : "10"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Ivan Strinić",
+              "frequencySignificance" : 273,
+              "caseFrequencySignificance" : 198,
+              "durations" : [
+                  {
+                      "TotalDuration" : 406000,
+                      "MeanDuration" : 1344.37086092715,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 7000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "510",
+                          "Pressure" : "14",
+                          "Miscontrol" : "10",
+                          "Ball Recovery" : "36",
+                          "Dribble" : "18",
+                          "Block" : "4",
+                          "Foul Committed" : "10",
+                          "Interception" : "2"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "478",
+                          "Throw-in" : "90",
+                          "Recovery" : "30",
+                          "Free Kick" : "6"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "From Free Kick" : "50",
+                          "From Throw In" : "198",
+                          "Regular Play" : "258",
+                          "From Counter" : "48",
+                          "From Corner" : "20",
+                          "From Goal Kick" : "8",
+                          "From Keeper" : "14",
+                          "From Kick Off" : "8"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "True" : "138",
+                          "None" : "466"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "598",
+                          "True" : "6"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "Total" : "2,42216795675201E+18",
+                          "Mean" : "4,74934893480787E+15",
+                          "Median" : "17076516,5",
+                          "Min" : "-3,1239834E+16",
+                          "Max" : "4,3450896E+16"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "Total" : "2,74211571016361E+18",
+                          "Mean" : "5,37669747090903E+15",
+                          "Median" : "17102625",
+                          "Min" : "10",
+                          "Max" : "7,28011E+16"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Domagoj Vida" : "82",
+                          "Ivan Rakitić" : "90",
+                          "Mario Mandžukić" : "52",
+                          "Marcelo Brozović" : "48",
+                          "Luka Modrić" : "42",
+                          "Ivan Perišić" : "78",
+                          "Mateo Kovačić" : "10",
+                          "Šime Vrsaljko" : "4",
+                          "Ante Rebić" : "66",
+                          "Andrej Kramarić" : "12",
+                          "Danijel Subašić" : "4"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Ivan Strinić" : "604"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Left Back" : "604"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Ivan Rakitić",
+              "frequencySignificance" : 430,
+              "caseFrequencySignificance" : 286,
+              "durations" : [
+                  {
+                      "TotalDuration" : 733000,
+                      "MeanDuration" : 1562.89978678038,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 12000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "776",
+                          "Ball Recovery" : "46",
+                          "Dribble" : "20",
+                          "Shot" : "34",
+                          "Pressure" : "26",
+                          "Miscontrol" : "18",
+                          "Block" : "6",
+                          "Foul Committed" : "10",
+                          "Interception" : "2"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "786",
+                          "Free Kick" : "32",
+                          "Recovery" : "66",
+                          "Open Play" : "24",
+                          "Penalty" : "4",
+                          "Corner" : "18",
+                          "Throw-in" : "6",
+                          "Interception" : "2"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "From Free Kick" : "130",
+                          "Regular Play" : "398",
+                          "From Goal Kick" : "16",
+                          "From Counter" : "100",
+                          "From Throw In" : "168",
+                          "From Corner" : "60",
+                          "From Kick Off" : "24",
+                          "From Keeper" : "30",
+                          "Other" : "12"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "None" : "780",
+                          "True" : "158"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "918",
+                          "True" : "20"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "Total" : "9,84678410492723E+17",
+                          "Mean" : "1,26891547743908E+15",
+                          "Median" : "2819842",
+                          "Min" : "-3,0648208E+16",
+                          "Max" : "4,466038E+16"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "Total" : "5,30268613887314E+18",
+                          "Mean" : "6,83335842638292E+15",
+                          "Median" : "21023796",
+                          "Min" : "10",
+                          "Max" : "7,28011E+16"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Domagoj Vida" : "64",
+                          "Luka Modrić" : "124",
+                          "Mario Mandžukić" : "32",
+                          "Marcelo Brozović" : "94",
+                          "Ante Rebić" : "48",
+                          "Ivan Perišić" : "76",
+                          "Dejan Lovren" : "80",
+                          "Mateo Kovačić" : "20",
+                          "Šime Vrsaljko" : "50",
+                          "Ivan Strinić" : "74",
+                          "Josip Pivarić" : "26",
+                          "Andrej Kramarić" : "30",
+                          "Milan Badelj" : "2",
+                          "Danijel Subašić" : "8",
+                          "Vedran Ćorluka" : "6",
+                          "Marko Pjaca" : "2"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Ivan Rakitić" : "938"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Left Center Midfield" : "506",
+                          "Right Defensive Midfield" : "28",
+                          "Right Center Midfield" : "34",
+                          "Left Defensive Midfield" : "164",
+                          "Center Midfield" : "24",
+                          "Left Attacking Midfield" : "178",
+                          "Center Attacking Midfield" : "4"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "end_node",
+              "frequencySignificance" : 723,
+              "caseFrequencySignificance" : 0,
+              "attributes" : [
+                  {
+                      }
+                   ]
+          },
+           {
+              "label" : "Šime Vrsaljko",
+              "frequencySignificance" : 365,
+              "caseFrequencySignificance" : 254,
+              "durations" : [
+                  {
+                      "TotalDuration" : 563000,
+                      "MeanDuration" : 1428.93401015228,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 8000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "694",
+                          "Ball Recovery" : "46",
+                          "Miscontrol" : "10",
+                          "Foul Committed" : "4",
+                          "Shot" : "10",
+                          "Pressure" : "8",
+                          "Interception" : "6",
+                          "Dribble" : "8",
+                          "Block" : "2"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "630",
+                          "Throw-in" : "104",
+                          "Recovery" : "40",
+                          "Free Kick" : "4",
+                          "Open Play" : "10"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "Regular Play" : "298",
+                          "From Goal Kick" : "18",
+                          "From Counter" : "84",
+                          "From Throw In" : "258",
+                          "From Free Kick" : "72",
+                          "From Keeper" : "24",
+                          "From Corner" : "20",
+                          "Other" : "2",
+                          "From Kick Off" : "12"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "None" : "632",
+                          "True" : "156"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "778",
+                          "True" : "10"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "Total" : "-2,35674148626492E+18",
+                          "Mean" : "-3,39588110412812E+15",
+                          "Median" : "-16141984,5",
+                          "Min" : "-3,070285E+16",
+                          "Max" : "4,808873E+16"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "Total" : "4,57246476130888E+18",
+                          "Mean" : "6,58856593848542E+15",
+                          "Median" : "18681541",
+                          "Min" : "20",
+                          "Max" : "7,28011E+16"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Marcelo Brozović" : "64",
+                          "Dejan Lovren" : "142",
+                          "Ante Rebić" : "78",
+                          "Ivan Rakitić" : "40",
+                          "Mario Mandžukić" : "94",
+                          "Luka Modrić" : "110",
+                          "Ivan Perišić" : "52",
+                          "Josip Pivarić" : "2",
+                          "Mateo Kovačić" : "6",
+                          "Danijel Subašić" : "8",
+                          "Marko Pjaca" : "4",
+                          "Andrej Kramarić" : "22",
+                          "Domagoj Vida" : "4",
+                          "Ivan Strinić" : "2"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Šime Vrsaljko" : "788"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Right Back" : "788"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Ivan Perišić",
+              "frequencySignificance" : 233,
+              "caseFrequencySignificance" : 182,
+              "durations" : [
+                  {
+                      "TotalDuration" : 360000,
+                      "MeanDuration" : 1406.25,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 6000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pressure" : "34",
+                          "Pass" : "376",
+                          "Shot" : "48",
+                          "Ball Recovery" : "16",
+                          "Dribble" : "12",
+                          "Miscontrol" : "14",
+                          "Interception" : "2",
+                          "Block" : "6",
+                          "Foul Committed" : "4"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "416",
+                          "Open Play" : "44",
+                          "Throw-in" : "16",
+                          "Free Kick" : "4",
+                          "Recovery" : "32"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "Regular Play" : "222",
+                          "From Counter" : "46",
+                          "From Throw In" : "126",
+                          "From Free Kick" : "54",
+                          "From Keeper" : "26",
+                          "From Goal Kick" : "6",
+                          "From Corner" : "22",
+                          "Other" : "4",
+                          "From Kick Off" : "6"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "None" : "420",
+                          "True" : "92"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "502",
+                          "True" : "10"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Ivan Perišić" : "512"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Left Midfield" : "106",
+                          "Left Wing" : "344",
+                          "Center Attacking Midfield" : "16",
+                          "Right Wing" : "46"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "Total" : "9,34355944278926E+17",
+                          "Mean" : "2,48498921350778E+15",
+                          "Median" : "12627436",
+                          "Min" : "-2,714965E+16",
+                          "Max" : "3,1415927E+16"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "Total" : "2,84311039680269E+18",
+                          "Mean" : "7,56146382128375E+15",
+                          "Median" : "20396078",
+                          "Min" : "10",
+                          "Max" : "7,28011E+16"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Ante Rebić" : "24",
+                          "Marcelo Brozović" : "14",
+                          "Mario Mandžukić" : "54",
+                          "Josip Pivarić" : "18",
+                          "Ivan Rakitić" : "36",
+                          "Ivan Strinić" : "18",
+                          "Luka Modrić" : "48",
+                          "Šime Vrsaljko" : "28",
+                          "Andrej Kramarić" : "28",
+                          "Mateo Kovačić" : "14",
+                          "Milan Badelj" : "14",
+                          "Filip Bradarić" : "2",
+                          "Marko Pjaca" : "4",
+                          "Domagoj Vida" : "14",
+                          "Dejan Lovren" : "6",
+                          "Danijel Subašić" : "4"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Danijel Subašić",
+              "frequencySignificance" : 162,
+              "caseFrequencySignificance" : 147,
+              "durations" : [
+                  {
+                      "TotalDuration" : 528000,
+                      "MeanDuration" : 2750,
+                      "MedianDuration" : 3000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 25000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "324",
+                          "Ball Recovery" : "60"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "304",
+                          "Goal Kick" : "64",
+                          "Free Kick" : "10",
+                          "Throw-in" : "2",
+                          "Recovery" : "4"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "Regular Play" : "142",
+                          "From Goal Kick" : "68",
+                          "From Throw In" : "30",
+                          "From Keeper" : "24",
+                          "From Counter" : "74",
+                          "From Free Kick" : "26",
+                          "From Corner" : "6",
+                          "From Kick Off" : "6",
+                          "Other" : "8"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "True" : "26",
+                          "None" : "358"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "384"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "Total" : "-1,67450010920359E+17",
+                          "Mean" : "-516821021359133",
+                          "Median" : "-1152572",
+                          "Min" : "-5,7080783E+16",
+                          "Max" : "5,1237166E+16"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "Total" : "1,80483491572928E+18",
+                          "Mean" : "5,57047813496693E+15",
+                          "Median" : "26907248",
+                          "Min" : "150",
+                          "Max" : "5,9682495E+16"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Ivan Strinić" : "22",
+                          "Mario Mandžukić" : "32",
+                          "Domagoj Vida" : "52",
+                          "Dejan Lovren" : "56",
+                          "Josip Pivarić" : "10",
+                          "Andrej Kramarić" : "4",
+                          "Ante Rebić" : "20",
+                          "Luka Modrić" : "10",
+                          "Marcelo Brozović" : "24",
+                          "Ivan Perišić" : "18",
+                          "Marko Pjaca" : "2",
+                          "Ivan Rakitić" : "6",
+                          "Šime Vrsaljko" : "22"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Danijel Subašić" : "384"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Goalkeeper" : "384"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Ante Rebić",
+              "frequencySignificance" : 173,
+              "caseFrequencySignificance" : 149,
+              "durations" : [
+                  {
+                      "TotalDuration" : 288000,
+                      "MeanDuration" : 1274.33628318584,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 6000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "250",
+                          "Ball Recovery" : "42",
+                          "Dribble" : "44",
+                          "Miscontrol" : "26",
+                          "Shot" : "30",
+                          "Foul Committed" : "32",
+                          "Interception" : "4",
+                          "Pressure" : "22",
+                          "Block" : "2"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "402",
+                          "Recovery" : "16",
+                          "Open Play" : "30",
+                          "Interception" : "2",
+                          "Kick Off" : "2"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "Regular Play" : "212",
+                          "From Counter" : "50",
+                          "From Throw In" : "108",
+                          "From Corner" : "26",
+                          "From Keeper" : "18",
+                          "From Goal Kick" : "8",
+                          "From Free Kick" : "26",
+                          "From Kick Off" : "4"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "None" : "354",
+                          "True" : "98"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "450",
+                          "True" : "2"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "Total" : "1,47558619562086E+17",
+                          "Mean" : "590234478248344",
+                          "Median" : "0",
+                          "Min" : "-3,0648208E+16",
+                          "Max" : "3,1415927E+16"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "Total" : "1,16764986235091E+18",
+                          "Mean" : "4,67059944940364E+15",
+                          "Median" : "15967952",
+                          "Min" : "0",
+                          "Max" : "7,071068E+16"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Marcelo Brozović" : "18",
+                          "Šime Vrsaljko" : "38",
+                          "Ivan Rakitić" : "24",
+                          "Ivan Strinić" : "22",
+                          "Ivan Perišić" : "22",
+                          "Mario Mandžukić" : "42",
+                          "Luka Modrić" : "14",
+                          "Andrej Kramarić" : "22",
+                          "Josip Pivarić" : "6",
+                          "Dejan Lovren" : "2",
+                          "Domagoj Vida" : "2"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Ante Rebić" : "452"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Right Midfield" : "130",
+                          "Right Center Forward" : "2",
+                          "Left Wing" : "62",
+                          "Right Wing" : "250",
+                          "Center Forward" : "8"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Mario Mandžukić",
+              "frequencySignificance" : 189,
+              "caseFrequencySignificance" : 165,
+              "durations" : [
+                  {
+                      "TotalDuration" : 268000,
+                      "MeanDuration" : 1313.72549019608,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 7000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Foul Committed" : "14",
+                          "Pass" : "298",
+                          "Pressure" : "14",
+                          "Offside" : "2",
+                          "Ball Recovery" : "24",
+                          "Miscontrol" : "20",
+                          "Shot" : "24",
+                          "Shield" : "2",
+                          "Block" : "2",
+                          "Interception" : "2",
+                          "Dribble" : "6"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "342",
+                          "Recovery" : "26",
+                          "Kick Off" : "16",
+                          "Open Play" : "24"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "From Goal Kick" : "12",
+                          "From Free Kick" : "40",
+                          "From Throw In" : "86",
+                          "Regular Play" : "190",
+                          "From Corner" : "14",
+                          "From Kick Off" : "20",
+                          "From Keeper" : "6",
+                          "From Counter" : "40"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "None" : "326",
+                          "True" : "82"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "394",
+                          "True" : "14"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Mario Mandžukić" : "408"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Center Forward" : "382",
+                          "Left Wing" : "26"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "Total" : "5,32967782779364E+17",
+                          "Mean" : "1,7884824925482E+15",
+                          "Median" : "7416173",
+                          "Min" : "-3,0828369E+16",
+                          "Max" : "3,1415927E+16"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "Total" : "1,65029569056718E+18",
+                          "Mean" : "5,53790500190329E+15",
+                          "Median" : "16124516",
+                          "Min" : "0",
+                          "Max" : "7,071068E+16"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Luka Modrić" : "56",
+                          "Ante Rebić" : "36",
+                          "Domagoj Vida" : "2",
+                          "Ivan Perišić" : "52",
+                          "Šime Vrsaljko" : "24",
+                          "Ivan Rakitić" : "38",
+                          "Marcelo Brozović" : "30",
+                          "Ivan Strinić" : "4",
+                          "Andrej Kramarić" : "20",
+                          "Dejan Lovren" : "10",
+                          "Vedran Ćorluka" : "2",
+                          "Mateo Kovačić" : "2",
+                          "Josip Pivarić" : "2"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Mateo Kovačić",
+              "frequencySignificance" : 138,
+              "caseFrequencySignificance" : 74,
+              "durations" : [
+                  {
+                      "TotalDuration" : 176000,
+                      "MeanDuration" : 1142.85714285714,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 8000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "240",
+                          "Ball Recovery" : "24",
+                          "Block" : "2",
+                          "Pressure" : "12",
+                          "Dribble" : "14",
+                          "Shot" : "10",
+                          "Interception" : "2",
+                          "Miscontrol" : "4"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "290",
+                          "Free Kick" : "4",
+                          "Recovery" : "2",
+                          "Open Play" : "8",
+                          "Corner" : "2",
+                          "Penalty" : "2"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "From Throw In" : "90",
+                          "From Free Kick" : "34",
+                          "Regular Play" : "80",
+                          "From Goal Kick" : "14",
+                          "From Counter" : "46",
+                          "From Corner" : "16",
+                          "From Keeper" : "20",
+                          "From Kick Off" : "6",
+                          "Other" : "2"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "None" : "258",
+                          "True" : "50"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "302",
+                          "True" : "6"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "Total" : "5,19961076173092E+17",
+                          "Mean" : "2,16650448405455E+15",
+                          "Median" : "11071488",
+                          "Min" : "-3,0648208E+16",
+                          "Max" : "3,1415927E+16"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "Total" : "1,0943898577622E+18",
+                          "Mean" : "4,55995774067583E+15",
+                          "Median" : "18110771",
+                          "Min" : "50",
+                          "Max" : "7,071068E+16"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Ivan Rakitić" : "20",
+                          "Ivan Strinić" : "8",
+                          "Šime Vrsaljko" : "10",
+                          "Ivan Perišić" : "16",
+                          "Andrej Kramarić" : "20",
+                          "Luka Modrić" : "40",
+                          "Josip Pivarić" : "28",
+                          "Dejan Lovren" : "4",
+                          "Milan Badelj" : "46",
+                          "Duje Ćaleta-Car" : "16",
+                          "Filip Bradarić" : "2",
+                          "Vedran Ćorluka" : "14",
+                          "Marko Pjaca" : "4",
+                          "Marcelo Brozović" : "2",
+                          "Mario Mandžukić" : "6"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Mateo Kovačić" : "308"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Center Defensive Midfield" : "56",
+                          "Right Midfield" : "10",
+                          "Left Center Midfield" : "186",
+                          "Right Wing" : "28",
+                          "Center Attacking Midfield" : "12",
+                          "Left Midfield" : "16"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Josip Pivarić",
+              "frequencySignificance" : 154,
+              "caseFrequencySignificance" : 99,
+              "durations" : [
+                  {
+                      "TotalDuration" : 210000,
+                      "MeanDuration" : 1235.29411764706,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 7000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "288",
+                          "Ball Recovery" : "18",
+                          "Shot" : "6",
+                          "Dribble" : "18",
+                          "Foul Committed" : "4",
+                          "Block" : "2",
+                          "Pressure" : "2",
+                          "Clearance" : "2"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "274",
+                          "Throw-in" : "46",
+                          "Open Play" : "4",
+                          "Recovery" : "12",
+                          "Penalty" : "2",
+                          "Free Kick" : "2"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "From Free Kick" : "36",
+                          "Regular Play" : "94",
+                          "From Throw In" : "116",
+                          "From Goal Kick" : "4",
+                          "From Keeper" : "12",
+                          "From Counter" : "46",
+                          "From Corner" : "14",
+                          "From Kick Off" : "4",
+                          "Other" : "14"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "None" : "282",
+                          "True" : "58"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "True" : "4",
+                          "None" : "336"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "Total" : "1,10721198459658E+18",
+                          "Mean" : "3,84448605762701E+15",
+                          "Median" : "15707964",
+                          "Min" : "-2,953371E+16",
+                          "Max" : "3,1415927E+16"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "Total" : "1,46733044906187E+18",
+                          "Mean" : "5,09489739257592E+15",
+                          "Median" : "15231546",
+                          "Min" : "20",
+                          "Max" : "7,28011E+16"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Ivan Perišić" : "46",
+                          "Mateo Kovačić" : "52",
+                          "Mario Mandžukić" : "18",
+                          "Danijel Subašić" : "2",
+                          "Andrej Kramarić" : "42",
+                          "Ivan Rakitić" : "40",
+                          "Luka Modrić" : "26",
+                          "Domagoj Vida" : "4",
+                          "Marko Pjaca" : "4",
+                          "Milan Badelj" : "6",
+                          "Filip Bradarić" : "2",
+                          "Duje Ćaleta-Car" : "10",
+                          "Ante Rebić" : "12",
+                          "Marcelo Brozović" : "8",
+                          "Vedran Ćorluka" : "2"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Josip Pivarić" : "340"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Left Back" : "316",
+                          "Left Wing Back" : "24"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Andrej Kramarić",
+              "frequencySignificance" : 153,
+              "caseFrequencySignificance" : 108,
+              "durations" : [
+                  {
+                      "TotalDuration" : 238000,
+                      "MeanDuration" : 1375.7225433526,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 10000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "262",
+                          "Miscontrol" : "6",
+                          "Interception" : "4",
+                          "Pressure" : "4",
+                          "Shot" : "24",
+                          "Ball Recovery" : "24",
+                          "Dribble" : "20",
+                          "Foul Committed" : "2"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "Recovery" : "6",
+                          "None" : "312",
+                          "Open Play" : "22",
+                          "Penalty" : "2",
+                          "Kick Off" : "4"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "Regular Play" : "154",
+                          "From Goal Kick" : "10",
+                          "From Free Kick" : "32",
+                          "From Throw In" : "74",
+                          "From Counter" : "42",
+                          "Other" : "6",
+                          "From Corner" : "12",
+                          "From Keeper" : "12",
+                          "From Kick Off" : "4"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "True" : "64",
+                          "None" : "282"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "330",
+                          "True" : "16"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "Total" : "-7,02741025528808E+16",
+                          "Mean" : "-268221765469011",
+                          "Median" : "-2879953,5",
+                          "Min" : "-4,048918E+16",
+                          "Max" : "3,1415927E+16"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "Total" : "1,91637807394223E+18",
+                          "Mean" : "7,31442012955049E+15",
+                          "Median" : "20712090,5",
+                          "Min" : "0",
+                          "Max" : "7,28011E+16"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Josip Pivarić" : "48",
+                          "Mateo Kovačić" : "28",
+                          "Ivan Rakitić" : "18",
+                          "Mario Mandžukić" : "16",
+                          "Milan Badelj" : "12",
+                          "Tin Jedvaj" : "8",
+                          "Ivan Perišić" : "26",
+                          "Marko Pjaca" : "6",
+                          "Luka Modrić" : "28",
+                          "Ivan Strinić" : "14",
+                          "Ante Rebić" : "6",
+                          "Domagoj Vida" : "10",
+                          "Šime Vrsaljko" : "22",
+                          "Dejan Lovren" : "4",
+                          "Marcelo Brozović" : "8",
+                          "Vedran Ćorluka" : "2"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Andrej Kramarić" : "346"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Left Midfield" : "26",
+                          "Left Center Forward" : "14",
+                          "Center Forward" : "102",
+                          "Center Attacking Midfield" : "126",
+                          "Right Wing" : "54",
+                          "Right Midfield" : "24"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Milan Badelj",
+              "frequencySignificance" : 73,
+              "caseFrequencySignificance" : 41,
+              "durations" : [
+                  {
+                      "TotalDuration" : 88000,
+                      "MeanDuration" : 1035.29411764706,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 5000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "126",
+                          "Miscontrol" : "2",
+                          "Shot" : "6",
+                          "Pressure" : "12",
+                          "Interception" : "4",
+                          "Ball Recovery" : "8",
+                          "Block" : "4",
+                          "Dribble" : "4",
+                          "Foul Committed" : "4"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "Recovery" : "14",
+                          "None" : "148",
+                          "Penalty" : "2",
+                          "Interception" : "2",
+                          "Open Play" : "4"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "From Goal Kick" : "4",
+                          "Regular Play" : "66",
+                          "From Free Kick" : "10",
+                          "From Keeper" : "10",
+                          "From Throw In" : "46",
+                          "From Counter" : "24",
+                          "From Corner" : "6",
+                          "From Kick Off" : "4"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "None" : "142",
+                          "True" : "28"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "164",
+                          "True" : "6"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "-1.2924966999999998" : "2",
+                          "2.819842" : "2",
+                          "1.5707964" : "8",
+                          "-0.81569195" : "2",
+                          "0.7853982" : "6",
+                          "1.2341216" : "2",
+                          "0.08314123" : "2",
+                          "-1.9756881000000002" : "2",
+                          "-0.8567056000000001" : "2",
+                          "0.30288488" : "2",
+                          "-0.5028431999999999" : "2",
+                          "0.69473827" : "2",
+                          "1.9756881000000002" : "2",
+                          "-0.348771" : "2",
+                          "-0.4636476" : "2",
+                          "1.8662372" : "2",
+                          "-1.199905" : "2",
+                          "1.5195591" : "2",
+                          "1.4994888000000002" : "2",
+                          "-0.19739556" : "2",
+                          "-0.09966865" : "2",
+                          "0.22679885" : "2",
+                          "-0.64987046" : "2",
+                          "1.2277723999999999" : "2",
+                          "0.98279375" : "4",
+                          "2.8318896000000002" : "2",
+                          "-0.11710875" : "2",
+                          "-1.7234456999999999" : "2",
+                          "-1.4994888000000002" : "2",
+                          "0.7266424" : "2",
+                          "2.5899377" : "2",
+                          "-1.4288993" : "2",
+                          "1.8622531000000002" : "2",
+                          "0.0" : "6",
+                          "2.0344439" : "2",
+                          "-2.9147937" : "2",
+                          "-0.6287963000000001" : "2",
+                          "-2.2455373" : "2",
+                          "0.8441540000000001" : "2",
+                          "-0.08673834" : "2",
+                          "0.8379812" : "2",
+                          "1.4601392" : "2",
+                          "-0.5880025999999999" : "2",
+                          "2.0831857" : "2",
+                          "-1.5707964" : "2",
+                          "2.5213432" : "2",
+                          "-1.4464413" : "2",
+                          "1.6010901000000002" : "2",
+                          "0.39608145" : "2",
+                          "0.3708913" : "2",
+                          "0.96163285" : "2",
+                          "2.863293" : "2",
+                          "0.4636476" : "2",
+                          "2.1293957000000003" : "2",
+                          "-0.6435010999999999" : "2"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "7.2801100000000005" : "2",
+                          "9.486833" : "2",
+                          "18.0" : "2",
+                          "23.345236" : "2",
+                          "5.656854" : "2",
+                          "42.379242" : "2",
+                          "12.0415945" : "4",
+                          "7.615773" : "2",
+                          "19.849434" : "2",
+                          "16.763054" : "2",
+                          "22.825423999999998" : "2",
+                          "15.6205" : "2",
+                          "22.847319" : "2",
+                          "11.7046995" : "2",
+                          "8.485281" : "2",
+                          "11.18034" : "4",
+                          "24.041629999999998" : "2",
+                          "38.626415" : "2",
+                          "39.051247" : "2",
+                          "4.0" : "2",
+                          "3.0" : "2",
+                          "14.035668" : "4",
+                          "10.198039" : "2",
+                          "20.09975" : "2",
+                          "26.683328999999997" : "2",
+                          "31.400637" : "2",
+                          "14.866069" : "2",
+                          "7.211102499999999" : "4",
+                          "26.24881" : "2",
+                          "7.0710679999999995" : "2",
+                          "17.117243" : "2",
+                          "13.152946" : "2",
+                          "15.264338" : "2",
+                          "21.213203" : "2",
+                          "20.880613" : "2",
+                          "7.0" : "2",
+                          "8.944272" : "2",
+                          "13.341664000000002" : "2",
+                          "13.601470999999998" : "2",
+                          "12.806249000000001" : "2",
+                          "24.083189" : "2",
+                          "23.086792000000003" : "2",
+                          "11.0" : "2",
+                          "14.422204999999998" : "2",
+                          "13.453624" : "2",
+                          "17.0" : "2",
+                          "9.055386" : "2",
+                          "36.71512" : "2",
+                          "20.0" : "2",
+                          "17.20465" : "2",
+                          "16.124516" : "2",
+                          "33.01515" : "2",
+                          "59.615432999999996" : "2",
+                          "19.313208" : "2",
+                          "52.43091" : "2",
+                          "14.560220000000001" : "2",
+                          "12.0" : "2",
+                          "28.301942999999998" : "2",
+                          "25.0" : "2"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Luka Modrić" : "20",
+                          "Dejan Lovren" : "4",
+                          "Mateo Kovačić" : "24",
+                          "Tin Jedvaj" : "8",
+                          "Josip Pivarić" : "8",
+                          "Marko Pjaca" : "12",
+                          "Filip Bradarić" : "2",
+                          "Andrej Kramarić" : "14",
+                          "Vedran Ćorluka" : "14",
+                          "Ivan Perišić" : "12",
+                          "Duje Ćaleta-Car" : "6"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Milan Badelj" : "170"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Left Midfield" : "12",
+                          "Center Defensive Midfield" : "158"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Duje Ćaleta-Car",
+              "frequencySignificance" : 35,
+              "caseFrequencySignificance" : 26,
+              "durations" : [
+                  {
+                      "TotalDuration" : 61000,
+                      "MeanDuration" : 1605.26315789474,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 4000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "68",
+                          "Foul Committed" : "2",
+                          "Dribble" : "2",
+                          "Block" : "2",
+                          "Ball Recovery" : "2"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "66",
+                          "Recovery" : "10"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "From Throw In" : "20",
+                          "From Goal Kick" : "2",
+                          "Regular Play" : "14",
+                          "From Free Kick" : "6",
+                          "From Keeper" : "6",
+                          "From Corner" : "2",
+                          "From Counter" : "24",
+                          "From Kick Off" : "2"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "True" : "8",
+                          "None" : "68"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "76"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "1.7196863000000002" : "2",
+                          "-0.034469099999999996" : "2",
+                          "1.1351135" : "2",
+                          "-0.07448879" : "2",
+                          "-1.3909428" : "2",
+                          "2.6779451" : "2",
+                          "0.07677189" : "2",
+                          "1.735945" : "4",
+                          "1.5405024999999999" : "2",
+                          "0.0" : "2",
+                          "-0.3708913" : "2",
+                          "-0.8288491" : "4",
+                          "-0.9151007" : "2",
+                          "2.819842" : "2",
+                          "-0.98279375" : "2",
+                          "-0.65284663" : "2",
+                          "1.5385494" : "2",
+                          "-0.29544082" : "2",
+                          "-1.2220253" : "2",
+                          "-0.5880025999999999" : "2",
+                          "-0.30805278" : "2",
+                          "0.6435010999999999" : "2",
+                          "-1.1246908000000002" : "2",
+                          "1.7475052" : "2",
+                          "-0.87605804" : "2",
+                          "-0.32175055" : "2",
+                          "0.27829966" : "2",
+                          "-1.012197" : "2",
+                          "-1.2490457" : "2",
+                          "1.9678756999999998" : "2",
+                          "0.9272952" : "2",
+                          "-0.7853982" : "2"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "20.22375" : "2",
+                          "58.034473" : "2",
+                          "63.97656" : "2",
+                          "67.18630999999999" : "2",
+                          "11.18034" : "2",
+                          "31.304953" : "2",
+                          "13.038404" : "2",
+                          "18.248287" : "2",
+                          "33.01515" : "2",
+                          "15.0" : "4",
+                          "38.626415" : "2",
+                          "30.413813" : "2",
+                          "16.27882" : "4",
+                          "32.802440000000004" : "2",
+                          "34.785053000000005" : "2",
+                          "7.211102499999999" : "2",
+                          "21.400934" : "2",
+                          "31.016125" : "2",
+                          "24.041629999999998" : "2",
+                          "11.7046995" : "2",
+                          "14.422204999999998" : "2",
+                          "23.086792000000003" : "2",
+                          "5.0" : "2",
+                          "25.495098000000002" : "2",
+                          "28.442923999999998" : "2",
+                          "7.81025" : "2",
+                          "9.486833" : "4",
+                          "14.560220000000001" : "2",
+                          "18.867962" : "2",
+                          "33.61547" : "2",
+                          "9.899495" : "2"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Vedran Ćorluka" : "12",
+                          "Andrej Kramarić" : "2",
+                          "Tin Jedvaj" : "2",
+                          "Josip Pivarić" : "14",
+                          "Mateo Kovačić" : "16",
+                          "Lovre Kalinić" : "6",
+                          "Milan Badelj" : "2",
+                          "Ivan Perišić" : "6",
+                          "Marko Pjaca" : "4",
+                          "Luka Modrić" : "4"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Duje Ćaleta-Car" : "76"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Left Center Back" : "74",
+                          "Center Back" : "2"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Vedran Ćorluka",
+              "frequencySignificance" : 56,
+              "caseFrequencySignificance" : 40,
+              "durations" : [
+                  {
+                      "TotalDuration" : 86000,
+                      "MeanDuration" : 1365.07936507937,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 6000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "108",
+                          "Dribble" : "6",
+                          "Ball Recovery" : "6",
+                          "Foul Committed" : "2",
+                          "Interception" : "2",
+                          "Clearance" : "2"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "108",
+                          "Recovery" : "16",
+                          "Free Kick" : "2"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "From Throw In" : "28",
+                          "Regular Play" : "38",
+                          "From Counter" : "34",
+                          "From Keeper" : "6",
+                          "From Free Kick" : "10",
+                          "From Corner" : "4",
+                          "From Goal Kick" : "2",
+                          "From Kick Off" : "4"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "True" : "22",
+                          "None" : "104"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "126"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "-0.40489179999999997" : "2",
+                          "0.24497867" : "2",
+                          "0.39852244" : "2",
+                          "-2.4526682" : "2",
+                          "0.07677189" : "2",
+                          "0.41071695" : "2",
+                          "-0.87605804" : "2",
+                          "-0.33929262" : "2",
+                          "0.41241044" : "2",
+                          "-1.598567" : "2",
+                          "-2.070143" : "2",
+                          "-1.6295521000000002" : "2",
+                          "-0.4636476" : "2",
+                          "1.1659045" : "2",
+                          "-2.9660006" : "2",
+                          "-1.6951512999999998" : "2",
+                          "-3.0309355" : "2",
+                          "-0.23554498" : "2",
+                          "-1.677532" : "2",
+                          "-1.1773456" : "2",
+                          "-0.071307465" : "2",
+                          "-1.0040671" : "2",
+                          "-0.7853982" : "2",
+                          "-1.943784" : "2",
+                          "-0.32175055" : "4",
+                          "-1.7234456999999999" : "2",
+                          "1.2722973999999998" : "2",
+                          "-0.124354996" : "2",
+                          "-1.5083776000000002" : "2",
+                          "-1.0062269" : "2",
+                          "-0.8850667999999999" : "2",
+                          "0.72425" : "2",
+                          "-1.6784862" : "2",
+                          "-0.07677189" : "2",
+                          "2.0344439" : "2",
+                          "-1.6195382" : "2",
+                          "-1.8063413000000001" : "2",
+                          "-0.5247958" : "2",
+                          "-0.3332443" : "2",
+                          "0.08314123" : "2",
+                          "-1.6207546999999998" : "2",
+                          "-0.119428925" : "2",
+                          "-0.9272952" : "2",
+                          "3.1415927000000003" : "2",
+                          "1.5707964" : "2",
+                          "1.19029" : "2",
+                          "-1.3734008" : "2",
+                          "0.0" : "2",
+                          "-1.2120256" : "2",
+                          "1.152572" : "2",
+                          "2.8828218" : "2",
+                          "1.6951512999999998" : "2",
+                          "0.22679885" : "2"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "7.615773" : "2",
+                          "4.1231055" : "2",
+                          "20.615528" : "2",
+                          "22.022714999999998" : "2",
+                          "13.038404" : "4",
+                          "67.62396" : "2",
+                          "7.81025" : "2",
+                          "18.027756" : "2",
+                          "17.464249" : "2",
+                          "36.013884999999995" : "2",
+                          "12.529964" : "2",
+                          "34.058772999999995" : "2",
+                          "17.888544" : "2",
+                          "15.231546" : "2",
+                          "62.96824599999999" : "2",
+                          "24.186773000000002" : "6",
+                          "9.055386" : "2",
+                          "25.70992" : "4",
+                          "28.160255" : "2",
+                          "57.384666" : "2",
+                          "14.035668" : "2",
+                          "5.656854" : "2",
+                          "24.698176999999998" : "2",
+                          "12.649111" : "2",
+                          "6.3245554" : "2",
+                          "26.305892999999998" : "2",
+                          "13.601470999999998" : "2",
+                          "16.03122" : "2",
+                          "35.510563" : "2",
+                          "14.212670000000001" : "2",
+                          "34.713108" : "2",
+                          "37.215588000000004" : "2",
+                          "26.076809" : "2",
+                          "4.472136" : "2",
+                          "41.04875" : "2",
+                          "21.954498" : "2",
+                          "27.513634000000003" : "2",
+                          "12.0415945" : "2",
+                          "40.04997" : "2",
+                          "25.179357999999997" : "2",
+                          "10.0" : "2",
+                          "21.0" : "2",
+                          "18.0" : "2",
+                          "26.925822999999998" : "2",
+                          "10.198039" : "2",
+                          "5.0" : "2",
+                          "17.088007" : "2",
+                          "9.848858" : "2",
+                          "35.171009999999995" : "2",
+                          "13.341664000000002" : "2"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Luka Modrić" : "16",
+                          "Tin Jedvaj" : "10",
+                          "Lovre Kalinić" : "4",
+                          "Filip Bradarić" : "4",
+                          "Marko Pjaca" : "6",
+                          "Duje Ćaleta-Car" : "18",
+                          "Milan Badelj" : "8",
+                          "Mateo Kovačić" : "12",
+                          "Josip Pivarić" : "8",
+                          "Andrej Kramarić" : "4",
+                          "Ivan Perišić" : "2",
+                          "Marcelo Brozović" : "6",
+                          "Danijel Subašić" : "4",
+                          "Dejan Lovren" : "6"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Vedran Ćorluka" : "126"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Right Center Back" : "100",
+                          "Left Center Back" : "22",
+                          "Center Forward" : "4"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Tin Jedvaj",
+              "frequencySignificance" : 46,
+              "caseFrequencySignificance" : 36,
+              "durations" : [
+                  {
+                      "TotalDuration" : 65000,
+                      "MeanDuration" : 1354.16666666667,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 4000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "86",
+                          "Miscontrol" : "4",
+                          "Pressure" : "4",
+                          "Interception" : "2"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "62",
+                          "Throw-in" : "26",
+                          "Recovery" : "8"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "From Throw In" : "54",
+                          "Regular Play" : "20",
+                          "From Counter" : "14",
+                          "From Keeper" : "4",
+                          "From Free Kick" : "2",
+                          "From Kick Off" : "2"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "True" : "12",
+                          "None" : "84"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "96"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "0.026309717000000003" : "2",
+                          "0.24497867" : "6",
+                          "-1.5707964" : "2",
+                          "-1.2490457" : "2",
+                          "-2.411693" : "2",
+                          "-2.8023" : "2",
+                          "-2.3561945" : "2",
+                          "-1.012197" : "2",
+                          "-0.67474097" : "2",
+                          "-2.1669955" : "2",
+                          "-0.5191460999999999" : "2",
+                          "-0.8803499" : "2",
+                          "-1.7033478" : "2",
+                          "-0.34302393" : "2",
+                          "-1.0516502" : "2",
+                          "-0.75092906" : "2",
+                          "-1.7590178" : "2",
+                          "-0.86217004" : "2",
+                          "-2.5702553" : "2",
+                          "-2.2142975" : "2",
+                          "-0.81103355" : "2",
+                          "0.8379812" : "2",
+                          "-0.8058035" : "2",
+                          "-0.6435010999999999" : "2",
+                          "-2.695487" : "2",
+                          "-0.95054686" : "2",
+                          "-0.26625204" : "2",
+                          "-0.7853982" : "2",
+                          "-2.819842" : "2",
+                          "-2.2531128" : "2",
+                          "-2.2974386000000004" : "2",
+                          "-0.27829966" : "2",
+                          "-1.7454685" : "2",
+                          "-1.7273982" : "2",
+                          "-3.0309355" : "2",
+                          "-2.5829932999999996" : "2",
+                          "-2.7367008" : "2",
+                          "-2.4416997000000005" : "2",
+                          "-1.3439975" : "2",
+                          "0.98279375" : "2",
+                          "-3.034857" : "2"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "38.013157" : "2",
+                          "8.246211" : "2",
+                          "5.0" : "2",
+                          "9.486833" : "2",
+                          "25.495098000000002" : "4",
+                          "18.027756" : "2",
+                          "9.899495" : "4",
+                          "9.433981" : "4",
+                          "19.209373" : "2",
+                          "33.83785" : "2",
+                          "8.062258" : "2",
+                          "29.832869" : "2",
+                          "15.132746" : "2",
+                          "29.732138" : "2",
+                          "16.124516" : "2",
+                          "20.518284" : "2",
+                          "21.377557999999997" : "2",
+                          "9.219544" : "2",
+                          "16.643316" : "2",
+                          "10.0" : "4",
+                          "27.58623" : "2",
+                          "13.453624" : "2",
+                          "34.655445" : "2",
+                          "8.602325" : "2",
+                          "22.803509" : "2",
+                          "6.3245554" : "2",
+                          "20.615528" : "2",
+                          "12.0415945" : "2",
+                          "14.560220000000001" : "2",
+                          "4.1231055" : "2",
+                          "34.525352000000005" : "2",
+                          "19.235384" : "2",
+                          "18.110771" : "2",
+                          "38.078865" : "2",
+                          "24.839485" : "2",
+                          "13.341664000000002" : "2",
+                          "14.422204999999998" : "2",
+                          "32.984844" : "2",
+                          "28.160255" : "2"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Marko Pjaca" : "8",
+                          "Luka Modrić" : "18",
+                          "Vedran Ćorluka" : "16",
+                          "Filip Bradarić" : "6",
+                          "Mateo Kovačić" : "4",
+                          "Ivan Rakitić" : "4",
+                          "Ivan Perišić" : "4",
+                          "Andrej Kramarić" : "16",
+                          "Milan Badelj" : "6",
+                          "Lovre Kalinić" : "4"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Tin Jedvaj" : "96"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Right Back" : "82",
+                          "Right Wing Back" : "14"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Lovre Kalinić",
+              "frequencySignificance" : 17,
+              "caseFrequencySignificance" : 17,
+              "durations" : [
+                  {
+                      "TotalDuration" : 58000,
+                      "MeanDuration" : 3222.22222222222,
+                      "MedianDuration" : 3500,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 8000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "32",
+                          "Ball Recovery" : "4"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "Goal Kick" : "12",
+                          "None" : "20",
+                          "Free Kick" : "4"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "From Goal Kick" : "12",
+                          "Regular Play" : "6",
+                          "From Free Kick" : "4",
+                          "From Keeper" : "2",
+                          "From Counter" : "8",
+                          "From Throw In" : "4"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "None" : "32",
+                          "True" : "4"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "36"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "-1.4968573" : "2",
+                          "-0.6831914000000001" : "2",
+                          "-0.24497867" : "4",
+                          "-0.36339313" : "2",
+                          "-0.22810262" : "2",
+                          "-0.8960554000000001" : "2",
+                          "1.0516502" : "2",
+                          "-0.06885649" : "2",
+                          "0.39305803" : "2",
+                          "0.23602368" : "2",
+                          "-0.18622284" : "2",
+                          "0.09966865" : "2",
+                          "-0.810393" : "2",
+                          "-1.7126933000000002" : "2",
+                          "0.25255427" : "2"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "27.073973" : "2",
+                          "55.443665" : "2",
+                          "70.0928" : "4",
+                          "75.96051999999999" : "2",
+                          "57.48913" : "2",
+                          "25.612497" : "2",
+                          "32.24903" : "2",
+                          "58.13776800000001" : "2",
+                          "44.384679999999996" : "2",
+                          "81.25269" : "2",
+                          "70.21396" : "2",
+                          "60.299255" : "2",
+                          "56.586216" : "2",
+                          "14.142135999999999" : "2",
+                          "32.01562" : "2"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Duje Ćaleta-Car" : "6",
+                          "Andrej Kramarić" : "10",
+                          "Ivan Perišić" : "8",
+                          "Vedran Ćorluka" : "2",
+                          "Marko Pjaca" : "4",
+                          "Tin Jedvaj" : "2"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Lovre Kalinić" : "36"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Goalkeeper" : "36"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Marko Pjaca",
+              "frequencySignificance" : 33,
+              "caseFrequencySignificance" : 28,
+              "durations" : [
+                  {
+                      "TotalDuration" : 30000,
+                      "MeanDuration" : 789.473684210526,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 3000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Ball Recovery" : "8",
+                          "Dribble" : "4",
+                          "Pressure" : "8",
+                          "Pass" : "42",
+                          "Miscontrol" : "12",
+                          "Shot" : "2"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "74",
+                          "Open Play" : "2"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "Regular Play" : "36",
+                          "From Throw In" : "20",
+                          "From Counter" : "14",
+                          "From Keeper" : "4",
+                          "From Free Kick" : "2"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "True" : "16",
+                          "None" : "60"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "74",
+                          "True" : "2"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Marko Pjaca" : "76"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Right Wing" : "56",
+                          "Center Forward" : "12",
+                          "Left Back" : "8"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "-1.731559" : "2",
+                          "1.8370484" : "2",
+                          "3.1415927000000003" : "4",
+                          "1.0636978000000001" : "2",
+                          "-3.0584514" : "2",
+                          "-2.3561945" : "2",
+                          "-2.6779451" : "2",
+                          "-2.3191743" : "2",
+                          "2.4668517000000003" : "2",
+                          "-1.7126933000000002" : "2",
+                          "-0.4636476" : "2",
+                          "-1.8925468999999997" : "2",
+                          "0.39479113" : "2",
+                          "-1.2341216" : "2",
+                          "0.87605804" : "2",
+                          "-1.5707964" : "2",
+                          "-1.3734008" : "2",
+                          "2.8753407" : "2",
+                          "-0.14189705" : "2",
+                          "1.1801893" : "2"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "37.48333" : "2",
+                          "11.401753999999999" : "4",
+                          "7.0" : "2",
+                          "10.295630000000001" : "2",
+                          "12.0415945" : "2",
+                          "4.2426405" : "2",
+                          "11.18034" : "4",
+                          "19.104973" : "2",
+                          "6.403124299999999" : "2",
+                          "7.0710679999999995" : "2",
+                          "9.486833" : "2",
+                          "13.0" : "2",
+                          "21.189621" : "2",
+                          "15.6205" : "2",
+                          "4.0" : "2",
+                          "8.0" : "2",
+                          "5.0990195" : "2",
+                          "21.213203" : "2",
+                          "18.384777" : "2"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Ivan Perišić" : "2",
+                          "Mateo Kovačić" : "10",
+                          "Andrej Kramarić" : "8",
+                          "Tin Jedvaj" : "6",
+                          "Luka Modrić" : "2",
+                          "Josip Pivarić" : "4",
+                          "Milan Badelj" : "2",
+                          "Marcelo Brozović" : "2",
+                          "Domagoj Vida" : "2",
+                          "Šime Vrsaljko" : "2"
+                          }
+                      ]
+                      }
+                   ]
+          },
+           {
+              "label" : "Filip Bradarić",
+              "frequencySignificance" : 11,
+              "caseFrequencySignificance" : 10,
+              "durations" : [
+                  {
+                      "TotalDuration" : 14000,
+                      "MeanDuration" : 1166.66666666667,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 4000
+                   }
+               ],
+              "attributes" : [
+                  {
+                      "action" : [
+                          {
+                          "Pass" : "22",
+                          "Ball Recovery" : "2"
+                          }
+                      ],
+                      "type" : [
+                          {
+                          "None" : "22",
+                          "Recovery" : "2"
+                          }
+                      ],
+                      "play_pattern" : [
+                          {
+                          "From Goal Kick" : "2",
+                          "From Corner" : "2",
+                          "From Counter" : "4",
+                          "From Throw In" : "6",
+                          "Regular Play" : "10"
+                          }
+                      ],
+                      "under_pressure" : [
+                          {
+                          "None" : "20",
+                          "True" : "4"
+                          }
+                      ],
+                      "shot_assist" : [
+                          {
+                          "None" : "24"
+                          }
+                      ],
+                      "angle" : [
+                          {
+                          "-2.5213432" : "2",
+                          "0.87605804" : "2",
+                          "-2.158799" : "2",
+                          "-0.39852244" : "2",
+                          "-0.69473827" : "2",
+                          "1.1246908000000002" : "2",
+                          "3.0172377" : "2",
+                          "0.27829966" : "2",
+                          "-0.67474097" : "2",
+                          "-1.7234456999999999" : "2",
+                          "-0.5667291999999999" : "2"
+                          }
+                      ],
+                      "length" : [
+                          {
+                          "8.602325" : "2",
+                          "15.6205" : "2",
+                          "7.211102499999999" : "2",
+                          "20.615528" : "2",
+                          "7.81025" : "2",
+                          "25.495098000000002" : "2",
+                          "8.062258" : "2",
+                          "21.840329999999998" : "2",
+                          "12.806249000000001" : "2",
+                          "13.152946" : "2",
+                          "26.076809" : "2"
+                          }
+                      ],
+                      "recipient" : [
+                          {
+                          "Mateo Kovačić" : "4",
+                          "Andrej Kramarić" : "2",
+                          "Milan Badelj" : "2",
+                          "Ivan Perišić" : "4",
+                          "Tin Jedvaj" : "2",
+                          "Ivan Rakitić" : "4",
+                          "Josip Pivarić" : "4"
+                          }
+                      ],
+                      "player" : [
+                          {
+                          "Filip Bradarić" : "24"
+                          }
+                      ],
+                      "player_position" : [
+                          {
+                          "Right Center Midfield" : "24"
+                          }
+                      ]
+                      }
+                   ]
+          }
+      ],
+      "edges": [
+           {
+              "label" : "start_node -> Dejan Lovren",
+              "fromNode" : "start_node",
+              "toNode" : "Dejan Lovren",
+              "frequencySignificance" : 58
+          },
+           {
+              "label" : "Ivan Strinić -> end_node",
+              "fromNode" : "Ivan Strinić",
+              "toNode" : "end_node",
+              "frequencySignificance" : 56
+          },
+           {
+              "label" : "start_node -> Ivan Strinić",
+              "fromNode" : "start_node",
+              "toNode" : "Ivan Strinić",
+              "frequencySignificance" : 70
+          },
+           {
+              "label" : "Domagoj Vida -> end_node",
+              "fromNode" : "Domagoj Vida",
+              "toNode" : "end_node",
+              "frequencySignificance" : 36
+          },
+           {
+              "label" : "start_node -> Domagoj Vida",
+              "fromNode" : "start_node",
+              "toNode" : "Domagoj Vida",
+              "frequencySignificance" : 42
+          },
+           {
+              "label" : "start_node -> Danijel Subašić",
+              "fromNode" : "start_node",
+              "toNode" : "Danijel Subašić",
+              "frequencySignificance" : 74
+          },
+           {
+              "label" : "Danijel Subašić -> end_node",
+              "fromNode" : "Danijel Subašić",
+              "toNode" : "end_node",
+              "frequencySignificance" : 24
+          },
+           {
+              "label" : "Marcelo Brozović -> end_node",
+              "fromNode" : "Marcelo Brozović",
+              "toNode" : "end_node",
+              "frequencySignificance" : 42
+          },
+           {
+              "label" : "start_node -> Šime Vrsaljko",
+              "fromNode" : "start_node",
+              "toNode" : "Šime Vrsaljko",
+              "frequencySignificance" : 88
+          },
+           {
+              "label" : "start_node -> Marcelo Brozović",
+              "fromNode" : "start_node",
+              "toNode" : "Marcelo Brozović",
+              "frequencySignificance" : 48
+          },
+           {
+              "label" : "Ivan Perišić -> end_node",
+              "fromNode" : "Ivan Perišić",
+              "toNode" : "end_node",
+              "frequencySignificance" : 72
+          },
+           {
+              "label" : "Ante Rebić -> end_node",
+              "fromNode" : "Ante Rebić",
+              "toNode" : "end_node",
+              "frequencySignificance" : 70
+          },
+           {
+              "label" : "start_node -> Ivan Rakitić",
+              "fromNode" : "start_node",
+              "toNode" : "Ivan Rakitić",
+              "frequencySignificance" : 65
+          },
+           {
+              "label" : "Dejan Lovren -> end_node",
+              "fromNode" : "Dejan Lovren",
+              "toNode" : "end_node",
+              "frequencySignificance" : 33
+          },
+           {
+              "label" : "Mario Mandžukić -> end_node",
+              "fromNode" : "Mario Mandžukić",
+              "toNode" : "end_node",
+              "frequencySignificance" : 56
+          },
+           {
+              "label" : "start_node -> Ante Rebić",
+              "fromNode" : "start_node",
+              "toNode" : "Ante Rebić",
+              "frequencySignificance" : 16
+          },
+           {
+              "label" : "start_node -> Luka Modrić",
+              "fromNode" : "start_node",
+              "toNode" : "Luka Modrić",
+              "frequencySignificance" : 103
+          },
+           {
+              "label" : "start_node -> Ivan Perišić",
+              "fromNode" : "start_node",
+              "toNode" : "Ivan Perišić",
+              "frequencySignificance" : 25
+          },
+           {
+              "label" : "Ivan Rakitić -> end_node",
+              "fromNode" : "Ivan Rakitić",
+              "toNode" : "end_node",
+              "frequencySignificance" : 77
+          },
+           {
+              "label" : "Šime Vrsaljko -> end_node",
+              "fromNode" : "Šime Vrsaljko",
+              "toNode" : "end_node",
+              "frequencySignificance" : 65
+          },
+           {
+              "label" : "Luka Modrić -> end_node",
+              "fromNode" : "Luka Modrić",
+              "toNode" : "end_node",
+              "frequencySignificance" : 82
+          },
+           {
+              "label" : "start_node -> Mateo Kovačić",
+              "fromNode" : "start_node",
+              "toNode" : "Mateo Kovačić",
+              "frequencySignificance" : 12
+          },
+           {
+              "label" : "Mateo Kovačić -> end_node",
+              "fromNode" : "Mateo Kovačić",
+              "toNode" : "end_node",
+              "frequencySignificance" : 15
+          },
+           {
+              "label" : "start_node -> Josip Pivarić",
+              "fromNode" : "start_node",
+              "toNode" : "Josip Pivarić",
+              "frequencySignificance" : 35
+          },
+           {
+              "label" : "Josip Pivarić -> end_node",
+              "fromNode" : "Josip Pivarić",
+              "toNode" : "end_node",
+              "frequencySignificance" : 24
+          },
+           {
+              "label" : "start_node -> Mario Mandžukić",
+              "fromNode" : "start_node",
+              "toNode" : "Mario Mandžukić",
+              "frequencySignificance" : 22
+          },
+           {
+              "label" : "start_node -> Andrej Kramarić",
+              "fromNode" : "start_node",
+              "toNode" : "Andrej Kramarić",
+              "frequencySignificance" : 14
+          },
+           {
+              "label" : "Andrej Kramarić -> end_node",
+              "fromNode" : "Andrej Kramarić",
+              "toNode" : "end_node",
+              "frequencySignificance" : 27
+          },
+           {
+              "label" : "Milan Badelj -> end_node",
+              "fromNode" : "Milan Badelj",
+              "toNode" : "end_node",
+              "frequencySignificance" : 8
+          },
+           {
+              "label" : "start_node -> Milan Badelj",
+              "fromNode" : "start_node",
+              "toNode" : "Milan Badelj",
+              "frequencySignificance" : 8
+          },
+           {
+              "label" : "Vedran Ćorluka -> Luka Modrić",
+              "fromNode" : "Vedran Ćorluka",
+              "toNode" : "Luka Modrić",
+              "frequencySignificance" : 8,
+              "caseFrequencySignificance" : 8,
+              "durations" : [
+                  {
+                      "TotalDuration" : 10000,
+                      "MeanDuration" : 1250,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 3000
+                   }
+               ]
+          },
+           {
+              "label" : "Tin Jedvaj -> end_node",
+              "fromNode" : "Tin Jedvaj",
+              "toNode" : "end_node",
+              "frequencySignificance" : 10
+          },
+           {
+              "label" : "start_node -> Lovre Kalinić",
+              "fromNode" : "start_node",
+              "toNode" : "Lovre Kalinić",
+              "frequencySignificance" : 9
+          },
+           {
+              "label" : "Duje Ćaleta-Car -> end_node",
+              "fromNode" : "Duje Ćaleta-Car",
+              "toNode" : "end_node",
+              "frequencySignificance" : 3
+          },
+           {
+              "label" : "start_node -> Marko Pjaca",
+              "fromNode" : "start_node",
+              "toNode" : "Marko Pjaca",
+              "frequencySignificance" : 2
+          },
+           {
+              "label" : "Marko Pjaca -> end_node",
+              "fromNode" : "Marko Pjaca",
+              "toNode" : "end_node",
+              "frequencySignificance" : 13
+          },
+           {
+              "label" : "start_node -> Tin Jedvaj",
+              "fromNode" : "start_node",
+              "toNode" : "Tin Jedvaj",
+              "frequencySignificance" : 15
+          },
+           {
+              "label" : "start_node -> Vedran Ćorluka",
+              "fromNode" : "start_node",
+              "toNode" : "Vedran Ćorluka",
+              "frequencySignificance" : 11
+          },
+           {
+              "label" : "Filip Bradarić -> Ivan Rakitić",
+              "fromNode" : "Filip Bradarić",
+              "toNode" : "Ivan Rakitić",
+              "frequencySignificance" : 2,
+              "caseFrequencySignificance" : 2,
+              "durations" : [
+                  {
+                      "TotalDuration" : 2000,
+                      "MeanDuration" : 1000,
+                      "MedianDuration" : 1000,
+                      "MinDuration" : 0,
+                      "MaxDuration" : 2000
+                   }
+               ]
+          },
+           {
+              "label" : "Lovre Kalinić -> end_node",
+              "fromNode" : "Lovre Kalinić",
+              "toNode" : "end_node",
+              "frequencySignificance" : 5
+          },
+           {
+              "label" : "start_node -> Duje Ćaleta-Car",
+              "fromNode" : "start_node",
+              "toNode" : "Duje Ćaleta-Car",
+              "frequencySignificance" : 4
+          }
+      ]
+  }
+}
